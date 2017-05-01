@@ -45,6 +45,8 @@ void on_entry_mesg_delete_text (GtkEditable * editable, gint start_pos, gint end
 
 void on_entry_mesg_insert_text (GtkEditable * editable, gchar * new_text, gint new_text_length, gpointer position, gpointer user_data);
 
+void on_entry_mesg_preedit_changed (GtkEntry * entry, gchar * preedit, gpointer user_data);
+
 gboolean on_entry_mesg_drag_drop (GtkWidget * widget, GdkDragContext * drag_context, gint x, gint y, guint time, gpointer user_data);
 
 

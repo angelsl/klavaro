@@ -40,7 +40,7 @@ static gint lang_num = 0;
 const gchar *
 trans_code_to_country (gchar *code)
 {
-#	define COUNTRY_N 40
+#	define COUNTRY_N 50
 	gsize i;
 	gchar *dummy = NULL;
 	static gchar map[COUNTRY_N][2][64] = {
@@ -69,17 +69,27 @@ trans_code_to_country (gchar *code)
 		{"it","Italia"},
 		{"jp","日本 (Nippon)"},
 		{"kk","Қазақстан"},
+		{"kr","대한민국"},
 		{"no","Norge"},
 		{"pl","Polska"},
 		{"pk","پاکستان"},
-		{"pt","Portugal"},
-		{"ru","Россия"}, /* 30 */
+		{"pt","Portugal"}, /* 30 */
+		{"ru","Россия"},
 		{"sl","Slovenija"},
 		{"se","Sverige"},
 		{"tr","Türkiye"},
 		{"ua","Україна"},
 		{"uk","United Kingdom"},
 		{"us","USA"},
+		{"",""},
+		{"",""},
+		{"",""}, /* 40 */
+		{"",""},
+		{"",""},
+		{"",""},
+		{"",""},
+		{"",""},
+		{"",""},
 		{"",""},
 		{"",""},
 		{"",""},
@@ -706,5 +716,6 @@ trans_read_text (const gchar * file_end)
 		}
 	}
 	buf[pos] = 0;
+	fclose (fh);
 	return buf;
 }

@@ -684,6 +684,36 @@ on_entry_mesg_insert_text (GtkEditable * editable,
 	tutor_process_touch (g_utf8_get_char_validated (new_text, new_text_length));
 }
 
+/* For languages using input method - by Hodong Kim */
+G_MODULE_EXPORT void
+on_entry_mesg_preedit_changed (GtkEntry * entry,
+			       gchar * preedit,
+			       gpointer user_data)
+{
+  gunichar real_char = cursor_get_char ();
+  gunichar preedit_char = g_utf8_get_char (preedit);
+
+  if (real_char == preedit_char)
+  {
+    /* This trick sends 'focus change' to GtkEntry.
+       gtk_entry_focus_in() sets priv->need_im_reset = TRUE,
+       therefore gtk_entry_reset_im_context always executes gtk_im_context_reset,
+       as a result, pre-edit text is committed */
+    GdkEvent *event = gdk_event_new (GDK_FOCUS_CHANGE);
+
+    event->focus_change.type = GDK_FOCUS_CHANGE;
+    event->focus_change.in = TRUE;
+    event->focus_change.window = gtk_widget_get_window (GTK_WIDGET (entry));
+    if (event->focus_change.window != NULL)
+      g_object_ref (event->focus_change.window);
+
+    gtk_widget_send_focus_change (GTK_WIDGET (entry), event);
+    gdk_event_free (event);
+
+    gtk_entry_reset_im_context (entry);
+  }
+}
+
 /* Tutor drag and drop handling
  */
 G_MODULE_EXPORT gboolean
