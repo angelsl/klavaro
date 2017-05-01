@@ -12,11 +12,11 @@
 
 /*
  * This file contains the set of languages configured for
- * internationalization.
+ * localization.
  * The letters in parenthesis must agree with LL_CC,
  * where LL is the language code
  * and CC is the country code.
- * The only one exception is for the generic
+ * The only exception is for the generic
  * English, which uses the 'C' code.
  * Keep the alphabetic order, because it is put
  * in the interface as done here.
@@ -42,6 +42,7 @@
 "Hrvatski (hr) [qwertz_hr]\n" \
 "Italiano (it) [qwerty_it]\n" \
 "Қазақ (kk) [jtsuken_kk]\n" \
+"한국어 (ko) [dubeolsik_kr]\n" \
 "Кыргызча (ky) [jtsuken_ru]\n" \
 "Magyar (hu) [qwertz_hu]\n" \
 "Nederlands (nl) [qwerty_us]\n" \

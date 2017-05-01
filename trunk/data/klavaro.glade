@@ -683,6 +683,7 @@ Author: Felipe Castro
                 <signal name="grab-focus" handler="on_entry_mesg_grab_focus" after="yes" swapped="no"/>
                 <signal name="icon-release" handler="on_entry_mesg_icon_release" swapped="no"/>
                 <signal name="insert-text" handler="on_entry_mesg_insert_text" after="yes" swapped="no"/>
+                <signal name="preedit-changed" handler="on_entry_mesg_preedit_changed" after="yes" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">True</property>

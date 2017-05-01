@@ -29,6 +29,7 @@ klavaro_data = \
 	azerty_fr.kbd \
 	azerty_fr_ibook.kbd \
 	colemak_us.kbd \
+ 	dubeolsik_kr.kbd \
 	dvorak_bg.kbd \
 	dvorak_br_nativo.kbd \
 	dvorak_br_us.kbd \
@@ -47,7 +48,8 @@ klavaro_data = \
 	dvorak_us.kbd \
 	dvorak_us_prog.kbd \
 	gurmukhi_in_jhelum.kbd \
-	gurmukhi_in_jhelumShift.kbd \
+	gurmukhi_pk_jhelum.kbd \
+	gurmukhi_pk_jhelumShift.kbd \
 	jtsuken_kk.kbd \
 	jtsuken_ru.kbd \
 	jtsuken_ru_typewriter.kbd \
@@ -129,6 +131,8 @@ klavaro_data = \
 	it.paragraphs \
 	kk.words \
 	kk.paragraphs \
+ 	ko.words \
+ 	ko.paragraphs \
 	nb.words \
 	nb.paragraphs \
 	nl.words \
