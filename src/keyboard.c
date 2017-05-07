@@ -12,6 +12,7 @@
 
 /* Functions to implement and manage the keyboard editing operations
  */
+#include <errno.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -311,7 +312,7 @@ keyb_set_chars ()
 	{
 		for (i = 0; i < 4; i++)
 		{
-			fgets (tmp_str, 6 * KEY_LINE_LEN + 1, fh);
+			tmp_name = fgets (tmp_str, 6 * KEY_LINE_LEN + 1, fh);
 			tmp_str[6 * KEY_LINE_LEN] = '\0';
 			uchs = g_utf8_to_ucs4_fast (tmp_str, -1, &n_itens);
 			if (n_itens > KEY_LINE_LEN)
@@ -325,7 +326,7 @@ keyb_set_chars ()
 		}
 		for (i = 0; i < 4; i++)
 		{
-			fgets (tmp_str, 6 * KEY_LINE_LEN + 1, fh);
+			tmp_name = fgets (tmp_str, 6 * KEY_LINE_LEN + 1, fh);
 			tmp_str[6 * KEY_LINE_LEN] = '\0';
 			uchs = g_utf8_to_ucs4_fast (tmp_str, -1, &n_itens);
 			if (n_itens > KEY_LINE_LEN)
@@ -1577,6 +1578,7 @@ hints_init ()
 {
 	gint i;
 	gchar *tmp_name;
+	gchar *tmp;
 	FILE *fh;
 
 	if (hints_is_initialized == TRUE)
@@ -1598,7 +1600,7 @@ hints_init ()
 	{
 		hints_is_initialized = TRUE;
 		for (i = 0; i < 4; i++)
-			fgets (hints[i], KEY_LINE_LEN + 1, fh);
+			tmp = fgets (hints[i], KEY_LINE_LEN + 1, fh);
 		fclose (fh);
 		hints_set_tips ();
 		hints_set_colors ();
