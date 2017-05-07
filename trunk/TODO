@@ -9,6 +9,7 @@ Simple list of things that could be done in future releases:
 - Configurable colors for the progress window.
 - Add method for advanced users to learn the keyboard from words in the dictionaries (center row left/rigth/both hands, lower row, upper row, number row, etc).
 - Use long dictionaries for the speed module (word frequency should come from real language used in ordinary texts, but if people send long a dict it will be accepted, in a language basis).
+- Fix timeout handling of cursor blinking.
 
 ____________________________________________
 And suggestions that probably won't be done:

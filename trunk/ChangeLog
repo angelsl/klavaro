@@ -9,6 +9,7 @@
 	- Updated klavaro.appdata.xml file, e.g. added the kudo ModernToolkit.
 	- Added GenericName in klavaro.desktop file.
 	- Resource leak at translation.c (fh obtained with fopen but had no fclose).
+	- Default keyboard for Finnish is [qwerty_se], not [querty_se].
 	* Changed:
 	= Better handling on scripted languages.
 	* Added translations:

@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 
-
-Copyright (C) Felipe Castro
-
-This file is part of Klavaro.
-
-Klavaro is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Klavaro is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
-
-Author: Felipe Castro
-
--->
+<!-- Generated with glade 3.16.1 -->
 <interface>
-  <requires lib="gtk+" version="3.0"/>
-  <!-- interface-license-type gplv3 -->
-  <!-- interface-name Klavaro -->
-  <!-- interface-copyright Felipe Castro -->
-  <!-- interface-authors Felipe Castro -->
+  <requires lib="gtk+" version="3.8"/>
   <object class="GtkAdjustment" id="adjustment1">
     <property name="lower">0.97999999999999998</property>
     <property name="upper">60</property>
@@ -51,12 +26,13 @@ Author: Felipe Castro
     <property name="deletable">False</property>
     <signal name="show" handler="on_window_stat_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox30">
+      <object class="GtkBox" id="vbox30">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">8</property>
         <child>
-          <object class="GtkHBox" id="hbox22">
+          <object class="GtkBox" id="hbox22">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">6</property>
@@ -207,7 +183,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox21">
+          <object class="GtkBox" id="hbox21">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">6</property>
@@ -281,7 +257,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox87">
+                      <object class="GtkBox" id="hbox87">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -351,7 +327,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox29">
+                      <object class="GtkBox" id="hbox29">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -423,11 +399,12 @@ Author: Felipe Castro
     <signal name="destroy" handler="on_window_tutor_destroy" swapped="no"/>
     <signal name="show" handler="on_window_tutor_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox_tutor_main">
+      <object class="GtkBox" id="vbox_tutor_main">
         <property name="visible">True</property>
         <property name="can_focus">True</property>
+        <property name="orientation">vertical</property>
         <child>
-          <object class="GtkHBox" id="hbox_top_menu">
+          <object class="GtkBox" id="hbox_top_menu">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -440,7 +417,7 @@ Author: Felipe Castro
                 <property name="relief">none</property>
                 <signal name="clicked" handler="on_button_tutor_other_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox78">
+                  <object class="GtkBox" id="hbox78">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">2</property>
@@ -479,9 +456,10 @@ Author: Felipe Castro
               </packing>
             </child>
             <child>
-              <object class="GtkVSeparator" id="vseparator_tutor_1">
+              <object class="GtkSeparator" id="vseparator_tutor_1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -525,9 +503,10 @@ Author: Felipe Castro
               </packing>
             </child>
             <child>
-              <object class="GtkVSeparator" id="vseparator_tutor_2">
+              <object class="GtkSeparator" id="vseparator_tutor_2">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -663,7 +642,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox_bottom_mesg">
+          <object class="GtkBox" id="hbox_bottom_mesg">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -715,12 +694,12 @@ Author: Felipe Castro
                         <property name="icon_size">1</property>
                       </object>
                     </child>
-                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                     <accelerator key="r" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                   </object>
                 </child>
-                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
+                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -737,7 +716,7 @@ Author: Felipe Castro
                 <property name="relief">none</property>
                 <signal name="clicked" handler="on_button_tutor_show_keyb_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox12">
+                  <object class="GtkBox" id="hbox12">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="spacing">2</property>
@@ -806,7 +785,7 @@ Author: Felipe Castro
                 <property name="active">True</property>
                 <signal name="toggled" handler="on_togglebutton_tutor_beep_toggled" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox8">
+                  <object class="GtkBox" id="hbox8">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -855,7 +834,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox10">
+          <object class="GtkBox" id="hbox10">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -865,7 +844,7 @@ Author: Felipe Castro
                 <property name="receives_default">True</property>
                 <signal name="toggled" handler="on_togglebutton_tutor_intro_toggled" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox9">
+                  <object class="GtkBox" id="hbox9">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -913,7 +892,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Charts showing the learning progress along the exercises.</property>
                 <signal name="clicked" handler="on_button_tutor_stat_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox13">
+                  <object class="GtkBox" id="hbox13">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -961,7 +940,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Exit the application immediately.</property>
                 <signal name="clicked" handler="on_button_tutor_close_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox76">
+                  <object class="GtkBox" id="hbox76">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1010,7 +989,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Return to the main menu.</property>
                 <signal name="clicked" handler="on_button_tutor_back_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox11">
+                  <object class="GtkBox" id="hbox11">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1059,7 +1038,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Show local and external scores from other users.</property>
                 <signal name="clicked" handler="on_button_tutor_top10_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox14">
+                  <object class="GtkBox" id="hbox14">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1120,9 +1099,10 @@ Author: Felipe Castro
     <property name="gravity">center</property>
     <signal name="show" handler="on_dialog_confirm_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox42">
+      <object class="GtkBox" id="vbox42">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <child>
           <object class="GtkLabel" id="label117">
             <property name="visible">True</property>
@@ -1158,7 +1138,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox62">
+          <object class="GtkBox" id="hbox62">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="border_width">5</property>
@@ -1210,7 +1190,7 @@ Author: Felipe Castro
                     <property name="left_padding">4</property>
                     <property name="right_padding">4</property>
                     <child>
-                      <object class="GtkHBox" id="hbox89">
+                      <object class="GtkBox" id="hbox89">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">4</property>
@@ -1268,7 +1248,7 @@ Author: Felipe Castro
                     <property name="left_padding">4</property>
                     <property name="right_padding">4</property>
                     <child>
-                      <object class="GtkHBox" id="hbox88">
+                      <object class="GtkBox" id="hbox88">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">4</property>
@@ -1353,7 +1333,7 @@ Author: Felipe Castro
                     <property name="xscale">0.5</property>
                     <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkHBox" id="hbox25">
+                      <object class="GtkBox" id="hbox25">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -1405,7 +1385,7 @@ Author: Felipe Castro
                     <property name="xscale">0.5</property>
                     <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkHBox" id="hbox26">
+                      <object class="GtkBox" id="hbox26">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -1476,14 +1456,15 @@ Author: Felipe Castro
     <property name="deletable">False</property>
     <property name="gravity">center</property>
     <child>
-      <object class="GtkHBox" id="hbox18">
+      <object class="GtkBox" id="hbox18">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="spacing">8</property>
         <child>
-          <object class="GtkVBox" id="vbox9">
+          <object class="GtkBox" id="vbox9">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
             <child>
               <object class="GtkScrolledWindow" id="scrolledwindow3">
                 <property name="width_request">250</property>
@@ -1553,9 +1534,10 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkVBox" id="vbox2">
+          <object class="GtkBox" id="vbox2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
             <property name="spacing">12</property>
             <child>
               <object class="GtkButton" id="button_other_new">
@@ -1565,7 +1547,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Read a text file and add a copy of it here. The file must be encoded in UTF-8.</property>
                 <signal name="clicked" handler="on_button_other_new_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox64">
+                  <object class="GtkBox" id="hbox64">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1614,7 +1596,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Paste text that was copied to the clipboard.</property>
                 <signal name="clicked" handler="on_button_other_paste_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox63">
+                  <object class="GtkBox" id="hbox63">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1663,7 +1645,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Remove the selected item.</property>
                 <signal name="clicked" handler="on_button_other_remove_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox80">
+                  <object class="GtkBox" id="hbox80">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -1705,7 +1687,7 @@ Author: Felipe Castro
               </packing>
             </child>
             <child>
-              <object class="GtkHBox" id="hbox30">
+              <object class="GtkBox" id="hbox30">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="spacing">8</property>
@@ -1722,7 +1704,7 @@ Author: Felipe Castro
                         <property name="xscale">0.5</property>
                         <property name="yscale">0.5</property>
                         <child>
-                          <object class="GtkHBox" id="hbox27">
+                          <object class="GtkBox" id="hbox27">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
@@ -1778,7 +1760,7 @@ Author: Felipe Castro
                         <property name="xscale">0.5</property>
                         <property name="yscale">0.5</property>
                         <child>
-                          <object class="GtkHBox" id="hbox91">
+                          <object class="GtkBox" id="hbox91">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
@@ -1847,10 +1829,11 @@ Author: Felipe Castro
     <signal name="check-resize" handler="on_window_hints_check_resize" swapped="no"/>
     <signal name="show" handler="on_window_hints_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox_hints">
+      <object class="GtkBox" id="vbox_hints">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="border_width">4</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">4</property>
         <child>
           <object class="GtkImage" id="pixmap_hints">
@@ -1869,7 +1852,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHButtonBox" id="hbuttonbox1">
+          <object class="GtkButtonBox" id="hbuttonbox1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -1888,7 +1871,7 @@ Author: Felipe Castro
                     <property name="xscale">0.5</property>
                     <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkHBox" id="hbox15">
+                      <object class="GtkBox" id="hbox15">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -1949,18 +1932,20 @@ Author: Felipe Castro
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
     <child>
-      <object class="GtkVBox" id="vbox_keyboard">
+      <object class="GtkBox" id="vbox_keyboard">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">8</property>
         <child>
-          <object class="GtkHBox" id="hbox_keyboard_hints">
+          <object class="GtkBox" id="hbox_keyboard_hints">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkVBox" id="vbox_keyboard_hints">
+              <object class="GtkBox" id="vbox_keyboard_hints">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
                 <property name="spacing">12</property>
                 <child>
                   <object class="GtkLabel" id="label_keyboard_title">
@@ -2055,9 +2040,10 @@ Author: Felipe Castro
               </packing>
             </child>
             <child>
-              <object class="GtkVBox" id="vbox10">
+              <object class="GtkBox" id="vbox10">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkLabel" id="label_keyboard_spacer">
                     <property name="visible">True</property>
@@ -2099,7 +2085,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox_keyboard_selector">
+          <object class="GtkBox" id="hbox_keyboard_selector">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">9</property>
@@ -2143,7 +2129,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox75">
+                      <object class="GtkBox" id="hbox75">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">2</property>
@@ -2452,7 +2438,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox_keyboard_saveas">
+          <object class="GtkBox" id="hbox_keyboard_saveas">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">4</property>
@@ -2492,7 +2478,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox19">
+          <object class="GtkBox" id="hbox19">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">8</property>
@@ -2510,7 +2496,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox24">
+                      <object class="GtkBox" id="hbox24">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2543,8 +2529,8 @@ Author: Felipe Castro
                     </child>
                   </object>
                 </child>
-                <accelerator key="Left" signal="clicked"/>
                 <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Left" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2569,7 +2555,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox23">
+                      <object class="GtkBox" id="hbox23">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2602,8 +2588,8 @@ Author: Felipe Castro
                     </child>
                   </object>
                 </child>
-                <accelerator key="Right" signal="clicked"/>
                 <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Right" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2636,7 +2622,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox73">
+                      <object class="GtkBox" id="hbox73">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2693,7 +2679,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox74">
+                      <object class="GtkBox" id="hbox74">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2747,7 +2733,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox71">
+                      <object class="GtkBox" id="hbox71">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2804,7 +2790,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox28">
+                      <object class="GtkBox" id="hbox28">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -2864,14 +2850,16 @@ Author: Felipe Castro
     <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
     <signal name="show" handler="on_window_main_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox40">
+      <object class="GtkBox" id="vbox40">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">8</property>
         <child>
-          <object class="GtkVBox" id="vbox4">
+          <object class="GtkBox" id="vbox4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
             <property name="spacing">5</property>
             <child>
               <object class="GtkButton" id="button_intro">
@@ -2881,7 +2869,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Don't be shy about learning the basics!</property>
                 <signal name="clicked" handler="on_button_intro_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox1">
+                  <object class="GtkBox" id="hbox1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -2899,9 +2887,10 @@ Author: Felipe Castro
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox1">
+                      <object class="GtkBox" id="vbox1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
                         <child>
                           <object class="GtkLabel" id="label_main_intro">
                             <property name="visible">True</property>
@@ -2958,7 +2947,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Initial training for your fingers.</property>
                 <signal name="clicked" handler="on_button_basic_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox2">
+                  <object class="GtkBox" id="hbox2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -2976,9 +2965,10 @@ Author: Felipe Castro
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox5">
+                      <object class="GtkBox" id="vbox5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
                         <child>
                           <object class="GtkLabel" id="label_main_basic">
                             <property name="visible">True</property>
@@ -3035,7 +3025,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Memorizing the keyboard practicing random keys exercises.</property>
                 <signal name="clicked" handler="on_button_adapt_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox4">
+                  <object class="GtkBox" id="hbox4">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -3053,9 +3043,10 @@ Author: Felipe Castro
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox6">
+                      <object class="GtkBox" id="vbox6">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
                         <child>
                           <object class="GtkLabel" id="label_main_adapt">
                             <property name="visible">True</property>
@@ -3112,7 +3103,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Accelerating the touches practicing random words exercises.</property>
                 <signal name="clicked" handler="on_button_velo_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox5">
+                  <object class="GtkBox" id="hbox5">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -3130,9 +3121,10 @@ Author: Felipe Castro
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox7">
+                      <object class="GtkBox" id="vbox7">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
                         <child>
                           <object class="GtkLabel" id="label_main_velo">
                             <property name="visible">True</property>
@@ -3189,7 +3181,7 @@ Author: Felipe Castro
                 <property name="tooltip_text" translatable="yes">Becoming proficient practicing complete paragraphs exercises.</property>
                 <signal name="clicked" handler="on_button_fluid_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkHBox" id="hbox6">
+                  <object class="GtkBox" id="hbox6">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
@@ -3207,9 +3199,10 @@ Author: Felipe Castro
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkVBox" id="vbox8">
+                      <object class="GtkBox" id="vbox8">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
                         <child>
                           <object class="GtkLabel" id="label_main_fluid">
                             <property name="visible">True</property>
@@ -3266,41 +3259,11 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkTable" id="table1">
+          <object class="GtkGrid" id="grid1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="n_rows">2</property>
-            <property name="n_columns">3</property>
-            <property name="column_spacing">4</property>
-            <property name="row_spacing">10</property>
-            <child>
-              <object class="GtkLabel" id="label4">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="tooltip_text" translatable="yes">Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest.</property>
-                <property name="xalign">0</property>
-                <property name="label" translatable="yes">_Keyboard:</property>
-                <property name="use_underline">True</property>
-              </object>
-              <packing>
-                <property name="x_options">GTK_FILL</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkLabel" id="label1">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="tooltip_text" translatable="yes">Language for modules 3 and 4.</property>
-                <property name="xalign">0</property>
-                <property name="label" translatable="yes">_Language:</property>
-                <property name="use_underline">True</property>
-              </object>
-              <packing>
-                <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
-                <property name="x_options">GTK_FILL</property>
-              </packing>
-            </child>
+            <property name="row_spacing">4</property>
+            <property name="column_spacing">10</property>
             <child>
               <object class="GtkCheckButton" id="checkbutton_speech">
                 <property name="label" translatable="yes">Speech</property>
@@ -3308,41 +3271,15 @@ Author: Felipe Castro
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
                 <property name="tooltip_text">Espeak</property>
-                <property name="xalign">0.5</property>
+                <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
                 <signal name="toggled" handler="on_checkbutton_speech_toggled" swapped="no"/>
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="right_attach">3</property>
                 <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkComboBoxText" id="combobox_language">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="tooltip_text" translatable="yes">Your language here.</property>
-                <signal name="changed" handler="on_combobox_language_changed" swapped="no"/>
-              </object>
-              <packing>
-                <property name="left_attach">1</property>
-                <property name="right_attach">2</property>
-                <property name="top_attach">1</property>
-                <property name="bottom_attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkComboBoxText" id="combobox_kbd_country">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="tooltip_text" translatable="yes">Country / Custom</property>
-                <signal name="changed" handler="on_combobox_kbd_country_changed" swapped="no"/>
-              </object>
-              <packing>
-                <property name="left_attach">1</property>
-                <property name="right_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3354,18 +3291,80 @@ Author: Felipe Castro
               </object>
               <packing>
                 <property name="left_attach">2</property>
-                <property name="right_attach">3</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combobox_language">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">Your language here.</property>
+                <signal name="changed" handler="on_combobox_language_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combobox_kbd_country">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">Country / Custom</property>
+                <signal name="changed" handler="on_combobox_kbd_country_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label4">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest.</property>
+                <property name="xalign">1</property>
+                <property name="label" translatable="yes">_Keyboard:</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">Language for modules 3 and 4.</property>
+                <property name="xalign">1</property>
+                <property name="label" translatable="yes">_Language:</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
           </object>
           <packing>
             <property name="expand">False</property>
-            <property name="fill">False</property>
+            <property name="fill">True</property>
             <property name="position">1</property>
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox7">
+          <object class="GtkBox" id="hbox7">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">5</property>
@@ -3383,7 +3382,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox70">
+                      <object class="GtkBox" id="hbox70">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -3439,7 +3438,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox69">
+                      <object class="GtkBox" id="hbox69">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -3495,7 +3494,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox68">
+                      <object class="GtkBox" id="hbox68">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
@@ -3663,7 +3662,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox90">
+                      <object class="GtkBox" id="hbox90">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">2</property>
@@ -3732,10 +3731,11 @@ Author: Felipe Castro
                 <property name="left_padding">10</property>
                 <property name="right_padding">15</property>
                 <child>
-                  <object class="GtkVBox" id="vbox3">
+                  <object class="GtkBox" id="vbox3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">start</property>
+                    <property name="orientation">vertical</property>
                     <child>
                       <object class="GtkLabel" id="label_info1">
                         <property name="visible">True</property>
@@ -3804,13 +3804,14 @@ Author: Felipe Castro
     <property name="deletable">False</property>
     <signal name="show" handler="on_window_top10_show" swapped="no"/>
     <child>
-      <object class="GtkVBox" id="vbox44">
+      <object class="GtkBox" id="vbox44">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="border_width">4</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">8</property>
         <child>
-          <object class="GtkHBox" id="hbox17">
+          <object class="GtkBox" id="hbox17">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="spacing">8</property>
@@ -3846,11 +3847,11 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox16">
+          <object class="GtkBox" id="hbox16">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
-              <object class="GtkHPaned" id="hpaned1">
+              <object class="GtkPaned" id="hpaned1">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="position">300</property>
@@ -3961,7 +3962,7 @@ Author: Felipe Castro
           </packing>
         </child>
         <child>
-          <object class="GtkHBox" id="hbox96">
+          <object class="GtkBox" id="hbox96">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <child>
@@ -3999,7 +4000,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox103">
+                      <object class="GtkBox" id="hbox103">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">2</property>
@@ -4055,7 +4056,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox102">
+                      <object class="GtkBox" id="hbox102">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="spacing">2</property>
@@ -4123,7 +4124,7 @@ Author: Felipe Castro
                     <property name="xscale">0</property>
                     <property name="yscale">0</property>
                     <child>
-                      <object class="GtkHBox" id="hbox99">
+                      <object class="GtkBox" id="hbox99">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <child>
