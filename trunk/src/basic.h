@@ -10,7 +10,7 @@
 /*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
 /*****************************************************************************/
 
-#define	MAX_BASIC_LESSONS 60
+#define	MAX_BASIC_LESSONS 256
 
 /*
  * Interface functions
