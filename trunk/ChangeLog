@@ -5,7 +5,7 @@
 	- el.paragraphs minor bugs fixed.
 	= Counting unicode characters apart for touchs-per-second calculation. 
 	- Gurmukhi keyboard for Jhelum is from Pakistan (kept version for
-	India). Removed extra "bindi" from 'P' key-position.
+	  India). Removed extra "bindi" from 'P' key-position.
 	- Updated klavaro.appdata.xml file, e.g. added the kudo ModernToolkit.
 	- Added GenericName in klavaro.desktop file.
 	- Resource leak at translation.c (fh obtained with fopen but had no fclose).
@@ -14,10 +14,13 @@
 	= Better handling on scripted languages.
 	- Max number of customizable basic lessons increased to 256.
 	- ar.paragraphs updated with some quotes, no more religious or
-	political texts.
+	  political texts.
+	- Allowing the tutor window to shrink more.
 	* Added translations:
 	= Korean (partial).
 	* Updated translations:
+	- Arabic.
+	- French.
 
 2016-03-17  Felipe Castro (-) <fefcas@gmail.com>;
 
