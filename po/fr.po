@@ -4,20 +4,23 @@
 # Fabrice Haberer-Proust <_fric_@proustmedia.de>, 2005.
 # Sebastién Wilmet <_darkagonik_@gmail.com>, 2008.
 # Thierry Benita <tbenita@atreal.net>, 2011 2012 2013.
-# Stéphane Aulery <lkppo@free.fr>, 2015.
+# Stéphane Aulery <lkppo@free.fr>, 2015-2016.
+#
+# Merci à Marthe Thirion pour son rapport de bogue (2016).
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
 "POT-Creation-Date: 2014-09-03 14:56-0300\n"
-"PO-Revision-Date: 2015-04-26 20:05+0200\n"
+"PO-Revision-Date: 2016-12-27 00:28+0100\n"
 "Last-Translator: Stéphane Aulery <lkppo@free.fr>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
@@ -570,7 +573,7 @@ msgstr "La langue par défaut est celle définie pour l'affichage (ici, le fran�
 
 #: ../src/translation.c:601
 msgid "With this exercise the focus is on speed. So, you are supposed to type really fast and I will only flatter you when you deserve it!"
-msgstr "Dans cet exercice, l'accent est mis sur la rapidité. Donc, vous êtes sensé taper le plus rapidement possible ! Épatez-moi !"
+msgstr "Dans cet exercice, l'accent est mis sur la rapidité. Donc, vous êtes censé taper le plus rapidement possible ! Épatez-moi !"
 
 #: ../src/translation.c:605
 msgid "We will now use complete sentences and paragraphs which make logical sense. This may distract you while you type if you try to understand what you are entering. The previous exercises were aimed at getting you to type without interpreting and analyzing the content."
