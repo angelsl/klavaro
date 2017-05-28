@@ -16,6 +16,8 @@
 	- ar.paragraphs updated with some quotes, no more religious or
 	  political texts.
 	- Allowing the tutor window to shrink more.
+	- Using Gurmukhi script to show Punjabi (pa) option in "Language" at main menu
+	  window.
 	* Added translations:
 	= Korean (partial).
 	* Updated translations:
