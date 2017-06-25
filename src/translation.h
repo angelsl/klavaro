@@ -52,6 +52,7 @@
 "Русский (ru) [jtsuken_ru]\n" \
 "Suomen kieli (fi) [qwerty_se]\n"\
 "Slovenščina (sl) [qwertz_sl]\n" \
+"Српски (sr) [qwertz_rs]\n" \
 "Svenska (sv) [qwerty_se]\n" \
 "తెలుగు (te) [qwerty_us]\n" \
 "Українська (uk) [jtsuken_ua]\n" \
