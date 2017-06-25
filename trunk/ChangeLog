@@ -1,17 +1,17 @@
-2017-05-01  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
+2017-05-01  Felipe Castro (-) <fefcas@gmail.com>;
 
 	* Release 3.03
 	* Fixed:
 	- el.paragraphs minor bugs fixed.
-	= Counting unicode characters apart for touchs-per-second calculation. 
+	? Counting unicode characters apart for touchs-per-second calculation. 
 	- Gurmukhi keyboard for Jhelum is from Pakistan (kept version for
 	  India). Removed extra "bindi" from 'P' key-position.
 	- Updated klavaro.appdata.xml file, e.g. added the kudo ModernToolkit.
 	- Added GenericName in klavaro.desktop file.
 	- Resource leak at translation.c (fh obtained with fopen but had no fclose).
 	- Default keyboard for Finnish is [qwerty_se], not [querty_se].
+	- Blinking cursor GSource timeout error.
 	* Changed:
-	= Better handling on scripted languages.
 	- Max number of customizable basic lessons increased to 256.
 	- ar.paragraphs updated with some quotes, no more religious or
 	  political texts.
@@ -19,7 +19,7 @@
 	- Using Gurmukhi script to show Punjabi (pa) option in "Language" at main menu
 	  window.
 	* Added translations:
-	= Korean (partial).
+	- Serbian.
 	* Updated translations:
 	- Arabic.
 	- French.

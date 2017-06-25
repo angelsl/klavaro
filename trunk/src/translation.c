@@ -69,11 +69,12 @@ trans_code_to_country (gchar *code)
 		{"it","Italia"},
 		{"jp","日本 (Nippon)"},
 		{"kk","Қазақстан"},
-		{"kr","대한민국"},
+		{"kr","대한민국"}, /* Korea */
 		{"no","Norge"},
 		{"pl","Polska"},
 		{"pk","پاکستان"},
 		{"pt","Portugal"}, /* 30 */
+		{"rs","Србија"}, /* Serbia */
 		{"ru","Россия"},
 		{"sl","Slovenija"},
 		{"se","Sverige"},
@@ -81,7 +82,6 @@ trans_code_to_country (gchar *code)
 		{"ua","Україна"},
 		{"uk","United Kingdom"},
 		{"us","USA"},
-		{"",""},
 		{"",""},
 		{"",""}, /* 40 */
 		{"",""},

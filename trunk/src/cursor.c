@@ -162,7 +162,10 @@ gboolean
 cursor_on (gpointer data)
 {
 	if (cursor.id)
+	{
 		g_source_remove (cursor.id);
+		cursor.id = 0;
+	}
 
 	if (cursor.blink == FALSE)
 		return FALSE;
@@ -187,7 +190,10 @@ gboolean
 cursor_off (gpointer data)
 {
 	if (cursor.id)
+	{
 		g_source_remove (cursor.id);
+		cursor.id = 0;
+	}
 
 	if (cursor.blink == FALSE)
 		return FALSE;

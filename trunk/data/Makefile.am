@@ -89,6 +89,7 @@ klavaro_data = \
 	qwertz_hr.kbd \
 	qwertz_hu.kbd \
 	qwertz_pl.kbd \
+	qwertz_rs.kbd \
 	qwertz_sl.kbd \
 	workman_us.kbd \
 	C.words \
@@ -145,6 +146,8 @@ klavaro_data = \
 	pt_BR.paragraphs \
 	ru.words \
 	ru.paragraphs \
+	sr.words \
+	sr.paragraphs \
 	sl.words \
 	sl.paragraphs \
 	sv.words \
