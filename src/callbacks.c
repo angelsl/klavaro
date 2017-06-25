@@ -698,7 +698,8 @@ on_entry_mesg_preedit_changed (GtkEntry * entry,
     /* This trick sends 'focus change' to GtkEntry.
        gtk_entry_focus_in() sets priv->need_im_reset = TRUE,
        therefore gtk_entry_reset_im_context always executes gtk_im_context_reset,
-       as a result, pre-edit text is committed */
+       as a result, pre-edit text is committed
+       */
     GdkEvent *event = gdk_event_new (GDK_FOCUS_CHANGE);
 
     event->focus_change.type = GDK_FOCUS_CHANGE;

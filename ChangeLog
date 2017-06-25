@@ -1,9 +1,10 @@
-2017-05-01  Felipe Castro (-) <fefcas@gmail.com>;
+2017-05-01  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
 
 	* Release 3.03
 	* Fixed:
 	- el.paragraphs minor bugs fixed.
-	? Counting unicode characters apart for touchs-per-second calculation. 
+	= Counting unicode characters apart for touchs-per-second calculation and
+	  also handling IM context. 
 	- Gurmukhi keyboard for Jhelum is from Pakistan (kept version for
 	  India). Removed extra "bindi" from 'P' key-position.
 	- Updated klavaro.appdata.xml file, e.g. added the kudo ModernToolkit.
@@ -19,6 +20,7 @@
 	- Using Gurmukhi script to show Punjabi (pa) option in "Language" at main menu
 	  window.
 	* Added translations:
+	= Korean support.
 	- Serbian.
 	* Updated translations:
 	- Arabic.
