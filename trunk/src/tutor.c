@@ -749,7 +749,7 @@ tutor_eval_forward (gunichar user_chr)
 		return (TRUE);
 	}
 
-	gsize n_touchs = g_unichar_fully_decompose (user_chr, FALSE, NULL, G_UNICHAR_MAX_DECOMPOSITION_LENGTH);
+	gsize n_touchs = g_unichar_fully_decompose (user_chr, FALSE, NULL, 0);
 	tutor.n_touchs += (int) n_touchs;
 
 	real_chr = cursor_get_char ();
@@ -874,7 +874,7 @@ tutor_eval_forward_backward (gunichar user_chr)
 	 */
 	if (user_chr == real_chr && tutor.retro_pos == 0)
 	{
-	        gsize n_touchs = g_unichar_fully_decompose (user_chr, FALSE, NULL, G_UNICHAR_MAX_DECOMPOSITION_LENGTH);
+	        gsize n_touchs = g_unichar_fully_decompose (user_chr, FALSE, NULL, 0);
 	        tutor.n_touchs += (int) n_touchs;
 		if (tutor.ttidx < MAX_TOUCH_TICS)
 		{
