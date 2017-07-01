@@ -481,7 +481,8 @@ trans_change_language (gchar *language)
 	gint i;
 	gchar *tmp_code;
 
-	for (i = 0; i < lang_num; i++)
+	/* Keep decreasing order of scanning, for not missing "English UK", for instance. */
+	for (i = lang_num-1; i >= 0; i--)
 		if (g_str_has_prefix (language, lang[i].name))
 			break;
 
