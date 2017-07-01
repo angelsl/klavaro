@@ -11,7 +11,7 @@
 /*****************************************************************************/
 
 /*
- * This file contains the set of languages configured for
+ * This definition contains the set of languages configured for
  * localization.
  * The letters in parenthesis must agree with LL_CC,
  * where LL is the language code

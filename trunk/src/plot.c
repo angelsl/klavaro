@@ -86,7 +86,7 @@ gchar date[DATA_POINTS+1][20];
 gchar hour[DATA_POINTS+1][20];
 gint nchars[DATA_POINTS+1];
 gchar lesson[DATA_POINTS+1][299];
-gchar language[DATA_POINTS+1][80];
+gchar language[DATA_POINTS+1][80+1];
 glong n_points;
 gint plot_type; /* used to communicate the plotting type, for updating the cursor marker, etc */
 
@@ -293,11 +293,12 @@ plot_initialize ()
 void
 plot_draw_chart (gint field)
 {
-	gint i;
+	gint i, len;
 	gint lesson_n;
 	gchar *kb_name;
 	gchar *tmp_name;
 	gchar *tmp_locale;
+	gchar *tmp_lang;
 	gchar tmp_str[2000];
 	FILE *fh;
 	GdkRGBA color, color2, color3;
@@ -363,9 +364,10 @@ plot_draw_chart (gint field)
 		g_free (tmp_name);
 		return;
 	}
-
-	/* Change to "C" locale
+	
+	/* Change to "C" locale, but keep current language
 	 */
+        tmp_lang = trans_get_current_language ();
 	tmp_locale = g_strdup (setlocale (LC_NUMERIC, NULL));
 	if (tmp_locale != NULL)
 		setlocale (LC_NUMERIC, "C");
@@ -394,17 +396,23 @@ plot_draw_chart (gint field)
 	while (1)
 	{
 		gint itens;
+		gchar *lang_extra;
 
+		language[i][0] = '\0';
 		if (field < 4)
-			itens = fscanf (fh, "%f%f%f%s%s%s%s", &accur[i], &velo[i], &fluid[i],
-				       	date[i], hour[i], lesson[i], language[i]);
+		{
+			itens = fscanf (fh, "%f%f%f%s%s%s\t", &accur[i], &velo[i], &fluid[i],
+				       	date[i], hour[i], lesson[i]);
+			if (itens != 6)	break;
+		}
 		else
-			itens = fscanf (fh, "%f%s%s%i%s", &score[i], date[i], hour[i], &nchars[i], language[i]);
-
-		if (field < 4 && itens != 7)
-			break;
-		else if (field == 4 && itens != 5)
-			break;
+		{
+			itens = fscanf (fh, "%f%s%s%i\t", &score[i], date[i], hour[i], &nchars[i]);
+			if (itens != 4)	break;
+		}
+		lang_extra = fgets (language[i], 80, fh); 
+		if (language[i][len = (strlen(language[i])-1)] == '\n')
+			language[i][len] = '\0';
 
 		//plot_clip_data (i);
 
@@ -417,9 +425,9 @@ plot_draw_chart (gint field)
 		}
 		if (tutor_get_type () == TT_ADAPT && strcmp (lesson[i], kb_name) != 0)
 			continue;
-		if (tutor_get_type () == TT_VELO && strcmp (language[i], trans_get_current_language ()) != 0)
+		if (tutor_get_type () == TT_VELO && strcmp (language[i], tmp_lang) != 0)
 			continue;
-		if (tutor_get_type () == TT_FLUID && strcmp (language[i], trans_get_current_language ()) != 0)
+		if (tutor_get_type () == TT_FLUID && strcmp (language[i], tmp_lang) != 0)
 			continue;
 		switch (field)
 		{
@@ -445,17 +453,23 @@ plot_draw_chart (gint field)
 	while (1)
 	{
 		gint itens;
+		gchar *lang_extra;
 
+		language[i][0] = '\0';
 		if (field < 4)
-			itens = fscanf (fh, "%f%f%f%s%s%s%s", &accur[i], &velo[i], &fluid[i],
-				       	date[i], hour[i], lesson[i], language[i]);
+		{
+			itens = fscanf (fh, "%f%f%f%s%s%s\t", &accur[i], &velo[i], &fluid[i],
+				       	date[i], hour[i], lesson[i]);
+			if (itens != 6)	break;
+		}
 		else
-			itens = fscanf (fh, "%f%s%s%i%s", &score[i], date[i], hour[i], &nchars[i], language[i]);
-
-		if (field < 4 && itens != 7)
-			break;
-		else if (field == 4 && itens != 5)
-			break;
+		{
+			itens = fscanf (fh, "%f%s%s%i\t", &score[i], date[i], hour[i], &nchars[i]);
+			if (itens != 4)	break;
+		}
+		lang_extra = fgets (language[i], 80, fh); 
+		if (language[i][len = (strlen(language[i])-1)] == '\n')
+			language[i][len] = '\0';
 
 		//plot_clip_data (i);
 
@@ -468,9 +482,9 @@ plot_draw_chart (gint field)
 		}
 		if (tutor_get_type () == TT_ADAPT && strcmp (lesson[i], kb_name) != 0)
 			continue;
-		if (tutor_get_type () == TT_VELO && strcmp (language[i], trans_get_current_language ()) != 0)
+		if (tutor_get_type () == TT_VELO && strcmp (language[i], tmp_lang) != 0)
 			continue;
-		if (tutor_get_type () == TT_FLUID && strcmp (language[i], trans_get_current_language ()) != 0)
+		if (tutor_get_type () == TT_FLUID && strcmp (language[i], tmp_lang) != 0)
 			continue;
 		for (i = 0; i < DATA_POINTS - 1; i++)
 		{

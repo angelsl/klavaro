@@ -12,6 +12,8 @@
 	- Resource leak at translation.c (fh obtained with fopen but had no fclose).
 	- Default keyboard for Finnish is [qwerty_se], not [querty_se].
 	- Blinking cursor GSource timeout error.
+	- Not plotting data for English UK, Español; Castellano and possibly other 
+	  languages.
 	* Changed:
 	- Max number of customizable basic lessons increased to 256.
 	- ar.paragraphs updated with some quotes, no more religious or
