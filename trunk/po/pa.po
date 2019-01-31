@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2017-06-25 09:16-0300\n"
+"POT-Creation-Date: 2019-01-31 19:53+0100\n"
 "PO-Revision-Date: 2014-09-09 16:59+0530\n"
 "Last-Translator: Gursharnjit Singh <ubuntuser13@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sourceforge.net>\n"
@@ -483,12 +483,12 @@ msgstr "ਬੁਨਿਆਦੀ ਕੋਰਸ"
 msgid "Adaptability"
 msgstr "ਅਨੁਕੂਲਤਾ"
 
-#: ../src/main.c:369 ../src/callbacks.c:1243 ../src/top10.c:89
+#: ../src/main.c:369 ../src/callbacks.c:1244 ../src/top10.c:89
 #: ../src/top10.c:115
 msgid "Speed"
 msgstr "ਰਫ਼ਤਾਰ"
 
-#: ../src/main.c:372 ../src/callbacks.c:1266 ../src/top10.c:91
+#: ../src/main.c:372 ../src/callbacks.c:1267 ../src/top10.c:91
 #: ../src/top10.c:118
 msgid "Fluidity"
 msgstr "ਫ਼ਲੂਈਡਿਟੀ"
@@ -497,60 +497,60 @@ msgstr "ਫ਼ਲੂਈਡਿਟੀ"
 msgid "Keys:"
 msgstr "ਕੁੰਜੀਆਂ:"
 
-#: ../src/callbacks.c:791 ../src/callbacks.c:807
+#: ../src/callbacks.c:792 ../src/callbacks.c:808
 msgid "Connecting..."
 msgstr "ਸੰਪਰਕ ਕਰ ਰਿਹਾ..."
 
-#: ../src/callbacks.c:1078
+#: ../src/callbacks.c:1079
 msgid "Overwrite user layout"
 msgstr "ਯੂਜ਼ਰ ਡਾਟਾ ਮੁੜ ਲਿਖੋ"
 
-#: ../src/callbacks.c:1080
+#: ../src/callbacks.c:1081
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ OVERWRITE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1087
+#: ../src/callbacks.c:1088
 msgid "Remove user layout"
 msgstr "ਯੂਜ਼ਰ ਖਾਕਾ ਹਟਾਓ"
 
-#: ../src/callbacks.c:1089
+#: ../src/callbacks.c:1090
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ REMOVE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1096
+#: ../src/callbacks.c:1097
 msgid "Reset progress data"
 msgstr "ਡਾਟਾ ਵਿਕਾਸ ਰੀਸੈੱਟ"
 
-#: ../src/callbacks.c:1097
+#: ../src/callbacks.c:1098
 msgid "This will DELETE all the progress data shown in the charts."
 msgstr "ਇਹ ਚਾਰਟਾਂ ਵਿੱਚ ਵਿਖਾਏ ਗਏ ਸਾਰੇ ਤਰੱਕੀ ਡਾਟੇ ਨੂੰ DELETE ਕਰ ਦੇਵੇਗਾ।"
 
-#: ../src/callbacks.c:1240 ../src/top10.c:87
+#: ../src/callbacks.c:1241 ../src/top10.c:87
 msgid "Accuracy"
 msgstr "ਖਰਾਪਨ"
 
-#: ../src/callbacks.c:1243 ../src/tutor.c:1298
+#: ../src/callbacks.c:1244 ../src/tutor.c:1298
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1254
+#: ../src/callbacks.c:1255
 msgid "Errors"
 msgstr "ਗਲਤੀਆਂ"
 
-#: ../src/callbacks.c:1257
+#: ../src/callbacks.c:1258
 msgid "Touch times (s)"
 msgstr "ਛੂਹਣ ਸਮਾਂ (s)"
 
-#: ../src/callbacks.c:1269 ../src/tutor.c:1325 ../src/top10.c:69
+#: ../src/callbacks.c:1270 ../src/tutor.c:1325 ../src/top10.c:69
 msgid "Score"
 msgstr "ਅੰਕ"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:506 ../src/tutor.c:1735
+#: ../src/translation.c:507 ../src/tutor.c:1735
 msgid "en"
 msgstr "pa"
 
-#: ../src/translation.c:593
+#: ../src/translation.c:594
 msgid ""
 "The basic course focuses on having you read the characters presented to you "
 "on screen and typing the corresponding keys. Remember to keep your hands "
@@ -561,7 +561,7 @@ msgstr ""
 "ਅਨੁਸਾਰ ਕੁੰਜੀਆਂ ਟਾਈਪ ਕਰੋ। ਆਪਣੇ ਹੱਥਾਂ ਨੂੰ ਹਰ ਵੇਲੇ ਕੀਬੋਰਡ ਦੀ ਹੋਮ ਕਤਾਰ ਉੱਤੇ ਅਧਾਰਿਤ ਰੱਖਣਾ ਯਾਦ ਰੱਖੋ "
 "(ਮੁੱਖ ਮੀਨੂੰ ਤੇ ਭੂਮਿਕਾ ਵੇਖੋ)।"
 
-#: ../src/translation.c:597
+#: ../src/translation.c:598
 msgid ""
 "The key set used in each series will be shown in the above message line. The "
 "[Space], [Shift] and [Enter] keys may not show up there but are used very "
@@ -570,7 +570,7 @@ msgstr ""
 "ਹਰੇਕ ਲੜੀ ਵਿੱਚ ਵਰਤਿਆ ਕੁੰਜੀ ਸਮੂਹ ਉੱਪਰ ਦਿੱਤੀ ਲਾਈਨ ਵਿੱਚ ਵਿਖਾਈ ਦੇਵੇਗਾ। [Space] , [Shift], "
 "[Enter] ਕੁੰਜੀਆਂ ਹੋ ਸਕਦਾ ਉੱਥੇ ਨਾ ਵਿਖਾਈ ਦੇਣ ਪਰ ਅਕਸਰ ਬਹੁਤ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।"
 
-#: ../src/translation.c:600
+#: ../src/translation.c:601
 msgid ""
 "The message line below follows and echoes your key presses. If required, it "
 "changes and displays instructions for actions required from you."
@@ -578,7 +578,7 @@ msgstr ""
 "ਹੇਠ ਦਿੱਤੀ ਸੁਨੇਹਾ ਲਾਈਨ ਪਿੱਛਾ ਕਰਦੀ ਅਤੇ ਤੁਹਾਡੇ ਕੁੰਜੀ ਦੱਬਣ ਤੇ ਹੁੰਗਾਰਾ ਦਿੰਦੀ ਹੈ। ਜੇਕਰ ਲੋੜ ਪਵੇ, ਇਹ "
 "ਬਦਲਦੀ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਕੋਲੋ ਲੁੜੀਂਦੀ ਕਾਰਵਾਈ ਲਈ ਹਦਾਇਤਾਂ ਵਿਖਾਉਂਦੀ ਹੈ।"
 
-#: ../src/translation.c:604
+#: ../src/translation.c:605
 msgid ""
 "Here you may practice and improve your memorization of all keys. There will "
 "be sentences presented with nonsense words which mix some numbers and "
@@ -587,7 +587,7 @@ msgstr ""
 "ਇੱਥੇ ਤੁਸੀ ਅਭਿਆਸ ਕਰੋ ਅਤੇ ਆਪਣੀ ਸਾਰੀ ਕੁੰਜੀਆਂ ਨੂੰ ਯਾਦ ਰੱਖਣ ਦੀ ਸੱਮਰਥਾ ਵਧਾਓ। ਇੱਥੇ ਵਾਕ ਬੇਹੂਦਗੀ ਸ਼ਬਦਾਂ "
 "ਨਾਲ ਪੇਸ ਕੀਤੇ ਜਾਣਗੇ ਜਿਹੜੇ ਕੁੱਝ ਨੰਬਰਾਂ ਅਤੇ ਚਿੰਨ੍ਹਾਂ ਨਾਲ ਮਿਲੇ ਹੋਣਗੇ।"
 
-#: ../src/translation.c:607
+#: ../src/translation.c:608
 msgid ""
 "In order to keep the lesson contents language and keyboard independent, "
 "accented letter combinations will probably not appear. For real word "
@@ -596,7 +596,7 @@ msgstr ""
 "ਪਾਠ ਸਮੱਗਰੀ ਭਾਸ਼ਾ ਅਤੇ ਕੀਬੋਰਡ ਨੂੰ ਨਿਰਪੇਖ ਰੱਖਣ ਲਈ, ਲਹਿਜ਼ੇ ਵਾਲੇ ਅੱਖਰਾਂ ਦੇ ਸੰਜੋਗ ਸੰਭਵ ਹੈ ਨਹੀਂ ਵਿਖਾਈ "
 "ਦੇਣਗੇ। ਅਸਲ ਸ਼ਬਦ ਵਾਕਾਂ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਮੇਨ ਮੀਨੂੰ ਦੀ ਚੌਥੀ ਚੋਣ ਨੂੰ ਵਰਤੋਂ (ਫ਼ਲੂਈਡਨੈੱਸ ਬਾਰੇ)।"
 
-#: ../src/translation.c:611
+#: ../src/translation.c:612
 msgid ""
 "After each exercise there will be a brief statistics panel reviewing your "
 "performance along with some relevant comments."
@@ -604,7 +604,7 @@ msgstr ""
 "ਹਰੇਕ ਅਭਿਆਸ ਤੋਂ ਬਾਅਦ ਇੱਕ ਸ਼ੰਖੇਪ ਅੰਕੜਿਆਂ ਵਾਲਾ ਪੈਨਲ ਤੁਹਾਡੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦੀ ਸਮੀਖਿਆ ਕਰਨ ਦੇ ਨਾਲ ਕੁੱਝ "
 "ਢੁੱਕਵੀਆਂ ਟਿੱਪਣੀਆਂ ਵੀ ਕਰੇਗਾ।"
 
-#: ../src/translation.c:615
+#: ../src/translation.c:616
 msgid ""
 "This exercise is very similar to the second one, for adaptability. The "
 "difference is that here you'll type real words."
@@ -612,7 +612,7 @@ msgstr ""
 "ਇਹ ਅਭਿਆਸ ਦੂਜੇ ਵਾਲੇ ਦੇ ਨਾਲ ਮਿਲਦਾ ਜੁਲਦਾ ਹੀ ਹੈ, ਅਨੁਕੂਲਤਾ ਲਈ। ਫ਼ਰਕ ਇਹ ਹੈ ਕੀ ਇੱਥੇ ਤੁਸੀ ਅਸਲ ਸ਼ਬਦ "
 "ਟਾਈਪ ਕਰੋਗੇ।"
 
-#: ../src/translation.c:618
+#: ../src/translation.c:619
 msgid ""
 "The default language is the actual one of the interface. But you may select "
 "any other texts with words you would like to use. Press the 'Other' option "
@@ -622,7 +622,7 @@ msgstr ""
 "ਦੀ ਵਰਤੋਂ ਤੁਹਾਨੂੰ ਪਸੰਦ ਹੋਵੇ । ਉੱਪਰ ਦਿੱਤੇ 'ਹੋਰ' ਚੋਣ ਨੂੰ ਦਬਾਓ ਅਤੇ ਫ਼ਾਈਲਾਂ ਜੋੜੋ ਜਿਹਨਾਂ ਵਿੱਚ ਉਹ ਟੈਕਸਟ "
 "ਮੋਜੂਦ ਹੋਣ।"
 
-#: ../src/translation.c:622
+#: ../src/translation.c:623
 msgid ""
 "With this exercise the focus is on speed. So, you are supposed to type "
 "really fast and I will only flatter you when you deserve it!"
@@ -630,7 +630,7 @@ msgstr ""
 "ਇਸ ਅਭਿਆਸ ਨਾਲ ਧਿਆਨ ਸਾਰਾ ਰਫ਼ਤਾਰ ਤੇ ਹੈ । ਇਸ ਲਈ, ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਕਾਫ਼ੀ ਤੇਜ਼ ਟਾਈਪ ਕਰਨਾ ਹੈ "
 "ਅਤੇ ਮੈਂਤੁਹਾਡੀ ਵਾਹੋ-ਵਾਹੀ ਓਦੋਂ ਹੀ ਕਰਾਗਾਂ ਜਦੋ ਤੁਸੀ ਇਸਦੇ ਹੱਕਦਾਰ ਹੋਵੋਗੇ!"
 
-#: ../src/translation.c:626
+#: ../src/translation.c:627
 msgid ""
 "We will now use complete sentences and paragraphs which make logical sense. "
 "This may distract you while you type if you try to understand what you are "
@@ -641,7 +641,7 @@ msgstr ""
 "ਧਿਆਨਭਟਕਾ ਦੇਵੇ ਜਦੋ ਤੁਸੀ ਟਾਈਪ ਕਰੋ ਜੇਕਰ ਤੁਸੀ ਜੋ ਐਂਟਰ ਕਰ ਰਹੇ ਹੋ ਉਸਨੂੰ ਸਮਝਣ ਦੀ ਕੋਸ਼ਿਸ ਕੀਤੀ । "
 "ਪਿਛਲੇ ਅਭਿਆਸਾਂ ਦਾ ਉਦੇਸ਼ ਤੁੁੁਹਾਡੇ ਕੋਲੋ ਬਿਨਾਂ ਅਨੁਵਾਦ ਅਤੇ ਵਿਸਲੇਸ਼ਣ ਦੇ ਟਾਈਪ ਕਰਵਾਉਣਾ ਸੀ।"
 
-#: ../src/translation.c:630
+#: ../src/translation.c:631
 msgid ""
 "We do not mean to imply that the typists must behave like a robot, without "
 "understanding what they type. We do aim to develop the skill of typing, "
@@ -656,7 +656,7 @@ msgstr ""
 "ਦਾ ਕਰਮ ਸਵੈਚਾਲਿਤ ਹੋ ਜਾਵੇਗਾ ਅਤੇ ਲਗਨ ਦੀ ਲੋੜ ਘੱਟ ਪਵੇਗੀ । ਤੱਦ ਤੁਸੀ ਟੈਕਸਟ ਦੇ ਸਹੀ ਮਤਲਬ ਤੇ ਧਿਆਨ "
 "ਦੇਣ ਕਾਬਲ ਹੋ ਜਾਵੋਗੇ।"
 
-#: ../src/translation.c:634
+#: ../src/translation.c:635
 msgid ""
 "These exercises are longer. Each exercise consists of three paragraphs and "
 "the emphasis is placed on correctness and rhythm, with a minimum speed "
@@ -966,11 +966,11 @@ msgstr "ਐਪਰਸੈਨਡ"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:319
+#: ../src/plot.c:320
 msgid "Character"
 msgstr "ਅੱਖਰ"
 
-#: ../src/plot.c:331
+#: ../src/plot.c:332
 msgid "Date & Time"
 msgstr "ਤਾਰੀਖ ਅਤੇ ਸਮਾਂ"
 
@@ -1123,7 +1123,7 @@ msgstr ""
 " ਕੰਗ-ਫ਼ੂ ਵਿੱਚ ਨਿਪੁੰਨ ਹੋ ਰਿਹਾਂ!\n"
 " ਕਿ ਤੁਸੀ %.0f WPM ਤੱਕ ਉੱਡ ਸਕਦੇ ਹੋ?\n"
 
-#. Translators: Dvorak here means that infamous ergonomic keyboard layout.
+#. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
 #: ../src/velocity.c:454
 msgid ""
 " Dvorak master!\n"

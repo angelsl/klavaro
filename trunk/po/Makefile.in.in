@@ -33,8 +33,7 @@ exec_prefix = @exec_prefix@
 datadir = @datadir@
 datarootdir = @datarootdir@
 libdir = @libdir@
-DATADIRNAME = @DATADIRNAME@
-itlocaledir = $(prefix)/$(DATADIRNAME)/locale
+localedir = @localedir@
 subdir = po
 install_sh = @install_sh@
 # Automake >= 1.8 provides @mkdir_p@.
@@ -63,7 +62,7 @@ USE_LINGUAS=$(shell if test -n "$(USER_LINGUAS)" -o -n "$(LINGUAS)"; then LLINGU
 POFILES=$(shell LINGUAS="$(PO_LINGUAS)"; for lang in $$LINGUAS; do printf "$$lang.po "; done)
 
 DISTFILES = Makefile.in.in POTFILES.in $(POFILES)
-EXTRA_DISTFILES = ChangeLog POTFILES.skip Makevars LINGUAS $(GETTEXT_PACKAGE).pot
+EXTRA_DISTFILES = ChangeLog POTFILES.skip Makevars LINGUAS
 
 POTFILES = \
 # This comment gets stripped out
@@ -80,7 +79,7 @@ INTLTOOL__v_MSGFMT_0 = @echo "  MSGFMT" $@;
 
 .po.pox:
 	$(MAKE) $(GETTEXT_PACKAGE).pot
-	$(MSGMERGE) $< $(GETTEXT_PACKAGE).pot -o $*.pox
+	$(MSGMERGE) $* $(GETTEXT_PACKAGE).pot -o $*.pox
 
 .po.mo:
 	$(INTLTOOL_V_MSGFMT)$(MSGFMT) -o $@ $<
@@ -108,7 +107,7 @@ install-data-no: all
 install-data-yes: all
 	linguas="$(USE_LINGUAS)"; \
 	for lang in $$linguas; do \
-	  dir=$(DESTDIR)$(itlocaledir)/$$lang/LC_MESSAGES; \
+	  dir=$(DESTDIR)$(localedir)/$$lang/LC_MESSAGES; \
 	  $(mkdir_p) $$dir; \
 	  if test -r $$lang.gmo; then \
 	    $(INSTALL_DATA) $$lang.gmo $$dir/$(GETTEXT_PACKAGE).mo; \
@@ -142,8 +141,8 @@ install-exec installcheck:
 uninstall:
 	linguas="$(USE_LINGUAS)"; \
 	for lang in $$linguas; do \
-	  rm -f $(DESTDIR)$(itlocaledir)/$$lang/LC_MESSAGES/$(GETTEXT_PACKAGE).mo; \
-	  rm -f $(DESTDIR)$(itlocaledir)/$$lang/LC_MESSAGES/$(GETTEXT_PACKAGE).mo.m; \
+	  rm -f $(DESTDIR)$(localedir)/$$lang/LC_MESSAGES/$(GETTEXT_PACKAGE).mo; \
+	  rm -f $(DESTDIR)$(localedir)/$$lang/LC_MESSAGES/$(GETTEXT_PACKAGE).mo.m; \
 	done
 
 check: all $(GETTEXT_PACKAGE).pot
@@ -154,7 +153,7 @@ check: all $(GETTEXT_PACKAGE).pot
 	fi
 
 mostlyclean:
-	rm -f *.pox *.old.po cat-id-tbl.tmp
+	rm -f *.pox $(GETTEXT_PACKAGE).pot *.old.po cat-id-tbl.tmp
 	rm -f .intltool-merge-cache
 
 clean: mostlyclean
@@ -167,7 +166,6 @@ maintainer-clean: distclean
 	@echo "This command is intended for maintainers to use;"
 	@echo "it deletes files that may require special tools to rebuild."
 	rm -f Makefile.in.in
-	rm -f $(GETTEXT_PACKAGE).pot 
 
 distdir = ../$(PACKAGE)-$(VERSION)/$(subdir)
 dist distdir: $(DISTFILES)
