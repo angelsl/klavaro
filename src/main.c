@@ -289,8 +289,8 @@ main_gtkbuilder_translation_workaround ()
 static void
 main_window_init ()
 {
-	gchar *tmp;
-	gchar *ttip;
+	gchar *tmp = NULL;
+	gchar *ttip = NULL;
 	PangoAttrList *palist;
 
 	/* Workaround to make GtkBuilder translate all text, on Windows :-(
@@ -314,13 +314,13 @@ main_window_init ()
 		main_preferences_set_boolean ("interface", "speech", TRUE);
 	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (get_wg ("checkbutton_speech")),
 		       	main_preferences_get_boolean ("interface", "speech"));
-	tmp = dngettext (PACKAGE, "Dictation mode (depends on this speech synthesizer: %s)",
-		       	"Dictation mode (depends on one of these speech synthesizers: %s)", 1);
+	tmp = g_strdup (dngettext (PACKAGE, "Dictation mode (depends on this speech synthesizer: %s)",
+					    "Dictation mode (depends on one of these speech synthesizers: %s)", 1));
 	ttip = g_strdup_printf (tmp, "Espeak");
+	g_free (tmp);
 	gtk_widget_set_tooltip_text (get_wg ("checkbutton_speech"), ttip);
 	callbacks_shield_set (FALSE);
 	
-
 	/* Set the initial keyboard to use
 	 */
 	keyb_set_combo_kbd ("combobox_kbd_country", "combobox_kbd_variant");
@@ -356,7 +356,6 @@ main_window_init ()
 
 	/* Set main labels (for translation)
 	 */
-	tmp = NULL;
 	tmp = g_strdup_printf ("0 - %s", _("Introduction"));
 	gtk_label_set_text (GTK_LABEL (get_wg ("label_main_intro")), tmp);
 	g_free (tmp);

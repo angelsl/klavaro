@@ -1221,7 +1221,6 @@ tutor_calc_stats ()
 	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (wg));
 
 	/* Begin the accuracy */
-	;
 	tmp_str = g_strconcat ("\n", _("STATISTICS"), "\n",
 			       _("Elapsed time:"), " %i ",
 			       dngettext (PACKAGE, "minute and", "minutes and", minutes),

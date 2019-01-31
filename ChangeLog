@@ -14,6 +14,10 @@
 	- sr.paragraphs chars fixed. (removed English quoted text)
 	- uk.paragraphs chars fixed.
 	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
+	? Crashing when no <libintl.h> installed on the system and using 
+	  ./configure --disable-nls
+	* Added:
+	- dvorak_de_adnw.kbd "Aus der Neue Welt" german keyboard layout
 
 2017-07-02  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
 

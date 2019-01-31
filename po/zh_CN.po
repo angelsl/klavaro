@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.9.0-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2017-06-25 09:16-0300\n"
+"POT-Creation-Date: 2019-01-31 19:53+0100\n"
 "PO-Revision-Date: 2011-03-31 14:17+0800\n"
 "Last-Translator: Yuwei Yu <acevery@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -488,12 +488,12 @@ msgstr "基础课程"
 msgid "Adaptability"
 msgstr "适应性"
 
-#: ../src/main.c:369 ../src/callbacks.c:1243 ../src/top10.c:89
+#: ../src/main.c:369 ../src/callbacks.c:1244 ../src/top10.c:89
 #: ../src/top10.c:115
 msgid "Speed"
 msgstr "速度"
 
-#: ../src/main.c:372 ../src/callbacks.c:1266 ../src/top10.c:91
+#: ../src/main.c:372 ../src/callbacks.c:1267 ../src/top10.c:91
 #: ../src/top10.c:118
 msgid "Fluidity"
 msgstr "流畅性"
@@ -502,60 +502,60 @@ msgstr "流畅性"
 msgid "Keys:"
 msgstr "按键："
 
-#: ../src/callbacks.c:791 ../src/callbacks.c:807
+#: ../src/callbacks.c:792 ../src/callbacks.c:808
 msgid "Connecting..."
 msgstr "连接..."
 
-#: ../src/callbacks.c:1078
+#: ../src/callbacks.c:1079
 msgid "Overwrite user layout"
 msgstr "覆盖用户布局"
 
-#: ../src/callbacks.c:1080
+#: ../src/callbacks.c:1081
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "这将 覆盖 一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1087
+#: ../src/callbacks.c:1088
 msgid "Remove user layout"
 msgstr "移除用户布局"
 
-#: ../src/callbacks.c:1089
+#: ../src/callbacks.c:1090
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "这将移除一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1096
+#: ../src/callbacks.c:1097
 msgid "Reset progress data"
 msgstr "重置进展数据"
 
-#: ../src/callbacks.c:1097
+#: ../src/callbacks.c:1098
 msgid "This will DELETE all the progress data shown in the charts."
 msgstr "这将会 删除 所有显示在图表的进展数据。"
 
-#: ../src/callbacks.c:1240 ../src/top10.c:87
+#: ../src/callbacks.c:1241 ../src/top10.c:87
 msgid "Accuracy"
 msgstr "精度"
 
-#: ../src/callbacks.c:1243 ../src/tutor.c:1298
+#: ../src/callbacks.c:1244 ../src/tutor.c:1298
 msgid "(WPM)"
 msgstr "(词每分钟)"
 
-#: ../src/callbacks.c:1254
+#: ../src/callbacks.c:1255
 msgid "Errors"
 msgstr "错误"
 
-#: ../src/callbacks.c:1257
+#: ../src/callbacks.c:1258
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1269 ../src/tutor.c:1325 ../src/top10.c:69
+#: ../src/callbacks.c:1270 ../src/tutor.c:1325 ../src/top10.c:69
 msgid "Score"
 msgstr "得分"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:506 ../src/tutor.c:1735
+#: ../src/translation.c:507 ../src/tutor.c:1735
 msgid "en"
 msgstr "en"
 
-#: ../src/translation.c:593
+#: ../src/translation.c:594
 msgid ""
 "The basic course focuses on having you read the characters presented to you "
 "on screen and typing the corresponding keys. Remember to keep your hands "
@@ -565,7 +565,7 @@ msgstr ""
 "    基础课程专注于使你根据显示在屏幕上的字母按下相应的按键。记住要保持你的手"
 "总是正确地放在键盘的本行上(见主菜单中的介绍)。"
 
-#: ../src/translation.c:597
+#: ../src/translation.c:598
 msgid ""
 "The key set used in each series will be shown in the above message line. The "
 "[Space], [Shift] and [Enter] keys may not show up there but are used very "
@@ -574,7 +574,7 @@ msgstr ""
 "    每个系列使用的按键会在上方的消息行中显示。[空格]、[Shift]和[回车]键可能不"
 "会显示，但它们很常用。"
 
-#: ../src/translation.c:600
+#: ../src/translation.c:601
 msgid ""
 "The message line below follows and echoes your key presses. If required, it "
 "changes and displays instructions for actions required from you."
@@ -582,7 +582,7 @@ msgstr ""
 "    下方的消息行跟随并显示你按下的键。需要的时候，它会改变为显示你需要采取的"
 "下一步行动。"
 
-#: ../src/translation.c:604
+#: ../src/translation.c:605
 msgid ""
 "Here you may practice and improve your memorization of all keys. There will "
 "be sentences presented with nonsense words which mix some numbers and "
@@ -591,7 +591,7 @@ msgstr ""
 "    这里你将练习并改进你对所有键位的记忆，通过一些由没有意义的词组成的，并混"
 "杂着数字和符号的句子。"
 
-#: ../src/translation.c:607
+#: ../src/translation.c:608
 msgid ""
 "In order to keep the lesson contents language and keyboard independent, "
 "accented letter combinations will probably not appear. For real word "
@@ -600,13 +600,13 @@ msgstr ""
 "    为了保持课程内容独立于语言和键盘，带有音调的字母组合可能不会出现。练习由"
 "真实词语组成的句子，请使用主菜单中的第四个练习(关于流畅性的)。"
 
-#: ../src/translation.c:611
+#: ../src/translation.c:612
 msgid ""
 "After each exercise there will be a brief statistics panel reviewing your "
 "performance along with some relevant comments."
 msgstr "    在每个练习后会有一个简要的统计检查你的表现并提供相应的建议。"
 
-#: ../src/translation.c:615
+#: ../src/translation.c:616
 msgid ""
 "This exercise is very similar to the second one, for adaptability. The "
 "difference is that here you'll type real words."
@@ -614,7 +614,7 @@ msgstr ""
 "    这个练习和第二个练习(关于适应性的)非常相似。不同的是，这里你会输入真正的"
 "单词。"
 
-#: ../src/translation.c:618
+#: ../src/translation.c:619
 msgid ""
 "The default language is the actual one of the interface. But you may select "
 "any other texts with words you would like to use. Press the 'Other' option "
@@ -623,7 +623,7 @@ msgstr ""
 "    默认语言是界面的语言。但你可以选择你喜欢的含有其他字词的文本。按下上方"
 "的'其它'按钮并添加包含这些文本的文件。"
 
-#: ../src/translation.c:622
+#: ../src/translation.c:623
 msgid ""
 "With this exercise the focus is on speed. So, you are supposed to type "
 "really fast and I will only flatter you when you deserve it!"
@@ -631,7 +631,7 @@ msgstr ""
 "    这个练习专注于速度。所以，你将被假定为打得非常快，而我也只会在你足够好时"
 "才会夸你！"
 
-#: ../src/translation.c:626
+#: ../src/translation.c:627
 msgid ""
 "We will now use complete sentences and paragraphs which make logical sense. "
 "This may distract you while you type if you try to understand what you are "
@@ -642,7 +642,7 @@ msgstr ""
 "可能会分散你的注意力。之前的练习目标是使你在不需要理解和分析内容的情况下学会"
 "打字。"
 
-#: ../src/translation.c:630
+#: ../src/translation.c:631
 msgid ""
 "We do not mean to imply that the typists must behave like a robot, without "
 "understanding what they type. We do aim to develop the skill of typing, "
@@ -656,7 +656,7 @@ msgstr ""
 "就会自然而然且不需要什么注意力。这时，你就可以轻松把注意力放到文字的意思上"
 "了。"
 
-#: ../src/translation.c:634
+#: ../src/translation.c:635
 msgid ""
 "These exercises are longer. Each exercise consists of three paragraphs and "
 "the emphasis is placed on correctness and rhythm, with a minimum speed "
@@ -957,11 +957,11 @@ msgstr "＆"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:319
+#: ../src/plot.c:320
 msgid "Character"
 msgstr ""
 
-#: ../src/plot.c:331
+#: ../src/plot.c:332
 msgid "Date & Time"
 msgstr "日期和时间"
 
@@ -1114,7 +1114,7 @@ msgstr ""
 "    Dvorak 模式主宰！\n"
 "    你能飞到90个词每分钟吗？\n"
 
-#. Translators: Dvorak here means that infamous ergonomic keyboard layout.
+#. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
 #: ../src/velocity.c:454
 msgid ""
 " Dvorak master!\n"

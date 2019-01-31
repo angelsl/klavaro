@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2017-06-25 09:16-0300\n"
+"POT-Creation-Date: 2019-01-31 19:53+0100\n"
 "PO-Revision-Date: 2014-09-06 11:09+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -500,12 +500,12 @@ msgstr "Начальный курс"
 msgid "Adaptability"
 msgstr "Адаптивность"
 
-#: ../src/main.c:369 ../src/callbacks.c:1243 ../src/top10.c:89
+#: ../src/main.c:369 ../src/callbacks.c:1244 ../src/top10.c:89
 #: ../src/top10.c:115
 msgid "Speed"
 msgstr "Скорость"
 
-#: ../src/main.c:372 ../src/callbacks.c:1266 ../src/top10.c:91
+#: ../src/main.c:372 ../src/callbacks.c:1267 ../src/top10.c:91
 #: ../src/top10.c:118
 msgid "Fluidity"
 msgstr "Плавность"
@@ -514,60 +514,60 @@ msgstr "Плавность"
 msgid "Keys:"
 msgstr "Клавиши:"
 
-#: ../src/callbacks.c:791 ../src/callbacks.c:807
+#: ../src/callbacks.c:792 ../src/callbacks.c:808
 msgid "Connecting..."
 msgstr "Подключение..."
 
-#: ../src/callbacks.c:1078
+#: ../src/callbacks.c:1079
 msgid "Overwrite user layout"
 msgstr "Перезаписать раскладку пользователя"
 
-#: ../src/callbacks.c:1080
+#: ../src/callbacks.c:1081
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "При этом существующая раскладка будет ПЕРЕЗАПИСАНА"
 
-#: ../src/callbacks.c:1087
+#: ../src/callbacks.c:1088
 msgid "Remove user layout"
 msgstr "Удалить раскладку пользователя"
 
-#: ../src/callbacks.c:1089
+#: ../src/callbacks.c:1090
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "При этом существующая раскладка будет УДАЛЕНА"
 
-#: ../src/callbacks.c:1096
+#: ../src/callbacks.c:1097
 msgid "Reset progress data"
 msgstr "Сброс данных статистики"
 
-#: ../src/callbacks.c:1097
+#: ../src/callbacks.c:1098
 msgid "This will DELETE all the progress data shown in the charts."
 msgstr "При этом все данные, показанные на диаграммах, будут УНИЧТОЖЕНЫ"
 
-#: ../src/callbacks.c:1240 ../src/top10.c:87
+#: ../src/callbacks.c:1241 ../src/top10.c:87
 msgid "Accuracy"
 msgstr "Точность"
 
-#: ../src/callbacks.c:1243 ../src/tutor.c:1298
+#: ../src/callbacks.c:1244 ../src/tutor.c:1298
 msgid "(WPM)"
 msgstr "(слов/мин)"
 
-#: ../src/callbacks.c:1254
+#: ../src/callbacks.c:1255
 msgid "Errors"
 msgstr "Ошибки"
 
-#: ../src/callbacks.c:1257
+#: ../src/callbacks.c:1258
 msgid "Touch times (s)"
 msgstr "Время нажатия"
 
-#: ../src/callbacks.c:1269 ../src/tutor.c:1325 ../src/top10.c:69
+#: ../src/callbacks.c:1270 ../src/tutor.c:1325 ../src/top10.c:69
 msgid "Score"
 msgstr "Очки"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:506 ../src/tutor.c:1735
+#: ../src/translation.c:507 ../src/tutor.c:1735
 msgid "en"
 msgstr "en"
 
-#: ../src/translation.c:593
+#: ../src/translation.c:594
 msgid ""
 "The basic course focuses on having you read the characters presented to you "
 "on screen and typing the corresponding keys. Remember to keep your hands "
@@ -578,7 +578,7 @@ msgstr ""
 "нажимать соответствующие клавиши. Не забывайте правильно держать руки на "
 "внутреннем ряду клавиатуры (см. введение в главном меню)."
 
-#: ../src/translation.c:597
+#: ../src/translation.c:598
 msgid ""
 "The key set used in each series will be shown in the above message line. The "
 "[Space], [Shift] and [Enter] keys may not show up there but are used very "
@@ -588,7 +588,7 @@ msgstr ""
 "сеансе. Клавиши [ПРОБЕЛ], [SHIFT] и [ВВОД] могут не отображаться в этой "
 "строке, поскольку они используются очень часто."
 
-#: ../src/translation.c:600
+#: ../src/translation.c:601
 msgid ""
 "The message line below follows and echoes your key presses. If required, it "
 "changes and displays instructions for actions required from you."
@@ -597,7 +597,7 @@ msgstr ""
 "строки будет изменяться, показывая инструкции, которых вам следует "
 "придерживаться."
 
-#: ../src/translation.c:604
+#: ../src/translation.c:605
 msgid ""
 "Here you may practice and improve your memorization of all keys. There will "
 "be sentences presented with nonsense words which mix some numbers and "
@@ -607,7 +607,7 @@ msgstr ""
 "клавиш. В упражнении будут представлены предложения из бессмысленных слов, "
 "представляющих собой смесь из букв и цифр."
 
-#: ../src/translation.c:607
+#: ../src/translation.c:608
 msgid ""
 "In order to keep the lesson contents language and keyboard independent, "
 "accented letter combinations will probably not appear. For real word "
@@ -618,7 +618,7 @@ msgstr ""
 "предложений из реальных слов используйте четвертый пункт главного меню "
 "(плавность)."
 
-#: ../src/translation.c:611
+#: ../src/translation.c:612
 msgid ""
 "After each exercise there will be a brief statistics panel reviewing your "
 "performance along with some relevant comments."
@@ -626,7 +626,7 @@ msgstr ""
 "В конце каждого упражнения будет показана краткая статистика относительно "
 "вашей производительности с соответствующими комментариями."
 
-#: ../src/translation.c:615
+#: ../src/translation.c:616
 msgid ""
 "This exercise is very similar to the second one, for adaptability. The "
 "difference is that here you'll type real words."
@@ -634,7 +634,7 @@ msgstr ""
 "Это упражнение очень похоже на второе (адаптация). Разница заключается в "
 "том, что здесь вы будете набирать реальные слова."
 
-#: ../src/translation.c:618
+#: ../src/translation.c:619
 msgid ""
 "The default language is the actual one of the interface. But you may select "
 "any other texts with words you would like to use. Press the 'Other' option "
@@ -644,7 +644,7 @@ msgstr ""
 "другой текст с интересующими вас словами. Нажмите кнопку «Другой текст» "
 "вверху и добавьте файлы с нужным текстом."
 
-#: ../src/translation.c:622
+#: ../src/translation.c:623
 msgid ""
 "With this exercise the focus is on speed. So, you are supposed to type "
 "really fast and I will only flatter you when you deserve it!"
@@ -652,7 +652,7 @@ msgstr ""
 "В этом упражнении упор делается на скорость. Поэтому, чтобы заслужить "
 "похвалу, текст нужно набирать как можно быстрее."
 
-#: ../src/translation.c:626
+#: ../src/translation.c:627
 msgid ""
 "We will now use complete sentences and paragraphs which make logical sense. "
 "This may distract you while you type if you try to understand what you are "
@@ -664,7 +664,7 @@ msgstr ""
 "отвлекать вас во время набора. В предыдущих упражнениях упор делался на "
 "набор текста без интерпретации и анализа его содержания."
 
-#: ../src/translation.c:630
+#: ../src/translation.c:631
 msgid ""
 "We do not mean to imply that the typists must behave like a robot, without "
 "understanding what they type. We do aim to develop the skill of typing, "
@@ -680,7 +680,7 @@ msgstr ""
 "минимальной концентрацией. Тогда вы сможете обратить внимание на реальный "
 "смысл текста."
 
-#: ../src/translation.c:634
+#: ../src/translation.c:635
 msgid ""
 "These exercises are longer. Each exercise consists of three paragraphs and "
 "the emphasis is placed on correctness and rhythm, with a minimum speed "
@@ -999,11 +999,11 @@ msgstr "амперсанд"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:319
+#: ../src/plot.c:320
 msgid "Character"
 msgstr "Символ"
 
-#: ../src/plot.c:331
+#: ../src/plot.c:332
 msgid "Date & Time"
 msgstr "Дата и время"
 
@@ -1160,7 +1160,7 @@ msgstr ""
 " Мастер кунг-фу!\n"
 " Пора взлетать до %.0f слов в минуту?\n"
 
-#. Translators: Dvorak here means that infamous ergonomic keyboard layout.
+#. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
 #: ../src/velocity.c:454
 msgid ""
 " Dvorak master!\n"
