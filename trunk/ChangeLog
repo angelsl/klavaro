@@ -1,3 +1,20 @@
+2017-07-02  Felipe Castro (-) <fefcas@gmail.com>;
+
+	* Release 3.04
+	* Fixed:
+	- bg.paragraphs and bg.words chars fixed.
+	- da.paragraphs and da.words chars fixed. (ét -> et)
+	- fi.paragraphs char fixed.
+	- hr.paragraphs chars fixed.
+	- kk.paragraphs chars fixed?
+	- nl.paragraphs chars fixed? (wéér -> weer)
+	- pa.paragraphs chars fixed. (removed English word quadrant)
+	- ru.paragraphs chars fixed.
+	- sr.paragraphs chars fixed. (ascii quotes: " ")
+	- sr.paragraphs chars fixed. (removed English quoted text)
+	- uk.paragraphs chars fixed.
+	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
+
 2017-07-02  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
 
 	* Release 3.03

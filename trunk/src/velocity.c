@@ -450,7 +450,7 @@ velo_comment (gdouble accuracy, gdouble velocity)
 		/* Translators: feel free to change the reference to that martial art, if you find another good analogy. */
 		tmp_str = g_strdup_printf (_(" Kung-fu mastery!\n Can you fly at %.0f WPM?\n"), tutor_goal_level(7));
 	else
-		/* Translators: Dvorak here means that infamous ergonomic keyboard layout. */
+		/* Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy. */
 		tmp_str = g_strdup (_(" Dvorak master!\n"
 				   " I have no words to express my admiration!\n"));
 
