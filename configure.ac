@@ -16,6 +16,7 @@ AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 AC_PROG_CXX
 AC_PROG_RANLIB
+dnl LT_INIT
 dnl For Windows, comment out this one (then do an "autoreconf"):
 IT_PROG_INTLTOOL
 
