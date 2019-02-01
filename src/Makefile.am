@@ -20,7 +20,7 @@ klavaro_SOURCES = \
 
 AM_CPPFLAGS = @GTK_CFLAGS@ \
 	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
-	      -DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
 
 AM_CFLAGS = -Wextra \
 	    -I$(top_srcdir)/gtkdatabox

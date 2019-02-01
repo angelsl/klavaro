@@ -728,6 +728,23 @@ on_entry_mesg_drag_drop (GtkWidget * widget, GdkDragContext * drag_context,
 	return FALSE;
 }
 
+G_MODULE_EXPORT void
+on_entry_mesg_realize (GtkWidget * widget, gpointer user_data)
+{
+	GtkBindingSet *bs;
+	GdkModifierType modmask = GDK_CONTROL_MASK;
+
+	bs = gtk_binding_set_by_class (G_OBJECT_GET_CLASS ( G_OBJECT (GTK_ENTRY (widget))));
+	gtk_binding_entry_add_signal (bs, GDK_KEY_w, modmask, 
+			"delete-from-cursor", 2, 
+			G_TYPE_INT, GTK_DELETE_WORDS,
+			G_TYPE_INT, -1); /* Delete -1 word: Ctrl+w */
+	gtk_binding_entry_add_signal (bs, GDK_KEY_h, modmask, 
+			"delete-from-cursor", 2, 
+			G_TYPE_INT, GTK_DELETE_CHARS,
+			G_TYPE_INT, -1); /* Delete -1 char: Ctrl+h */
+}
+
 /**********************************************************************
  * 4 - Top 10 management
  **********************************************************************/
@@ -888,7 +905,7 @@ on_button_kb_remove_clicked (GtkButton * button, gpointer user_data)
 	tmp_path = g_strconcat (main_path_user (), G_DIR_SEPARATOR_S, keyb_get_name (), ".kbd", NULL);
 	if (! g_file_test (tmp_path, G_FILE_TEST_IS_REGULAR))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default());
 		g_message ("no valid keyboard to remove...");
 		g_free (tmp_path);
 		return;
@@ -1424,7 +1441,7 @@ on_button_other_paste_clicked (GtkButton * button, gpointer user_data)
 		text = gtk_clipboard_wait_for_text (clipboard_2);
 	if (text == NULL)
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default());
 		g_message ("No text in the Clipboard");
 		return;
 	}
@@ -1461,7 +1478,7 @@ on_button_other_remove_clicked (GtkButton * button, gpointer user_data)
 	sel = gtk_tree_view_get_selection (GTK_TREE_VIEW (get_wg ("treeview_other")));
 	if (gtk_tree_selection_get_selected (sel, &store, &iter) == FALSE)
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default());
 		return;
 	}
 
@@ -1469,7 +1486,7 @@ on_button_other_remove_clicked (GtkButton * button, gpointer user_data)
 
 	if (g_str_equal (tmp_str, OTHER_DEFAULT))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default());
 		g_free (tmp_str);
 		return;
 	}

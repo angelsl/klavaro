@@ -1,10 +1,7 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- AdNW keyboard layout from Germany.
-- Create Dvorak right and left hand keyboards.
 - Use 2 copies of letter pool for the basic lessons generator.
-- In fluidity, manage Ctrl+h to work as Backspace (delete 1 char) and Ctrl+w as Ctrl+Backspace (clean up all errors).
 
 - Make possible to merge all basic lessons in the progress chart.
 - Fix timeout handling of cursor blinking.
