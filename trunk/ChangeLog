@@ -11,19 +11,22 @@
 	- pa.paragraphs chars fixed. (removed English word quadrant)
 	- ru.paragraphs chars fixed.
 	- sr.paragraphs chars fixed. (ascii quotes: " ")
-	- sr.paragraphs chars fixed. (removed English quoted text)
 	- uk.paragraphs chars fixed.
 	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
-	? Crashing when no <libintl.h> installed on the system and using 
+	- Crashing? when no <libintl.h> installed on the system and? using 
 	  ./configure --disable-nls
 	* Added:
-	- dvorak_de_adnw.kbd "Aus der Neue Welt" german keyboard layout
+	- dvorak_de_adnw.kbd	"Aus der Neue Welt" german keyboard layout
+	- dvorak_us_left.kbd	Dvorak left hand layout
+	- dvorak_us_rigth.kbd	Dvorak rigth hand layout
+	- In fluidity, manages Ctrl+h to work as Backspace (delete -1 char) 
+	  and Ctrl+w as Ctrl+Backspace (clean up all errors).
 
 2017-07-02  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
 
 	* Release 3.03
 	* Fixed:
-	- el.paragraphs minor bugs fixed.
+	- el.paragraphs chars fixed.
 	= Counting unicode characters apart for touchs-per-second calculation and
 	  also handling IM context. 
 	- Gurmukhi keyboard for Jhelum is from Pakistan (kept version for

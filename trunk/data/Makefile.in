@@ -424,6 +424,8 @@ klavaro_data = \
 	dvorak_tr_F.kbd \
 	dvorak_uk.kbd \
 	dvorak_us.kbd \
+	dvorak_us_left.kbd \
+	dvorak_us_rigth.kbd \
 	dvorak_us_prog.kbd \
 	gurmukhi_in_jhelum.kbd \
 	gurmukhi_pk_jhelum.kbd \

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.16.1 -->
+<!-- Generated with glade 3.20.4 -->
 <interface>
   <requires lib="gtk+" version="3.8"/>
   <object class="GtkAdjustment" id="adjustment2">
@@ -57,10 +57,10 @@
               <object class="GtkLabel" id="label_stat_lesson">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xalign">1</property>
                 <property name="label" translatable="yes">_Lesson:</property>
                 <property name="use_underline">True</property>
                 <property name="mnemonic_widget">spinbutton_stat_lesson</property>
+                <property name="xalign">1</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -372,6 +372,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkAdjustment" id="adjustment3">
     <property name="upper">100</property>
@@ -519,10 +522,10 @@
               <object class="GtkLabel" id="label_heading">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xalign">0</property>
                 <property name="xpad">6</property>
                 <property name="ypad">12</property>
                 <property name="wrap_mode">char</property>
+                <property name="xalign">0</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -663,6 +666,7 @@
                 <signal name="icon-release" handler="on_entry_mesg_icon_release" swapped="no"/>
                 <signal name="insert-text" handler="on_entry_mesg_insert_text" after="yes" swapped="no"/>
                 <signal name="preedit-changed" handler="on_entry_mesg_preedit_changed" after="yes" swapped="no"/>
+                <signal name="realize" handler="on_entry_mesg_realize" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -680,11 +684,11 @@
                 <child>
                   <object class="GtkButton" id="button_tutor_restart">
                     <property name="can_focus">False</property>
+                    <property name="focus_on_click">False</property>
                     <property name="receives_default">False</property>
                     <property name="tooltip_text" translatable="yes">Press here to restart the exercise. Hotkey: [Ctrl-R]</property>
                     <property name="border_width">4</property>
                     <property name="relief">none</property>
-                    <property name="focus_on_click">False</property>
                     <signal name="clicked" handler="on_button_tutor_restart_clicked" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image1">
@@ -694,12 +698,12 @@
                         <property name="icon_size">1</property>
                       </object>
                     </child>
-                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                     <accelerator key="r" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                   </object>
                 </child>
-                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
+                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1086,6 +1090,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="dialog_confirm">
     <property name="can_focus">False</property>
@@ -1107,12 +1114,12 @@
           <object class="GtkLabel" id="label117">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">0</property>
-            <property name="yalign">0</property>
             <property name="xpad">10</property>
             <property name="ypad">10</property>
             <property name="label" translatable="yes">Attention!</property>
             <property name="justify">center</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -1124,12 +1131,12 @@
           <object class="GtkLabel" id="label_confirm">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">0</property>
-            <property name="yalign">1</property>
             <property name="xpad">10</property>
             <property name="ypad">10</property>
             <property name="label">CONFIRM_MESSAGE</property>
             <property name="wrap">True</property>
+            <property name="xalign">0</property>
+            <property name="yalign">1</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -1299,6 +1306,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkFileChooserDialog" id="filechooser_tutor">
     <property name="can_focus">False</property>
@@ -1441,6 +1451,9 @@
       <action-widget response="0">button_filechooser_cancel</action-widget>
       <action-widget response="0">button_filechooser_open</action-widget>
     </action-widgets>
+    <child>
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="popup_other">
     <property name="width_request">450</property>
@@ -1499,11 +1512,11 @@
                 <property name="height_request">25</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xalign">0</property>
-                <property name="yalign">1</property>
                 <property name="label" translatable="yes">Re_name:</property>
                 <property name="use_underline">True</property>
                 <property name="mnemonic_widget">entry_other_rename</property>
+                <property name="xalign">0</property>
+                <property name="yalign">1</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1568,9 +1581,9 @@
                       <object class="GtkLabel" id="label127">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">_Open text file</property>
                         <property name="use_underline">True</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1617,9 +1630,9 @@
                       <object class="GtkLabel" id="label126">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">_Paste from clipboard</property>
                         <property name="use_underline">True</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1666,9 +1679,9 @@
                       <object class="GtkLabel" id="label143">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes">_Remove copied file</property>
                         <property name="use_underline">True</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1818,6 +1831,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="window_hints">
     <property name="can_focus">False</property>
@@ -1921,6 +1937,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="window_keyboard">
     <property name="can_focus">False</property>
@@ -1952,10 +1971,10 @@
                     <property name="width_request">350</property>
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
                     <property name="label">title</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1967,11 +1986,11 @@
                   <object class="GtkLabel" id="label_keyboard_text_1">
                     <property name="width_request">350</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
                     <property name="label">text 1</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
                     <property name="width_chars">44</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1983,10 +2002,10 @@
                   <object class="GtkLabel" id="label_keyboard_text_2">
                     <property name="width_request">350</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
                     <property name="label">text 2</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -2446,11 +2465,11 @@
               <object class="GtkLabel" id="label24">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xalign">0</property>
                 <property name="xpad">8</property>
                 <property name="label" translatable="yes">S_ave as:</property>
                 <property name="use_underline">True</property>
                 <property name="mnemonic_widget">entry_keyboard</property>
+                <property name="xalign">0</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2529,8 +2548,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Left" signal="clicked"/>
                 <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Left" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2588,8 +2607,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Right" signal="clicked"/>
                 <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Right" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2841,6 +2860,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="window_main">
     <property name="can_focus">False</property>
@@ -2895,11 +2917,11 @@
                           <object class="GtkLabel" id="label_main_intro">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                             <property name="ypad">2</property>
                             <property name="label">Introduction</property>
                             <property name="mnemonic_widget">button_basic</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2911,10 +2933,10 @@
                           <object class="GtkLabel" id="label10">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                             <property name="ypad">2</property>
                             <property name="label" translatable="yes">Learn how to type correctly</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2973,11 +2995,11 @@
                           <object class="GtkLabel" id="label_main_basic">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                             <property name="ypad">2</property>
                             <property name="label">Basic course</property>
                             <property name="mnemonic_widget">button_basic</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2989,10 +3011,10 @@
                           <object class="GtkLabel" id="label13">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                             <property name="ypad">2</property>
                             <property name="label" translatable="yes">First steps with initial training</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3051,11 +3073,11 @@
                           <object class="GtkLabel" id="label_main_adapt">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                             <property name="ypad">2</property>
                             <property name="label">Adaptability</property>
                             <property name="mnemonic_widget">button_basic</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3067,10 +3089,10 @@
                           <object class="GtkLabel" id="label15">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                             <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with random keys</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3129,11 +3151,11 @@
                           <object class="GtkLabel" id="label_main_velo">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                             <property name="ypad">2</property>
                             <property name="label">Velocity</property>
                             <property name="mnemonic_widget">button_basic</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3145,10 +3167,10 @@
                           <object class="GtkLabel" id="label17">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                             <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with random words</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3207,11 +3229,11 @@
                           <object class="GtkLabel" id="label_main_fluid">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                             <property name="ypad">2</property>
                             <property name="label">Fluidness</property>
                             <property name="mnemonic_widget">button_basic</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3223,10 +3245,10 @@
                           <object class="GtkLabel" id="label3">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                             <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with complete texts</property>
+                            <property name="xalign">0</property>
+                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3278,8 +3300,6 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">1</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3292,8 +3312,6 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3306,8 +3324,6 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">1</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3320,8 +3336,6 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3329,15 +3343,13 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_text" translatable="yes">Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest.</property>
-                <property name="xalign">1</property>
                 <property name="label" translatable="yes">_Keyboard:</property>
                 <property name="use_underline">True</property>
+                <property name="xalign">1</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -3345,15 +3357,13 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="tooltip_text" translatable="yes">Language for modules 3 and 4.</property>
-                <property name="xalign">1</property>
                 <property name="label" translatable="yes">_Language:</property>
                 <property name="use_underline">True</property>
+                <property name="xalign">1</property>
               </object>
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">1</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
           </object>
@@ -3547,6 +3557,9 @@
         </child>
       </object>
     </child>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkAboutDialog" id="aboutdialog_klavaro">
     <property name="can_focus">False</property>
@@ -3626,6 +3639,9 @@
           </packing>
         </child>
       </object>
+    </child>
+    <child>
+      <placeholder/>
     </child>
   </object>
   <object class="GtkDialog" id="dialog_info">
@@ -3742,14 +3758,14 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">start</property>
-                        <property name="xalign">0</property>
-                        <property name="yalign">0</property>
                         <property name="ypad">5</property>
                         <property name="label" translatable="yes">The main menu of the application is very straightforward. Just select the type of exercise you wish to take. Do not worry about clicking any button on the screen. The buttons will never hurt you!</property>
                         <property name="justify">fill</property>
                         <property name="wrap">True</property>
                         <property name="width_chars">40</property>
                         <property name="max_width_chars">80</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3762,13 +3778,13 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">start</property>
-                        <property name="xalign">0</property>
-                        <property name="yalign">0</property>
                         <property name="label" translatable="yes">Also the controls have tips which will appear if you hover over them with your mouse. These tips can come in very handy. To see how these tips work, position your mouse over the button below, and without clicking, wait for the tip to appear...</property>
                         <property name="justify">fill</property>
                         <property name="wrap">True</property>
                         <property name="width_chars">40</property>
                         <property name="max_width_chars">80</property>
+                        <property name="xalign">0</property>
+                        <property name="yalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -3792,6 +3808,9 @@
     <action-widgets>
       <action-widget response="-7">button_info_return</action-widget>
     </action-widgets>
+    <child>
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkWindow" id="window_top10">
     <property name="width_request">400</property>
@@ -4185,6 +4204,9 @@
           </packing>
         </child>
       </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
     </child>
   </object>
 </interface>

@@ -447,6 +447,7 @@ main (int argc, char *argv[])
 	if (show_version)
 	{
 		g_printf (VERSION"\n");
+		//g_printf (PACKAGE_LOCALE_DIR"\n");
 		return 0;
 	}
 
