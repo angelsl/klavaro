@@ -36,7 +36,7 @@ enum
 {
   GRAPH_COLOR = 1,
   GRAPH_SIZE,
-  GRAPH_HIDE
+  GRAPH_HIDE,
 };
 
 /**
@@ -193,7 +193,6 @@ gtk_databox_graph_class_init (GtkDataboxGraphClass *klass)
 static void
 gtk_databox_graph_init (GtkDataboxGraph *graph)
 {
-	graph = graph;
 }
 
 /**

@@ -462,7 +462,7 @@ gtk_databox_new (void) {
 GList *
 gtk_databox_get_graphs (GtkDatabox * box) 
 {
-    g_return_val_if_fail (GTK_IS_DATABOX (box), NULL);
+    g_return_val_if_fail (GTK_IS_DATABOX (box), -1);
 
     return GTK_DATABOX_GET_PRIVATE(box)->graphs;
 }
@@ -1222,7 +1222,7 @@ gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
 
     cr2 = cairo_create(priv->backing_surface);
     //gtk_style_context_get_background_color(stylecontext, GTK_STATE_FLAG_NORMAL, &bg_color);
-    gdk_rgba_parse (&bg_color, "#fffff9");
+    gdk_rgba_parse (&bg_color, "#fffff5");
     gdk_cairo_set_source_rgba (cr2, &bg_color);
     cairo_paint(cr2);
     cairo_destroy(cr2);

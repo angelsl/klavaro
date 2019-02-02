@@ -1,15 +1,16 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
+- Fix bug that makes tutor window grows and does not allow it to shrink.
 - Make possible to merge all basic lessons in the progress chart.
 - Make possible individual reset of character errors logs.
 - Substitute all deprecated GTK functions (gtk_widet_override_background) and on Glade file.
 - Configurable colors for the progress window.
 - Add instructions for typing with the shift keys (in the introduction).
 - Explain what are the blank lessons after 43, in basic module.
-- Verify GtkDataBox for updating as external lib.
 
 - Compile for Windows again...
+- Verify GtkDataBox for updating as external lib. (2019-02-02: not yet, still on GTK-2, updated from git to use GTK-3)
 
 ____________________________________________
 And suggestions that probably won't be done:
@@ -27,4 +28,4 @@ And suggestions that probably won't be done:
 - Use sound system instead of the PC beeps. (in Gnome, for example, one can configure the beeps as smooth sounds)
 - Disable Alt-keys as shortcuts, because some systems use Alt-keys to type characters. (disabling this should be done by GTK global configuration, search for GtkSettings and gtk-enable-mnemonics)
 - Separate error and touch-speed analises by language, and put in other module, apart from the adaptability. (these analyses had been separated according to the keyboard, so the user should apply the rigth keyboard for each different language)
-- Fix timeout handling of cursor blinking. (indeed, that's a feature, if the user speed is good, why to care about the cursor?)
+- Fix timeout handling of cursor blinking. (indeed, that's a feature, in fluidness module, if the user speed is good, why to care about the cursor?)

@@ -14,6 +14,9 @@
 
 @SET_MAKE@
 
+# From gtkdatabox git repo, adapted
+
+
 VPATH = @srcdir@
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
@@ -100,7 +103,8 @@ am__aclocal_m4_deps = $(top_srcdir)/m4/gettext.m4 \
 	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
-DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
+DIST_COMMON = $(srcdir)/Makefile.am $(include_HEADERS) \
+	$(am__DIST_COMMON)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
@@ -132,7 +136,7 @@ am__uninstall_files_from_dir = { \
     || { echo " ( cd '$$dir' && rm -f" $$files ")"; \
          $(am__cd) "$$dir" && rm -f $$files; }; \
   }
-am__installdirs = "$(DESTDIR)$(libdir)"
+am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includedir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libgtkdataboks_la_LIBADD =
 am_libgtkdataboks_la_OBJECTS = gtkdatabox.lo gtkdatabox_marshal.lo \
@@ -192,6 +196,7 @@ am__can_run_installinfo = \
     n|no|NO) false;; \
     *) (install-info --version) >/dev/null 2>&1;; \
   esac
+HEADERS = $(include_HEADERS)
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 # Read a list of newline-separated strings from the standard input,
 # and print each of them once, without duplicates.  Input order is
@@ -381,15 +386,23 @@ libgtkdataboks_la_SOURCES = \
 			gtkdatabox_graph.c\
 			gtkdatabox_xyc_graph.c\
 			gtkdatabox_xyyc_graph.c\
-			gtkdatabox_points.c\
-			gtkdatabox_lines.c\
-			gtkdatabox_bars.c\
-			gtkdatabox_offset_bars.c\
-			gtkdatabox_regions.c\
+ 			gtkdatabox_points.c\
+            gtkdatabox_lines.c\
+            gtkdatabox_bars.c\
+            gtkdatabox_offset_bars.c\
+            gtkdatabox_regions.c\
 			gtkdatabox_markers.c\
-			gtkdatabox_cross_simple.c\
-			gtkdatabox_grid.c\
-			gtkdatabox_ruler.c\
+            gtkdatabox_cross_simple.c\
+            gtkdatabox_grid.c\
+			gtkdatabox_ruler.c
+
+libgtkdataboks_la_LDFLAGS = \
+		        #-version-info $(LT_CURRENT)\
+			#-release $(LT_RELEASE)\
+			-no-undefined \
+			@GTK_LIBS@
+
+include_HEADERS = \
 			gtkdatabox_typedefs.h\
 			gtkdatabox.h\
 			gtkdatabox_marshal.h\
@@ -398,21 +411,15 @@ libgtkdataboks_la_SOURCES = \
 			gtkdatabox_xyc_graph.h\
 			gtkdatabox_xyyc_graph.h\
  			gtkdatabox_points.h\
-			gtkdatabox_lines.h\
-			gtkdatabox_bars.h\
-			gtkdatabox_offset_bars.h\
-			gtkdatabox_regions.h\
+            gtkdatabox_lines.h\
+            gtkdatabox_bars.h\
+            gtkdatabox_offset_bars.h\
+            gtkdatabox_regions.h\
 			gtkdatabox_markers.h\
-			gtkdatabox_cross_simple.h\
-			gtkdatabox_grid.h\
+            gtkdatabox_cross_simple.h\
+            gtkdatabox_grid.h\
 			gtkdatabox_ruler.h
 
-libgtkdataboks_la_LDFLAGS = \
-			-no-undefined\
-			@GTK_LIBS@
-
-#		        -version-info $(LT_CURRENT)
-#			-release $(LT_RELEASE)
 EXTRA_DIST = gtkdatabox_marshal.list
 BUILT_SOURCES = gtkdatabox_marshal.c gtkdatabox_marshal.h
 AM_CPPFLAGS = \
@@ -552,6 +559,27 @@ mostlyclean-libtool:
 
 clean-libtool:
 	-rm -rf .libs _libs
+install-includeHEADERS: $(include_HEADERS)
+	@$(NORMAL_INSTALL)
+	@list='$(include_HEADERS)'; test -n "$(includedir)" || list=; \
+	if test -n "$$list"; then \
+	  echo " $(MKDIR_P) '$(DESTDIR)$(includedir)'"; \
+	  $(MKDIR_P) "$(DESTDIR)$(includedir)" || exit 1; \
+	fi; \
+	for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  echo "$$d$$p"; \
+	done | $(am__base_list) | \
+	while read files; do \
+	  echo " $(INSTALL_HEADER) $$files '$(DESTDIR)$(includedir)'"; \
+	  $(INSTALL_HEADER) $$files "$(DESTDIR)$(includedir)" || exit $$?; \
+	done
+
+uninstall-includeHEADERS:
+	@$(NORMAL_UNINSTALL)
+	@list='$(include_HEADERS)'; test -n "$(includedir)" || list=; \
+	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
+	dir='$(DESTDIR)$(includedir)'; $(am__uninstall_files_from_dir)
 
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
@@ -638,9 +666,9 @@ distdir: $(DISTFILES)
 check-am: all-am
 check: $(BUILT_SOURCES)
 	$(MAKE) $(AM_MAKEFLAGS) check-am
-all-am: Makefile $(LTLIBRARIES)
+all-am: Makefile $(LTLIBRARIES) $(HEADERS)
 installdirs:
-	for dir in "$(DESTDIR)$(libdir)"; do \
+	for dir in "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includedir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
 install: $(BUILT_SOURCES)
@@ -698,7 +726,7 @@ info: info-am
 
 info-am:
 
-install-data-am:
+install-data-am: install-includeHEADERS
 
 install-dvi: install-dvi-am
 
@@ -744,7 +772,7 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-libLTLIBRARIES
+uninstall-am: uninstall-includeHEADERS uninstall-libLTLIBRARIES
 
 .MAKE: all check install install-am install-strip
 
@@ -754,13 +782,15 @@ uninstall-am: uninstall-libLTLIBRARIES
 	distclean-libtool distclean-tags distdir dvi dvi-am html \
 	html-am info info-am install install-am install-data \
 	install-data-am install-dvi install-dvi-am install-exec \
-	install-exec-am install-html install-html-am install-info \
-	install-info-am install-libLTLIBRARIES install-man install-pdf \
-	install-pdf-am install-ps install-ps-am install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
+	install-exec-am install-html install-html-am \
+	install-includeHEADERS install-info install-info-am \
+	install-libLTLIBRARIES install-man install-pdf install-pdf-am \
+	install-ps install-ps-am install-strip installcheck \
+	installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
 	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	tags tags-am uninstall uninstall-am uninstall-libLTLIBRARIES
+	tags tags-am uninstall uninstall-am uninstall-includeHEADERS \
+	uninstall-libLTLIBRARIES
 
 .PRECIOUS: Makefile
 
