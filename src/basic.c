@@ -255,7 +255,7 @@ basic_draw_lesson ()
 	gint idx, rnd;
 	gchar *ut8_tmp;
 	gunichar sentence[9 * 6 + 4];
-	gunichar char_pool[N_LINES * 9 * 5];
+	gunichar char_pool[2*(N_LINES * 9 * 5)];
 	GtkTextBuffer *buf;
 
 	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (get_wg ("text_tutor")));
@@ -271,6 +271,11 @@ basic_draw_lesson ()
 	 * Draw the lines as sentences
 	 */
 	memmove (char_pool, basic.char_set, len * sizeof (gunichar));
+	if (len > 4 && len < 14)
+	{
+		memmove (char_pool+len, basic.char_set, len * sizeof (gunichar));
+		len *= 2;
+	}
 	sentence[9 * 6] = L'\n';
 	sentence[9 * 6 + 1] = L'\0';
 	sentence[9 * 6 + 2] = L'\0';
@@ -283,11 +288,17 @@ basic_draw_lesson ()
 			{	/* letters */
 				rnd = rand () % len;
 				sentence[idx++] = char_pool[rnd];
-				char_pool[rnd] = char_pool[--len];
+				len--;
+				char_pool[rnd] = char_pool[len];
 				if (len == 0)
 				{
 					len = basic.char_set_size;
 					memmove (char_pool, basic.char_set, len * sizeof (gunichar));
+					if (len > 4 && len < 14)
+					{
+						memmove (char_pool+len, basic.char_set, len * sizeof (gunichar));
+						len *= 2;
+					}
 				}
 				if (keyb_is_diacritic (sentence[idx-1]))
 					sentence[idx-1] = L' ';

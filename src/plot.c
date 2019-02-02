@@ -154,11 +154,7 @@ plot_error_frequencies ()
 	if (plot.lim.y[1] < 1)
 		plot.lim.y[1] = 1.05;
 
-	/* White background
-	 */
-	gdk_rgba_parse (&color, "#ffffff");
-	gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
-	 
+	/* Plot color */
 	gdk_rgba_parse (&color_black, "#000000");
 	gdk_rgba_parse (&color, PLOT_GREEN_2);
 
@@ -219,11 +215,7 @@ plot_touch_times ()
 	if (plot.lim.y[1] < 0.01)
 		plot.lim.y[1] = 0.0105;
 
-	/* White background
-	 */
-	gdk_rgba_parse (&color, "#ffffff");
-	gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
-	 
+	/* Plot color */
 	gdk_rgba_parse (&color_black, "#000000");
 	gdk_rgba_parse (&color, PLOT_PURPLE);
 
@@ -260,6 +252,7 @@ plot_initialize ()
 {
 	static gboolean inited = FALSE;
 	gint i;
+	GdkRGBA color;
 
 	if (inited)
 		return;
@@ -275,6 +268,11 @@ plot_initialize ()
 	gtk_databox_create_box_with_scrollbars_and_rulers (&plot.databox, &plot.gtkgrid, FALSE, FALSE, FALSE, FALSE);
 	gtk_container_add (GTK_CONTAINER (get_wg ("frame_stat")), plot.gtkgrid);
 	g_signal_connect (G_OBJECT (plot.databox), "motion_notify_event", G_CALLBACK (on_databox_hovered), NULL);
+
+	/* White background
+	 */
+	gdk_rgba_parse (&color, "#ffffff");
+	//gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
 
 	/* Y labels
 	 */
@@ -522,19 +520,10 @@ plot_draw_chart (gint field)
 		setlocale (LC_NUMERIC, tmp_locale);
 	g_free (tmp_locale);
 
-	/* Set apropriate background
-	 */
 	if (i == 0)
 	{
 		g_message ("no valid data to plot.");
-		gdk_rgba_parse (&color, "#ccccce");
-		gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
 		return;
-	}
-	else
-	{
-		gdk_rgba_parse (&color, "#ffffff");
-		gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
 	}
 	n_points = i;
 
@@ -622,7 +611,8 @@ plot_draw_chart (gint field)
 		{
 			g_sprintf (tmp_str, "%u", 100 - 10*i);
 			gtk_label_set_text (GTK_LABEL (plot.label_y[i]), tmp_str);
-			gtk_misc_set_alignment (GTK_MISC (plot.label_y[i]), 1.0, i / 4.0);
+			gtk_label_set_xalign (GTK_LABEL (plot.label_y[i]), 0.9);
+			gtk_label_set_yalign (GTK_LABEL (plot.label_y[i]), i / 4.0);
 			gtk_widget_show (plot.label_y[i]);
 		}
 		for (; i < MAX_Y_LABELS; i++)
@@ -635,7 +625,8 @@ plot_draw_chart (gint field)
 		{
 			g_sprintf (tmp_str, "%u", 120 - 10*i);
 			gtk_label_set_text (GTK_LABEL (plot.label_y[i]), tmp_str);
-			gtk_misc_set_alignment (GTK_MISC (plot.label_y[i]), 1.0, i / 12.0);
+			gtk_label_set_xalign (GTK_LABEL (plot.label_y[i]), 0.9);
+			gtk_label_set_yalign (GTK_LABEL (plot.label_y[i]), i / 12.0);
 			gtk_widget_show (plot.label_y[i]);
 		}
 	}
@@ -649,7 +640,8 @@ plot_draw_chart (gint field)
 			else
 				g_sprintf (tmp_str, "%u", 10 - i);
 			gtk_label_set_text (GTK_LABEL (plot.label_y[i]), tmp_str);
-			gtk_misc_set_alignment (GTK_MISC (plot.label_y[i]), 1.0, i / 10.0);
+			gtk_label_set_xalign (GTK_LABEL (plot.label_y[i]), 0.9);
+			gtk_label_set_yalign (GTK_LABEL (plot.label_y[i]), i / 10.0);
 			gtk_widget_show (plot.label_y[i]);
 		}
 		for (; i < MAX_Y_LABELS; i++)

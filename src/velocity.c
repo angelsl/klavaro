@@ -314,7 +314,7 @@ velo_text_write_to_file (gchar * text_raw, gboolean overwrite)
 	assert_user_dir ();
 	if (!(fh_destiny = (FILE *) g_fopen (dict_path, "w")))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't create the file:\n <%s>", dict_path);
 		if (overwrite == FALSE)
 		{
@@ -358,14 +358,14 @@ velo_create_dict (gchar * file_name, gboolean overwrite)
 
 	if (!file_name)
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("velo_create_dict(): null file name as first argument.");
 		return;
 	}
 
 	if (!g_file_get_contents (file_name, &text_raw, NULL, NULL))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't read the file:\n <%s>", file_name);
 		return;
 	}
@@ -375,7 +375,7 @@ velo_create_dict (gchar * file_name, gboolean overwrite)
 	assert_user_dir ();
 	if (!(fh_destiny = (FILE *) g_fopen (dict_path, "w")))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't create the file:\n <%s>", dict_path);
 		if (overwrite == FALSE)
 		{

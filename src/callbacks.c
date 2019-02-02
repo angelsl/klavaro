@@ -288,7 +288,7 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 		main_preferences_set_string ("tutor", "lesson_font", tmp_font);
 	}
 	gtk_text_buffer_create_tag (buf, "lesson_font", "font", tmp_font, NULL);
-	gtk_font_button_set_font_name (GTK_FONT_BUTTON (get_wg ("fontbutton_tutor")), tmp_font);
+	gtk_font_chooser_set_font (GTK_FONT_CHOOSER (get_wg ("fontbutton_tutor")), tmp_font);
 
 	/* Change default font throughout the widget */
 	font_desc = pango_font_description_from_string (tmp_font);
@@ -488,11 +488,14 @@ on_fontbutton_tutor_font_set (GtkFontButton * fbut, gpointer user_data)
 	GtkTextIter end;
 	gchar *tmp_font;
 
-	tmp_font = g_strdup (gtk_font_button_get_font_name (fbut));
+	tmp_font = gtk_font_chooser_get_font (GTK_FONT_CHOOSER (fbut));
 	if (tmp_font == NULL)
 		tmp_font = g_strdup (LESSON_FONT);
 	if (strlen (tmp_font) == 0)
+	{
+		g_free (tmp_font);
 		tmp_font = g_strdup (LESSON_FONT);
+	}
 	main_preferences_set_string ("tutor", "lesson_font", tmp_font);
 
 	wg = get_wg ("text_tutor");
@@ -791,7 +794,7 @@ on_button_top10_go_www_clicked         (GtkButton       *button,
 {
 	gchar *url;
 	url = gtk_widget_get_tooltip_text (get_wg ("button_top10_go_www"));
-	gtk_show_uri (NULL, url, GDK_CURRENT_TIME, NULL);
+	gtk_show_uri_on_window (get_win ("window_top10") , url, GDK_CURRENT_TIME, NULL);
 	g_free (url);
 }
 

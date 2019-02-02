@@ -15,6 +15,10 @@
 	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
 	- Crashing? when no <libintl.h> installed on the system and? using 
 	  ./configure --disable-nls
+	* Changed:
+	- Some deprecated GTK functions were updated. 
+	- Using 2 copies of character pool for the basic lessons generator,
+	  for a little bit more double sequences of same char.
 	* Added:
 	- dvorak_de_adnw.kbd	"Aus der Neue Welt" german keyboard layout
 	- dvorak_us_left.kbd	Dvorak left hand layout
