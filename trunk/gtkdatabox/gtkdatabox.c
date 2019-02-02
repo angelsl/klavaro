@@ -1221,7 +1221,8 @@ gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
     gtk_databox_create_backing_surface (box);
 
     cr2 = cairo_create(priv->backing_surface);
-    gtk_style_context_get_background_color(stylecontext, GTK_STATE_FLAG_NORMAL, &bg_color);
+    //gtk_style_context_get_background_color(stylecontext, GTK_STATE_FLAG_NORMAL, &bg_color);
+    gdk_rgba_parse (&bg_color, "#fffff9");
     gdk_cairo_set_source_rgba (cr2, &bg_color);
     cairo_paint(cr2);
     cairo_destroy(cr2);

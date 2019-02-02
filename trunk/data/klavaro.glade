@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.20.4 -->
 <interface>
-  <requires lib="gtk+" version="3.8"/>
+  <requires lib="gtk+" version="3.2"/>
   <object class="GtkAdjustment" id="adjustment2">
     <property name="lower">1</property>
     <property name="upper">60</property>
@@ -698,12 +698,12 @@
                         <property name="icon_size">1</property>
                       </object>
                     </child>
-                    <accelerator key="r" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                     <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                    <accelerator key="r" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                   </object>
                 </child>
-                <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
+                <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2548,8 +2548,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
                 <accelerator key="Left" signal="clicked"/>
+                <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2607,8 +2607,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
                 <accelerator key="Right" signal="clicked"/>
+                <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>

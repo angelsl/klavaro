@@ -437,7 +437,7 @@ fluid_text_write_to_file (gchar * text_raw)
 	assert_user_dir ();
 	if (!(fh_destiny = (FILE *) g_fopen (pars_path, "w")))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't create the file:\n %s", pars_path);
 		g_free (pars_path);
 		g_free (pars_name);
@@ -476,14 +476,14 @@ fluid_copy_text_file (gchar * file_name)
 
 	if (!file_name)
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("fluid_copy_text_file(): null file name as argument.");
 		return;
 	}
 
 	if (!g_file_get_contents (file_name, &text_raw, NULL, NULL))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't read the file:\n %s\n", file_name);
 		return;
 	}
@@ -493,7 +493,7 @@ fluid_copy_text_file (gchar * file_name)
 	assert_user_dir ();
 	if (!(fh_destiny = (FILE *) g_fopen (pars_path, "w")))
 	{
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 		g_warning ("couldn't create the file:\n %s", pars_path);
 		g_free (pars_path);
 		g_free (pars_name);

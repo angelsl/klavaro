@@ -1015,8 +1015,7 @@ tutor_calc_stats ()
 	if (tutor.type == TT_FLUID)
 		if (tutor.n_touchs < MIN_CHARS_TO_LOG)
 		{
-			gdk_beep ();
-			gdk_beep ();
+			gdk_display_beep (gdk_display_get_default ());
 			contest_ps =
 				g_strdup_printf (_
 						 ("ps.: logging not performed for this session: "
@@ -1654,7 +1653,7 @@ tutor_other_rename (const gchar *new_tx, const gchar *old_tx)
 		if (g_file_test (new_file, G_FILE_TEST_IS_REGULAR))
 		{
 			g_message ("File already exists, not renaming.\n\t%s\n", new_file);
-			gdk_beep ();
+			gdk_display_beep (gdk_display_get_default ());
 		}
 		else
 		{
@@ -1706,7 +1705,7 @@ tutor_beep ()
 
 	wg = get_wg ("togglebutton_tutor_beep");
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (wg)))
-		gdk_beep ();
+		gdk_display_beep (gdk_display_get_default ());
 }
 
 /**********************************************************************
