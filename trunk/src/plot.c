@@ -251,8 +251,9 @@ void
 plot_initialize ()
 {
 	static gboolean inited = FALSE;
+	static GtkCssProvider *css;
+	GtkStyleContext *sc;
 	gint i;
-	GdkRGBA color;
 
 	if (inited)
 		return;
@@ -271,8 +272,11 @@ plot_initialize ()
 
 	/* White background
 	 */
-	gdk_rgba_parse (&color, "#ffffff");
-	//gtk_widget_override_background_color (plot.databox, GTK_STATE_FLAG_NORMAL, &color);
+	css = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (css, ".plot_bg {background-color: white;}", -1, NULL);
+	sc = gtk_widget_get_style_context (plot.databox);
+	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	gtk_style_context_add_class (sc, "plot_bg");
 
 	/* Y labels
 	 */

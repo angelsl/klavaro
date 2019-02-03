@@ -38,6 +38,8 @@
 #include "top10.h"
 #include "tutor.h"
 
+extern GtkCssProvider *keyb_css;
+
 #define MAX_TOUCH_TICS 10000
 struct
 {
@@ -440,6 +442,7 @@ tutor_update_intro ()
 	GtkAdjustment *scroll;
 	GtkTextIter start;
 	GtkTextIter end;
+	GtkStyleContext *sc;
 
 	if (tutor.type == TT_BASIC)
 	{
@@ -467,6 +470,9 @@ tutor_update_intro ()
 	gtk_text_buffer_apply_tag_by_name (gtk_text_view_get_buffer (wg_text), "lesson_font", &start, &end);
 	gtk_text_buffer_apply_tag_by_name (gtk_text_view_get_buffer (wg_text), "text_intro", &start, &end);
 
+	/*
+	 * Apply tutor background color and font to the intro
+	 */
 	if (main_preferences_exist ("colors", "text_intro_bg"))
 		color_bg = main_preferences_get_string ("colors", "text_intro_bg");
 	else

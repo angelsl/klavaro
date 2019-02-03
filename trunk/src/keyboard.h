@@ -134,6 +134,8 @@ gboolean keyb_force_edit_tab (gpointer data);
  */
 void hints_init (void);
 
+gchar * hints_color_from_charcode (gchar charcode);
+
 gchar * hints_string_from_charcode (gchar charcode);
 
 void hints_set_tips (void);

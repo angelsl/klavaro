@@ -1,16 +1,17 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- Fix bug that makes tutor window grows and does not allow it to shrink.
+- Substitute deprecated stuff on Glade file, for GTK-3.2
 - Make possible to merge all basic lessons in the progress chart.
+- Show accuracy * speed in progress charts for modules basic, adapt and speed.
 - Make possible individual reset of character errors logs.
-- Substitute all deprecated GTK functions (gtk_widet_override_background) and on Glade file.
 - Configurable colors for the progress window.
 - Add instructions for typing with the shift keys (in the introduction).
 - Explain what are the blank lessons after 43, in basic module.
 
 - Compile for Windows again...
-- Verify GtkDataBox for updating as external lib. (2019-02-02: not yet, still on GTK-2, updated from git to use GTK-3)
+- Verify GtkDataBox for updating as external lib. (2019-02-02: not yet, still on GTK-2, so updated to use GTK-3, from sf.net GIT on 2019-02-02 )
+- Substitute all deprecated gtk_widet_override_background functions. (no way on GtkTextView...)
 
 ____________________________________________
 And suggestions that probably won't be done:
