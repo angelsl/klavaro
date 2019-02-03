@@ -376,12 +376,7 @@
       <placeholder/>
     </child>
   </object>
-  <object class="GtkAdjustment" id="adjustment3">
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
-  </object>
-  <object class="GtkAdjustment" id="adjustment4">
+  <object class="GtkAdjustment" id="adjustment_h_tutor">
     <property name="upper">100</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
@@ -392,6 +387,11 @@
     <property name="value">0.98999999999999999</property>
     <property name="step_increment">1</property>
     <property name="page_increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_v_tutor">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
   </object>
   <object class="GtkWindow" id="window_tutor">
     <property name="can_focus">False</property>
@@ -612,17 +612,16 @@
             <property name="height_request">20</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="hadjustment">adjustment3</property>
-            <property name="vadjustment">adjustment4</property>
-            <property name="hscrollbar_policy">never</property>
+            <property name="hadjustment">adjustment_h_tutor</property>
+            <property name="vadjustment">adjustment_v_tutor</property>
             <property name="shadow_type">in</property>
             <child>
               <object class="GtkTextView" id="text_tutor">
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
                 <property name="can_focus">False</property>
-                <property name="hadjustment">adjustment3</property>
-                <property name="vadjustment">adjustment4</property>
+                <property name="hadjustment">adjustment_h_tutor</property>
+                <property name="vadjustment">adjustment_v_tutor</property>
                 <property name="pixels_above_lines">9</property>
                 <property name="pixels_below_lines">1</property>
                 <property name="pixels_inside_wrap">4</property>
@@ -630,7 +629,7 @@
                 <property name="wrap_mode">word</property>
                 <property name="left_margin">10</property>
                 <property name="right_margin">10</property>
-                <property name="indent">-1</property>
+                <property name="indent">25</property>
                 <property name="cursor_visible">False</property>
                 <property name="accepts_tab">False</property>
                 <signal name="realize" handler="on_text_tutor_realize" swapped="no"/>
@@ -698,12 +697,12 @@
                         <property name="icon_size">1</property>
                       </object>
                     </child>
-                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                     <accelerator key="r" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                    <accelerator key="R" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                   </object>
                 </child>
-                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
+                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2548,8 +2547,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Left" signal="clicked"/>
                 <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Left" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2607,8 +2606,8 @@
                     </child>
                   </object>
                 </child>
-                <accelerator key="Right" signal="clicked"/>
                 <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Right" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
