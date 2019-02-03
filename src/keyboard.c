@@ -32,6 +32,9 @@
 extern gchar *KEYB_CUSTOM;
 extern gchar *KEYB_EDIT;
 
+//static GtkCssProvider *keyb_css = NULL;
+GtkCssProvider *keyb_css = NULL;
+
 static struct
 {
 	gchar *name;
@@ -209,25 +212,41 @@ keyb_create_virtual_keys ()
 	gchar *hlp;
 	GtkFixed *fix;
 	GdkRGBA color;
-	
-	/* Set color of space key
-	 */
-	if (main_preferences_exist ("colors", "key_5"))
-		hlp = main_preferences_get_string ("colors", "key_5");
-	else
-		hlp = g_strdup (KEYB_PURPLE);
-	gdk_rgba_parse (&color, hlp);
-	gtk_widget_override_background_color (get_wg ("but_space"), GTK_STATE_FLAG_NORMAL, &color);
-	g_free (hlp);
+	gchar *css_text;
+	gchar *tmp;
+	gchar *tmp2;
+	gchar chcd;
+	GtkStyleContext *sc;
 
-	/* Set text color of keys
+	/* Set color of keys
 	 */
 	if (main_preferences_exist ("colors", "key_fg"))
 		hlp = main_preferences_get_string ("colors", "key_fg");
 	else
 		hlp = g_strdup (KEYB_BLACK);
-	gdk_rgba_parse (&color, hlp);
+	if (keyb_css == NULL)
+	{
+		keyb_css = gtk_css_provider_new ();
+		css_text = g_strdup ("");
+		for (chcd = '1'; chcd <= '9'; chcd++)
+		{
+			tmp = g_strdup_printf (".key-but%c {background-image: none; background-color: %s; color: %s} "
+					       ".key-but%c:hover {background-image: none; background-color: white; color: black} "
+					       ".key-but%c:active {background-image: none; background-color: black; color: white} ",
+				               chcd, hints_color_from_charcode (chcd), hlp, chcd, chcd);
+			css_text = g_strdup_printf ("%s%s", css_text, tmp); 
+			g_free (tmp);
+		}
+		gtk_css_provider_load_from_data (keyb_css, css_text, -1, NULL);
+		g_free (css_text);
+	}
 	g_free (hlp);
+
+	/* Set space key
+	 */
+	sc = gtk_widget_get_style_context (get_wg ("but_space"));
+	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (keyb_css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	gtk_style_context_add_class (sc, "key-but5");
 
 	/* Create and position buttons and labels
 	 */
@@ -244,8 +263,6 @@ keyb_create_virtual_keys ()
   			g_signal_connect_after ((gpointer) keyb.but[i][j], "grab-focus",
 				       	G_CALLBACK (on_virtual_key_grab_focus), NULL);
 			keyb.lab[i][j] = gtk_label_new ("0");
-			gtk_widget_override_color (keyb.lab[i][j], GTK_STATE_FLAG_NORMAL, &color);
-			gtk_widget_override_color (keyb.lab[i][j], GTK_STATE_FLAG_PRELIGHT, &color);
 			gtk_container_add (GTK_CONTAINER (keyb.but[i][j]), keyb.lab[i][j]);
 
 			if (i > 0)
@@ -1608,6 +1625,7 @@ hints_init ()
 	else
 		g_warning ("couldn't open the file:\n %s", tmp_name);
 	g_free (tmp_name);
+
 }
 
 gchar *
@@ -1757,6 +1775,8 @@ hints_set_colors ()
 	gint i, j;
 	gint j_max;
 	GdkRGBA color;
+	GtkStyleContext *sc;
+	gchar *tmp;
 
 	if (hints_is_initialized == FALSE)
 	{
@@ -1769,8 +1789,11 @@ hints_set_colors ()
 		j_max = KEY_LINE_LEN - (i == 0 ? 1 : (i == 1 ? 2 : 3));
 		for (j = 0; j < j_max; j++)
 		{
-			gdk_rgba_parse (&color, hints_color_from_charcode (hints[i][j]));
-			gtk_widget_override_background_color (keyb.but[i][j], GTK_STATE_FLAG_NORMAL, &color);
+			sc = gtk_widget_get_style_context (keyb.but[i][j]);
+			gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (keyb_css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+			tmp = g_strdup_printf ("key-but%c", hints[i][j]);
+			gtk_style_context_add_class (sc, tmp);
+			g_free (tmp);
 		}
 	}
 }
@@ -1909,3 +1932,4 @@ hints_finger_name_from_char (gunichar uch)
 
 	return (g_strdup (" "));
 }
+

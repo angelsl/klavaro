@@ -1,9 +1,12 @@
-2017-07-02  Felipe Castro (-) <fefcas@gmail.com>;
+2019-02-??  Felipe Castro (-) <fefcas@gmail.com>;
 
 	* Release 3.04
 	* Fixed:
 	- Tutor window was not allowing to shrink horizontaly, only growing.
 	  Now its horizontal scroll is allowed to appear, liberating it to shrink.
+	- Colors again on keyboard buttons, they had disappeared.
+	- Crashing? when no <libintl.h> installed on the system and? using 
+	  ./configure --disable-nls
 	- bg.paragraphs and bg.words chars fixed.
 	- da.paragraphs and da.words chars fixed. (ét -> et)
 	- fi.paragraphs char fixed.
@@ -15,21 +18,19 @@
 	- sr.paragraphs chars fixed. (ascii quotes: " ")
 	- uk.paragraphs chars fixed.
 	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
-	- Crashing? when no <libintl.h> installed on the system and? using 
-	  ./configure --disable-nls
 	* Changed:
 	- Inserting a little indentation on tutor texts paragraphs.
 	- Using 2 copies of character pool for the basic lessons generator,
 	  for a little bit more double sequences of same char.
 	- Using new GtkDataBox update, from GIT repository, changes may appear
 	  in the progress charts.
-	- Some deprecated GTK functions were updated. 
+	- Some deprecated GTK-3 functions were updated for version 3.6. 
 	* Added:
+	- In fluidity, manages Ctrl+h to work as Backspace (delete -1 char) 
+	  and Ctrl+w as Ctrl+Backspace (clean up all errors).
 	- dvorak_de_adnw.kbd	"Aus der Neue Welt" german keyboard layout.
 	- dvorak_us_left.kbd	Dvorak left hand layout.
 	- dvorak_us_rigth.kbd	Dvorak rigth hand layout.
-	- In fluidity, manages Ctrl+h to work as Backspace (delete -1 char) 
-	  and Ctrl+w as Ctrl+Backspace (clean up all errors).
 
 2017-07-02  Felipe Castro (-) <fefcas@gmail.com>; Hodong Kim (=)
 

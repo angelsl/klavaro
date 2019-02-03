@@ -290,19 +290,22 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	gtk_text_buffer_create_tag (buf, "lesson_font", "font", tmp_font, NULL);
 	gtk_font_chooser_set_font (GTK_FONT_CHOOSER (get_wg ("fontbutton_tutor")), tmp_font);
 
-	/* Change default font throughout the widget */
+	/* Change default font throughout the widget
 	font_desc = pango_font_description_from_string (tmp_font);
 	g_free (tmp_font);
 	gtk_widget_override_font (widget, font_desc);
 	pango_font_description_free (font_desc);
+	 */
 
-	/* Change default background color throughout the widget */
+	/* Change default background color throughout the widget
 	gdk_rgba_parse (&color, color_main_bg);
 	gtk_widget_override_background_color (widget, GTK_STATE_FLAG_INSENSITIVE, &color);
+	 */
 
-	/* Change default text color throughout the widget */
+	/* Change default text color throughout the widget
 	gdk_rgba_parse (&color, color_main_fg);
 	gtk_widget_override_color (widget, GTK_STATE_FLAG_INSENSITIVE, &color);
+	*/
 
 	/* Turns on/off the beeps according to last time
 	 */
