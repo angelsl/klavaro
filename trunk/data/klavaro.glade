@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.20.4 -->
 <interface>
-  <requires lib="gtk+" version="3.2"/>
-  <object class="GtkAdjustment" id="adjustment2">
+  <requires lib="gtk+" version="3.8"/>
+  <object class="GtkAdjustment" id="adjustment_h_tutor">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_lesson">
     <property name="lower">1</property>
-    <property name="upper">60</property>
+    <property name="upper">256</property>
+    <property name="value">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">5</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment_stat_lesson">
+    <property name="upper">256</property>
     <property name="value">1</property>
     <property name="step_increment">1</property>
     <property name="page_increment">5</property>
@@ -72,12 +83,10 @@
               <object class="GtkSpinButton" id="spinbutton_stat_lesson">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="max_length">2</property>
-                <property name="width_chars">2</property>
+                <property name="width_chars">3</property>
                 <property name="xalign">0.5</property>
-                <property name="adjustment">adjustment2</property>
+                <property name="adjustment">adjustment_stat_lesson</property>
                 <property name="numeric">True</property>
-                <property name="value">-0.01</property>
                 <signal name="value-changed" handler="on_spinbutton_stat_lesson_value_changed" swapped="no"/>
               </object>
               <packing>
@@ -211,12 +220,12 @@
               <object class="GtkLabel" id="label_X">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">1</property>
                 <property name="label">X:</property>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">1</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -269,7 +278,6 @@
                           <object class="GtkLabel" id="label150">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">2</property>
                             <property name="label" translatable="yes">_Close</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">button_stat_close</property>
@@ -277,7 +285,7 @@
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
-                            <property name="padding">2</property>
+                            <property name="padding">5</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -339,7 +347,6 @@
                           <object class="GtkLabel" id="label28">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">2</property>
                             <property name="label" translatable="yes">_Reset</property>
                             <property name="use_underline">True</property>
                             <property name="mnemonic_widget">button_stat_reset</property>
@@ -347,7 +354,7 @@
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
-                            <property name="padding">2</property>
+                            <property name="padding">5</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -375,18 +382,6 @@
     <child type="titlebar">
       <placeholder/>
     </child>
-  </object>
-  <object class="GtkAdjustment" id="adjustment_h_tutor">
-    <property name="upper">100</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">10</property>
-  </object>
-  <object class="GtkAdjustment" id="adjustment_lesson">
-    <property name="lower">0.98999999999999999</property>
-    <property name="upper">256</property>
-    <property name="value">0.98999999999999999</property>
-    <property name="step_increment">1</property>
-    <property name="page_increment">5</property>
   </object>
   <object class="GtkAdjustment" id="adjustment_v_tutor">
     <property name="upper">100</property>
@@ -475,7 +470,6 @@
               <object class="GtkLabel" id="label_lesson">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">4</property>
                 <property name="label" translatable="yes">_Lesson:</property>
                 <property name="use_underline">True</property>
                 <property name="justify">center</property>
@@ -484,6 +478,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">4</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -522,14 +517,13 @@
               <object class="GtkLabel" id="label_heading">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">6</property>
-                <property name="ypad">12</property>
                 <property name="wrap_mode">char</property>
                 <property name="xalign">0</property>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">5</property>
                 <property name="position">5</property>
               </packing>
             </child>
@@ -727,13 +721,13 @@
                       <object class="GtkImage" id="image_keyboard">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">2</property>
                         <property name="pixbuf">key.png</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">2</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -795,13 +789,13 @@
                       <object class="GtkImage" id="image_beep">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">2</property>
                         <property name="pixbuf">beep.png</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
                         <property name="fill">True</property>
+                        <property name="padding">2</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -867,7 +861,6 @@
                       <object class="GtkLabel" id="label7">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">2</property>
                         <property name="label" translatable="yes">Co_urse information</property>
                         <property name="use_underline">True</property>
                       </object>
@@ -963,7 +956,6 @@
                       <object class="GtkLabel" id="label139">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">2</property>
                         <property name="label" translatable="yes">_Close</property>
                         <property name="use_underline">True</property>
                       </object>
@@ -1113,8 +1105,7 @@
           <object class="GtkLabel" id="label117">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xpad">10</property>
-            <property name="ypad">10</property>
+            <property name="margin_left">10</property>
             <property name="label" translatable="yes">Attention!</property>
             <property name="justify">center</property>
             <property name="xalign">0</property>
@@ -1123,6 +1114,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
+            <property name="padding">10</property>
             <property name="position">0</property>
           </packing>
         </child>
@@ -1130,8 +1122,7 @@
           <object class="GtkLabel" id="label_confirm">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xpad">10</property>
-            <property name="ypad">10</property>
+            <property name="margin_left">10</property>
             <property name="label">CONFIRM_MESSAGE</property>
             <property name="wrap">True</property>
             <property name="xalign">0</property>
@@ -1140,6 +1131,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
+            <property name="padding">10</property>
             <property name="position">1</property>
           </packing>
         </child>
@@ -1153,7 +1145,6 @@
               <object class="GtkLabel" id="label114">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">5</property>
                 <property name="label" translatable="yes">Do you confirm?</property>
                 <property name="justify">center</property>
               </object>
@@ -1166,13 +1157,13 @@
             <child>
               <object class="GtkLabel" id="label_confirm_action">
                 <property name="can_focus">False</property>
-                <property name="xpad">5</property>
                 <property name="label">NO_ACTION</property>
                 <property name="justify">center</property>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">10</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -1566,7 +1557,6 @@
                       <object class="GtkImage" id="image11">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="stock">gtk-open</property>
                         <property name="icon_size">2</property>
                       </object>
@@ -1615,7 +1605,6 @@
                       <object class="GtkImage" id="image6">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="stock">gtk-paste</property>
                         <property name="icon_size">2</property>
                       </object>
@@ -1664,7 +1653,6 @@
                       <object class="GtkImage" id="image19">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="stock">gtk-delete</property>
                         <property name="icon_size">2</property>
                       </object>
@@ -2049,11 +2037,11 @@
               <object class="GtkLabel" id="label26">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">2</property>
               </object>
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
+                <property name="padding">2</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -2066,11 +2054,11 @@
                   <object class="GtkLabel" id="label_keyboard_spacer">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="ypad">7</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
+                    <property name="padding">7</property>
                     <property name="position">0</property>
                   </packing>
                 </child>
@@ -2078,8 +2066,6 @@
                   <object class="GtkImage" id="pixmap_hints_fixed">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="xalign">0</property>
-                    <property name="yalign">0</property>
                     <property name="pixbuf">hands_0.png</property>
                   </object>
                   <packing>
@@ -2231,7 +2217,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_kbd1">
-                <property name="width_request">40</property>
+                <property name="width_request">39</property>
                 <property name="height_request">32</property>
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
@@ -2240,13 +2226,13 @@
                 <property name="use_underline">True</property>
               </object>
               <packing>
-                <property name="x">43</property>
+                <property name="x">58</property>
                 <property name="y">140</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="button_kbd2">
-                <property name="width_request">40</property>
+                <property name="width_request">38</property>
                 <property name="height_request">32</property>
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
@@ -2255,7 +2241,7 @@
                 <property name="use_underline">True</property>
               </object>
               <packing>
-                <property name="x">86</property>
+                <property name="x">100</property>
                 <property name="y">140</property>
               </packing>
             </child>
@@ -2288,7 +2274,6 @@
                   <object class="GtkImage" id="pixmap9">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="yalign">0</property>
                     <property name="stock">gtk-go-up</property>
                     <property name="icon_size">1</property>
                   </object>
@@ -2302,7 +2287,7 @@
             <child>
               <object class="GtkButton" id="but_space">
                 <property name="label" translatable="yes">SPACE BAR</property>
-                <property name="width_request">218</property>
+                <property name="width_request">206</property>
                 <property name="height_request">32</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -2316,7 +2301,7 @@
                 <signal name="clicked" handler="on_virtual_key_clicked" swapped="no"/>
               </object>
               <packing>
-                <property name="x">129</property>
+                <property name="x">141</property>
                 <property name="y">140</property>
               </packing>
             </child>
@@ -2334,7 +2319,6 @@
                   <object class="GtkImage" id="pixmap8">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="yalign">7.4505801528346183e-09</property>
                     <property name="stock">gtk-go-up</property>
                     <property name="icon_size">1</property>
                   </object>
@@ -2346,14 +2330,20 @@
             </child>
             <child>
               <object class="GtkButton" id="but_tab">
-                <property name="label">Tab</property>
-                <property name="width_request">46</property>
+                <property name="width_request">48</property>
                 <property name="height_request">32</property>
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
                 <property name="use_underline">True</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Tab</property>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="y">35</property>
@@ -2414,14 +2404,20 @@
             </child>
             <child>
               <object class="GtkButton" id="but_caps">
-                <property name="label" translatable="yes">Caps</property>
-                <property name="width_request">56</property>
+                <property name="width_request">58</property>
                 <property name="height_request">32</property>
                 <property name="visible">True</property>
                 <property name="sensitive">False</property>
                 <property name="can_focus">False</property>
                 <property name="receives_default">False</property>
                 <property name="use_underline">True</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="label" translatable="yes">Caps</property>
+                  </object>
+                </child>
               </object>
               <packing>
                 <property name="y">70</property>
@@ -2464,15 +2460,14 @@
               <object class="GtkLabel" id="label24">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">8</property>
                 <property name="label" translatable="yes">S_ave as:</property>
                 <property name="use_underline">True</property>
                 <property name="mnemonic_widget">entry_keyboard</property>
-                <property name="xalign">0</property>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">4</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -2771,13 +2766,13 @@
                           <object class="GtkLabel" id="label134">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">2</property>
                             <property name="label" translatable="yes">_Close</property>
                             <property name="use_underline">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -2828,13 +2823,13 @@
                           <object class="GtkLabel" id="label23">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">2</property>
                             <property name="label" translatable="yes">_Keep hands</property>
                             <property name="use_underline">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -2897,13 +2892,13 @@
                       <object class="GtkImage" id="image_intro">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">10</property>
                         <property name="stock">gtk-dialog-warning</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -2916,15 +2911,14 @@
                           <object class="GtkLabel" id="label_main_intro">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label">Introduction</property>
                             <property name="mnemonic_widget">button_basic</property>
                             <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -2932,7 +2926,6 @@
                           <object class="GtkLabel" id="label10">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label" translatable="yes">Learn how to type correctly</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
@@ -2940,6 +2933,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -2975,13 +2969,13 @@
                       <object class="GtkImage" id="image_basic">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">10</property>
                         <property name="stock">gtk-strikethrough</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -2994,7 +2988,6 @@
                           <object class="GtkLabel" id="label_main_basic">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label">Basic course</property>
                             <property name="mnemonic_widget">button_basic</property>
                             <property name="xalign">0</property>
@@ -3003,6 +2996,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -3010,7 +3004,6 @@
                           <object class="GtkLabel" id="label13">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label" translatable="yes">First steps with initial training</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
@@ -3018,6 +3011,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3053,13 +3047,13 @@
                       <object class="GtkImage" id="image_adapt">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">10</property>
                         <property name="stock">gtk-bold</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -3072,7 +3066,6 @@
                           <object class="GtkLabel" id="label_main_adapt">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label">Adaptability</property>
                             <property name="mnemonic_widget">button_basic</property>
                             <property name="xalign">0</property>
@@ -3081,6 +3074,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -3088,7 +3082,6 @@
                           <object class="GtkLabel" id="label15">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with random keys</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
@@ -3096,6 +3089,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3131,13 +3125,13 @@
                       <object class="GtkImage" id="image_adapt1">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">10</property>
                         <property name="stock">gtk-spell-check</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -3150,7 +3144,6 @@
                           <object class="GtkLabel" id="label_main_velo">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label">Velocity</property>
                             <property name="mnemonic_widget">button_basic</property>
                             <property name="xalign">0</property>
@@ -3159,6 +3152,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -3166,7 +3160,6 @@
                           <object class="GtkLabel" id="label17">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with random words</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
@@ -3174,6 +3167,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3209,13 +3203,13 @@
                       <object class="GtkImage" id="image_fluid">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xpad">10</property>
                         <property name="pixbuf">fluid.png</property>
                         <property name="icon_size">5</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">10</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -3228,7 +3222,6 @@
                           <object class="GtkLabel" id="label_main_fluid">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label">Fluidness</property>
                             <property name="mnemonic_widget">button_basic</property>
                             <property name="xalign">0</property>
@@ -3237,6 +3230,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">0</property>
                           </packing>
                         </child>
@@ -3244,7 +3238,6 @@
                           <object class="GtkLabel" id="label3">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="ypad">2</property>
                             <property name="label" translatable="yes">Practice with complete texts</property>
                             <property name="xalign">0</property>
                             <property name="yalign">0</property>
@@ -3252,6 +3245,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
+                            <property name="padding">2</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3292,7 +3286,6 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
                 <property name="tooltip_text">Espeak</property>
-                <property name="xalign">0</property>
                 <property name="draw_indicator">True</property>
                 <signal name="toggled" handler="on_checkbutton_speech_toggled" swapped="no"/>
               </object>
@@ -3410,15 +3403,13 @@
                           <object class="GtkLabel" id="label133">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">4</property>
-                            <property name="ypad">4</property>
                             <property name="label" translatable="yes">_Help</property>
                             <property name="use_underline">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
-                            <property name="padding">2</property>
+                            <property name="padding">6</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3466,15 +3457,13 @@
                           <object class="GtkLabel" id="label132">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">4</property>
-                            <property name="ypad">4</property>
                             <property name="label" translatable="yes">_About...</property>
                             <property name="use_underline">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
-                            <property name="padding">2</property>
+                            <property name="padding">4</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3522,15 +3511,13 @@
                           <object class="GtkLabel" id="label131">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="xpad">4</property>
-                            <property name="ypad">4</property>
                             <property name="label" translatable="yes">_Close</property>
                             <property name="use_underline">True</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
-                            <property name="padding">2</property>
+                            <property name="padding">4</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
@@ -3757,7 +3744,6 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">start</property>
-                        <property name="ypad">5</property>
                         <property name="label" translatable="yes">The main menu of the application is very straightforward. Just select the type of exercise you wish to take. Do not worry about clicking any button on the screen. The buttons will never hurt you!</property>
                         <property name="justify">fill</property>
                         <property name="wrap">True</property>
@@ -3769,6 +3755,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
+                        <property name="padding">5</property>
                         <property name="position">0</property>
                       </packing>
                     </child>
@@ -4119,7 +4106,6 @@
               <object class="GtkLabel" id="label21">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="xpad">10</property>
                 <property name="width_chars">0</property>
               </object>
               <packing>

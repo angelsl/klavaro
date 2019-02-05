@@ -1,11 +1,8 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- Substitute deprecated stuff on Glade file, for GTK-3.2
-- Make possible to merge all basic lessons in the progress chart.
-- Show accuracy * speed in progress charts for modules basic, adapt and speed.
-- Make possible individual reset of character errors logs.
-- Configurable colors for the progress window.
+- Make possible individual reset of character errors logs in adaptability.
+- Show sqrt(accuracy * speed) in progress charts for modules basic, adapt and speed.
 - Add instructions for typing with the shift keys (in the introduction).
 - Explain what are the blank lessons after 43, in basic module.
 
@@ -16,6 +13,7 @@ Simple list of things that could be done in future releases:
 ____________________________________________
 And suggestions that probably won't be done:
 
+- Configurable colors for the progress charts. (too much colors to deal with, complicate to specify each one)
 - Add method for advanced users to learn the keyboard from words in the dictionaries: center row left/rigth/both hands, lower row, upper row, number row, etc. (complicated, maybe not so useful, volunteers, please)
 - Local network support for local scores; zeroconf allows sharing ranking data among users connected to the same network. (libavahi? complicated, volunteers, please)
 - Collect wrong words and/or slow typed ones, and create special exercises with them in the velocity module. (complicated, volunteers, please)

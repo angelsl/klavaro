@@ -18,14 +18,16 @@
 	- sr.paragraphs chars fixed. (ascii quotes: " ")
 	- uk.paragraphs chars fixed.
 	- qwertz_de.kbd chars fixed. (Ä Ö -> ä ö)
+	- Substituted deprecated stuff on Glade file, for GTK+-3.8
 	* Changed:
 	- Inserting a little indentation on tutor texts paragraphs.
 	- Using 2 copies of character pool for the basic lessons generator,
 	  for a little bit more double sequences of same char.
 	- Using new GtkDataBox update, from GIT repository, changes may appear
 	  in the progress charts.
-	- Some deprecated GTK-3 functions were updated for version 3.6. 
+	- Some deprecated GTK+-3 functions were updated for version 3.8. 
 	* Added:
+	- Merge all basic the lessons in the progress chart: Lesson '0'.
 	- In fluidity, manages Ctrl+h to work as Backspace (delete -1 char) 
 	  and Ctrl+w as Ctrl+Backspace (clean up all errors).
 	- dvorak_de_adnw.kbd	"Aus der Neue Welt" german keyboard layout.

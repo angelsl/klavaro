@@ -34,6 +34,6 @@ GtkWidget * plot_get_databox (void);
 
 void plot_initialize (void);
 
-void plot_draw_chart (gint field);
+void plot_draw_chart (gint pltype);
 
 void plot_pointer_update (gdouble x);
