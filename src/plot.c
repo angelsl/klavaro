@@ -90,6 +90,8 @@ gchar language[DATA_POINTS+1][80+1];
 glong n_points;
 gint plot_type; /* used to communicate the plotting type, for updating the cursor marker, etc */
 
+gint lesson_n;
+
 /*******************************************************************************
  * Interface functions
  */
@@ -293,10 +295,9 @@ plot_initialize ()
  * Plots the statistics
  */
 void
-plot_draw_chart (gint field)
+plot_draw_chart (gint pltype)
 {
 	gint i, len;
-	gint lesson_n;
 	gchar *kb_name;
 	gchar *tmp_name;
 	gchar *tmp_locale;
@@ -315,18 +316,18 @@ plot_draw_chart (gint field)
 	gtk_widget_hide (plot.gtkgrid);
 
 	/* Set plot type for external reference */
-	plot_type = field;
+	plot_type = pltype;
 
 	/* Error frequencies or touch times
 	 */
 	gtk_widget_set_tooltip_text (get_wg ("entry_stat_x"), _("Character"));
 	gtk_widget_hide (get_wg ("box_grid_label_y"));
-	if (field == 6)
+	if (pltype == 6)
 	{
 		plot_error_frequencies ();
 		return;
 	}
-	else if (field == 7)
+	else if (pltype == 7)
 	{
 		plot_touch_times ();
 		return;
@@ -351,7 +352,7 @@ plot_draw_chart (gint field)
 
 	/* Get the file name
 	 */
-	if (field < 4)
+	if (pltype < 4)
 		tmp_name = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S "stat_",
 			       	tutor_get_type_name (), ".txt", NULL);
 	else
@@ -374,7 +375,7 @@ plot_draw_chart (gint field)
 	if (tmp_locale != NULL)
 		setlocale (LC_NUMERIC, "C");
 
-	/* Keyboard names are compared without spaces (may be needed for custom files)
+	/* Keyboard names must be compared without spaces (may appear in custom files)
 	 */
 	kb_name = g_strdup (keyb_get_name ());
 	for (i=0; kb_name[i]; i++)
@@ -389,6 +390,7 @@ plot_draw_chart (gint field)
 		fclose (fh);
 		return;
 	}
+	g_free (tmp_name);
 
 	/* Read the first DATA_POINTS points
 	 */
@@ -401,7 +403,7 @@ plot_draw_chart (gint field)
 		gchar *lang_extra;
 
 		language[i][0] = '\0';
-		if (field < 4)
+		if (pltype < 4)
 		{
 			itens = fscanf (fh, "%f%f%f%s%s%s\t", &accur[i], &velo[i], &fluid[i],
 				       	date[i], hour[i], lesson[i]);
@@ -420,9 +422,10 @@ plot_draw_chart (gint field)
 
 		if (tutor_get_type () == TT_BASIC)
 		{
-			if (g_ascii_strtoll (lesson[i], NULL, 10) != lesson_n)
-				continue;
-			if (strcmp (language[i], kb_name) != 0)
+			if (g_ascii_strtoll (lesson[i], NULL, 10) != lesson_n )
+				if (lesson_n != 0)
+					continue;
+			if (strcmp (language[i], kb_name) != 0) // in BASIC, language field is the keyboard.
 				continue;
 		}
 		if (tutor_get_type () == TT_ADAPT && strcmp (lesson[i], kb_name) != 0)
@@ -431,7 +434,7 @@ plot_draw_chart (gint field)
 			continue;
 		if (tutor_get_type () == TT_FLUID && strcmp (language[i], tmp_lang) != 0)
 			continue;
-		switch (field)
+		switch (pltype)
 		{
 		case 1:
 			plot.data.y[i] = accur[i];
@@ -458,7 +461,7 @@ plot_draw_chart (gint field)
 		gchar *lang_extra;
 
 		language[i][0] = '\0';
-		if (field < 4)
+		if (pltype < 4)
 		{
 			itens = fscanf (fh, "%f%f%f%s%s%s\t", &accur[i], &velo[i], &fluid[i],
 				       	date[i], hour[i], lesson[i]);
@@ -478,7 +481,8 @@ plot_draw_chart (gint field)
 		if (tutor_get_type () == TT_BASIC)
 		{
 			if (g_ascii_strtoll (lesson[i], NULL, 10) != lesson_n)
-				continue;
+				if (lesson_n != 0)
+					continue;
 			if (strcmp (language[i], kb_name) != 0)
 				continue;
 		}
@@ -497,7 +501,7 @@ plot_draw_chart (gint field)
 		strcpy (date[i], date[i + 1]);
 		strcpy (hour[i], hour[i + 1]);
 
-		switch (field)
+		switch (pltype)
 		{
 		case 1:
 			plot.data.y[i] = accur[i + 1];
@@ -516,7 +520,6 @@ plot_draw_chart (gint field)
 	}
 	fclose (fh);
 	g_free (kb_name);
-	g_free (tmp_name);
 
 	/* Coming back to the right locale
 	 */
@@ -541,7 +544,7 @@ plot_draw_chart (gint field)
 	plot.lim.y[1] = 100;
 	 
 	gdk_rgba_parse (&color_black, "#000000");
-	switch (field)
+	switch (pltype)
 	{
 	case 1:
 		plot.lim.y[0] = 60;
@@ -608,7 +611,7 @@ plot_draw_chart (gint field)
 
 	/* Grid and y labels */
 	gdk_rgba_parse (&color, "#dddddd");
-	if (field == 1) /* Correctness (%) */
+	if (pltype == 1) /* Correctness (%) */
 	{
 		plot.grid = gtk_databox_grid_new (3, 3, &color, 1);
 		for (i = 0; i < 5; i++)
@@ -622,7 +625,7 @@ plot_draw_chart (gint field)
 		for (; i < MAX_Y_LABELS; i++)
 			gtk_widget_hide (plot.label_y[i]);
 	}
-	else if (field == 2) /* Speed (WPM) */
+	else if (pltype == 2) /* Speed (WPM) */
 	{
 		plot.grid = gtk_databox_grid_new (11, 3, &color, 1);
 		for (i = 0; i < 13; i++)
@@ -639,7 +642,7 @@ plot_draw_chart (gint field)
 		plot.grid = gtk_databox_grid_new (9, 3, &color, 1);
 		for (i = 0; i < 11; i++)
 		{
-			if (field == 3)
+			if (pltype == 3)
 				g_sprintf (tmp_str, "%u", 100 - 10*i);
 			else
 				g_sprintf (tmp_str, "%u", 10 - i);
@@ -665,6 +668,7 @@ plot_pointer_update (gdouble x)
 	glong n = 0;
 	gchar *xstr;
 	gchar *ystr;
+	gchar *tmp;
 	GtkDatabox *box;
 	gint width;
 
@@ -692,7 +696,10 @@ plot_pointer_update (gdouble x)
 	{
 		if (plot_type < 6)
 		{
-			xstr = g_strdup_printf ("%s - %s", date[n], hour[n]);
+			if (tutor_get_type () == TT_BASIC && lesson_n == 0)
+				xstr = g_strdup_printf ("%s - %s [%s]", date[n], hour[n], lesson[n]);
+			else
+				xstr = g_strdup_printf ("%s - %s", date[n], hour[n]);
 			ystr = g_strdup_printf ("%.2f", plot.data.y[n]);
 		}
 		else if (plot_type == 6)
