@@ -1,14 +1,15 @@
-/*****************************************************************************/
-/*  Klavaro - a flexible touch typing tutor                                  */
-/*  Copyright (C) 2005, 2006, 2007, 2008 Felipe Castro                       */
-/*  Copyright (C) 2009, 2010, 2011, 2012, 2013 The Free Software Foundation  */
-/*                                                                           */
-/*  This program is free software, licensed under the terms of the GNU       */
-/*  General Public License as published by the Free Software Foundation,     */
-/*  either version 3 of the License, or (at your option) any later version.  */
-/*  You should have received a copy of the GNU General Public License        */
-/*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
-/*****************************************************************************/
+/**************************************************************************/
+/*  Klavaro - a flexible touch typing tutor                               */
+/*  Copyright (C) from 2005 until 2008 Felipe Castro                      */
+/*  Copyright (C) from 2009 until 2019 The Free Software Foundation       */
+/*                                                                        */
+/*  This program is free software, licensed under the terms of the GNU    */
+/*  General Public License as published by the Free Software Foundation,  */
+/*  either version 3 of the License, or (at your option) any later        */
+/*  version. You should have received a copy of the GNU General Public    */
+/*  License along with this program. If not,                              */
+/*  see <https://www.gnu.org/licenses/>.                                  */
+/**************************************************************************/
 
 /*
  * Adaptability exercise
@@ -41,11 +42,20 @@ adapt_draw_random_pattern ()
 	gunichar word[MAX_WORD_LEN + 1];
 	gboolean special;
 	gboolean word_ok = FALSE;
+	gdouble profi;
+
+	g_message ("Accuracy errors: %lu Limit: %lu", accur_error_total (), ERROR_LIMIT);
+	if (accur_ttime_n_get () >= 40) g_message ("Proficiency ratio p(10)/p(40): %f Limit: %.1f", 
+			accur_profi_aver(9)/accur_profi_aver(39), PROFI_LIMIT );
 
 	hlp = main_preferences_get_string ("interface", "language");
 
-	special = accur_error_total () >= ERROR_LIMIT ||
-		       	accur_profi_aver_norm (0) >= PROFI_LIMIT;
+	special = accur_error_total () >= ERROR_LIMIT;
+	if (accur_ttime_n_get () >= 40)
+	{
+		profi = accur_profi_aver(9)/accur_profi_aver(39);
+		special = (special || (profi > PROFI_LIMIT));
+	}
 	if (special)
 	{
 		gtk_widget_show (get_wg ("togglebutton_toomuch_errors"));

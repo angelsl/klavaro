@@ -5,6 +5,8 @@
 	- Tutor window was not allowing to shrink horizontaly, only growing.
 	  Now its horizontal scroll is allowed to appear, liberating it to shrink.
 	- Colors again on keyboard buttons, they had disappeared.
+	- Proficiency log file shown as touch time per key in adaptability
+	  charts  was being corrupted eventually.
 	- Crashing? when no <libintl.h> installed on the system and? using 
 	  ./configure --disable-nls
 	- bg.paragraphs and bg.words chars fixed.
@@ -23,11 +25,13 @@
 	- Inserting a little indentation on tutor texts paragraphs.
 	- Using 2 copies of character pool for the basic lessons generator,
 	  for a little bit more double sequences of same char.
+	- More difficult to get a special proficiency training session on
+	  adaptability, but easier to get an special error training.
 	- Using new GtkDataBox update, from GIT repository, changes may appear
 	  in the progress charts.
-	- Some deprecated GTK+-3 functions were updated for version 3.8. 
+	- Some deprecated GTK+-3 functions were updated to version 3.8. 
 	* Added:
-	- Merge all basic the lessons in the progress chart: Lesson '0'.
+	- Merge all the basic lessons in the progress chart: Lesson '0'.
 	- In fluidity, manages Ctrl+h to work as Backspace (delete -1 char) 
 	  and Ctrl+w as Ctrl+Backspace (clean up all errors).
 	- dvorak_de_adnw.kbd	"Aus der Neue Welt" german keyboard layout.
