@@ -1,14 +1,15 @@
-/*****************************************************************************/
-/*  Klavaro - a flexible touch typing tutor                                  */
-/*  Copyright (C) 2005, 2006, 2007, 2008 Felipe Castro                       */
-/*  Copyright (C) 2009, 2010, 2011, 2012, 2013 The Free Software Foundation  */
-/*                                                                           */
-/*  This program is free software, licensed under the terms of the GNU       */
-/*  General Public License as published by the Free Software Foundation,     */
-/*  either version 3 of the License, or (at your option) any later version.  */
-/*  You should have received a copy of the GNU General Public License        */
-/*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
-/*****************************************************************************/
+/**************************************************************************/
+/*  Klavaro - a flexible touch typing tutor                               */
+/*  Copyright (C) from 2005 until 2008 Felipe Castro                      */
+/*  Copyright (C) from 2009 until 2019 The Free Software Foundation       */
+/*                                                                        */
+/*  This program is free software, licensed under the terms of the GNU    */
+/*  General Public License as published by the Free Software Foundation,  */
+/*  either version 3 of the License, or (at your option) any later        */
+/*  version. You should have received a copy of the GNU General Public    */
+/*  License along with this program. If not,                              */
+/*  see <https://www.gnu.org/licenses/>.                                  */
+/**************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,26 +23,27 @@
 #include "keyboard.h"
 #include "adaptability.h"
 #include "accuracy.h"
+#include "plot.h"
 
 /* Touch errors
  */
-static struct
+struct
 {
 	gunichar uchr;
 	gulong wrong;
 	gulong correct;
 } terror[MAX_CHARS_EVALUATED];
-static gint terror_n = 0;
+gint terror_n = 0;
 
 /* Touch times
  */
-static struct
+struct
 {
 	gunichar uchr;
-	gdouble dt[MAX_TT_SAVED];
+	gdouble dt[MAX_TT_SAVED + 2];
 	gint idx;
 } ttime[MAX_CHARS_EVALUATED];
-static gint ttime_n = 0;
+gint ttime_n = 0;
 
 /* Simple reset
  */
@@ -123,22 +125,39 @@ accur_wrong_get (gint i)
 	return (terror[i].wrong);
 }
 
+void
+accur_ttime_print (void)
+{
+	gint i, j;
+
+	g_printf ("\n");
+	for (i = 0; i < ttime_n; i++)
+	{
+		g_printf ("%2i - %C - (%02i)", i, ttime[i].uchr, ttime[i].idx);
+		for (j = 0; j < ttime[i].idx; j+=1)
+			g_printf (" %1.2f", j, ttime[i].dt[j]);
+		g_printf ("\n");
+	}
+}
+
 /**********************************************************************
  * Open the accuracy accumulators
  */
 void
 accur_init ()
 {
-	const gchar delim[] = "\t\n\r()";
 	gint i, j;
 	gchar *tmp;
+	gchar tmpchr[UTF8_BUFFER];
 	gchar *kb_name;
 	gchar *data;
+	gchar *dtp;
+	gint nok;
 	gboolean success;
 	gunichar uchr;
 	gulong wrong;
 	gulong correct;
-	gdouble dt;
+	gdouble dt, dummy;
 
 	accur_reset ();
 
@@ -152,33 +171,25 @@ accur_init ()
 	tmp = g_strconcat (main_path_stats (), DIRSEP_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
 	success = g_file_get_contents (tmp, &data, NULL, NULL);
 	if (!success)
-	{
 		g_message ("Empty accuracy log: %s", tmp);
-		g_free (tmp);
-	}
 	else
 	{
-		g_free (tmp);
-		tmp = strtok (data, delim);
+		dtp = data;
 		for (i = 0; i < MAX_CHARS_EVALUATED; i++)
 		{
-			if (tmp == NULL)
+			if (3 != sscanf (dtp, "%6s\t%lu\t%lu\n", tmpchr, &wrong, &correct)) 
+			{
+				g_warning ("Accuracy file input error!");
 				break;
-			uchr = g_utf8_get_char_validated (tmp, -1);
+			}
+			uchr = g_utf8_get_char_validated (tmpchr, -1);
 			if (uchr == (gunichar)-1 || uchr == (gunichar)-2) 
+			{
+				g_warning ("Accuracy file UTF-8 input error!");
 				break;
+			}
 
-			tmp = strtok (NULL, delim);
-			if (tmp == NULL)
-				break;
-			wrong = strtoul (tmp, NULL, 10);
-
-			tmp = strtok (NULL, delim);
-			if (tmp == NULL)
-				break;
-			correct = strtoul (tmp, NULL, 10);
-			
-			if (wrong > 0 && correct <= ERROR_INERTIA)
+			if (1234 > wrong && wrong > 0 && correct <= ERROR_INERTIA)
 			{
 				terror[i].uchr = uchr;
 				terror[i].wrong = wrong;
@@ -187,11 +198,13 @@ accur_init ()
 			}
 			else
 				break;
-
-			tmp = strtok (NULL, delim);
+			while (dtp[0] != '\0' && dtp[0] != '\n') dtp++;
+			if (dtp[0] == '\n') dtp++;
+			if (dtp[0] == '\0') break;
 		}
 		g_free (data);
 	}
+	g_free (tmp);
 
 	/*
 	 * Second, the proficiency log
@@ -199,49 +212,45 @@ accur_init ()
 	tmp = g_strconcat (main_path_stats (), DIRSEP_S, PROFI_LOG_FILE, "_", kb_name, NULL);
 	success = g_file_get_contents (tmp, &data, NULL, NULL);
 	if (!success)
-	{
 		g_message ("Empty proficiency log: %s", tmp);
-		g_free (tmp);
-	}
 	else
 	{
-		g_free (tmp);
-		tmp = strtok (data, delim);
+		dtp = data;
 		for (i = 0; i < MAX_CHARS_EVALUATED; i++)
 		{
-			if (tmp == NULL)
+			if (3 != sscanf (dtp, "%6s\t%lf\t%lf\n", tmpchr, &dt, &dummy)) 
+			{
+				g_warning ("Proficiency file input error!");
 				break;
-			uchr = g_utf8_get_char_validated (tmp, -1);
-			if (uchr == (gunichar)-1 || uchr == (gunichar)-2) 
-				break;
+			}
 
-			tmp = strtok (NULL, delim);
-			if (tmp == NULL)
+			uchr = g_utf8_get_char_validated (tmpchr, -1);
+			if (uchr == (gunichar)-1 || uchr == (gunichar)-2) 
+			{
+				g_warning ("Proficiency file UTF-8 input error!");
 				break;
-			dt = strtod (tmp, NULL);
+			}
 
 			if (dt > 0)
 			{
 				ttime[i].uchr = uchr;
-				for (j = 0; j < 10; j++)
+				for (j = 0; j < 3; j++)
 					ttime[i].dt[j] = dt;
-				ttime[i].idx = 11;
+				ttime[i].idx = 3;
 				ttime_n = i + 1;
 			}
 			else
 				break;
 
-			/* Dummy normalized value
-			 */
-			tmp = strtok (NULL, delim);
-			if (tmp == NULL)
-				break;
-
-			tmp = strtok (NULL, delim);
+			while (dtp[0] != '\0' && dtp[0] != '\n') dtp++;
+			if (dtp[0] == '\n') dtp++;
+			if (dtp[0] == '\0') break;
 		}
 		g_free (data);
 	}
+	g_free (tmp);
 	g_free (kb_name);
+	/* accur_ttime_print (); */
 }
 
 /**********************************************************************
@@ -281,33 +290,31 @@ accur_correct (gunichar uchr, double touch_time)
 	if (touch_time < 0.001)
 		return;
 
+	/* If uchar is in the pool, add the touch time to it and return */
 	uchr = g_unichar_tolower (uchr);
 	for (i = 0; i < ttime_n; i++)
 	{
 		if (uchr == ttime[i].uchr)
 		{
 			ttime[i].dt[ttime[i].idx] = touch_time;
-			if (++ttime[i].idx == MAX_TT_SAVED)
+			ttime[i].idx++;
+			if (ttime[i].idx >= (MAX_TT_SAVED - 1))
 				ttime[i].idx = 0;
 			return;
 		}
 	}
-	if (i >= MAX_CHARS_EVALUATED)
-	{
-		for (i = MAX_CHARS_EVALUATED - 1; i >= 0; i--)
-		{
-			if (touch_time > ttime[i].dt[0])
-				break;
-		}
-		if (i < 0)
-			return;
-		for (j = 1; j < MAX_TT_SAVED; j++)
-			ttime[i].dt[j] = 0;
-	}
+
+	/* else, if there is room, */ 
+	if (ttime_n >= MAX_CHARS_EVALUATED)
+		return;
+
+	/* include a new key in the pool */
 	ttime[i].uchr = uchr;
 	ttime[i].dt[0] = touch_time;
+	for (j = 1; j < MAX_TT_SAVED; j++)
+		ttime[i].dt[j] = 0.0;
 	ttime[i].idx = 1;
-	ttime_n = i + 1;
+	ttime_n++;
 }
 
 /**********************************************************************
@@ -375,22 +382,24 @@ gdouble
 accur_profi_aver (gint idx)
 {
 	gint i, n;
-	gdouble sum = 0;
+	gdouble sum;
 
 	if (idx < 0)
 		return -10;
 
-	n = 0;
+	/* Simple average */
+	n = 0; sum = 0;
 	for (i = 0; i < MAX_TT_SAVED; i++)
 	{
-		if (ttime[idx].dt[i] > 0 && ttime[idx].dt[i] < 2)
+		if (ttime[idx].dt[i] > 0.0 && ttime[idx].dt[i] < 3.0)
 		{
 			sum += ttime[idx].dt[i];
 			n++;
 		}
 	}
 	if (n == 0)
-		return -1;
+		return 0.0;
+	
 	return (sum / n);
 }
 
@@ -400,7 +409,9 @@ accur_profi_aver_norm (gint idx)
 	gint norm;
 
 	if (idx < 0)
-		return 1;
+		return -1;
+	if (accur_profi_aver (ttime_n-1) == 0)
+		return -3;
 
 	norm = rint (accur_profi_aver (idx) / accur_profi_aver (ttime_n-1));
 	
@@ -510,6 +521,7 @@ accur_ttime_sort ()
 		else
 			break;
 	}
+	/* accur_ttime_print (); */
 }
 
 void
@@ -535,11 +547,14 @@ accur_create_word (gunichar word[MAX_WORD_LEN + 1])
 	gboolean ptype_ttime;
 	static gint profile_type = 0;
 
-	if (terror_n < 10 && ttime_n < 10)
+	if (terror_n < 10 && ttime_n < 5)
 		return FALSE;
 
 	ptype_terror = accur_error_total () >= ERROR_LIMIT;
-	ptype_ttime = accur_profi_aver_norm (0) >= PROFI_LIMIT;
+	if (ttime_n < 40)
+		ptype_ttime = 0;
+	else
+		ptype_ttime = ((accur_profi_aver(9)/accur_profi_aver(39)) > PROFI_LIMIT);
 	vlen = keyb_get_vowels (vowels);
 	n = rand () % (MAX_WORD_LEN) + 1;
 	for (i = 0; i < n; i++)
@@ -568,7 +583,7 @@ accur_create_word (gunichar word[MAX_WORD_LEN + 1])
 				ind = rand () % ttime_n;
 				if (ttime[ind].uchr == last)
 					continue;
-				if (rand () % accur_profi_aver_norm (0) < accur_profi_aver_norm (ind))
+				if ((rand () % accur_profi_aver_norm (0)) < accur_profi_aver_norm (ind))
 					break;
 			}
 			word[i] = ttime[ind].uchr;
@@ -624,7 +639,7 @@ accur_close ()
 				continue;
 
 			utf8 = accur_terror_char_utf8 (i);
-			g_fprintf (fh, "%s\t%lu\t%lu\n", utf8, terror[i].wrong, terror[i].correct);
+			g_fprintf (fh, "%s\t%2lu\t%2lu\n", utf8, terror[i].wrong, terror[i].correct);
 			g_free (utf8);
 		}
 		fclose (fh);
@@ -644,10 +659,12 @@ accur_close ()
 		{
 			utf8 = accur_ttime_char_utf8 (i);
 			g_fprintf (fh, "%s", utf8);
+			//g_printf ("%s", utf8);
 			g_free (utf8);
-			g_fprintf (fh, "\t%g\t%.2f\n",
+			g_fprintf (fh, "\t%0.6f\t%0.4f\n",
 					accur_profi_aver (i),
 					accur_profi_aver (i) / accur_profi_aver (ttime_n-1));
+			//g_printf ("\t%0.6f\t%0.4f\n", accur_profi_aver (i), accur_profi_aver (i) / accur_profi_aver (ttime_n-1));
 		}
 		fclose (fh);
 	}

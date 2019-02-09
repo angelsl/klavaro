@@ -1,14 +1,15 @@
-/*****************************************************************************/
-/*  Klavaro - a flexible touch typing tutor                                  */
-/*  Copyright (C) 2005, 2006, 2007, 2008 Felipe Castro                       */
-/*  Copyright (C) 2009, 2010, 2011, 2012, 2013 The Free Software Foundation  */
-/*                                                                           */
-/*  This program is free software, licensed under the terms of the GNU       */
-/*  General Public License as published by the Free Software Foundation,     */
-/*  either version 3 of the License, or (at your option) any later version.  */
-/*  You should have received a copy of the GNU General Public License        */
-/*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
-/*****************************************************************************/
+/**************************************************************************/
+/*  Klavaro - a flexible touch typing tutor                               */
+/*  Copyright (C) from 2005 until 2008 Felipe Castro                      */
+/*  Copyright (C) from 2009 until 2019 The Free Software Foundation       */
+/*                                                                        */
+/*  This program is free software, licensed under the terms of the GNU    */
+/*  General Public License as published by the Free Software Foundation,  */
+/*  either version 3 of the License, or (at your option) any later        */
+/*  version. You should have received a copy of the GNU General Public    */
+/*  License along with this program. If not,                              */
+/*  see <https://www.gnu.org/licenses/>.                                  */
+/**************************************************************************/
 
 /*
  * Callbacks for widgets events
@@ -235,8 +236,8 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 {
 	gboolean beep;
 	gchar *tmp;
-	gchar *search;
 	gchar *tmp_font;
+	gchar *search;
 	gchar *color_fg;
 	gchar *color_bg;
 	gchar *color_main_fg;
@@ -244,7 +245,13 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	GtkWidget *wg;
 	GtkTextBuffer *buf;
 	PangoFontDescription *font_desc;
+	PangoStyle pg_style;
+	PangoWeight pg_weight;
+	gint pg_size;
+	gchar *pg_family;
 	GdkRGBA color;
+	GtkStyleContext *sc;
+	static GtkCssProvider *css;
 
 	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (widget));
 
@@ -291,21 +298,33 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	gtk_font_chooser_set_font (GTK_FONT_CHOOSER (get_wg ("fontbutton_tutor")), tmp_font);
 
 	/* Change default font throughout the widget
-	font_desc = pango_font_description_from_string (tmp_font);
-	g_free (tmp_font);
-	gtk_widget_override_font (widget, font_desc);
-	pango_font_description_free (font_desc);
 	 */
+	font_desc = pango_font_description_from_string (tmp_font);
+	//g_message ("Klavaro - font: %s", tmp_font);
+	g_free (tmp_font);
+	pg_style = pango_font_description_get_style (font_desc);
+	pg_weight = pango_font_description_get_weight (font_desc);
+	pg_size = pango_font_description_get_size (font_desc) / PANGO_SCALE;
+	pg_family = (gchar *) pango_font_description_get_family (font_desc);
+	tmp = g_strdup_printf (".tutor-font {color: %s; font: %s %s %ipt %s;}", color_main_fg, 
+			pg_style==PANGO_STYLE_NORMAL?"":"italic", 
+			pg_weight>PANGO_WEIGHT_MEDIUM?"bold":"",
+		       	pg_size, pg_family);
+	//g_message ("Klavaro - tutor style: %s", tmp, tmp_font);
+	css = gtk_css_provider_new ();
+	gtk_css_provider_load_from_data (css, tmp, -1, NULL);
+	g_free (tmp);
+	sc = gtk_widget_get_style_context (widget);
+	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	gtk_style_context_add_class (sc, "tutor-font");
+
+	pango_font_description_free (font_desc);
 
 	/* Change default background color throughout the widget
+	 * FIXME: update deprecated function to change background color in GtkTextView
 	gdk_rgba_parse (&color, color_main_bg);
 	gtk_widget_override_background_color (widget, GTK_STATE_FLAG_INSENSITIVE, &color);
 	 */
-
-	/* Change default text color throughout the widget
-	gdk_rgba_parse (&color, color_main_fg);
-	gtk_widget_override_color (widget, GTK_STATE_FLAG_INSENSITIVE, &color);
-	*/
 
 	/* Turns on/off the beeps according to last time
 	 */

@@ -1,14 +1,15 @@
-/*****************************************************************************/
-/*  Klavaro - a flexible touch typing tutor                                  */
-/*  Copyright (C) 2005, 2006, 2007, 2008 Felipe Castro                       */
-/*  Copyright (C) 2009, 2010, 2011, 2012, 2013 The Free Software Foundation  */
-/*                                                                           */
-/*  This program is free software, licensed under the terms of the GNU       */
-/*  General Public License as published by the Free Software Foundation,     */
-/*  either version 3 of the License, or (at your option) any later version.  */
-/*  You should have received a copy of the GNU General Public License        */
-/*  along with this program.  If not, see <http://www.gnu.org/licenses/>.    */
-/*****************************************************************************/
+/**************************************************************************/
+/*  Klavaro - a flexible touch typing tutor                               */
+/*  Copyright (C) from 2005 until 2008 Felipe Castro                      */
+/*  Copyright (C) from 2009 until 2019 The Free Software Foundation       */
+/*                                                                        */
+/*  This program is free software, licensed under the terms of the GNU    */
+/*  General Public License as published by the Free Software Foundation,  */
+/*  either version 3 of the License, or (at your option) any later        */
+/*  version. You should have received a copy of the GNU General Public    */
+/*  License along with this program. If not,                              */
+/*  see <https://www.gnu.org/licenses/>.                                  */
+/**************************************************************************/
 
 #define MAX_PARAGRAPHS 100
 #define MAX_PAR_LEN 2001
