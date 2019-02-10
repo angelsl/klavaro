@@ -7,6 +7,7 @@
 	- Colors again on keyboard buttons, they had disappeared.
 	- Proficiency log file shown as touch time per key in adaptability
 	  charts  was being corrupted eventually.
+	- Statistics after practice were being colorized.
 	- Crashing? when no <libintl.h> installed on the system and? using 
 	  ./configure --disable-nls
 	- bg.paragraphs and bg.words chars fixed.

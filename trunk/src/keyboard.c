@@ -1574,13 +1574,13 @@ keyb_change_key (gunichar real_key)
 gchar *
 keyb_get_utf8_paragraph_symbol ()
 {
-	static gchar parsym[7];
+	static gchar parsym[7] = {0, 0, 0, 0, 0, 0, 0};
 	static gboolean is_initialized = FALSE;
 
 	if (is_initialized == FALSE)
 	{
 		is_initialized = TRUE;
-		parsym[g_unichar_to_utf8 (UPSYM, parsym)] = '\0';
+		g_unichar_to_utf8 (UPSYM, parsym);
 	}
 	return (parsym);
 }

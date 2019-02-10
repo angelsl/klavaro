@@ -45,8 +45,9 @@ adapt_draw_random_pattern ()
 	gdouble profi;
 
 	g_message ("Accuracy errors: %lu Limit: %lu", accur_error_total (), ERROR_LIMIT);
-	if (accur_ttime_n_get () >= 40) g_message ("Proficiency ratio p(10)/p(40): %f Limit: %.1f", 
-			accur_profi_aver(9)/accur_profi_aver(39), PROFI_LIMIT );
+	if (accur_ttime_n_get () >= 40) 
+		g_message ("Proficiency ratio p(10)/p(40): %f Limit: %.1f", 
+				accur_profi_aver(9)/accur_profi_aver(39), PROFI_LIMIT );
 
 	hlp = main_preferences_get_string ("interface", "language");
 
@@ -100,7 +101,6 @@ adapt_draw_random_pattern ()
 		tutor_draw_paragraph (utf8_text);
 		g_free (utf8_text);
 	}
-
 	g_free (hlp);
 }
 
