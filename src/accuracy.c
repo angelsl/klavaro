@@ -158,6 +158,7 @@ accur_init ()
 	gulong wrong;
 	gulong correct;
 	gdouble dt, dummy;
+	gsize len;
 
 	accur_reset ();
 
@@ -169,10 +170,10 @@ accur_init ()
 	 * First, the accuracy log
 	 */
 	tmp = g_strconcat (main_path_stats (), DIRSEP_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
-	success = g_file_get_contents (tmp, &data, NULL, NULL);
+	success = g_file_get_contents (tmp, &data, &len, NULL);
 	if (!success)
 		g_message ("Empty accuracy log: %s", tmp);
-	else
+	else if (len > 0)
 	{
 		dtp = data;
 		for (i = 0; i < MAX_CHARS_EVALUATED; i++)
@@ -210,10 +211,10 @@ accur_init ()
 	 * Second, the proficiency log
 	 */
 	tmp = g_strconcat (main_path_stats (), DIRSEP_S, PROFI_LOG_FILE, "_", kb_name, NULL);
-	success = g_file_get_contents (tmp, &data, NULL, NULL);
+	success = g_file_get_contents (tmp, &data, &len, NULL);
 	if (!success)
 		g_message ("Empty proficiency log: %s", tmp);
-	else
+	else if (len > 0)
 	{
 		dtp = data;
 		for (i = 0; i < MAX_CHARS_EVALUATED; i++)

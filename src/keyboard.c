@@ -1077,7 +1077,7 @@ keyb_update_combos (gchar *cmb_country, gchar *cmb_variant)
 void
 keyb_intro_step_next ()
 {
-	if (keyb.intro_step < 6)
+	if (keyb.intro_step < 7)
 		keyb_intro_step (++keyb.intro_step);
 }
 
@@ -1108,6 +1108,7 @@ keyb_intro_step (gint step)
 	static gchar *intro08 = NULL;
 	static gchar *intro09 = NULL;
 	static gchar *intro10 = NULL;
+	static gchar *intro11 = NULL;
 
 	if (intro01 == NULL)
 	{
@@ -1142,6 +1143,10 @@ keyb_intro_step (gint step)
 	"After memorizing this relationship, you can relax the previous rule some, "
 	"so that you can attain greater speed while typing."));
 		intro10 = g_strdup (_(
+	"The shift keys are used for capital letters and for some symbols ."
+	"To get a shifted key input you should first use the small finger of the opposite hand. "
+	"Just keep it in the closest Shift while reaching the target key with the other hand."));
+		intro11 = g_strdup (_(
 	"You should be prepared to start training with the basic course. "
 	"It will take effort and patience to be successful as a typist. "
 	"We trust you have these and look forward to your success!"));
@@ -1157,8 +1162,6 @@ keyb_intro_step (gint step)
 	switch (step)
 	{
 	case 0:	/* Recommendations */
-		gtk_label_set_text (tx1, intro01);
-		gtk_label_set_text (tx2, "");
 		gtk_label_set_text (tit, _("To position the hands"));
         	gtk_text_buffer_set_text (buffer, intro01, -1);
 		gtk_widget_grab_focus (get_wg ("button_keyboard_next"));
@@ -1167,8 +1170,6 @@ keyb_intro_step (gint step)
 		break;
 	case 1: /* Index fingers */
 		gtk_label_set_text (tit, intro00);
-		gtk_label_set_text (tx1, intro02);
-		gtk_label_set_text (tx2, intro03);
         	gtk_text_buffer_set_text (buffer, intro02, -1);
         	gtk_text_buffer_insert_at_cursor (buffer, "\n", -1);
         	gtk_text_buffer_insert_at_cursor (buffer, intro03, -1);
@@ -1179,8 +1180,6 @@ keyb_intro_step (gint step)
 		break;
 	case 2: /* Fingers beside index */
 		gtk_label_set_text (tit, intro00);
-		gtk_label_set_text (tx1, intro04);
-		gtk_label_set_text (tx2, "");
         	gtk_text_buffer_set_text (buffer, intro04, -1);
 		keyb_set_sensitive (FALSE);
 		gtk_widget_set_sensitive (keyb.but[2][0], TRUE);
@@ -1193,8 +1192,6 @@ keyb_intro_step (gint step)
 		break;
 	case 3: /* Thumbs and wrists */
 		gtk_label_set_text (tit, intro00);
-		gtk_label_set_text (tx1, intro05);
-		gtk_label_set_text (tx2, intro06);
         	gtk_text_buffer_set_text (buffer, intro05, -1);
         	gtk_text_buffer_insert_at_cursor (buffer, "\n", -1);
         	gtk_text_buffer_insert_at_cursor (buffer, intro06, -1);
@@ -1206,8 +1203,6 @@ keyb_intro_step (gint step)
 		break;
 	case 4: /* The home position */
 		gtk_label_set_text (tit, intro00);
-		gtk_label_set_text (tx1, intro07);
-		gtk_label_set_text (tx2, "");
         	gtk_text_buffer_set_text (buffer, intro07, -1);
 		keyb_set_sensitive (FALSE);
 		gtk_widget_set_sensitive (keyb.but[2][0], TRUE);
@@ -1222,8 +1217,6 @@ keyb_intro_step (gint step)
 		break;
 	case 5: /* Reaching keys */
 		gtk_label_set_text (tit, intro00);
-		gtk_label_set_text (tx1, intro08);
-		gtk_label_set_text (tx2, intro09);
         	gtk_text_buffer_set_text (buffer, intro08, -1);
         	gtk_text_buffer_insert_at_cursor (buffer, "\n", -1);
         	gtk_text_buffer_insert_at_cursor (buffer, intro09, -1);
@@ -1241,19 +1234,30 @@ keyb_intro_step (gint step)
 		gtk_widget_set_sensitive (get_wg ("toggle_shift2"), FALSE);
 		hints_demo_fingers (1000/5);
 		break;
-	case 6: /* Final words */
-		gtk_label_set_text (tx1, intro10);
-		gtk_label_set_text (tx2, "");
-		gtk_label_set_text (tit, _("Go ahead!"));
+	case 6: /* Shift key */
+		gtk_label_set_text (tit, intro00);
         	gtk_text_buffer_set_text (buffer, intro10, -1);
+		keyb_set_sensitive (FALSE);
+		gtk_widget_set_sensitive (keyb.but[0][0], TRUE);
+		gtk_widget_set_sensitive (keyb.but[0][13], TRUE);
+		gtk_widget_set_sensitive (get_wg ("toggle_shift1"), TRUE);
+		gtk_widget_set_sensitive (get_wg ("toggle_shift2"), TRUE);
+		hints_demo_fingers (1000/2);
+		break;
+	case 7: /* Final words */
+		gtk_label_set_text (tit, _("Go ahead!"));
+        	gtk_text_buffer_set_text (buffer, intro11, -1);
 		gtk_widget_grab_focus (get_wg ("button_keyboard_close"));
 		keyb_set_sensitive (TRUE);
 		hints_demo_fingers (0);
 		break;
 	default:
+		g_free (intro00);
+		intro00 = g_strdup (_("Click on any key to see which finger you must use:"));
 		gtk_label_set_text (tit, _("Relation between fingers and keys"));
 		gtk_label_set_text (tx1, _("Click on any key to see which finger you must use:"));
 		gtk_label_set_text (tx2, "");
+        	gtk_text_buffer_set_text (buffer, intro00, -1);
 		keyb_set_sensitive (TRUE);
 		hints_demo_fingers (0);
 	}
@@ -1269,12 +1273,12 @@ keyb_intro_step (gint step)
 	else
 		gtk_widget_set_sensitive (get_wg ("button_keyboard_previous"), TRUE);
 
-	if (step == 6)
+	if (step == 7)
 		gtk_widget_set_sensitive (get_wg ("button_keyboard_next"), FALSE);
 	else
 		gtk_widget_set_sensitive (get_wg ("button_keyboard_next"), TRUE);
 
-	if (step >= 0 && step <= 6)
+	if (step >= 0 && step <= 7)
 		keyb.intro_step = step;
 	else
 		keyb.intro_step = 0;

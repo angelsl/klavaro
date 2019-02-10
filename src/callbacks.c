@@ -1103,6 +1103,8 @@ on_dialog_confirm_show (GtkWidget * widget, gpointer user_data)
 {
 	gchar *action;
 	gchar *msg;
+	gchar *tmp;
+	gint len;
 	GtkLabel *wg_label;
 
 	wg_label = GTK_LABEL (get_wg ("label_confirm_action"));
@@ -1128,10 +1130,28 @@ on_dialog_confirm_show (GtkWidget * widget, gpointer user_data)
 		gtk_label_set_text (wg_label, msg);
 		g_free (msg);
 	}
+	else if (g_str_equal (action, "RESET_ALL"))
+	{
+		gtk_window_set_title (GTK_WINDOW (widget), _("Reset progress data"));
+		gtk_label_set_text (wg_label, _("This will DELETE all the progress data of all modules."));
+	}
 	else if (g_str_equal (action, "RESET"))
 	{
 		gtk_window_set_title (GTK_WINDOW (widget), _("Reset progress data"));
-		gtk_label_set_text (wg_label, _("This will DELETE all the progress data shown in the charts."));
+		tmp = g_strdup (tutor_get_type_name ());
+		for (msg = tmp; tmp[0] != '\0'; tmp++) tmp[0] = g_ascii_toupper (tmp[0]);
+		tmp = msg;
+		if (g_str_equal (tmp, "ADAPT") && gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_stat_type"))) > 1)
+		{
+			g_free (tmp);
+			tmp = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (get_wg ("combobox_stat_type")));
+			msg = g_strdup_printf (_("This will delete the data of this chart. <%s>"), tmp);
+		}
+		else
+			msg = g_strdup_printf (_("This will delete the progress data of the module. (%s)"), tmp);
+		gtk_label_set_text (wg_label, msg);
+		g_free (tmp);
+		g_free (msg);
 	}
 	else
 	{
@@ -1145,6 +1165,8 @@ on_button_confirm_yes_clicked (GtkButton * button, gpointer user_data)
 {
 	gchar *file;
 	gchar *action;
+	gchar *msg;
+	gchar *tmp;
 	GtkWidget *wg;
 
 	wg = get_wg ("label_confirm_action");
@@ -1163,11 +1185,12 @@ on_button_confirm_yes_clicked (GtkButton * button, gpointer user_data)
 		keyb_remove_user_layout ();
 	}
 
-	else if (g_str_equal (action, "RESET"))
+	else if (g_str_equal (action, "RESET_ALL"))
 	{
 		file = g_build_filename (main_path_stats (), "stat_basic.txt", NULL);
 		g_unlink (file);
 		g_free (file);
+		basic_set_lesson (1);
 		file = g_build_filename (main_path_stats (), "stat_adapt.txt", NULL);
 		g_unlink (file);
 		g_free (file);
@@ -1180,13 +1203,64 @@ on_button_confirm_yes_clicked (GtkButton * button, gpointer user_data)
 		file = g_build_filename (main_path_stats (), "scores_fluid.txt", NULL);
 		g_unlink (file);
 		g_free (file);
-		accur_reset ();
 
-		basic_set_lesson (1);
+		accur_reset ();
+		accur_close ();
+		accur_init ();
 
 		on_combobox_stat_type_changed (NULL, NULL);
 	}
+	else if (g_str_equal (action, "RESET"))
+	{
+		tmp = g_strdup (tutor_get_type_name ());
+		for (msg = tmp; tmp[0] != '\0'; tmp++) tmp[0] = g_ascii_toupper (tmp[0]);
+		tmp = msg;
 
+		if (g_str_equal (tmp, "BASIC"))
+		{
+			file = g_build_filename (main_path_stats (), "stat_basic.txt", NULL);
+			g_unlink (file);
+			g_free (file);
+			basic_set_lesson (1);
+		}
+		else if (g_str_equal (tmp, "ADAPT"))
+		{
+			if (gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_stat_type"))) == 2)
+			{
+				accur_terror_reset ();
+				accur_close ();
+				accur_init ();
+			}
+			else if (gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_stat_type"))) == 3)
+			{
+				accur_ttime_reset ();
+				accur_close ();
+				accur_init ();
+			}
+			else
+			{
+				file = g_build_filename (main_path_stats (), "stat_adapt.txt", NULL);
+				g_unlink (file);
+				g_free (file);
+			}
+		}
+		else if (g_str_equal (tmp, "VELO"))
+		{
+			file = g_build_filename (main_path_stats (), "stat_velo.txt", NULL);
+			g_unlink (file);
+			g_free (file);
+		}
+		else if (g_str_equal (tmp, "FLUID"))
+		{
+			file = g_build_filename (main_path_stats (), "stat_fluid.txt", NULL);
+			g_unlink (file);
+			g_free (file);
+			file = g_build_filename (main_path_stats (), "scores_fluid.txt", NULL);
+			g_unlink (file);
+			g_free (file);
+		}
+		on_combobox_stat_type_changed (NULL, NULL);
+	}
 	else
 		g_warning ("No valid action selected for 'yes' confirm-button: %s", action);
 
@@ -1356,9 +1430,14 @@ on_spinbutton_stat_lesson_value_changed (GtkSpinButton * spinbutton, gpointer us
 }
 
 G_MODULE_EXPORT void
-on_button_stat_reset_clicked (GtkButton * button, gpointer user_data)
+on_button_stat_reset_clicked (GtkButton * button, gpointer check)
 {
-	gtk_label_set_text (GTK_LABEL (get_wg ("label_confirm_action")), "RESET");
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (check)))
+		gtk_label_set_text (GTK_LABEL (get_wg ("label_confirm_action")), "RESET_ALL");
+	else
+		gtk_label_set_text (GTK_LABEL (get_wg ("label_confirm_action")), "RESET");
+	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check), FALSE);
+
 	gtk_widget_show (get_wg ("dialog_confirm"));
 }
 

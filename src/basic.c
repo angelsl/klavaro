@@ -264,7 +264,22 @@ basic_draw_lesson ()
 	len = basic.char_set_size;
 	if (len < 2)
 	{
-		g_warning ("no character set for this lesson.");
+		g_warning ("No character set for this lesson.");
+		return;
+	}
+
+	if (basic.char_set[0] == basic.char_set[1]) 
+	{
+		ut8_tmp = g_strconcat (_("This custom lesson is empty."
+				      " You can define two or more different characters "
+				      "to generate a personal practice."
+				      " Press the editting button in the upper-right corner."), 
+				keyb_get_utf8_paragraph_symbol (), "\n", NULL);
+		gtk_text_buffer_insert_at_cursor (buf, ut8_tmp, -1);
+		gtk_text_buffer_insert_at_cursor (buf, ut8_tmp, -1);
+		gtk_text_buffer_insert_at_cursor (buf, ut8_tmp, -1);
+		gtk_text_buffer_insert_at_cursor (buf, ut8_tmp, -1);
+		g_free (ut8_tmp);
 		return;
 	}
 
