@@ -320,12 +320,6 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 
 	pango_font_description_free (font_desc);
 
-	/* Change default background color throughout the widget
-	 * FIXME: update deprecated function to change background color in GtkTextView
-	gdk_rgba_parse (&color, color_main_bg);
-	gtk_widget_override_background_color (widget, GTK_STATE_FLAG_INSENSITIVE, &color);
-	 */
-
 	/* Turns on/off the beeps according to last time
 	 */
 	if (main_preferences_exist ("tutor", "tutor_beep"))

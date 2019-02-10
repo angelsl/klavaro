@@ -556,8 +556,8 @@ tutor_update_start ()
 	g_free (color_bg);
 
 	gtk_text_buffer_get_bounds (buf, &start, &end);
-	gtk_text_iter_backward_char (&end);
 	gtk_text_buffer_apply_tag_by_name (buf, "lesson_font", &start, &end);
+	gtk_text_buffer_apply_tag_by_name (buf, "char_untouched", &start, &end);
 
 	/* Trying to minimize automatic wrapping because of cursor blinking:
 	*/
@@ -1366,13 +1366,16 @@ tutor_calc_stats ()
 	}
 	g_free (tmp_str2);
 
+	gtk_text_buffer_get_bounds (buf, &start, &end);
+	gtk_text_buffer_apply_tag_by_name (buf, "char_keep_wrap", &start, &end);
+
 	gtk_text_view_scroll_mark_onscreen (GTK_TEXT_VIEW (wg), gtk_text_buffer_get_insert (buf));
 }
 
 /**********************************************************************
  * Ensure the user is not trying to type with weird texts in the fluidness contest
  */
-#define DECEIVENESS_LIMIT 0.195 // 0.135
+#define DECEIVENESS_LIMIT 0.195
 gboolean
 tutor_char_distribution_approved ()
 {
@@ -1553,11 +1556,10 @@ tutor_draw_paragraph (gchar * utf8_text)
 	static gchar *tmp1 = NULL;
 	static gchar *tmp2 = NULL;
 	gchar *ptr;
-	GtkWidget *wg;
 	GtkTextBuffer *buf;
 
-	g_free (tmp1);
-	g_free (tmp2);
+	//g_free (tmp1);
+	//g_free (tmp2);
 
 	if (g_utf8_strrchr (utf8_text, -1, L'\n') == NULL)
 	{
@@ -1573,12 +1575,12 @@ tutor_draw_paragraph (gchar * utf8_text)
 	else
 		g_error ("draw_paragraph () ==> string error");
 
-	wg = get_wg ("text_tutor");
-	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (wg));
-
 	tmp2 = g_strconcat (tmp1, keyb_get_utf8_paragraph_symbol (), "\n", NULL);
+	g_free (tmp1);
 
+	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (get_wg ("text_tutor")));
 	gtk_text_buffer_insert_at_cursor (buf, tmp2, -1);
+	g_free (tmp2);
 }
 
 /**********************************************************************
