@@ -1,6 +1,7 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
+- Look at $HOME subdirs searching for local results of Top10.
 - Make possible individual reset of character errors logs in adaptability.
 - Show sqrt(accuracy * speed) in progress charts for modules basic, adapt and speed.
 - Add instructions for typing with the shift keys (in the introduction).
