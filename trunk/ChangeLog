@@ -1,4 +1,16 @@
-2019-02-??  Felipe Castro (-) <fefcas@gmail.com>;
+2019-0?-??  Felipe Castro (-) <fefcas@gmail.com>;
+
+	* Release 3.05-pre1
+	* Fixed:
+	* Changed:
+	* Added:
+	- Instructions for typing with the shift keys (in the introduction).
+	- Explanation about the blank lessons after 43, in basic module.
+	- Possible to reset progress log of each module individually, as well
+	  as character error charts or touch times charts in adaptability.
+
+
+2019-02-10  Felipe Castro (-) <fefcas@gmail.com>;
 
 	* Release 3.04
 	* Fixed:

@@ -320,7 +320,7 @@ top10_get_score_file (gboolean locally, gint lang)
 	return (ksc);
 }
 
-static void
+static gboolean
 top10_merge_stats_from_file (gchar * file)
 {
 	gint i, j;
@@ -330,7 +330,8 @@ top10_merge_stats_from_file (gchar * file)
 
 	fh = g_fopen (file, "r");
 	if (fh == NULL)
-		return;
+		return FALSE;
+	g_message ("1: %s", file);
 
 	for (i = 0; i < 10; i++)
 	{
@@ -428,6 +429,7 @@ top10_merge_stats_from_file (gchar * file)
 		top10_compare_insert_stat (&top10, TRUE);
 	}
 	fclose (fh);
+	return TRUE;
 }
 
 gboolean
@@ -607,11 +609,7 @@ top10_read_stats (gboolean locally, gint lang)
 				continue;
 
 			tmp = g_build_filename ("/home", uname, stat_dir, "ksc", local_ksc, NULL);
-			if (g_file_test (tmp, G_FILE_TEST_IS_REGULAR))
-			{
-				top10_merge_stats_from_file (tmp);
-				success = TRUE;
-			}
+			success = success ? TRUE : top10_merge_stats_from_file (tmp);
 			g_free (tmp);
 		}
 		g_dir_close (home);
