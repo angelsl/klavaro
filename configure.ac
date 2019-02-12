@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([klavaro],[3.05-pre1],[fefcas@gmail.com])
+AC_INIT([klavaro],[3.05-pre2],[fefcas@gmail.com])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([-Wall])
@@ -21,9 +21,9 @@ dnl For Windows, comment out this one (then do an "autoreconf"):
 IT_PROG_INTLTOOL
 
 AC_HEADER_STDC
-AC_CHECK_HEADERS([locale.h stdlib.h string.h unistd.h curl/curl.h])
+AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h])
 dnl When GtkDataBox-GTK3 is available, check for it also:
-dnl AC_CHECK_HEADERS([locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
+dnl AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
 
 m4_define([gtk_required_version], [3.8.0])
 m4_define([pango_required_version], [1.16.0])

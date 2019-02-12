@@ -1143,7 +1143,7 @@ keyb_intro_step (gint step)
 	"After memorizing this relationship, you can relax the previous rule some, "
 	"so that you can attain greater speed while typing."));
 		intro10 = g_strdup (_(
-	"The shift keys are used for capital letters and for some symbols ."
+	"The shift keys are used for capital letters and for some symbols. "
 	"To get a shifted key input you should first use the small finger of the opposite hand. "
 	"Just keep it in the closest Shift while reaching the target key with the other hand."));
 		intro11 = g_strdup (_(
