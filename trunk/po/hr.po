@@ -2,29 +2,24 @@
 # Copyright (C) 2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the klavaro package.
 #
-# Božidar Putanec <bozidarp@yahoo.com>, 2015, 2016.
+# Božidar Putanec <bozidarp@yahoo.com>, 2015, 2016, 2019.
 # Lektura djelova klavara i jezično savjetovanje www.editor.hr, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: klavaro 3.01-pre1\n"
+"Project-Id-Version: klavaro 3.05-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-11 21:17+0100\n"
-"PO-Revision-Date: 2016-03-16 10:47-0700\n"
+"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"PO-Revision-Date: 2019-02-12 17:22-0800\n"
 "Last-Translator: Božidar Putanec <bozidarp@yahoo.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ../../Downloads/klavaro-3.01-pre1\n"
-"X-Poedit-Bookmarks: 39,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
-"X-Poedit-SearchPath-0: src\n"
-"X-Poedit-SearchPath-1: src\n"
-"X-Poedit-SearchPath-2: data\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../data/klavaro.glade.h:1
 msgid "Klavaro - Progress"
@@ -39,9 +34,8 @@ msgid "Value"
 msgstr "Vrijednost"
 
 #: ../data/klavaro.glade.h:4
-#, fuzzy
 msgid "Clear progress data."
-msgstr "Brisanje podataka napretka"
+msgstr "Izbrišite podatke o napretku."
 
 #: ../data/klavaro.glade.h:5
 msgid "_Reset"
@@ -49,7 +43,7 @@ msgstr "_Izbriši sve"
 
 #: ../data/klavaro.glade.h:6
 msgid "Close this window, returning to the exercise."
-msgstr "Zatvorite ovaj prozor da nastavite s lekcijom."
+msgstr "Zatvarate ovaj prozor da nastavite s lekcijom."
 
 #: ../data/klavaro.glade.h:7
 msgid "_Close"
@@ -58,13 +52,12 @@ msgstr "_Zatvori"
 #. Everything means ALL the progress charts statistics.
 #: ../data/klavaro.glade.h:9
 msgid "everything!"
-msgstr ""
+msgstr "sve!"
 
 #. Confirmation check-button for removing data.
 #: ../data/klavaro.glade.h:11
-#, fuzzy
 msgid "Clear data for every module, if checked!"
-msgstr "Brisanje svih podataka o napretku za sve tečajeve."
+msgstr "Izbrišite podatke svakog tečaja koji ste odabrali"
 
 #: ../data/klavaro.glade.h:12
 msgid "Load other exercises/lessons"
@@ -136,7 +129,7 @@ msgstr "_Napredak"
 
 #: ../data/klavaro.glade.h:28
 msgid "Exit the application immediately."
-msgstr "Zatvaranje! Izlaz iz programa!"
+msgstr "Zatvarate prozor i izlazite iz programa."
 
 #: ../data/klavaro.glade.h:29
 msgid "Return to the main menu."
@@ -180,7 +173,7 @@ msgstr "Klavaro - Izaberite datoteku"
 
 #: ../data/klavaro.glade.h:39
 msgid "_Cancel"
-msgstr "Od_ustani"
+msgstr "Od_ustajem"
 
 #: ../data/klavaro.glade.h:40
 msgid "_Open"
@@ -199,7 +192,7 @@ msgid ""
 "Read a text file and add a copy of it here. The file must be encoded in "
 "UTF-8."
 msgstr ""
-"Učitajte datoteku (koja mora biti UTF-8 kodiran tekst) i ovdje ostavite "
+"Učitajte datoteku (koja mora biti tekst kodiran u UTF-8) i ovdje ostavite "
 "njenu kopiju."
 
 #: ../data/klavaro.glade.h:44
@@ -232,7 +225,7 @@ msgstr "_Primjeni"
 
 #: ../data/klavaro.glade.h:51
 msgid "Close this window."
-msgstr "Zatvorite ovaj prozor."
+msgstr "Zatvarate ovaj prozor."
 
 #: ../data/klavaro.glade.h:52
 msgid "Country / Custom"
@@ -269,7 +262,7 @@ msgstr "palci"
 
 #: ../data/klavaro.glade.h:59
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: ../data/klavaro.glade.h:60
 msgid "Ctrl"
@@ -409,7 +402,7 @@ msgstr "Općenite informacije o programu Klavaro."
 
 #: ../data/klavaro.glade.h:92
 msgid "_About..."
-msgstr "_O Klavaru..."
+msgstr "_O programu..."
 
 #: ../data/klavaro.glade.h:93
 msgid "About 'Klavaro'"
@@ -425,7 +418,7 @@ msgstr "Zapamtite, uvijek ima netko tko vas voli!"
 
 #: ../data/klavaro.glade.h:96
 msgid "Help?"
-msgstr "Pomoć"
+msgstr "Pomoć?"
 
 #: ../data/klavaro.glade.h:97
 msgid "This is a tip. Now you press this button to return to the main menu."
@@ -490,9 +483,8 @@ msgid "_Update"
 msgstr "_Ažuriraj"
 
 #: ../data/klavaro.desktop.in.h:1
-#, fuzzy
 msgid "Klavaro"
-msgstr "O Klavaru..."
+msgstr "Klavaro"
 
 #: ../data/klavaro.desktop.in.h:3
 msgid "A very flexible and efficient touch typing tutor."
@@ -572,19 +564,18 @@ msgid "Reset progress data"
 msgstr "Brisanje podataka napretka"
 
 #: ../src/callbacks.c:1136
-#, fuzzy
 msgid "This will DELETE all the progress data of all modules."
-msgstr "Ovo će IZBRISATI sve podatke u svim grafikonima."
+msgstr "Time će se IZBRISATI svi podatci o napretku za sve tečajeve."
 
 #: ../src/callbacks.c:1148
-#, fuzzy, c-format
+#, c-format
 msgid "This will delete the data of this chart. <%s>"
-msgstr "Ovo će IZBRISATI sve podatke u svim grafikonima."
+msgstr "Time će se IZBRISATI podaci za ovaj grafikon. <%s>"
 
 #: ../src/callbacks.c:1151
-#, fuzzy, c-format
+#, c-format
 msgid "This will delete the progress data of the module. (%s)"
-msgstr "Brisanje svih podataka o napretku za sve tečajeve."
+msgstr "Time će se izbrisati podatci o napretku za sve tečajeve. (%s)"
 
 #: ../src/callbacks.c:1351 ../src/top10.c:88
 msgid "Accuracy"
@@ -832,6 +823,9 @@ msgid ""
 "hand. Just keep it in the closest Shift while reaching the target key with "
 "the other hand."
 msgstr ""
+"Tipke Shift rabe se za pisanje velikih slova i neke simbole. Prvo trebate "
+"malim prstom suprotne ruke pritisnuti Shift, a određenim prstom druge ruke "
+"pritisnuti slovo ili simbol koji želite upisati."
 
 #: ../src/keyboard.c:1150
 msgid ""
@@ -1080,6 +1074,9 @@ msgid ""
 "to generate a personal practice. Press the editting button in the upper-"
 "right corner."
 msgstr ""
+"Ova, prilagođena lekcija, je prazna. Ovdje možete definirati dva ili više "
+"znaka da napravite lekciju za vašu osobnu upotrebu. Pritisnite gumb za "
+"uređivanje u gornjem desnom kutu."
 
 #: ../src/basic.c:356
 msgid "Positions of keys seems to be learned!"
