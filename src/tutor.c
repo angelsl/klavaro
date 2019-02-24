@@ -1375,7 +1375,7 @@ tutor_calc_stats ()
 /**********************************************************************
  * Ensure the user is not trying to type with weird texts in the fluidness contest
  */
-#define DECEIVENESS_LIMIT 0.195
+#define DECEIVENESS_LIMIT 0.205
 gboolean
 tutor_char_distribution_approved ()
 {
