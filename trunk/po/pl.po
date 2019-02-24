@@ -2,22 +2,22 @@
 # Copyright (C) 2009 The Free Software Foundation Inc.
 # This file is distributed under the same license as the klavaro package.
 # Robert Stefaniuk <_kacprey_@gazeta.pl>, 2006 - 2007, 2011.
-# Tomasz Wojtyś <tsr84@o2.pl>, 2011, 2014.
+# Tomasz Wojtyś <klavaro@nela.pw>, 2011, 2014, 2019.
 # Łukasz Wieczorek <wieczorek1990@gmail.com>, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: klavaro-3.01-pre1\n"
+"Project-Id-Version: klavaro-3.05-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
-"PO-Revision-Date: 2014-11-19 22:12+0100\n"
+"POT-Creation-Date: 2019-02-11 21:17+0100\n"
+"PO-Revision-Date: 2019-02-15 22:12+0100\n"
 "Last-Translator: Tomasz Wojtyś <tsr84@o2.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.5.4\n"
 
 #: ../data/klavaro.glade.h:1
@@ -33,9 +33,8 @@ msgid "Value"
 msgstr "Wartość"
 
 #: ../data/klavaro.glade.h:4
-#, fuzzy
 msgid "Clear progress data."
-msgstr "Zresetuj dane postępów"
+msgstr "Usuń informacje o postępie."
 
 #: ../data/klavaro.glade.h:5
 msgid "_Reset"
@@ -52,13 +51,12 @@ msgstr "_Zamknij"
 #. Everything means ALL the progress charts statistics.
 #: ../data/klavaro.glade.h:9
 msgid "everything!"
-msgstr ""
+msgstr "wszystko!"
 
 #. Confirmation check-button for removing data.
 #: ../data/klavaro.glade.h:11
-#, fuzzy
 msgid "Clear data for every module, if checked!"
-msgstr "Wyczyść informacje o postępach, w każdym module."
+msgstr "Usuń informacje o postępach w każdym zaznaczonym module."
 
 #: ../data/klavaro.glade.h:12
 msgid "Load other exercises/lessons"
@@ -77,11 +75,8 @@ msgid "This is a specific exercise, adjusted to your error profile."
 msgstr "To jest zadanie specjalne, dostosowane do twojego profilu błędów."
 
 #: ../data/klavaro.glade.h:16
-msgid ""
-"Edit the character set to be used in lessons after 43: they are customizable!"
-msgstr ""
-"Zmień zestaw znaków używany w lekcjach następujących po 43: one są "
-"konfigurowalne!"
+msgid "Edit the character set to be used in lessons after 43: they are customizable!"
+msgstr "Zmień zestaw znaków używanych po 43 lekcji: one są konfigurowalne!"
 
 #: ../data/klavaro.glade.h:17 ../src/tutor.c:379
 msgid "Drag and drop text here to practice with it."
@@ -105,7 +100,7 @@ msgstr "Wybierz font używany w oknie ćwiczeń."
 
 #: ../data/klavaro.glade.h:22
 msgid "Font definition"
-msgstr "Definicja fontu"
+msgstr "Wybierz krój pisma"
 
 #: ../data/klavaro.glade.h:23
 msgid "Keep this checked if you want to get those nice beeps."
@@ -117,7 +112,7 @@ msgstr "_Dźwięk"
 
 #: ../data/klavaro.glade.h:25
 msgid "Co_urse information"
-msgstr "Informacja o _kursie"
+msgstr "Informacja o k_ursie"
 
 #: ../data/klavaro.glade.h:26
 msgid "Charts showing the learning progress along the exercises."
@@ -145,7 +140,7 @@ msgstr "Pokazuj lokalne i zewnętrzne wyniki innych użytkowników."
 
 #: ../data/klavaro.glade.h:32
 msgid "_Top 10"
-msgstr "_Najlepsza 10"
+msgstr "_Najlepsza 10."
 
 #: ../data/klavaro.glade.h:33
 msgid "Change language"
@@ -190,12 +185,8 @@ msgid "Rename the selected item."
 msgstr "Zmień nazwę zaznaczonego elementu."
 
 #: ../data/klavaro.glade.h:43
-msgid ""
-"Read a text file and add a copy of it here. The file must be encoded in "
-"UTF-8."
-msgstr ""
-"Wczytuje plik tekstowy i dodaje tutaj jego kopię. Plik musi być kodowany w "
-"UTF-8."
+msgid "Read a text file and add a copy of it here. The file must be encoded in UTF-8."
+msgstr "Wczytuje plik tekstowy i dodaje tutaj jego kopię. Plik musi być kodowany w UTF-8."
 
 #: ../data/klavaro.glade.h:44
 msgid "_Open text file"
@@ -248,12 +239,8 @@ msgstr "_Usuń"
 
 # "toggle", "alternate" - "przełączanie"
 #: ../data/klavaro.glade.h:56
-msgid ""
-"Toggles the shift effect on the keys. Alternates between the upper and lower "
-"characters of the keys."
-msgstr ""
-"Odpowiednik wciśniętego shift. Przełącza pomiędzy górnymi i dolnymi znakami "
-"klawiszy."
+msgid "Toggles the shift effect on the keys. Alternates between the upper and lower characters of the keys."
+msgstr "Odpowiednik wciśniętego shift. Przełącza pomiędzy górnymi i dolnymi znakami klawiszy."
 
 #: ../data/klavaro.glade.h:57
 msgid "SPACE BAR"
@@ -265,7 +252,7 @@ msgstr "kciuki"
 
 #: ../data/klavaro.glade.h:59
 msgid "Tab"
-msgstr ""
+msgstr "Tab"
 
 #: ../data/klavaro.glade.h:60
 msgid "Ctrl"
@@ -277,7 +264,7 @@ msgstr "Caps"
 
 #: ../data/klavaro.glade.h:62
 msgid "S_ave as:"
-msgstr "_Zapisz jako:"
+msgstr "Z_apisz jako:"
 
 #: ../data/klavaro.glade.h:63
 msgid "Show previous screen."
@@ -308,12 +295,8 @@ msgid "_Save and use"
 msgstr "_Zapisz i użyj"
 
 #: ../data/klavaro.glade.h:70
-msgid ""
-"If you like those beautiful hands, click here to close this window keeping "
-"them."
-msgstr ""
-"Jeśli chcesz oglądać te piękne ręce, kliknij tutaj by zamknąć okno "
-"zachowując je."
+msgid "If you like those beautiful hands, click here to close this window keeping them."
+msgstr "Jeśli chcesz oglądać te piękne ręce, kliknij tutaj by zamknąć okno zachowując je."
 
 # Coders: Maybee change "keep" to "show"?
 #: ../data/klavaro.glade.h:71
@@ -374,12 +357,8 @@ msgid "Your language here."
 msgstr "Twój język."
 
 #: ../data/klavaro.glade.h:85
-msgid ""
-"Keyboard layout for modules 1 and 2. Also used informatively in the "
-"fluidness contest."
-msgstr ""
-"Układ klawiatury dla modułów 1 i 2. Używany również informacyjnie w "
-"konkursie płynności."
+msgid "Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest."
+msgstr "Układ klawiatury dla modułów 1 i 2. Używany również informacyjnie w konkursie płynności."
 
 #: ../data/klavaro.glade.h:86
 msgid "_Keyboard:"
@@ -387,7 +366,7 @@ msgstr "_Klawiatura:"
 
 #: ../data/klavaro.glade.h:87
 msgid "Language for modules 3 and 4."
-msgstr "Język dla modułów 3 i 4"
+msgstr "Język modułów 3 i 4"
 
 #: ../data/klavaro.glade.h:88
 msgid "_Language:"
@@ -411,7 +390,7 @@ msgstr "_O programie..."
 
 #: ../data/klavaro.glade.h:93
 msgid "About 'Klavaro'"
-msgstr "O 'Klavaro'"
+msgstr "O „Klavaro”"
 
 #: ../data/klavaro.glade.h:94 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
@@ -427,34 +406,19 @@ msgstr "Pomóc?"
 
 #: ../data/klavaro.glade.h:97
 msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr ""
-"To jest wskazówka. Teraz naciśnij przycisk by powrócić do menu głównego."
+msgstr "To jest wskazówka. Teraz naciśnij przycisk by powrócić do menu głównego."
 
 #: ../data/klavaro.glade.h:98
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Główne menu aplikacji jest bardzo proste. Wystarczy wybrać rodzaj ćwiczeń, "
-"które chcesz wykonywać. Nie bój się klikać w przyciski na ekranie.One nie "
-"zrobią ci krzywdy!"
+msgid "The main menu of the application is very straightforward. Just select the type of exercise you wish to take. Do not worry about clicking any button on the screen. The buttons will never hurt you!"
+msgstr "Główne menu aplikacji jest bardzo proste. Wystarczy wybrać rodzaj ćwiczeń, które chcesz wykonywać. Nie bój się klikać w przyciski na ekranie.One nie zrobią ci krzywdy!"
 
 #: ../data/klavaro.glade.h:99
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Wszystkie elementy posiadają swoje wskazówki, które pojawią się jeżeli "
-"najedziesz na nie kursorem. Wskazówki te mogą się okazać użyteczne. Aby "
-"zobaczyć jak działają, ustaw kursor myszy nad przyciskiem poniżej, i bez "
-"klikania, poczekaj na pojawienie się wskazówki..."
+msgid "Also the controls have tips which will appear if you hover over them with your mouse. These tips can come in very handy. To see how these tips work, position your mouse over the button below, and without clicking, wait for the tip to appear..."
+msgstr "Wszystkie elementy posiadają swoje wskazówki, które pojawią się jeżeli najedziesz na nie kursorem. Wskazówki te mogą się okazać użyteczne. Aby zobaczyć jak działają, ustaw kursor myszy nad przyciskiem poniżej, i bez klikania, poczekaj na pojawienie się wskazówki..."
 
 #: ../data/klavaro.glade.h:100
 msgid "Top 10"
-msgstr "Najlepsza 10"
+msgstr "Najlepsza 10."
 
 #: ../data/klavaro.glade.h:101
 msgid "Show extra information."
@@ -558,22 +522,25 @@ msgstr "To USUNIE istniejący układ klawiszy."
 
 #: ../src/callbacks.c:1135 ../src/callbacks.c:1140
 msgid "Reset progress data"
-msgstr "Zresetuj dane postępów"
+msgstr "Usuń informacje o postępach"
 
 #: ../src/callbacks.c:1136
 #, fuzzy
+#| msgid "This will DELETE all the progress data shown in the charts."
 msgid "This will DELETE all the progress data of all modules."
 msgstr "To USUNIE wszystkie informacje o postępach pokazywane na wykresach."
 
 #: ../src/callbacks.c:1148
 #, fuzzy, c-format
+#| msgid "This will DELETE all the progress data shown in the charts."
 msgid "This will delete the data of this chart. <%s>"
 msgstr "To USUNIE wszystkie informacje o postępach pokazywane na wykresach."
 
 #: ../src/callbacks.c:1151
 #, fuzzy, c-format
+#| msgid "Clear all the progress data, for every module."
 msgid "This will delete the progress data of the module. (%s)"
-msgstr "Wyczyść informacje o postępach, w każdym module."
+msgstr "Usuń informacje o postępach, w każdym module. (%s)"
 
 #: ../src/callbacks.c:1351 ../src/top10.c:88
 msgid "Accuracy"
@@ -601,163 +568,69 @@ msgid "en"
 msgstr "pl"
 
 #: ../src/translation.c:595
-msgid ""
-"The basic course focuses on having you read the characters presented to you "
-"on screen and typing the corresponding keys. Remember to keep your hands "
-"correctly oriented on the home row of the keyboard at all times (see "
-"introduction on main menu)."
-msgstr ""
-"Kurs podstawowy skupia się wpisywaniu odczytanych z ekranu znaków. Pamiętaj "
-"by utrzymywać poprawnie ułożone dłonie na wierszu podstawowym klawiatury  "
-"(zobacz wstęp w menu głównym)."
+msgid "The basic course focuses on having you read the characters presented to you on screen and typing the corresponding keys. Remember to keep your hands correctly oriented on the home row of the keyboard at all times (see introduction on main menu)."
+msgstr "Kurs podstawowy skupia się wpisywaniu odczytanych z ekranu znaków. Pamiętaj by utrzymywać poprawnie ułożone dłonie na wierszu podstawowym klawiatury  (zobacz wstęp w menu głównym)."
 
 #: ../src/translation.c:599
-msgid ""
-"The key set used in each series will be shown in the above message line. The "
-"[Space], [Shift] and [Enter] keys may not show up there but are used very "
-"often."
-msgstr ""
-"Zestaw klawiszy używanych w każdej serii będzie pokazywany w powyższej linii "
-"wiadomości. Klawisze [Spacja], [Shift] i [Enter] mogą się tam nie pojawić, "
-"choć są używane bardzo często."
+msgid "The key set used in each series will be shown in the above message line. The [Space], [Shift] and [Enter] keys may not show up there but are used very often."
+msgstr "Zestaw klawiszy używanych w każdej serii będzie pokazywany w powyższej linii wiadomości. Klawisze [Spacja], [Shift] i [Enter] mogą się tam nie pojawić, choć są używane bardzo często."
 
 #: ../src/translation.c:602
-msgid ""
-"The message line below follows and echoes your key presses. If required, it "
-"changes and displays instructions for actions required from you."
-msgstr ""
-"Linia wiadomości poniżej śledzi i wypisuje twoje naciśnięcia klawiszy. "
-"Zależnie od kontekstu wyświetla również instrukcje postępowania."
+msgid "The message line below follows and echoes your key presses. If required, it changes and displays instructions for actions required from you."
+msgstr "Linia wiadomości poniżej śledzi i wypisuje twoje naciśnięcia klawiszy. Zależnie od kontekstu wyświetla również instrukcje postępowania."
 
 #: ../src/translation.c:606
-msgid ""
-"Here you may practice and improve your memorization of all keys. There will "
-"be sentences presented with nonsense words which mix some numbers and "
-"symbols."
-msgstr ""
-"Tutaj możesz ćwiczyć i udoskonalić swoją wiedzę o wszystkich klawiszach. "
-"Zobaczysz zdania ułożone z bezsensownych słów, z wtrąconymi cyframi i "
-"symbolami."
+msgid "Here you may practice and improve your memorization of all keys. There will be sentences presented with nonsense words which mix some numbers and symbols."
+msgstr "Tutaj możesz ćwiczyć i udoskonalić swoją wiedzę o wszystkich klawiszach. Zobaczysz zdania ułożone z bezsensownych słów, z wtrąconymi cyframi i symbolami."
 
 #: ../src/translation.c:609
-msgid ""
-"In order to keep the lesson contents language and keyboard independent, "
-"accented letter combinations will probably not appear. For real word "
-"sentences, please use the fourth option of the main menu (about fluidness)."
-msgstr ""
-"W celu zapewnienia niezależności ćwiczenia od języka i układu klawiszy, "
-"kombinacje liter akcentowanych prawdopodobnie się nie pojawią. Aby poćwiczyć "
-"wpisywanie prawdziwych słów, użyj czwartej opcji menu głównego (płynność)."
+msgid "In order to keep the lesson contents language and keyboard independent, accented letter combinations will probably not appear. For real word sentences, please use the fourth option of the main menu (about fluidness)."
+msgstr "W celu zapewnienia niezależności ćwiczenia od języka i układu klawiszy, kombinacje liter akcentowanych prawdopodobnie się nie pojawią. Aby poćwiczyć wpisywanie prawdziwych słów, użyj czwartej opcji menu głównego (płynność)."
 
 # Coders: Remove panel
 #: ../src/translation.c:613
-msgid ""
-"After each exercise there will be a brief statistics panel reviewing your "
-"performance along with some relevant comments."
-msgstr ""
-"Po każdym ćwiczeniu pokazane zostaną krótkie statystyki kontrolujące twoje "
-"wyniki razem z pewnymi istotnymi uwagami."
+msgid "After each exercise there will be a brief statistics panel reviewing your performance along with some relevant comments."
+msgstr "Po każdym ćwiczeniu pokazane zostaną krótkie statystyki kontrolujące twoje wyniki razem z pewnymi istotnymi uwagami."
 
 #: ../src/translation.c:617
-msgid ""
-"This exercise is very similar to the second one, for adaptability. The "
-"difference is that here you'll type real words."
-msgstr ""
-"To ćwiczenie jest bardzo podobne do drugiego, czyli adaptacji. Różnica "
-"polega na tym, że będziesz wpisywał prawdziwe słowa."
+msgid "This exercise is very similar to the second one, for adaptability. The difference is that here you'll type real words."
+msgstr "To ćwiczenie jest bardzo podobne do drugiego, czyli adaptacji. Różnica polega na tym, że będziesz wpisywał prawdziwe słowa."
 
 #: ../src/translation.c:620
-msgid ""
-"The default language is the actual one of the interface. But you may select "
-"any other texts with words you would like to use. Press the 'Other' option "
-"above and add files containing those texts."
-msgstr ""
-"Domyślnym językiem jest aktualny język interfejsu, ale możesz wybrać inne "
-"teksty ze słowami, których chciałbyś używać. Wciśnij przycisk 'Inne' powyżej "
-"i dodaj pliki zawierające te teksty."
+msgid "The default language is the actual one of the interface. But you may select any other texts with words you would like to use. Press the 'Other' option above and add files containing those texts."
+msgstr "Domyślnym językiem jest aktualny język interfejsu, ale możesz wybrać inne teksty ze słowami, których chciałbyś używać. Wciśnij przycisk 'Inne' powyżej i dodaj pliki zawierające te teksty."
 
 #: ../src/translation.c:624
-msgid ""
-"With this exercise the focus is on speed. So, you are supposed to type "
-"really fast and I will only flatter you when you deserve it!"
-msgstr ""
-"W tym ćwiczeniu nacisk kładziony jest na twoją szybkość. Dlatego powinieneś "
-"pisać naprawdę szybko. Zostaniesz pochwalony tylko, gdy na to zasłużysz!"
+msgid "With this exercise the focus is on speed. So, you are supposed to type really fast and I will only flatter you when you deserve it!"
+msgstr "W tym ćwiczeniu nacisk kładziony jest na twoją szybkość. Dlatego powinieneś pisać naprawdę szybko. Zostaniesz pochwalony tylko, gdy na to zasłużysz!"
 
 #: ../src/translation.c:628
-msgid ""
-"We will now use complete sentences and paragraphs which make logical sense. "
-"This may distract you while you type if you try to understand what you are "
-"entering. The previous exercises were aimed at getting you to type without "
-"interpreting and analyzing the content."
-msgstr ""
-"Teraz użyjemy pełnych zdań i akapitów posiadających logiczny sens. Może cię "
-"to rozpraszać jeśli podczas pisania spróbujesz zrozumieć co wprowadzasz. "
-"Poprzednie ćwiczenia były skierowanie na pisanie bez interpretacji i analizy "
-"treści."
+msgid "We will now use complete sentences and paragraphs which make logical sense. This may distract you while you type if you try to understand what you are entering. The previous exercises were aimed at getting you to type without interpreting and analyzing the content."
+msgstr "Teraz użyjemy pełnych zdań i akapitów posiadających logiczny sens. Może cię to rozpraszać jeśli podczas pisania spróbujesz zrozumieć co wprowadzasz. Poprzednie ćwiczenia były skierowanie na pisanie bez interpretacji i analizy treści."
 
 #: ../src/translation.c:632
-msgid ""
-"We do not mean to imply that the typists must behave like a robot, without "
-"understanding what they type. We do aim to develop the skill of typing, "
-"making it an automatic reflex akin to the acts of walking, talking, etc. "
-"After reaching this goal, the act of typing will become automatic and "
-"require little concentration. Then you will be able to pay attention to the "
-"real meaning of the text."
-msgstr ""
-"Nie chcemy sugerować, że piszący musi zachowywać się jak robot, bez "
-"rozumienia co pisze. Chodzi o rozwinięcie techniki pisania, wytworzenie "
-"naturalnych odruchów, jak przy chodzeniu, rozmawianiu itp. Po osiągnięciu "
-"tego celu, pisanie stanie się automatyczne i nie będzie wymagało specjalnego "
-"wysiłku. Będziesz wtedy zdolny zwracać uwagę na prawdziwe znaczenie tekstu."
+msgid "We do not mean to imply that the typists must behave like a robot, without understanding what they type. We do aim to develop the skill of typing, making it an automatic reflex akin to the acts of walking, talking, etc. After reaching this goal, the act of typing will become automatic and require little concentration. Then you will be able to pay attention to the real meaning of the text."
+msgstr "Nie chcemy sugerować, że piszący musi zachowywać się jak robot, bez rozumienia co pisze. Chodzi o rozwinięcie techniki pisania, wytworzenie naturalnych odruchów, jak przy chodzeniu, rozmawianiu itp. Po osiągnięciu tego celu, pisanie stanie się automatyczne i nie będzie wymagało specjalnego wysiłku. Będziesz wtedy zdolny zwracać uwagę na prawdziwe znaczenie tekstu."
 
 #: ../src/translation.c:636
-msgid ""
-"These exercises are longer. Each exercise consists of three paragraphs and "
-"the emphasis is placed on correctness and rhythm, with a minimum speed "
-"requirement. Here you will be required to use the backspace key to correct "
-"any mistakes. In other words, only input without error will be accepted."
-msgstr ""
-"Te ćwiczenia są dłuższe. Każde składa się z trzech akapitów, a uwaga "
-"poświęcana jest poprawności i rytmowi, z minimalnym wymogiem szybkości. "
-"Należy tutaj używać klawisza backspace do poprawiania wszelkich błędów. "
-"Innymi słowy, jedynie bezbłędnie napisany tekst zostanie zaakceptowany."
+msgid "These exercises are longer. Each exercise consists of three paragraphs and the emphasis is placed on correctness and rhythm, with a minimum speed requirement. Here you will be required to use the backspace key to correct any mistakes. In other words, only input without error will be accepted."
+msgstr "Te ćwiczenia są dłuższe. Każde składa się z trzech akapitów, a uwaga poświęcana jest poprawności i rytmowi, z minimalnym wymogiem szybkości. Należy tutaj używać klawisza backspace do poprawiania wszelkich błędów. Innymi słowy, jedynie bezbłędnie napisany tekst zostanie zaakceptowany."
 
 #: ../src/keyboard.c:1115
-msgid ""
-"Correct positioning of the hands and fingers is very important to efficient "
-"typing. You will learn faster and type better if you follow the next "
-"recommendations."
-msgstr ""
-"Prawidłowe ułożenie dłoni i palców jest bardzo ważne do efektywnego pisania "
-"na klawiaturze. Nauczysz się szybciej i będziesz lepiej pisał jeżeli "
-"postąpisz według następnych zaleceń."
+msgid "Correct positioning of the hands and fingers is very important to efficient typing. You will learn faster and type better if you follow the next recommendations."
+msgstr "Prawidłowe ułożenie dłoni i palców jest bardzo ważne do efektywnego pisania na klawiaturze. Nauczysz się szybciej i będziesz lepiej pisał jeżeli postąpisz według następnych zaleceń."
 
 #: ../src/keyboard.c:1118
-msgid ""
-"The index-finger tips rest over each of the two keys which have a small "
-"raised mark, in the center of the keyboard."
-msgstr ""
-"Koniuszki palców wskazujących spoczywają nad dwoma klawiszami, które mają na "
-"sobie małe wypustki, na środku klawiatury."
+msgid "The index-finger tips rest over each of the two keys which have a small raised mark, in the center of the keyboard."
+msgstr "Koniuszki palców wskazujących spoczywają nad dwoma klawiszami, które mają na sobie małe wypustki, na środku klawiatury."
 
 #: ../src/keyboard.c:1121
-msgid ""
-"These marks function as 'tactile hooks' for your fingers to remain at the "
-"correct position. This way, with a little experience, you will not need to "
-"look at the keyboard to see if your fingers are properly positioned."
-msgstr ""
-"Te wypustki funkcjonują jako 'dotykowe haczyki' by twoje palce pozostały w "
-"prawidłowej pozycji. W ten sposób, nie będziesz musiał spoglądać na "
-"klawiaturę by zobaczyć czy twoje palce są poprawnie ułożone."
+msgid "These marks function as 'tactile hooks' for your fingers to remain at the correct position. This way, with a little experience, you will not need to look at the keyboard to see if your fingers are properly positioned."
+msgstr "Te wypustki funkcjonują jako 'dotykowe haczyki' by twoje palce pozostały w prawidłowej pozycji. W ten sposób, nie będziesz musiał spoglądać na klawiaturę by zobaczyć czy twoje palce są poprawnie ułożone."
 
 #: ../src/keyboard.c:1125
-msgid ""
-"The tips of the other fingers lie naturally beside the index ones, over the "
-"keys on the same row of the keyboard."
-msgstr ""
-"Koniuszki pozostałych palców leżą naturalnie obok palców wskazujących na "
-"klawiszach z tego samego rzędu klawiatury."
+msgid "The tips of the other fingers lie naturally beside the index ones, over the keys on the same row of the keyboard."
+msgstr "Koniuszki pozostałych palców leżą naturalnie obok palców wskazujących na klawiszach z tego samego rzędu klawiatury."
 
 # Coders: Change "edges"
 #: ../src/keyboard.c:1128
@@ -765,63 +638,28 @@ msgid "The outside edges of your thumbs rest over the space bar."
 msgstr "Zewnętrzne krawędzie twoich kciuków spoczywają na spacji."
 
 #: ../src/keyboard.c:1130
-msgid ""
-"The part of the hands closest to the wrist (the base) rest over the table, "
-"outside the keyboard. Without this kind of support the arms would quickly "
-"tire."
-msgstr ""
-"Części dłoni najbliżej nadgarstka (baza) opierają się na stole, poza "
-"klawiaturą. Bez takiego podparcia ręce bardzo szybko by się zmęczyły."
+msgid "The part of the hands closest to the wrist (the base) rest over the table, outside the keyboard. Without this kind of support the arms would quickly tire."
+msgstr "Części dłoni najbliżej nadgarstka (baza) opierają się na stole, poza klawiaturą. Bez takiego podparcia ręce bardzo szybko by się zmęczyły."
 
 #: ../src/keyboard.c:1133
-msgid ""
-"This is referred to as the home position for the hands. From it the fingers "
-"move all over the keyboard, reaching all the keys as naturally and quickly "
-"as possible. To reach this goal one uses a specific relation between each "
-"key and finger. This relation will be learned gradually as you complete the "
-"basic course."
-msgstr ""
-"To jest pozycja podstawowa dłoni. Od niej palce przesuwają się po całej "
-"klawiaturze, sięgając wszystkich klawiszy tak naturalnie i szybko jak to "
-"tylko możliwe. Aby osiągnąć ten cel, każdy klawisz przypisany jest "
-"konkretnemu palcowi, którym może być wciskany. Nauczysz się tych powiązań "
-"stopniowo, podczas kursu podstawowego."
+msgid "This is referred to as the home position for the hands. From it the fingers move all over the keyboard, reaching all the keys as naturally and quickly as possible. To reach this goal one uses a specific relation between each key and finger. This relation will be learned gradually as you complete the basic course."
+msgstr "To jest pozycja podstawowa dłoni. Od niej palce przesuwają się po całej klawiaturze, sięgając wszystkich klawiszy tak naturalnie i szybko jak to tylko możliwe. Aby osiągnąć ten cel, każdy klawisz przypisany jest konkretnemu palcowi, którym może być wciskany. Nauczysz się tych powiązań stopniowo, podczas kursu podstawowego."
 
 #: ../src/keyboard.c:1139
-msgid ""
-"When learning the relation between fingers and keys, it is very important "
-"that you only move the finger which must press the key and allow all other "
-"fingers to remain in the home position."
-msgstr ""
-"Podczas nauki powiązań pomiędzy palcami i klawiszami ważne jest poruszanie "
-"tylko tym palcem, którym musisz nacisnąć klawisz i pozwolenie innym palcom "
-"pozostać w pozycji początkowej."
+msgid "When learning the relation between fingers and keys, it is very important that you only move the finger which must press the key and allow all other fingers to remain in the home position."
+msgstr "Podczas nauki powiązań pomiędzy palcami i klawiszami ważne jest poruszanie tylko tym palcem, którym musisz nacisnąć klawisz i pozwolenie innym palcom pozostać w pozycji początkowej."
 
 #: ../src/keyboard.c:1143
-msgid ""
-"After memorizing this relationship, you can relax the previous rule some, so "
-"that you can attain greater speed while typing."
-msgstr ""
-"Po zapamiętaniu powiązań, możesz stosować powyższą zasadę mniej ściśle, aby "
-"osiągnąć większą szybkość pisania."
+msgid "After memorizing this relationship, you can relax the previous rule some, so that you can attain greater speed while typing."
+msgstr "Po zapamiętaniu powiązań, możesz stosować powyższą zasadę mniej ściśle, aby osiągnąć większą szybkość pisania."
 
 #: ../src/keyboard.c:1146
-msgid ""
-"The shift keys are used for capital letters and for some symbols. To get a "
-"shifted key input you should first use the small finger of the opposite "
-"hand. Just keep it in the closest Shift while reaching the target key with "
-"the other hand."
-msgstr ""
+msgid "The shift keys are used for capital letters and for some symbols. To get a shifted key input you should first use the small finger of the opposite hand. Just keep it in the closest Shift while reaching the target key with the other hand."
+msgstr "Przyciski SHIFT służą są do wprowadzania wielkich liter oraz niektórych symboli. Żeby wpisać wielką literę użyj małego palca i przytrzymaj nim SHIFT, a drugą ręką wciśnij właściwą literę."
 
 #: ../src/keyboard.c:1150
-msgid ""
-"You should be prepared to start training with the basic course. It will take "
-"effort and patience to be successful as a typist. We trust you have these "
-"and look forward to your success!"
-msgstr ""
-"Przygotuj się do rozpoczęcia kursu podstawowego. By odnosić sukcesy jako "
-"osoba pisząca na klawiaturze wymagany jest wysiłek i cierpliwość. Wierzymy w "
-"Ciebie!"
+msgid "You should be prepared to start training with the basic course. It will take effort and patience to be successful as a typist. We trust you have these and look forward to your success!"
+msgstr "Przygotuj się do rozpoczęcia kursu podstawowego. By odnosić sukcesy jako osoba pisząca na klawiaturze wymagany jest wysiłek i cierpliwość. Wierzymy w Ciebie!"
 
 #: ../src/keyboard.c:1161
 #, c-format
@@ -892,12 +730,8 @@ msgid "Klavaro - Adaptability"
 msgstr "Klavaro - Adaptacja"
 
 #: ../src/tutor.c:354
-msgid ""
-"Adaptability exercises: automating the fingers responses, typing over all "
-"the keyboard."
-msgstr ""
-"Ćwiczenia z adaptacji: automatyzowanie reakcji palców, pisanie po całej "
-"klawiaturze."
+msgid "Adaptability exercises: automating the fingers responses, typing over all the keyboard."
+msgstr "Ćwiczenia z adaptacji: automatyzowanie reakcji palców, pisanie po całej klawiaturze."
 
 #: ../src/tutor.c:359
 msgid "Klavaro - Velocity"
@@ -937,25 +771,16 @@ msgstr "Użyj backspace, by poprawić błędy."
 
 #: ../src/tutor.c:1030
 #, c-format
-msgid ""
-"ps.: logging not performed for this session: the number of typed characters "
-"(%i) must be greater than %i."
-msgstr ""
-"PS: logowanie nie zostało wykonane w tej sesji: liczba wpisanych znaków (%i) "
-"musi być większa niż %i."
+msgid "ps.: logging not performed for this session: the number of typed characters (%i) must be greater than %i."
+msgstr "PS: logowanie nie zostało wykonane w tej sesji: liczba wpisanych znaków (%i) musi być większa niż %i."
 
 #: ../src/tutor.c:1172
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "PS: jesteś na liście dziesięciu najlepszych, świetnie!"
 
 #: ../src/tutor.c:1184
-msgid ""
-"ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
-"the language currently selected: we can't account for it in the 'Top 10' "
-"contest."
-msgstr ""
-"PS: tekst, który napisałeś nie wydaje się być podobny do zwykłych tekstów w "
-"aktualnie wybranym języku: nie możemy go zaliczyć do konkursu 'Najlepsza 10'."
+msgid "ps.: the text you just typed doesn't seem to be similar to ordinary texts in the language currently selected: we can't account for it in the 'Top 10' contest."
+msgstr "PS: tekst, który napisałeś nie wydaje się być podobny do zwykłych tekstów w aktualnie wybranym języku: nie możemy go zaliczyć do konkursu 'Najlepsza 10'."
 
 #. Begin the accuracy
 #: ../src/tutor.c:1232
@@ -1039,7 +864,7 @@ msgstr "cudzysłów"
 #. Translators: ampersand symbol: &
 #: ../src/tutor.c:1846
 msgid "ampersand"
-msgstr "ampersand"
+msgstr "znak „and”"
 
 #. Error frequencies or touch times
 #.
@@ -1052,11 +877,8 @@ msgid "Date & Time"
 msgstr "Data i czas"
 
 #: ../src/basic.c:273
-msgid ""
-"This custom lesson is empty. You can define two or more different characters "
-"to generate a personal practice. Press the editting button in the upper-"
-"right corner."
-msgstr ""
+msgid "This custom lesson is empty. You can define two or more different characters to generate a personal practice. Press the editting button in the upper-right corner."
+msgstr "Ta własna lekcja jest pusta. Możesz wybrać dwa lub więcej znaków aby wygenerować ćwiczenie. Naciśniej przycisk zmiany w prawym-górnym rogu."
 
 #: ../src/basic.c:356
 msgid "Positions of keys seems to be learned!"
@@ -1103,13 +925,10 @@ msgstr ""
 #, c-format
 msgid ""
 " You are almost there, but your accuracy rate is still below %.0f%%.\n"
-" Try a few more times, or maybe you're getting upset, so go to another kind "
-"of exercise.\n"
+" Try a few more times, or maybe you're getting upset, so go to another kind of exercise.\n"
 msgstr ""
-" Jesteś blisko celu, ale Twój wskaźnik dokładności jest ciągle poniżej %.0f"
-"%%.\n"
-" Spróbuj jeszcze kilka razy, a jeśli masz już dość to przejdź do innego "
-"ćwiczenia.\n"
+" Jesteś blisko celu, ale Twój wskaźnik dokładności jest ciągle poniżej %.0f%%.\n"
+" Spróbuj jeszcze kilka razy, a jeśli masz już dość to przejdź do innego ćwiczenia.\n"
 
 #: ../src/adaptability.c:238
 #, c-format
@@ -1135,8 +954,7 @@ msgid ""
 " persistence and practice will improve your velocity.\n"
 msgstr ""
 " Dopiero zaczynasz.\n"
-" Bądź cierpliwy, próbuj ponownie codziennie, odpoczywaj i nie martw się za "
-"wiele:\n"
+" Bądź cierpliwy, próbuj ponownie codziennie, odpoczywaj i nie martw się za wiele:\n"
 " wytrwałość i praktyka zwiększą twoją szybkość.\n"
 
 #: ../src/velocity.c:428
@@ -1405,17 +1223,8 @@ msgstr "Nie można wysłać/pobrać wyników."
 #~ msgid "Informations about this application, Klavaro."
 #~ msgstr "Informacje o tym programie, Klavaro."
 
-#~ msgid ""
-#~ "1)  The index-finger tips rest over each of the two keys which have a "
-#~ "small raised mark, in the center of the keyboard. Most keyboards are of "
-#~ "the 'qwerty' type, where these two keys are the 'F' and the 'J' keys. On "
-#~ "the other hand, in an American Dvorak keyboard, they are the 'U' and the "
-#~ "'H' keys."
-#~ msgstr ""
-#~ "1)  Opuszki palców wskazujących opierają się na klawiszach z wypustkami, "
-#~ "w centralnej części klawiatury. Większość klawiatur jest typu 'qwerty', w "
-#~ "nich te klawisze to 'F' oraz 'J'. Z kolei w amerykańskich klawiaturach "
-#~ "typu Dvorak są to 'U' oraz 'H'."
+#~ msgid "1)  The index-finger tips rest over each of the two keys which have a small raised mark, in the center of the keyboard. Most keyboards are of the 'qwerty' type, where these two keys are the 'F' and the 'J' keys. On the other hand, in an American Dvorak keyboard, they are the 'U' and the 'H' keys."
+#~ msgstr "1)  Opuszki palców wskazujących opierają się na klawiszach z wypustkami, w centralnej części klawiatury. Większość klawiatur jest typu 'qwerty', w nich te klawisze to 'F' oraz 'J'. Z kolei w amerykańskich klawiaturach typu Dvorak są to 'U' oraz 'H'."
 
 #~ msgid "Virtual Keyboard"
 #~ msgstr "Wirtualna Klawiatura"
@@ -1512,11 +1321,8 @@ msgstr "Nie można wysłać/pobrać wyników."
 #~ msgid "Load"
 #~ msgstr "Otwórz"
 
-#~ msgid ""
-#~ "Remove the layout shown above from the user defined list of available "
-#~ "ones."
-#~ msgstr ""
-#~ "Usuń układ pokazany powyżej z listy układów stworzonych przez użytkownika."
+#~ msgid "Remove the layout shown above from the user defined list of available ones."
+#~ msgstr "Usuń układ pokazany powyżej z listy układów stworzonych przez użytkownika."
 
 #~ msgid "New custom layout"
 #~ msgstr "Nowy własny układ"
@@ -1548,8 +1354,7 @@ msgstr "Nie można wysłać/pobrać wyników."
 #~ msgid "Revert"
 #~ msgstr "Wróć"
 
-#~ msgid ""
-#~ "Forgets the current lesson, restarting the course from the introduction."
+#~ msgid "Forgets the current lesson, restarting the course from the introduction."
 #~ msgstr "Porzuca bieżącą lekcję, zaczynając cały kurs od początku."
 
 #~ msgid "Other"
