@@ -537,7 +537,10 @@ tutor_update_start ()
 		adapt_draw_random_pattern ();
 		break;
 	case TT_VELO:
-		velo_draw_random_words ();
+		if (main_velo_txt ())
+			fluid_draw_random_paragraphs ();
+		else
+			velo_draw_random_words ();
 		break;
 	case TT_FLUID:
 		fluid_draw_random_paragraphs ();

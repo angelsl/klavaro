@@ -40,6 +40,7 @@ gchar *OTHER_DEFAULT;
 
 static GKeyFile *preferences = NULL;
 static gboolean curl_ok;
+static gboolean velo_txt;
 static struct
 {
 	gchar *user;
@@ -79,6 +80,12 @@ gboolean
 main_curl_ok ()
 {
 	return (curl_ok);
+}
+
+gboolean
+main_velo_txt ()
+{
+	return (velo_txt);
 }
 
 gboolean
@@ -366,7 +373,10 @@ main_window_init ()
 	tmp = g_strdup_printf ("2 - %s", _("Adaptability"));
 	gtk_label_set_text (GTK_LABEL (get_wg ("label_main_adapt")), tmp);
 	g_free (tmp);
-	tmp = g_strdup_printf ("3 - %s", _("Speed"));
+	if (velo_txt)
+		tmp = g_strdup_printf ("3 - %s (TXT)", _("Speed"));
+	else
+		tmp = g_strdup_printf ("3 - %s", _("Speed"));
 	gtk_label_set_text (GTK_LABEL (get_wg ("label_main_velo")), tmp);
 	g_free (tmp);
 	tmp = g_strdup_printf ("4 - %s", _("Fluidity"));
@@ -423,10 +433,11 @@ main (int argc, char *argv[])
 	gboolean show_version = FALSE;
 	GOptionContext *opct;
 	GOptionEntry option[] = {
-		{"version", 'v', 0, G_OPTION_ARG_NONE, &show_version, "Versio", NULL},
+		{"version", 'v', 0, G_OPTION_ARG_NONE, &show_version, "Version", NULL},
+		{"velotxt", 'x', 0, G_OPTION_ARG_NONE, &velo_txt, "Speed TXT", NULL},
 		{NULL}
 	};
-	GError *gerr;
+	GError *gerr = NULL;
 
 	/* Localization
 	 */
@@ -438,12 +449,17 @@ main (int argc, char *argv[])
 
 	/* Command-line arguments
 	 */
-	opct = g_option_context_new ("");
+	opct = g_option_context_new (" ");
 	g_option_context_set_translation_domain (opct, GETTEXT_PACKAGE);
 	g_option_context_add_main_entries (opct, option, GETTEXT_PACKAGE);
 	g_option_context_add_group (opct, gtk_get_option_group (TRUE));
 	g_setenv ("NO_AT_BRIDGE", "1", FALSE); /* to eliminate annoying accessibility bus warning */
-	g_option_context_parse (opct, &argc, &argv, &gerr);
+	if (g_option_context_parse (opct, &argc, &argv, &gerr) == FALSE)
+	{
+		g_printf ("%s\n", gerr->message);
+		g_printf ("klavaro -h\n");
+		return 0;
+	}
 
 	if (show_version)
 	{

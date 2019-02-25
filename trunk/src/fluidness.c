@@ -264,7 +264,7 @@ fluid_draw_random_paragraphs ()
 
 	/* Use all the text, without mangling it
 	 */
-	if (par_num == 0)
+	if (par_num == 0 || (main_velo_txt () && tutor_get_type () == TT_VELO))
 	{
 		par_num = par.len > FLUID_PARBUF ? FLUID_PARBUF : par.len;
 
