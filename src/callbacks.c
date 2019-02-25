@@ -358,7 +358,12 @@ on_button_tutor_other_clicked (GtkButton * button, gpointer user_data)
 	wg = get_wg ("treeview_other");
 	list = GTK_LIST_STORE ( gtk_tree_view_get_model (GTK_TREE_VIEW (wg)) );
 	if (tutor_get_type () == TT_VELO)
-		tutor_load_list_other (".words", list);
+	{
+		if (main_velo_txt ())
+			tutor_load_list_other (".paragraphs", list);
+		else
+			tutor_load_list_other (".words", list);
+	}
 	else if (tutor_get_type () == TT_FLUID)
 		tutor_load_list_other (".paragraphs", list);
 
@@ -1514,7 +1519,12 @@ on_button_other_apply_clicked (GtkButton *button, gpointer user_data)
 	gtk_tree_model_get (store, &iter, 0, &tmp_name, -1);
 
 	if (tutor_get_type () == TT_VELO)
-		velo_init_dict (tmp_name);
+	{
+		if (main_velo_txt ())
+			fluid_init_paragraph_list (tmp_name);
+		else
+			velo_init_dict (tmp_name);
+	}
 	else if (tutor_get_type () == TT_FLUID)
 		fluid_init_paragraph_list (tmp_name);
 
@@ -1548,10 +1558,17 @@ on_button_other_paste_clicked (GtkButton * button, gpointer user_data)
 	list = GTK_LIST_STORE ( gtk_tree_view_get_model (GTK_TREE_VIEW (wg)) );
 	if (tutor_get_type () == TT_VELO)
 	{
-		velo_text_write_to_file (text, TRUE);
-		tutor_load_list_other (".words", list);
+		if (main_velo_txt ())
+		{
+			fluid_text_write_to_file (text);
+			tutor_load_list_other (".paragraphs", list);
+		}
+		else
+		{
+			velo_text_write_to_file (text, TRUE);
+			tutor_load_list_other (".words", list);
+		}
 	}
-
 	else if (tutor_get_type () == TT_FLUID)
 	{
 		fluid_text_write_to_file (text);
@@ -1593,7 +1610,10 @@ on_button_other_remove_clicked (GtkButton * button, gpointer user_data)
 	g_free (tmp_str);
 
 	if (tutor_get_type () == TT_VELO)
-		tmp_str = g_strconcat (tmp_name, ".words", NULL);
+		if (main_velo_txt ())
+			tmp_str = g_strconcat (tmp_name, ".paragraphs", NULL);
+		else
+			tmp_str = g_strconcat (tmp_name, ".words", NULL);
 	else if (tutor_get_type () == TT_FLUID)
 		tmp_str = g_strconcat (tmp_name, ".paragraphs", NULL);
 	g_unlink (tmp_str);
@@ -1707,7 +1727,10 @@ on_button_filechooser_open_clicked (GtkButton *button, gpointer user_data)
 	wg = get_wg ("treeview_other");
 	list = GTK_LIST_STORE ( gtk_tree_view_get_model (GTK_TREE_VIEW (wg)) );
 	if (tutor_get_type () == TT_VELO)
-		tutor_load_list_other (".words", list);
+		if (main_velo_txt ())
+			tutor_load_list_other (".paragraphs", list);
+		else
+			tutor_load_list_other (".words", list);
 	else if (tutor_get_type () == TT_FLUID)
 		tutor_load_list_other (".paragraphs", list);
 

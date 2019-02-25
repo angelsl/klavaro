@@ -49,6 +49,8 @@ gchar *main_path_score (void);
 
 gboolean main_curl_ok (void);
 
+gboolean main_velo_txt (void);
+
 gboolean main_preferences_exist (gchar * group, gchar * key);
 
 void main_preferences_remove (gchar * group, gchar * key);
