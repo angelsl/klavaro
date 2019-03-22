@@ -6,17 +6,17 @@ libgtkdataboks_la_SOURCES= \
 			gtkdatabox_marshal.c\
 			gtkdatabox_scale.c\
 			gtkdatabox_graph.c\
-			gtkdatabox_xyc_graph.c\
-			gtkdatabox_xyyc_graph.c\
  			gtkdatabox_points.c\
-            gtkdatabox_lines.c\
-            gtkdatabox_bars.c\
-            gtkdatabox_offset_bars.c\
-            gtkdatabox_regions.c\
-			gtkdatabox_markers.c\
-            gtkdatabox_cross_simple.c\
-            gtkdatabox_grid.c\
-			gtkdatabox_ruler.c
+			gtkdatabox_lines.c\
+			gtkdatabox_bars.c\
+			gtkdatabox_grid.c\
+			gtkdatabox_ruler.c\
+			gtkdatabox_xyc_graph.c
+# gtkdatabox_xyyc_graph.c\
+# gtkdatabox_offset_bars.c\
+# gtkdatabox_regions.c\
+# gtkdatabox_markers.c\
+# gtkdatabox_cross_simple.c
 
 libgtkdataboks_la_LDFLAGS= \
 		        #-version-info $(LT_CURRENT)\
@@ -31,17 +31,17 @@ include_HEADERS		= \
 			gtkdatabox_marshal.h\
 			gtkdatabox_scale.h\
 			gtkdatabox_graph.h\
-			gtkdatabox_xyc_graph.h\
-			gtkdatabox_xyyc_graph.h\
  			gtkdatabox_points.h\
-            gtkdatabox_lines.h\
-            gtkdatabox_bars.h\
-            gtkdatabox_offset_bars.h\
-            gtkdatabox_regions.h\
-			gtkdatabox_markers.h\
-            gtkdatabox_cross_simple.h\
-            gtkdatabox_grid.h\
-			gtkdatabox_ruler.h
+		    	gtkdatabox_lines.h\
+		    	gtkdatabox_bars.h\
+		    	gtkdatabox_grid.h\
+			gtkdatabox_ruler.h\
+			gtkdatabox_xyc_graph.h
+# gtkdatabox_xyyc_graph.h\
+# gtkdatabox_offset_bars.h\
+# gtkdatabox_regions.h\
+# gtkdatabox_markers.h\
+# gtkdatabox_cross_simple.h
 
 EXTRA_DIST = gtkdatabox_marshal.list
 

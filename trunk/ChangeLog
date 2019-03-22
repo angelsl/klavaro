@@ -1,8 +1,14 @@
-2019-0?-??  Felipe Castro (-) <fefcas@gmail.com>;
+2019-04-??  Felipe Castro (-) <fefcas@gmail.com>;
 
-	* Release 3.05-pre1
-	* Fixed:
+	* Release 3.06
 	* Changed:
+	- GtkDataBox library clean-up.
+
+2019-03-17  Felipe Castro (-) <fefcas@gmail.com>;
+
+	* Release 3.05
+	* Fixed:
+	- Crashing when not recognized option from command-line.
 	* Added:
 	- Instructions for typing with the shift keys (in the introduction).
 	- Explanation about the blank lessons after 43, in basic module.

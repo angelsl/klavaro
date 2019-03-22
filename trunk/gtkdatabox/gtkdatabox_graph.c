@@ -190,10 +190,7 @@ gtk_databox_graph_class_init (GtkDataboxGraphClass *klass)
   g_type_class_add_private (klass, sizeof (GtkDataboxGraphPrivate));
 }
 
-static void
-gtk_databox_graph_init (GtkDataboxGraph *graph)
-{
-}
+static void gtk_databox_graph_init (GtkDataboxGraph *graph) { graph = graph;}
 
 /**
  * gtk_databox_graph_draw:

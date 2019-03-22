@@ -67,7 +67,7 @@ struct _GtkDataboxXYCGraphPrivate
    GType ytype;
 };
 
-static gpointer parent_class = NULL;
+//static gpointer parent_class = NULL;
 
 void
 gtk_databox_xyc_graph_set_X_Y_length(GtkDataboxXYCGraph * xyc_graph, gfloat * X, gfloat * Y, guint len)
@@ -525,10 +525,7 @@ gtk_databox_xyc_graph_class_init (GtkDataboxXYCGraphClass *klass)
    g_type_class_add_private (klass, sizeof (GtkDataboxXYCGraphPrivate));
 }
 
-static void
-gtk_databox_xyc_graph_init (GtkDataboxXYCGraph *xyc_graph)
-{
-}
+static void gtk_databox_xyc_graph_init (GtkDataboxXYCGraph *xyc_graph) {xyc_graph = xyc_graph;}
 
 static gint
 gtk_databox_xyc_graph_real_calculate_extrema (GtkDataboxGraph * graph,
