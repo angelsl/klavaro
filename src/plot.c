@@ -22,7 +22,6 @@
 #include <glib/gstdio.h>
 #include <gdk/gdk.h>
 #include <gtk/gtk.h>
-#include <gtkdatabox_typedefs.h>
 #include <gtkdatabox.h>
 #include <gtkdatabox_grid.h>
 #include <gtkdatabox_lines.h>

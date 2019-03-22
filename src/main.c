@@ -449,7 +449,7 @@ main (int argc, char *argv[])
 
 	/* Command-line arguments
 	 */
-	opct = g_option_context_new (" ");
+	opct = g_option_context_new ("\t");
 	g_option_context_set_translation_domain (opct, GETTEXT_PACKAGE);
 	g_option_context_add_main_entries (opct, option, GETTEXT_PACKAGE);
 	g_option_context_add_group (opct, gtk_get_option_group (TRUE));

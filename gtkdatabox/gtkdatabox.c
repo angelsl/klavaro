@@ -462,7 +462,7 @@ gtk_databox_new (void) {
 GList *
 gtk_databox_get_graphs (GtkDatabox * box) 
 {
-    g_return_val_if_fail (GTK_IS_DATABOX (box), -1);
+    g_return_val_if_fail (GTK_IS_DATABOX (box), NULL);
 
     return GTK_DATABOX_GET_PRIVATE(box)->graphs;
 }
@@ -651,7 +651,7 @@ gtk_databox_realize (GtkWidget * widget) {
 
     gtk_style_context_add_class(stylecontext, GTK_STYLE_CLASS_BACKGROUND);
 
-	gtk_style_context_set_background(stylecontext, gtk_widget_get_window(widget));
+    /*gtk_style_context_set_background(stylecontext, gtk_widget_get_window(widget));*/
 
     gtk_databox_create_backing_surface (box);
 }
@@ -1143,7 +1143,9 @@ gtk_databox_create_backing_surface(GtkDatabox * box) {
     GtkDataboxPrivate *priv = GTK_DATABOX_GET_PRIVATE(box);
     GtkAllocation allocation;
     GtkWidget *widget;
-	cairo_t *cr;
+    GdkDrawingContext *drawc;
+    cairo_region_t *crr;
+    cairo_t *cr;
     gint width;
     gint height;
 
@@ -1161,13 +1163,16 @@ gtk_databox_create_backing_surface(GtkDatabox * box) {
    priv->old_width = width;
    priv->old_height = height;
 
-    cr = gdk_cairo_create (gtk_widget_get_window (widget));
+   crr = gdk_window_get_visible_region (gtk_widget_get_window (widget));
+   drawc = gdk_window_begin_draw_frame (gtk_widget_get_window (widget), crr);
+   cr = gdk_drawing_context_get_cairo_context (drawc);
 
    priv->backing_surface = cairo_surface_create_similar(
                                 cairo_get_target (cr),
                                 CAIRO_CONTENT_COLOR,
                                 width, height);
-
+   gdk_window_end_draw_frame (gtk_widget_get_window (widget), drawc);
+   cairo_region_destroy (crr);
 }
 
 /**
@@ -1215,13 +1220,13 @@ gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
     GtkDataboxPrivate *priv = GTK_DATABOX_GET_PRIVATE(box);
     GList *list;
     cairo_t *cr2;
-    GtkStyleContext *stylecontext = gtk_widget_get_style_context(widget);
     GdkRGBA bg_color;
 
     gtk_databox_create_backing_surface (box);
 
     cr2 = cairo_create(priv->backing_surface);
-    gtk_style_context_get_background_color(stylecontext, GTK_STATE_FLAG_NORMAL, &bg_color);
+
+    gdk_rgba_parse (&bg_color, "#fefefe");
     gdk_cairo_set_source_rgba (cr2, &bg_color);
     cairo_paint(cr2);
     cairo_destroy(cr2);
@@ -1238,7 +1243,7 @@ gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
 
     cairo_set_source_surface (cr, priv->backing_surface, 0, 0);
     cairo_paint(cr);
-	/* the following was removed - unsure if it creates problems */
+    /* the following was removed - unsure if it creates problems */
     /*gtk_databox_draw_selection (box, FALSE);*/
 
     return FALSE;
@@ -1422,8 +1427,8 @@ gtk_databox_zoomed (GtkDatabox * box) {
     priv->selection_active = FALSE;
     priv->selection_finalized = FALSE;
 
-    gtk_adjustment_changed (priv->adj_x);
-    gtk_adjustment_changed (priv->adj_y);
+    //gtk_adjustment_changed (priv->adj_x);
+    //gtk_adjustment_changed (priv->adj_y);
 
     gtk_widget_queue_draw (GTK_WIDGET(box));
 
@@ -1579,10 +1584,16 @@ static void
 gtk_databox_draw_selection (GtkDatabox * box, gboolean clear) {
     GtkDataboxPrivate *priv = GTK_DATABOX_GET_PRIVATE(box);
     GtkWidget *widget = GTK_WIDGET (box);
-	cairo_t *cr;
+    GdkDrawingContext *drawc;
+    cairo_region_t *crr;
+    cairo_t *cr;
 
-	cr = gdk_cairo_create (gtk_widget_get_window (widget));
-    cairo_rectangle (cr,
+   crr = gdk_window_get_visible_region (gtk_widget_get_window (widget));
+   drawc = gdk_window_begin_draw_frame (gtk_widget_get_window (widget), crr);
+   cr = gdk_drawing_context_get_cairo_context (drawc);
+   /*cr = gdk_cairo_create (gtk_widget_get_window (widget));*/
+
+   cairo_rectangle (cr,
                      MIN (priv->marked.x, priv->select.x) - 0.5,
                      MIN (priv->marked.y, priv->select.y) - 0.5,
                      ABS (priv->marked.x - priv->select.x) + 1.0,
@@ -1596,10 +1607,11 @@ gtk_databox_draw_selection (GtkDatabox * box, gboolean clear) {
       cairo_set_source_rgb (cr, 1.0, 1.0, 1.0);
       cairo_set_operator (cr, CAIRO_OPERATOR_DIFFERENCE);
       cairo_set_line_width (cr, 1.0);
-	}
-	cairo_stroke(cr);
+    }
+    cairo_stroke(cr);
 
-	cairo_destroy(cr);
+    gdk_window_end_draw_frame (gtk_widget_get_window (widget), drawc);
+    cairo_region_destroy (crr);
 }
 
 static void

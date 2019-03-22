@@ -156,7 +156,7 @@ gtk_databox_grid_real_create_gc (GtkDataboxGraph * graph,
 static void
 grid_finalize (GObject * object)
 {
-  GtkDataboxGraph *graph = GTK_DATABOX_GRAPH (object);
+  //GtkDataboxGraph *graph = GTK_DATABOX_GRAPH (object);
 
   /* Chain up to the parent class */
   G_OBJECT_CLASS (gtk_databox_grid_parent_class)->finalize (object);
@@ -210,10 +210,7 @@ gtk_databox_grid_class_init (GtkDataboxGridClass *klass)
    g_type_class_add_private (klass, sizeof (GtkDataboxGridPrivate));
 }
 
-static void
-gtk_databox_grid_init (GtkDataboxGrid *grid)
-{
-}
+static void gtk_databox_grid_init (GtkDataboxGrid *grid) { grid = grid; }
 
 /**
  * gtk_databox_grid_new:
