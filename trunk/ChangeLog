@@ -3,6 +3,7 @@
 	* Release 3.06
 	* Changed:
 	- GtkDataBox library clean-up.
+	- Updated building infra to compile for Windows.
 
 2019-03-17  Felipe Castro (-) <fefcas@gmail.com>;
 
