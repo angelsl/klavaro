@@ -12,18 +12,12 @@ libgtkdataboks_la_SOURCES= \
 			gtkdatabox_grid.c\
 			gtkdatabox_ruler.c\
 			gtkdatabox_xyc_graph.c
-# gtkdatabox_xyyc_graph.c\
-# gtkdatabox_offset_bars.c\
-# gtkdatabox_regions.c\
-# gtkdatabox_markers.c\
-# gtkdatabox_cross_simple.c
 
 libgtkdataboks_la_LDFLAGS= \
-		        #-version-info $(LT_CURRENT)\
-			#-release $(LT_RELEASE)\
-			-no-undefined \
+			#-no-undefined \
+			#-static\
+			-lgmodule-2.0 \
 			@GTK_LIBS@
-
 
 include_HEADERS		= \
 			gtkdatabox_typedefs.h\
@@ -37,11 +31,6 @@ include_HEADERS		= \
 		    	gtkdatabox_grid.h\
 			gtkdatabox_ruler.h\
 			gtkdatabox_xyc_graph.h
-# gtkdatabox_xyyc_graph.h\
-# gtkdatabox_offset_bars.h\
-# gtkdatabox_regions.h\
-# gtkdatabox_markers.h\
-# gtkdatabox_cross_simple.h
 
 EXTRA_DIST = gtkdatabox_marshal.list
 
@@ -68,4 +57,3 @@ AM_CFLAGS =\
 			-DGTK_DISABLE_SINGLE_INCLUDES\
 		 	@GTK_CFLAGS@
 
-AM_LDFLAGS = -static

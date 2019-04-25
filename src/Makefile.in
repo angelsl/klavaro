@@ -90,8 +90,6 @@ build_triplet = @build@
 host_triplet = @host@
 bin_PROGRAMS = klavaro$(EXEEXT)
 @IS_POSIX_TRUE@am__append_1 = -export-dynamic
-@IS_WIN32_TRUE@am__append_2 = -lcurldll
-@IS_WIN32_TRUE@am__append_3 = -export-all-symbols
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/gettext.m4 \
@@ -117,9 +115,7 @@ am_klavaro_OBJECTS = main.$(OBJEXT) auxiliar.$(OBJEXT) \
 	basic.$(OBJEXT) adaptability.$(OBJEXT) velocity.$(OBJEXT) \
 	fluidness.$(OBJEXT) accuracy.$(OBJEXT) top10.$(OBJEXT)
 klavaro_OBJECTS = $(am_klavaro_OBJECTS)
-am__DEPENDENCIES_1 =
-klavaro_DEPENDENCIES = $(top_srcdir)/gtkdatabox/libgtkdataboks.la \
-	$(am__DEPENDENCIES_1)
+klavaro_DEPENDENCIES = $(top_srcdir)/gtkdatabox/libgtkdataboks.la
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
@@ -366,11 +362,12 @@ AM_CPPFLAGS = @GTK_CFLAGS@ \
 	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
 
-AM_CFLAGS = -Wextra -I$(top_srcdir)/gtkdatabox $(am__append_1) \
-	$(am__append_3)
+AM_CFLAGS = -Wextra -I$(top_srcdir)/gtkdatabox $(am__append_1)
 AM_LDFLAGS = -static
-klavaro_LDADD = @GTK_LIBS@ -lgmodule-2.0 \
-	$(top_srcdir)/gtkdatabox/libgtkdataboks.la $(am__append_2)
+klavaro_LDADD = @GTK_LIBS@ \
+		-lgmodule-2.0 \
+	       	$(top_srcdir)/gtkdatabox/libgtkdataboks.la
+
 all: all-am
 
 .SUFFIXES:

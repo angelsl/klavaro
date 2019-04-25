@@ -35,8 +35,3 @@ if IS_POSIX
 AM_CFLAGS += -export-dynamic
 endif
 
-if IS_WIN32
-klavaro_LDADD += -lcurldll
-AM_CFLAGS += -export-all-symbols
-endif
-
