@@ -9,6 +9,8 @@ And also, specific libs you have to install (on Debian):
 - intltool
 - libtool
 
+For compiling on Windows, you may use MSYS2, following instructions from GTK site.
+
 See also the web site:
 http://klavaro.sourceforge.net
 

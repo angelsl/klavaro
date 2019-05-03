@@ -164,7 +164,7 @@ klavaro_data = \
 
 pkgdata_DATA = $(klavaro_data)
 
-if IS_WIN32
+if IS_WIN
 EXTRA_DIST = $(klavaro_data)
 else
 @INTLTOOL_DESKTOP_RULE@
@@ -180,5 +180,4 @@ DISTCLEANFILES = $(desktop_DATA) \
 EXTRA_DIST = $(klavaro_data) \
 	     $(desktop_in_file) \
 	     $(appdata_in_files)
-
 endif

@@ -92,14 +92,10 @@ build_triplet = @build@
 host_triplet = @host@
 subdir = data
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/gettext.m4 \
-	$(top_srcdir)/m4/iconv.m4 $(top_srcdir)/m4/intltool.m4 \
-	$(top_srcdir)/m4/lib-ld.m4 $(top_srcdir)/m4/lib-link.m4 \
-	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/libtool.m4 \
+am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
 	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
 	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
-	$(top_srcdir)/m4/nls.m4 $(top_srcdir)/m4/po.m4 \
-	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/configure.ac
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -540,19 +536,19 @@ klavaro_data = \
 	vi.paragraphs
 
 pkgdata_DATA = $(klavaro_data)
-@IS_WIN32_FALSE@EXTRA_DIST = $(klavaro_data) \
-@IS_WIN32_FALSE@	     $(desktop_in_file) \
-@IS_WIN32_FALSE@	     $(appdata_in_files)
+@IS_WIN_FALSE@EXTRA_DIST = $(klavaro_data) \
+@IS_WIN_FALSE@	     $(desktop_in_file) \
+@IS_WIN_FALSE@	     $(appdata_in_files)
 
-@IS_WIN32_TRUE@EXTRA_DIST = $(klavaro_data)
-@IS_WIN32_FALSE@desktopdir = $(prefix)/$(DATADIRNAME)/applications
-@IS_WIN32_FALSE@desktop_in_file = klavaro.desktop.in
-@IS_WIN32_FALSE@desktop_DATA = $(desktop_in_file:.desktop.in=.desktop)
-@IS_WIN32_FALSE@appdatadir = $(prefix)/$(DATADIRNAME)/appdata
-@IS_WIN32_FALSE@appdata_in_files = klavaro.appdata.xml.in
-@IS_WIN32_FALSE@appdata_DATA = $(appdata_in_files:.xml.in=.xml)
-@IS_WIN32_FALSE@DISTCLEANFILES = $(desktop_DATA) \
-@IS_WIN32_FALSE@                 $(appdata_DATA)
+@IS_WIN_TRUE@EXTRA_DIST = $(klavaro_data)
+@IS_WIN_FALSE@desktopdir = $(prefix)/$(DATADIRNAME)/applications
+@IS_WIN_FALSE@desktop_in_file = klavaro.desktop.in
+@IS_WIN_FALSE@desktop_DATA = $(desktop_in_file:.desktop.in=.desktop)
+@IS_WIN_FALSE@appdatadir = $(prefix)/$(DATADIRNAME)/appdata
+@IS_WIN_FALSE@appdata_in_files = klavaro.appdata.xml.in
+@IS_WIN_FALSE@appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+@IS_WIN_FALSE@DISTCLEANFILES = $(desktop_DATA) \
+@IS_WIN_FALSE@                 $(appdata_DATA)
 
 all: all-recursive
 
@@ -937,8 +933,8 @@ uninstall-am: uninstall-appdataDATA uninstall-desktopDATA \
 
 .PRECIOUS: Makefile
 
-@IS_WIN32_FALSE@@INTLTOOL_DESKTOP_RULE@
-@IS_WIN32_FALSE@@INTLTOOL_XML_RULE@
+@IS_WIN_FALSE@@INTLTOOL_DESKTOP_RULE@
+@IS_WIN_FALSE@@INTLTOOL_XML_RULE@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

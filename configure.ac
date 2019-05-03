@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([klavaro],[3.06-pre],[fefcas@gmail.com])
+AC_INIT([klavaro],[3.06],[fefcas@gmail.com])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([-Wall])
@@ -15,15 +15,19 @@ AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_MAKE_SET
 AC_PROG_CXX
-AC_PROG_RANLIB
-dnl LT_INIT
-dnl For Windows, comment out this one (then do an "autoreconf"):
 IT_PROG_INTLTOOL
+
+dnl For Windows, comment out this one (then do an "autoreconf"):
+dnl LT_INIT([win32-dll])
+dnl For POSIX, simply use this:
+LT_INIT
 
 AC_HEADER_STDC
 AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h])
 dnl When GtkDataBox-GTK3 is available, check for it also:
 dnl AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
+dnl PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 0.9.1.1])
+dnl AC_CHECK_LIB([gtkdatabox], [gtk_databox_new])
 
 m4_define([gtk_required_version], [3.8.0])
 m4_define([pango_required_version], [1.16.0])
@@ -35,13 +39,9 @@ PKG_CHECK_MODULES(PANGO, [pango >= [pango_required_version]])
 PKG_CHECK_MODULES(CAIRO, [cairo >= [cairo_required_version]])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
-dnl For Windows:
-dnl PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 0.9.1.1])
 
 AC_CHECK_LIB([curl], [curl_global_init])
 AC_CHECK_LIB([m], [sqrt])
-dnl When GtkDataBox-GTK3 is available, check for it:
-dnl AC_CHECK_LIB([gtkdatabox], [gtk_databox_new])
 
 AC_FUNC_STRTOD
 AC_CHECK_FUNCS([floor pow memmove memset rint setlocale sqrt strcasecmp strchr strdup strerror strrchr strstr strtoul])
@@ -53,8 +53,8 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.18.3])
 
-AM_CONDITIONAL(IS_WIN32, test `uname` = "MINGW32_NT-6.1")
-AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW32_NT-6.1" -a `uname` != "Darwin")
+AM_CONDITIONAL(IS_WIN, test `uname` = "MINGW64_NT-10.0")
+AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW64_NT-10.0" -a `uname` != "Darwin")
 
 AC_CONFIG_FILES([Makefile
 		gtkdatabox/Makefile

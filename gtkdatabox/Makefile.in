@@ -91,16 +91,13 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
+@IS_WIN_TRUE@am__append_1 = -no-undefined -export-symbols-regexp '^gtk_databox_'
 subdir = gtkdatabox
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/gettext.m4 \
-	$(top_srcdir)/m4/iconv.m4 $(top_srcdir)/m4/intltool.m4 \
-	$(top_srcdir)/m4/lib-ld.m4 $(top_srcdir)/m4/lib-link.m4 \
-	$(top_srcdir)/m4/lib-prefix.m4 $(top_srcdir)/m4/libtool.m4 \
+am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
 	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
 	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
-	$(top_srcdir)/m4/nls.m4 $(top_srcdir)/m4/po.m4 \
-	$(top_srcdir)/m4/progtest.m4 $(top_srcdir)/configure.ac
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(include_HEADERS) \
@@ -388,14 +385,7 @@ libgtkdataboks_la_SOURCES = \
 			gtkdatabox_ruler.c\
 			gtkdatabox_xyc_graph.c
 
-libgtkdataboks_la_LDFLAGS = \
-		        #-version-info $(LT_CURRENT)\
-			#-release $(LT_RELEASE)\
-			#-no-undefined \
-			#-static\
-			-lgmodule-2.0 \
-			@GTK_LIBS@
-
+libgtkdataboks_la_LDFLAGS = -lgmodule-2.0 @GTK_LIBS@ $(am__append_1)
 include_HEADERS = \
 			gtkdatabox_typedefs.h\
 			gtkdatabox.h\
@@ -416,7 +406,7 @@ AM_CPPFLAGS = \
 
 AM_CFLAGS = \
 			-O2\
-			-W -Wall -pedantic\
+			-W -Wall\
 			-DG_DISABLE_DEPRECATED\
 			-DGDK_DISABLE_DEPRECATED\
 			-DGDK_PIXBUF_DISABLE_DEPRECATED\
