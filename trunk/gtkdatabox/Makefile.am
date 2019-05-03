@@ -14,10 +14,12 @@ libgtkdataboks_la_SOURCES= \
 			gtkdatabox_xyc_graph.c
 
 libgtkdataboks_la_LDFLAGS= \
-			#-no-undefined \
-			#-static\
 			-lgmodule-2.0 \
 			@GTK_LIBS@
+
+if IS_WIN
+libgtkdataboks_la_LDFLAGS += -no-undefined -export-symbols-regexp '^gtk_databox_'
+endif
 
 include_HEADERS		= \
 			gtkdatabox_typedefs.h\
@@ -47,7 +49,7 @@ AM_CPPFLAGS = \
 
 AM_CFLAGS =\
 			-O2\
-			-W -Wall -pedantic\
+			-W -Wall\
 			-DG_DISABLE_DEPRECATED\
 			-DGDK_DISABLE_DEPRECATED\
 			-DGDK_PIXBUF_DISABLE_DEPRECATED\

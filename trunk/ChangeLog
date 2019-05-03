@@ -1,9 +1,9 @@
-2019-04-??  Felipe Castro (-) <fefcas@gmail.com>;
+2019-05-03  Felipe Castro (-) <fefcas@gmail.com>;
 
 	* Release 3.06
 	* Changed:
 	- GtkDataBox library clean-up.
-	- Updated building infra to compile for Windows.
+	- Updated building infra to compile also on Windows.
 
 2019-03-17  Felipe Castro (-) <fefcas@gmail.com>;
 

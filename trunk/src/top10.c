@@ -893,7 +893,7 @@ top10_global_publish (gpointer data)
 	gchar *url;
 	GtkImage *img;
 	FILE *fh, *fh2;
-	struct stat fs;
+	GStatBuf fs;
 	CURL *curl;
 	
 	fs.st_size = 0;

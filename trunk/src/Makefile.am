@@ -35,3 +35,7 @@ if IS_POSIX
 AM_CFLAGS += -export-dynamic
 endif
 
+if IS_WIN
+#AM_CFLAGS += -mwindows
+endif
+
