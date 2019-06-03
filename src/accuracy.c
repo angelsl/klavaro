@@ -135,7 +135,7 @@ accur_ttime_print (void)
 	{
 		g_printf ("%2i - %C - (%02i)", i, ttime[i].uchr, ttime[i].idx);
 		for (j = 0; j < ttime[i].idx; j+=1)
-			g_printf (" %1.2f", j, ttime[i].dt[j]);
+			g_printf (" %2i - %.2lf", j, ttime[i].dt[j]);
 		g_printf ("\n");
 	}
 }

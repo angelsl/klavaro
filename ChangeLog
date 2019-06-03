@@ -1,6 +1,15 @@
-2019-06-05  Felipe Castro (-) <fefcas@gmail.com>;
+2019-06-02  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.07
+	* Fixed:
+	- Contry code for Slovenia is sk, not sl.
+	- Using $(rootdatadir) for Gnome metadata.
+	* Added:
+	- qwertz_sk_2.kbd keyboard layout for Slovenia.
+	- /usr/.../share/klavaro/preferences_darkmode.ini as dark colors example.
+	* Removed:
+	- Beeps, as they were not reliable.
 	* Updated translations:
+	- Dutch.
 	- French.
 
 2019-05-03  Felipe Castro (-) <fefcas@gmail.com>;

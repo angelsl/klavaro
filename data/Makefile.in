@@ -383,6 +383,7 @@ SUBDIRS = icons
 klavaro_data = \
 	klavaro.glade \
 	klavaro_icon.png \
+	preferences_darkmode.ini\
 	beep.png \
 	fluid.png \
 	go_www.png \
@@ -471,7 +472,8 @@ klavaro_data = \
 	qwertz_hu.kbd \
 	qwertz_pl.kbd \
 	qwertz_rs.kbd \
-	qwertz_sl.kbd \
+	qwertz_sk.kbd \
+	qwertz_sk_2.kbd \
 	workman_us.kbd \
 	C.words \
 	C.paragraphs \
@@ -546,10 +548,10 @@ pkgdata_DATA = $(klavaro_data)
 @IS_WIN_FALSE@	     $(appdata_in_files)
 
 @IS_WIN_TRUE@EXTRA_DIST = $(klavaro_data)
-@IS_WIN_FALSE@desktopdir = $(prefix)/$(DATADIRNAME)/applications
+@IS_WIN_FALSE@desktopdir = $(datarootdir)/applications
 @IS_WIN_FALSE@desktop_in_file = klavaro.desktop.in
 @IS_WIN_FALSE@desktop_DATA = $(desktop_in_file:.desktop.in=.desktop)
-@IS_WIN_FALSE@appdatadir = $(prefix)/$(DATADIRNAME)/appdata
+@IS_WIN_FALSE@appdatadir = $(datarootdir)/appdata
 @IS_WIN_FALSE@appdata_in_files = klavaro.appdata.xml.in
 @IS_WIN_FALSE@appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 @IS_WIN_FALSE@DISTCLEANFILES = $(desktop_DATA) \
