@@ -78,7 +78,7 @@ trans_code_to_country (gchar *code)
 		{"rs","Србија"}, /* Serbia */
 		{"ru","Россия"},
 		{"se","Sverige"},
-		{"sl","Slovenija"},
+		{"sk","Slovenija"},
 		{"tr","Türkiye"},
 		{"ua","Україна"},
 		{"uk","United Kingdom"},
