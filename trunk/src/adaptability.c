@@ -44,7 +44,7 @@ adapt_draw_random_pattern ()
 	gboolean word_ok = FALSE;
 	gdouble profi;
 
-	g_message ("Accuracy errors: %lu Limit: %lu", accur_error_total (), ERROR_LIMIT);
+	g_message ("Accuracy errors: %lu Limit: %i", accur_error_total (), ERROR_LIMIT);
 	if (accur_ttime_n_get () >= 40) 
 		g_message ("Proficiency ratio p(10)/p(40): %f Limit: %.1f", 
 				accur_profi_aver(9)/accur_profi_aver(39), PROFI_LIMIT );
