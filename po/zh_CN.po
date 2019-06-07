@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.9.0-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2011-03-31 14:17+0800\n"
 "Last-Translator: Yuwei Yu <acevery@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -471,19 +471,19 @@ msgstr "Klavaro"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "就是另一个盲打训练的家庭教师"
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr "(定制)"
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr "(编辑定制)"
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 msgid "(Default)"
 msgstr "(默认)"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -492,93 +492,93 @@ msgstr[1] "语音模式（取决于这些语音合成器： %s）"
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "介绍"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "基础课程"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "适应性"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "速度"
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "流畅性"
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "按键："
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr "连接..."
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "覆盖用户布局"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "这将 覆盖 一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "移除用户布局"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "这将移除一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr "重置进展数据"
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "这将会 删除 所有显示在图表的进展数据。"
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "这将会 删除 所有显示在图表的进展数据。"
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "清除所有练习数据，所有模块的。"
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "精度"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(词每分钟)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr "错误"
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "得分"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "en"
 
@@ -884,26 +884,26 @@ msgstr "学习键位。"
 msgid "Press any key to start the exercise. "
 msgstr "按任意键开始练习。"
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "当你准备好时就开始打字。"
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr ""
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
 "(%i) must be greater than %i."
 msgstr "    注意：当前的练习并没有被记录下来：打的字符数(%i)必须大于%i。"
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "    注意：你进入了冠军榜了，太棒了！"
 
-#: ../src/tutor.c:1184
+#: ../src/tutor.c:1187
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -912,94 +912,94 @@ msgstr ""
 "    注意：你刚刚打的好像和你当前选择的语言不同：我们不能将它记入冠军榜中。"
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "统计"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "使用时间："
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "分钟和"
 msgstr[1] "分钟和"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "秒"
 msgstr[1] "秒"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr "错误率："
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "准确率："
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "目标："
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "字符数每秒："
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(字每秒)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "词每分钟："
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "流畅性："
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "评价："
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr "空格"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr "Y"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr "回车"
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr "单引号"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr "双引号"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr "＆"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr ""
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr "日期和时间"
 

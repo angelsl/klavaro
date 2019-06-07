@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2014-09-06 07:22+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
@@ -481,19 +481,19 @@ msgstr ""
 "Đây là một chương trình dạy cách gõ bàn phím máy tính rất mềm dẻo và hiệu "
 "quả."
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr "(Tùy chỉnh)"
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr "(Chỉnh sửa tùy chỉnh)"
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 msgid "(Default)"
 msgstr "(Mặc định)"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -501,93 +501,93 @@ msgstr[0] "Chế độ đọc chính tả (phụ thuộc vào bộ máy đọc: 
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "Phần giới thiệu"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "Phần học cơ bản"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "Mô phỏng đoạn văn"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Tốc độ"
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Trôi chảy"
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "Phím:"
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr "Đang kết nối..."
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "Ghi đè giao diện người dùng"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Điều này sẽ GHI ĐÈ lên một giao diện bàn phím có sẵn."
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "Gỡ bỏ giao diện người dùng"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Việc làm này sẽ XÓA BỎ giao diện bàn phím có sẵn."
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr "Đặt lại dữ liệu lưu tiến trình"
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Việc làm này sẽ XÓA tất cả dữ liệu được hiển thị đồ thị."
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Việc làm này sẽ XÓA tất cả dữ liệu được hiển thị đồ thị."
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Xóa dữ liệu lưu tiến trình, cho tất cả các mô đun."
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Độ chính xác"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr "Lỗi"
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr "Thời gian gõ (giây)"
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "Điểm số"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "vi"
 
@@ -916,15 +916,15 @@ msgstr "Học vị trí các phím."
 msgid "Press any key to start the exercise. "
 msgstr "Bấm bất kỳ phím nào để bắt đầu luyện tập. "
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "Bắt đầu gõ khi bạn đã sẵn sàng. "
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr "Sử dụng phím xóa lùi (backspace) để sửa chỗ sai."
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -933,11 +933,11 @@ msgstr ""
 "ps.: sự đăng nhập đã không được thi hành cho phiên làm việc này: số của kiểu "
 "ký tự (%i) phải lớn hơn %i."
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "ps.: bạn đã lọt vào danh sách Top 10, rất cừ!"
 
-#: ../src/tutor.c:1184
+#: ../src/tutor.c:1187
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -947,92 +947,92 @@ msgstr ""
 "hiện đang chọn: chúng tôi không thể khai báo nó vào cuộc thi “Top 10”."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "THỐNG KÊ"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "Thời gian đã trôi qua:"
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "phút và"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "giây"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr "Tỉ lệ lỗi:"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "Độ chính xác:"
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "Điểm:"
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "Số ký tự trên một giây:"
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(CPS)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "Số từ trên một phút:"
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "Trôi chảy:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "Ghi chú:"
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr "dấu cách"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr "chữ Y"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr "enter"
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr "dấu nháy đơn"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr "dấu nháy kép"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr "ký hiệu &"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr "Ký tự"
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr "Ngày tháng & Thời gian"
 

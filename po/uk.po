@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.05-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2019-02-12 15:58+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation-team-uk@lists.sourceforge.net>\n"
@@ -489,19 +489,19 @@ msgstr "Klavaro"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "Дуже гнучка та ефективна програма для навчання набору наосліп"
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr "(Нетиповий)"
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr "(Редагувати нетиповий)"
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 msgid "(Default)"
 msgstr "(Типовий)"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -512,95 +512,95 @@ msgstr[3] "Режим диктанту (залежить від такої си�
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "Вступ"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "Основний курс"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "Пристосування"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Швидкість"
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Плавність"
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "Клавіші:"
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr "З'єднання…"
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "Перезаписати розкладку користувача"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr ""
 "У результаті виконання цієї дії буде перезаписано існуючу розкладку "
 "клавіатури."
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "Вилучення розкладки користувача"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr ""
 "У результаті виконання цієї дії буде вилучено існуючу розкладку клавіатури."
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr "Вилучення даних щодо поступу"
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Буде вилучено всі дані щодо поступу в усіх модулях."
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "У результаті буде вилучено дані цієї діаграми. <%s>"
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "У результаті буде вилучено усі дані щодо поступу у модулі. (%s)"
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Точність"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(сл./хв.)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr "Помилки"
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr "Тривалість натискання (у с)"
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "Результат"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "uk"
 
@@ -938,15 +938,15 @@ msgstr "Вивчення розташування клавіш."
 msgid "Press any key to start the exercise. "
 msgstr "Натисніть будь-яку клавішу, щоб розпочати вправу. "
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "Почніть вводити символи, щойно будете готові. "
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr "Натисніть Backspace, щоб виправити помилки."
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -955,11 +955,11 @@ msgstr ""
 "P.S. Під час цього сеансу записів додано не було: кількість введених "
 "символів (%i) має перевищувати %i."
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "P.S. Ви увійшли до найкращої десятки, поздоровляємо!"
 
-#: ../src/tutor.c:1184
+#: ../src/tutor.c:1187
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -969,15 +969,15 @@ msgstr ""
 "мови: ми не можемо зарахувати ваш результат у змаганні «Найкраща десятка»."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "Статистика"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "Витрачено часу:"
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "хвилина і"
@@ -985,7 +985,7 @@ msgstr[1] "хвилини і"
 msgstr[2] "хвилин і"
 msgstr[3] "хвилина і"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "секунда"
@@ -993,74 +993,74 @@ msgstr[1] "секунди"
 msgstr[2] "секунд"
 msgstr[3] "секунда"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr "Частка помилок:"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "Точність:"
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "Мета:"
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "Символів на секунду:"
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(симв./сек.)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "Слів на хвилину:"
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "Плавність:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "Коментарі:"
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr "пробіл"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr "ігрек"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr "enter"
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr "апостроф"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr "лапки"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr "амперсанд"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr "Символ"
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr "Дата і час"
 

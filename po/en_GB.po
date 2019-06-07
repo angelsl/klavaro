@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.1.7\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2008-10-15 05:42-0300\n"
 "Last-Translator: Dave Pawson <_dave_._pawson_@gmail.com>\n"
 "Language-Team: en_GB <GB@li.org>\n"
@@ -506,20 +506,20 @@ msgstr "'Klavaro'"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr ""
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr ""
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr ""
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 #, fuzzy
 msgid "(Default)"
 msgstr "Default"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -528,93 +528,93 @@ msgstr[1] ""
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "Basics"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "Adaptability"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr ""
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr ""
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 #, fuzzy
 msgid "Keys:"
 msgstr "Keys: %s"
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr ""
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "Overwrite user layout"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "This will OVERWRITE an existing keyboard layout."
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "Remove user layout"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "This will REMOVE an existing keyboard layout."
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr ""
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 msgid "This will DELETE all the progress data of all modules."
 msgstr ""
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr ""
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr ""
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Accuracy"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr ""
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "Score"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "en"
 
@@ -916,15 +916,15 @@ msgstr "Learning the key positions."
 msgid "Press any key to start the exercise. "
 msgstr "Press any key to start the exercise."
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "Start typing when you are ready."
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr ""
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -932,11 +932,11 @@ msgid ""
 msgstr ""
 "No logging for this session. Typed characters (%i) must be more than %i."
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "You have entered the Top 10 list, Well done!"
 
-#: ../src/tutor.c:1184
+#: ../src/tutor.c:1187
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -944,94 +944,94 @@ msgid ""
 msgstr "Your text is not like ordinary text. We can't count it in the Top 10."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "Statistics"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "Elapsed time"
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "minute and"
 msgstr[1] "minutes and"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "second"
 msgstr[1] "seconds"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr ""
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "Accuracy:"
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "Goal:"
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "Characters per second:"
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(CPS)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "Words per minute:"
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "Fluidity:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "Comments:"
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr ""
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr ""
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr ""
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr ""
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr ""
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr ""
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr ""
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr ""
 

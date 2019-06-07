@@ -36,7 +36,7 @@
 "English (C) [qwerty_us]\n" \
 "English UK (en_GB) [qwerty_uk]\n" \
 "Esperanto (eo) [dvorak_eo_eurokeys]\n" \
-"Español; Castellano (es) [qwerty_es]\n" \
+"Español (es) [qwerty_es]\n" \
 "Euskara (eu) [qwerty_es]\n" \
 "Français (fr) [azerty_fr]\n" \
 "Galego (gl) [qwerty_es]\n" \
@@ -49,7 +49,8 @@
 "Nederlands (nl) [qwerty_us]\n" \
 "ਪੰਜਾਬੀ (pa) [gumurkhi_in_jehlum]\n" \
 "Polski (pl) [qwerty_pl_us]\n" \
-"Português (pt_BR) [qwerty_br_abnt2]\n" \
+"Português (pt) [qwerty_pt]\n" \
+"Português BR (pt_BR) [qwerty_br_abnt2]\n" \
 "Русский (ru) [jtsuken_ru]\n" \
 "Suomen kieli (fi) [qwerty_se]\n"\
 "Slovenščina (sl) [qwertz_sk]\n" \

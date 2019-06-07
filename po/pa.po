@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-13 21:24+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2014-09-09 16:59+0530\n"
 "Last-Translator: Gursharnjit Singh <ubuntuser13@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sourceforge.net>\n"
@@ -468,19 +468,19 @@ msgstr "ਬਾਰੇ 'ਕਲਾਵਾਰੋ'"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "ਇੱਕ ਬਹੁਤ ਹੀ ਕੋਮਲ ਅਤੇ ਨਿਪੁੰਨ ਟੱਚ ਟਾਈਪਿੰਗ ਸਿਖਿੱਅਕ।"
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr "(ਪਸੰਦੀਦਾ)"
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr "(ਪਸੰਦੀਦਾ ਸੋਧ)"
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 msgid "(Default)"
 msgstr "(ਮੂਲ)"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -489,93 +489,93 @@ msgstr[1] "ਲੇਖਾਰੀ ਮੋਡ (ਇਹਨਾਂ ਵਿੱਚੋਂ ਇ�
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "ਭੂਮਿਕਾ"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "ਬੁਨਿਆਦੀ ਕੋਰਸ"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "ਅਨੁਕੂਲਤਾ"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "ਰਫ਼ਤਾਰ"
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "ਫ਼ਲੂਈਡਿਟੀ"
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "ਕੁੰਜੀਆਂ:"
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr "ਸੰਪਰਕ ਕਰ ਰਿਹਾ..."
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "ਯੂਜ਼ਰ ਡਾਟਾ ਮੁੜ ਲਿਖੋ"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ OVERWRITE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "ਯੂਜ਼ਰ ਖਾਕਾ ਹਟਾਓ"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ REMOVE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr "ਡਾਟਾ ਵਿਕਾਸ ਰੀਸੈੱਟ"
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "ਇਹ ਚਾਰਟਾਂ ਵਿੱਚ ਵਿਖਾਏ ਗਏ ਸਾਰੇ ਤਰੱਕੀ ਡਾਟੇ ਨੂੰ DELETE ਕਰ ਦੇਵੇਗਾ।"
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "ਇਹ ਚਾਰਟਾਂ ਵਿੱਚ ਵਿਖਾਏ ਗਏ ਸਾਰੇ ਤਰੱਕੀ ਡਾਟੇ ਨੂੰ DELETE ਕਰ ਦੇਵੇਗਾ।"
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "ਸਾਰਾ ਡਾਟਾ ਵਿਕਾਸ ਮਿਟਾਓ, ਹਰੇਕ ਮੋਡੀਊਲ ਲਈ।"
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "ਖਰਾਪਨ"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr "ਗਲਤੀਆਂ"
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr "ਛੂਹਣ ਸਮਾਂ (s)"
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "ਅੰਕ"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "pa"
 
@@ -892,15 +892,15 @@ msgstr "ਕੁੰਜੀ ਅਹੁਦੇ ਸਿੱਖ ਰਿਹਾ।"
 msgid "Press any key to start the exercise. "
 msgstr "ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੋਈ ਵੀ ਕੁੰਜੀ ਦੱਬੋ। "
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "ਜਦੋਂ ਤਿਆਰ ਹੋਵੋ ਟਾਈਪਿੰਗ ਸ਼ੁਰੂ ਕਰੋ। "
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr "ਗਲਤੀਆਂ ਠੀਕ ਕਰਨ ਲਈ ਬੈਕਸਪੇਸ ਵਰਤੋਂ।"
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -909,11 +909,11 @@ msgstr ""
 "ps.: ਇਸ ਸ਼ੈਸ਼ਨ ਲਈ ਲਾਗਿੰਗ ਨਹੀਂ ਕੀਤੀ ਗਈ: ਟਾਈਪ ਕੀਤੇ ਗਏ ਅੱਖਰਾਂ(%i) ਦੀ ਗਿਣਤੀ %i ਤੋਂ ਵੱਧ ਹੋਣੀ "
 "ਚਾਹੀਦੀ ਹੈ।"
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "ps.: ਤੁਸੀ ਚੋਟੀ ਦੇ 10 ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ, ਬਹੁਤ ਵਧੀਆ!"
 
-#: ../src/tutor.c:1184
+#: ../src/tutor.c:1187
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -923,94 +923,94 @@ msgstr ""
 "ਅਸੀ 'ਚੋਟੀਦੇ10' ਮੁਕਾਬਲੇ ਵਿੱਚ ਇਸ ਦਾ ਉਲੇਖ ਨਹੀਂ ਕਰ ਸਕਦੇ।"
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "STATISTICS"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "ਬਾਕੀ ਸਮਾਂ:"
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "ਮਿੰਟ ਅਤੇ"
 msgstr[1] "ਮਿ਼ੰਟ ਅਤੇ"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "ਸੈਕਿੰਡ"
 msgstr[1] "ਸੈਕਿੰਡ"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr "ਗਲਤੀ ਅਨੁਪਾਤ:"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "ਖਰਾਪਨ:"
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "ਟੀਚਾ:"
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "ਅੱਖਰ ਪ੍ਰਤੀ ਸੈਕਿੰਡ:"
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(CPS)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "ਸ਼ਬਦ ਪ੍ਰਤੀ ਸੈਕਿੰਡ:"
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "ਫ਼ਲੂਈਡਨੈੱਸ:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "ਟਿੱਪਣੀਆਂ:"
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr "ਸਪੇਸ"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr "wye"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr "ਐਂਟਰ"
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr "ਐਪਾਸਟਰਾਫ਼ੀ"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr "ਹਿੱਸਾ"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr "ਐਪਰਸੈਨਡ"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr "ਅੱਖਰ"
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr "ਤਾਰੀਖ ਅਤੇ ਸਮਾਂ"
 
