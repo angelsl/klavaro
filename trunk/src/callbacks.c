@@ -327,6 +327,8 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	else
 		beep = TRUE;
 	wg = get_wg ("togglebutton_tutor_beep");
+	beep = FALSE; /* Disabling it here, let's see if someone complains... */
+	gtk_widget_hide (wg); /* Hidding it too, to keep it off always. */
 	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (wg), beep);
 	main_preferences_set_boolean ("tutor", "tutor_beep", beep);
 

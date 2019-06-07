@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.05-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-02-11 21:17+0100\n"
+"POT-Creation-Date: 2019-06-06 20:43-0300\n"
 "PO-Revision-Date: 2019-05-27 11:40+0200\n"
 "Last-Translator: Benno Schulenberg <vertaling@coevern.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -77,8 +77,11 @@ msgid "This is a specific exercise, adjusted to your error profile."
 msgstr "Dit is een speciale oefening, aangepast aan jouw foutenprofiel."
 
 #: ../data/klavaro.glade.h:16
-msgid "Edit the character set to be used in lessons after 43: they are customizable!"
-msgstr "De tekenset wijzigen die in de lessen na les 43 gebruikt wordt: die zijn te veranderen!"
+msgid ""
+"Edit the character set to be used in lessons after 43: they are customizable!"
+msgstr ""
+"De tekenset wijzigen die in de lessen na les 43 gebruikt wordt: die zijn te "
+"veranderen!"
 
 #: ../data/klavaro.glade.h:17 ../src/tutor.c:379
 msgid "Drag and drop text here to practice with it."
@@ -90,7 +93,8 @@ msgstr "Klik hier om de oefening te herstarten. Sneltoets: [Ctrl-R]"
 
 #: ../data/klavaro.glade.h:19
 msgid "Show the virtual keyboard and the relation between fingers and keys."
-msgstr "Een schematisch toetsenbord tonen met de relatie tussen vingers en toetsen."
+msgstr ""
+"Een schematisch toetsenbord tonen met de relatie tussen vingers en toetsen."
 
 #: ../data/klavaro.glade.h:20
 msgid "_Keyboard"
@@ -185,8 +189,12 @@ msgid "Rename the selected item."
 msgstr "Het geselecteerde item hernoemen."
 
 #: ../data/klavaro.glade.h:43
-msgid "Read a text file and add a copy of it here. The file must be encoded in UTF-8."
-msgstr "Een tekstbestand inlezen en een kopie ervan hier invoegen. Het bestand moet gecodeerd zijn in UTF-8."
+msgid ""
+"Read a text file and add a copy of it here. The file must be encoded in "
+"UTF-8."
+msgstr ""
+"Een tekstbestand inlezen en een kopie ervan hier invoegen. Het bestand moet "
+"gecodeerd zijn in UTF-8."
 
 #: ../data/klavaro.glade.h:44
 msgid "_Open text file"
@@ -237,8 +245,12 @@ msgid "_Remove"
 msgstr "_Verwijderen"
 
 #: ../data/klavaro.glade.h:56
-msgid "Toggles the shift effect on the keys. Alternates between the upper and lower characters of the keys."
-msgstr "Schakelt Shift aan of uit; wisselt tussen de bovenste en onderste tekens van de toetsen."
+msgid ""
+"Toggles the shift effect on the keys. Alternates between the upper and lower "
+"characters of the keys."
+msgstr ""
+"Schakelt Shift aan of uit; wisselt tussen de bovenste en onderste tekens van "
+"de toetsen."
 
 #: ../data/klavaro.glade.h:57
 msgid "SPACE BAR"
@@ -293,8 +305,12 @@ msgid "_Save and use"
 msgstr "_Opslaan en gebruiken"
 
 #: ../data/klavaro.glade.h:70
-msgid "If you like those beautiful hands, click here to close this window keeping them."
-msgstr "Als je die mooie handen graag ziet, klik dan hier om dit venster te sluiten en ze te behouden."
+msgid ""
+"If you like those beautiful hands, click here to close this window keeping "
+"them."
+msgstr ""
+"Als je die mooie handen graag ziet, klik dan hier om dit venster te sluiten "
+"en ze te behouden."
 
 #: ../data/klavaro.glade.h:71
 msgid "_Keep hands"
@@ -353,8 +369,12 @@ msgid "Your language here."
 msgstr "Kies hier je taal."
 
 #: ../data/klavaro.glade.h:85
-msgid "Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest."
-msgstr "Toetsenbordindeling voor modules 1 en 2; wordt ook informatief gebruikt in de vloeiendtypenwedstrijd."
+msgid ""
+"Keyboard layout for modules 1 and 2. Also used informatively in the "
+"fluidness contest."
+msgstr ""
+"Toetsenbordindeling voor modules 1 en 2; wordt ook informatief gebruikt in "
+"de vloeiendtypenwedstrijd."
 
 #: ../data/klavaro.glade.h:86
 msgid "_Keyboard:"
@@ -402,15 +422,31 @@ msgstr "Hulp?"
 
 #: ../data/klavaro.glade.h:97
 msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "Dit is een tip. Je kunt nu op deze knop klikken om terug te keren naar het hoofdmenu."
+msgstr ""
+"Dit is een tip. Je kunt nu op deze knop klikken om terug te keren naar het "
+"hoofdmenu."
 
 #: ../data/klavaro.glade.h:98
-msgid "The main menu of the application is very straightforward. Just select the type of exercise you wish to take. Do not worry about clicking any button on the screen. The buttons will never hurt you!"
-msgstr "Het hoofdmenu van het programma is vrij eenvoudig: kies het soort oefening dat je wilt doen. Wees niet bang om op een knop op het scherm te klikken. Ze zullen niet bijten!"
+msgid ""
+"The main menu of the application is very straightforward. Just select the "
+"type of exercise you wish to take. Do not worry about clicking any button on "
+"the screen. The buttons will never hurt you!"
+msgstr ""
+"Het hoofdmenu van het programma is vrij eenvoudig: kies het soort oefening "
+"dat je wilt doen. Wees niet bang om op een knop op het scherm te klikken. Ze "
+"zullen niet bijten!"
 
 #: ../data/klavaro.glade.h:99
-msgid "Also the controls have tips which will appear if you hover over them with your mouse. These tips can come in very handy. To see how these tips work, position your mouse over the button below, and without clicking, wait for the tip to appear..."
-msgstr "Elke knop toont een toelichting als je de muisaanwijzer erboven houdt. Deze toelichtingen kunnen van pas komen. Om te zien hoe ze werken, plaats je nu de muisaanwijzer boven de knop hieronder, zonder te klikken -- wacht tot de tip verschijnt..."
+msgid ""
+"Also the controls have tips which will appear if you hover over them with "
+"your mouse. These tips can come in very handy. To see how these tips work, "
+"position your mouse over the button below, and without clicking, wait for "
+"the tip to appear..."
+msgstr ""
+"Elke knop toont een toelichting als je de muisaanwijzer erboven houdt. Deze "
+"toelichtingen kunnen van pas komen. Om te zien hoe ze werken, plaats je nu "
+"de muisaanwijzer boven de knop hieronder, zonder te klikken -- wacht tot de "
+"tip verschijnt..."
 
 #: ../data/klavaro.glade.h:100
 msgid "Top 10"
@@ -448,207 +484,344 @@ msgstr "'Klavaro'"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "Een zeer flexibel en efficiënt typelesprogramma."
 
-#: ../src/main.c:239
+#: ../src/main.c:246
 msgid "(Custom)"
 msgstr "(aangepast)"
 
-#: ../src/main.c:240
+#: ../src/main.c:247
 msgid "(Edit custom)"
 msgstr "(Aanpassen)"
 
-#: ../src/main.c:241
+#: ../src/main.c:248
 msgid "(Default)"
 msgstr "(standaard)"
 
-#: ../src/main.c:318
+#: ../src/main.c:325
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
 msgstr[0] "Dicteermodus (maakt gebruik van deze spraaksynthesizer: %s)"
-msgstr[1] "Dicteermodus (maakt gebruik van één van deze spraaksynthesizers: %s)"
+msgstr[1] ""
+"Dicteermodus (maakt gebruik van één van deze spraaksynthesizers: %s)"
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:360 ../src/keyboard.c:1315
+#: ../src/main.c:367 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "Inleiding"
 
-#: ../src/main.c:363 ../src/top10.c:110
+#: ../src/main.c:370 ../src/top10.c:110
 msgid "Basic course"
 msgstr "Basiscursus"
 
-#: ../src/main.c:366 ../src/top10.c:113
+#: ../src/main.c:373 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "Flexibiliteit"
 
-#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
-#: ../src/top10.c:116
+#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Snelheid"
 
-#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
+#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Vloeiendheid"
 
-#: ../src/callbacks.c:430 ../src/tutor.c:523
+#: ../src/callbacks.c:437 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "Toetsen:"
 
-#: ../src/callbacks.c:828 ../src/callbacks.c:844
+#: ../src/callbacks.c:835 ../src/callbacks.c:851
 msgid "Connecting..."
 msgstr "Verbinden..."
 
-#: ../src/callbacks.c:1117
+#: ../src/callbacks.c:1124
 msgid "Overwrite user layout"
 msgstr "Zelfgemaakte indeling overschrijven"
 
-#: ../src/callbacks.c:1119
+#: ../src/callbacks.c:1126
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Dit zal een bestaande toetsenbordindeling OVERSCHRIJVEN."
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1133
 msgid "Remove user layout"
 msgstr "Zelfgemaakte indeling verwijderen"
 
-#: ../src/callbacks.c:1128
+#: ../src/callbacks.c:1135
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Dit zal een bestaande toetsenbordindeling VERWIJDEREN."
 
-#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
+#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
 msgid "Reset progress data"
 msgstr "Voortgangsgegevens wissen"
 
-#: ../src/callbacks.c:1136
+#: ../src/callbacks.c:1143
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Dit zal alle voortgangsgegevens van alle modules VERWIJDEREN."
 
-#: ../src/callbacks.c:1148
+#: ../src/callbacks.c:1155
 #, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Dit zal de gegevens van deze grafiek verwijderen. <%s>"
 
-#: ../src/callbacks.c:1151
+#: ../src/callbacks.c:1158
 #, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Dit zal de voortgangsgegevens van de module wissen. (%s)"
 
-#: ../src/callbacks.c:1351 ../src/top10.c:88
+#: ../src/callbacks.c:1358 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Nauwkeurigheid"
 
-#: ../src/callbacks.c:1354 ../src/tutor.c:1305
+#: ../src/callbacks.c:1361 ../src/tutor.c:1308
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1365
+#: ../src/callbacks.c:1372
 msgid "Errors"
 msgstr "Fouten"
 
-#: ../src/callbacks.c:1368
+#: ../src/callbacks.c:1375
 msgid "Touch times (s)"
 msgstr "Aanslagtijden (s)"
 
-#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
+#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
 msgid "Score"
 msgstr "Score"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1744
+#: ../src/translation.c:508 ../src/tutor.c:1747
 msgid "en"
 msgstr "nl"
 
 #: ../src/translation.c:595
-msgid "The basic course focuses on having you read the characters presented to you on screen and typing the corresponding keys. Remember to keep your hands correctly oriented on the home row of the keyboard at all times (see introduction on main menu)."
-msgstr "De basiscursus richt zich erop dat je de tekens die op het scherm getoond worden leest en de corresponderende toetsen indrukt. Denk eraan om continu je handen op de basisrij van het toetsenbord te houden (zie de Inleiding in het hoofdmenu)."
+msgid ""
+"The basic course focuses on having you read the characters presented to you "
+"on screen and typing the corresponding keys. Remember to keep your hands "
+"correctly oriented on the home row of the keyboard at all times (see "
+"introduction on main menu)."
+msgstr ""
+"De basiscursus richt zich erop dat je de tekens die op het scherm getoond "
+"worden leest en de corresponderende toetsen indrukt. Denk eraan om continu "
+"je handen op de basisrij van het toetsenbord te houden (zie de Inleiding in "
+"het hoofdmenu)."
 
 #: ../src/translation.c:599
-msgid "The key set used in each series will be shown in the above message line. The [Space], [Shift] and [Enter] keys may not show up there but are used very often."
-msgstr "De gebruikte toetsenset in elke serie wordt in de bovenste berichtenregel getoond. Het kan zijn dat de [Spatie]-, [Shift]- en [Enter]-toetsen daar niet verschijnen maar toch vaak gebruikt worden."
+msgid ""
+"The key set used in each series will be shown in the above message line. The "
+"[Space], [Shift] and [Enter] keys may not show up there but are used very "
+"often."
+msgstr ""
+"De gebruikte toetsenset in elke serie wordt in de bovenste berichtenregel "
+"getoond. Het kan zijn dat de [Spatie]-, [Shift]- en [Enter]-toetsen daar "
+"niet verschijnen maar toch vaak gebruikt worden."
 
 #: ../src/translation.c:602
-msgid "The message line below follows and echoes your key presses. If required, it changes and displays instructions for actions required from you."
-msgstr "De berichtenregel onderaan geeft de toetsen weer die je indrukte. Indien nodig toont het instructies voor vereiste acties."
+msgid ""
+"The message line below follows and echoes your key presses. If required, it "
+"changes and displays instructions for actions required from you."
+msgstr ""
+"De berichtenregel onderaan geeft de toetsen weer die je indrukte. Indien "
+"nodig toont het instructies voor vereiste acties."
 
 #: ../src/translation.c:606
-msgid "Here you may practice and improve your memorization of all keys. There will be sentences presented with nonsense words which mix some numbers and symbols."
-msgstr "Hier kun je oefenen en je inprenting van de toetsen verbeteren. Er zullen zinnen worden getoond met niet-bestaande woorden plus enkele cijfers en symbolen."
+msgid ""
+"Here you may practice and improve your memorization of all keys. There will "
+"be sentences presented with nonsense words which mix some numbers and "
+"symbols."
+msgstr ""
+"Hier kun je oefenen en je inprenting van de toetsen verbeteren. Er zullen "
+"zinnen worden getoond met niet-bestaande woorden plus enkele cijfers en "
+"symbolen."
 
 #: ../src/translation.c:609
-msgid "In order to keep the lesson contents language and keyboard independent, accented letter combinations will probably not appear. For real word sentences, please use the fourth option of the main menu (about fluidness)."
-msgstr "Om de lessen onafhankelijk van taal en toetsenbord te houden, zullen letters met accenten waarschijnlijk niet verschijnen. Gebruik voor echte zinnen de vierde optie van het hoofdmenu (Vloeiendheid)."
+msgid ""
+"In order to keep the lesson contents language and keyboard independent, "
+"accented letter combinations will probably not appear. For real word "
+"sentences, please use the fourth option of the main menu (about fluidness)."
+msgstr ""
+"Om de lessen onafhankelijk van taal en toetsenbord te houden, zullen letters "
+"met accenten waarschijnlijk niet verschijnen. Gebruik voor echte zinnen de "
+"vierde optie van het hoofdmenu (Vloeiendheid)."
 
 #: ../src/translation.c:613
-msgid "After each exercise there will be a brief statistics panel reviewing your performance along with some relevant comments."
-msgstr "Na elke oefening zal een kort statistisch overzicht van je prestaties getoond worden, samen met enkele relevante commentaren."
+msgid ""
+"After each exercise there will be a brief statistics panel reviewing your "
+"performance along with some relevant comments."
+msgstr ""
+"Na elke oefening zal een kort statistisch overzicht van je prestaties "
+"getoond worden, samen met enkele relevante commentaren."
 
 #: ../src/translation.c:617
-msgid "This exercise is very similar to the second one, for adaptability. The difference is that here you'll type real words."
-msgstr "Deze oefening is vergelijkbaar met de tweede (Flexibiliteit). Het verschil is dat je hier bestaande woorden zult typen."
+msgid ""
+"This exercise is very similar to the second one, for adaptability. The "
+"difference is that here you'll type real words."
+msgstr ""
+"Deze oefening is vergelijkbaar met de tweede (Flexibiliteit). Het verschil "
+"is dat je hier bestaande woorden zult typen."
 
 #: ../src/translation.c:620
-msgid "The default language is the actual one of the interface. But you may select any other texts with words you would like to use. Press the 'Other' option above and add files containing those texts."
-msgstr "De standaard taal is die van je interface. Maar je mag andere teksten selecteren met woorden die je graag zou oefenen. Klik op de keuze 'Overig' bovenaan om bestanden toe te voegen die de gewenste tekst bevatten."
+msgid ""
+"The default language is the actual one of the interface. But you may select "
+"any other texts with words you would like to use. Press the 'Other' option "
+"above and add files containing those texts."
+msgstr ""
+"De standaard taal is die van je interface. Maar je mag andere teksten "
+"selecteren met woorden die je graag zou oefenen. Klik op de keuze 'Overig' "
+"bovenaan om bestanden toe te voegen die de gewenste tekst bevatten."
 
 #: ../src/translation.c:624
-msgid "With this exercise the focus is on speed. So, you are supposed to type really fast and I will only flatter you when you deserve it!"
-msgstr "Bij deze oefening ligt de nadruk op snelheid. Het is dus de bedoeling om zo snel mogelijk te typen; ik zal je enkel vleien wanneer je het verdient!"
+msgid ""
+"With this exercise the focus is on speed. So, you are supposed to type "
+"really fast and I will only flatter you when you deserve it!"
+msgstr ""
+"Bij deze oefening ligt de nadruk op snelheid. Het is dus de bedoeling om zo "
+"snel mogelijk te typen; ik zal je enkel vleien wanneer je het verdient!"
 
 #: ../src/translation.c:628
-msgid "We will now use complete sentences and paragraphs which make logical sense. This may distract you while you type if you try to understand what you are entering. The previous exercises were aimed at getting you to type without interpreting and analyzing the content."
-msgstr "We zullen nu complete zinnen en alinea's gebruiken die logisch verband houden. Dit kan je aandacht afleiden tijdens het typen als je tracht te begrijpen wat je typt. De voorgaande oefeningen waren erop gericht om je te leren typen zonder de inhoud te analyseren en te interpreteren."
+msgid ""
+"We will now use complete sentences and paragraphs which make logical sense. "
+"This may distract you while you type if you try to understand what you are "
+"entering. The previous exercises were aimed at getting you to type without "
+"interpreting and analyzing the content."
+msgstr ""
+"We zullen nu complete zinnen en alinea's gebruiken die logisch verband "
+"houden. Dit kan je aandacht afleiden tijdens het typen als je tracht te "
+"begrijpen wat je typt. De voorgaande oefeningen waren erop gericht om je te "
+"leren typen zonder de inhoud te analyseren en te interpreteren."
 
 #: ../src/translation.c:632
-msgid "We do not mean to imply that the typists must behave like a robot, without understanding what they type. We do aim to develop the skill of typing, making it an automatic reflex akin to the acts of walking, talking, etc. After reaching this goal, the act of typing will become automatic and require little concentration. Then you will be able to pay attention to the real meaning of the text."
-msgstr "We willen niet zeggen dat typisten zich als een robot zouden moeten gedragen, zonder te begrijpen wat ze typen. We hebben enkel als doel de vaardigheid van het typen te ontwikkelen, om het een automatische reflex te maken, net als lopen, fietsen, praten enzovoort. Na het bereiken van dit doel zal de vaardigheid van het typen automatisch worden en weinig aandacht vereisen. Dan zul je aandacht kunnen besteden aan de betekenis van de tekst."
+msgid ""
+"We do not mean to imply that the typists must behave like a robot, without "
+"understanding what they type. We do aim to develop the skill of typing, "
+"making it an automatic reflex akin to the acts of walking, talking, etc. "
+"After reaching this goal, the act of typing will become automatic and "
+"require little concentration. Then you will be able to pay attention to the "
+"real meaning of the text."
+msgstr ""
+"We willen niet zeggen dat typisten zich als een robot zouden moeten "
+"gedragen, zonder te begrijpen wat ze typen. We hebben enkel als doel de "
+"vaardigheid van het typen te ontwikkelen, om het een automatische reflex te "
+"maken, net als lopen, fietsen, praten enzovoort. Na het bereiken van dit "
+"doel zal de vaardigheid van het typen automatisch worden en weinig aandacht "
+"vereisen. Dan zul je aandacht kunnen besteden aan de betekenis van de tekst."
 
 #: ../src/translation.c:636
-msgid "These exercises are longer. Each exercise consists of three paragraphs and the emphasis is placed on correctness and rhythm, with a minimum speed requirement. Here you will be required to use the backspace key to correct any mistakes. In other words, only input without error will be accepted."
-msgstr "Deze oefeningen zijn langer. Elke oefening bestaat uit drie alinea's en de nadruk ligt op correctheid en ritme, met een vereiste minimumsnelheid. Hier zul je de [Backspace]-toets moeten gebruiken om fouten te corrigeren. Met andere woorden: alleen foutloze inhoud wordt geaccepteerd."
+msgid ""
+"These exercises are longer. Each exercise consists of three paragraphs and "
+"the emphasis is placed on correctness and rhythm, with a minimum speed "
+"requirement. Here you will be required to use the backspace key to correct "
+"any mistakes. In other words, only input without error will be accepted."
+msgstr ""
+"Deze oefeningen zijn langer. Elke oefening bestaat uit drie alinea's en de "
+"nadruk ligt op correctheid en ritme, met een vereiste minimumsnelheid. Hier "
+"zul je de [Backspace]-toets moeten gebruiken om fouten te corrigeren. Met "
+"andere woorden: alleen foutloze inhoud wordt geaccepteerd."
 
 #: ../src/keyboard.c:1115
-msgid "Correct positioning of the hands and fingers is very important to efficient typing. You will learn faster and type better if you follow the next recommendations."
-msgstr "Het correct positioneren van je handen en vingers is zeer belangrijk om efficiënt te kunnen typen. Je zult het sneller leren en beter typen als je deze aanbevelingen opvolgt."
+msgid ""
+"Correct positioning of the hands and fingers is very important to efficient "
+"typing. You will learn faster and type better if you follow the next "
+"recommendations."
+msgstr ""
+"Het correct positioneren van je handen en vingers is zeer belangrijk om "
+"efficiënt te kunnen typen. Je zult het sneller leren en beter typen als je "
+"deze aanbevelingen opvolgt."
 
 #: ../src/keyboard.c:1118
-msgid "The index-finger tips rest over each of the two keys which have a small raised mark, in the center of the keyboard."
-msgstr "De twee wijsvingertoppen moeten rusten op de twee toetsen die een kleine verhoogde markering hebben, in het midden van het toetsenbord."
+msgid ""
+"The index-finger tips rest over each of the two keys which have a small "
+"raised mark, in the center of the keyboard."
+msgstr ""
+"De twee wijsvingertoppen moeten rusten op de twee toetsen die een kleine "
+"verhoogde markering hebben, in het midden van het toetsenbord."
 
 #: ../src/keyboard.c:1121
-msgid "These marks function as 'tactile hooks' for your fingers to remain at the correct position. This way, with a little experience, you will not need to look at the keyboard to see if your fingers are properly positioned."
-msgstr "Deze verhoginkjes functioneren als 'gevoelshaken' voor je vingers, om makkelijk op de correcte positie te kunnen blijven. Op deze manier, en met een klein beetje oefening, zul je niet naar het toetsenbord hoeven kijken om te weten of je vingers correct gepositioneerd zijn."
+msgid ""
+"These marks function as 'tactile hooks' for your fingers to remain at the "
+"correct position. This way, with a little experience, you will not need to "
+"look at the keyboard to see if your fingers are properly positioned."
+msgstr ""
+"Deze verhoginkjes functioneren als 'gevoelshaken' voor je vingers, om "
+"makkelijk op de correcte positie te kunnen blijven. Op deze manier, en met "
+"een klein beetje oefening, zul je niet naar het toetsenbord hoeven kijken om "
+"te weten of je vingers correct gepositioneerd zijn."
 
 #: ../src/keyboard.c:1125
-msgid "The tips of the other fingers lie naturally beside the index ones, over the keys on the same row of the keyboard."
-msgstr "De toppen van de andere vingers liggen natuurlijk naast die van de wijsvingers, op de toetsen van dezelfde rij van het toetsenbord."
+msgid ""
+"The tips of the other fingers lie naturally beside the index ones, over the "
+"keys on the same row of the keyboard."
+msgstr ""
+"De toppen van de andere vingers liggen natuurlijk naast die van de "
+"wijsvingers, op de toetsen van dezelfde rij van het toetsenbord."
 
 #: ../src/keyboard.c:1128
 msgid "The outside edges of your thumbs rest over the space bar."
 msgstr "De buitenranden van je duimen rusten op de spatiebalk."
 
 #: ../src/keyboard.c:1130
-msgid "The part of the hands closest to the wrist (the base) rest over the table, outside the keyboard. Without this kind of support the arms would quickly tire."
-msgstr "Het deel van de handen dicht bij de pols (de basis) rust op de tafel buiten het toetsenbord. Zonder deze ondersteuning zouden de armen snel moe worden."
+msgid ""
+"The part of the hands closest to the wrist (the base) rest over the table, "
+"outside the keyboard. Without this kind of support the arms would quickly "
+"tire."
+msgstr ""
+"Het deel van de handen dicht bij de pols (de basis) rust op de tafel buiten "
+"het toetsenbord. Zonder deze ondersteuning zouden de armen snel moe worden."
 
 #: ../src/keyboard.c:1133
-msgid "This is referred to as the home position for the hands. From it the fingers move all over the keyboard, reaching all the keys as naturally and quickly as possible. To reach this goal one uses a specific relation between each key and finger. This relation will be learned gradually as you complete the basic course."
-msgstr "Dit wordt de basispositie voor de handen genoemd. Van daar bewegen de vingers over het toetsenbord, en bereiken alle toetsen zo natuurlijk en snel mogelijk. Om het typen automatisch te kunnen maken, wordt er een vaste relatie tussen toetsen en vingers gebruikt. Deze relatie zal tijdens de basiscursus langzaam worden aangeleerd."
+msgid ""
+"This is referred to as the home position for the hands. From it the fingers "
+"move all over the keyboard, reaching all the keys as naturally and quickly "
+"as possible. To reach this goal one uses a specific relation between each "
+"key and finger. This relation will be learned gradually as you complete the "
+"basic course."
+msgstr ""
+"Dit wordt de basispositie voor de handen genoemd. Van daar bewegen de "
+"vingers over het toetsenbord, en bereiken alle toetsen zo natuurlijk en snel "
+"mogelijk. Om het typen automatisch te kunnen maken, wordt er een vaste "
+"relatie tussen toetsen en vingers gebruikt. Deze relatie zal tijdens de "
+"basiscursus langzaam worden aangeleerd."
 
 #: ../src/keyboard.c:1139
-msgid "When learning the relation between fingers and keys, it is very important that you only move the finger which must press the key and allow all other fingers to remain in the home position."
-msgstr "Tijdens het aanleren van de relatie tussen vingers en toetsen, is het zeer belangrijk dat je alleen de vinger die de toets moet indrukken beweegt en alle andere vingers in de basispositie houdt."
+msgid ""
+"When learning the relation between fingers and keys, it is very important "
+"that you only move the finger which must press the key and allow all other "
+"fingers to remain in the home position."
+msgstr ""
+"Tijdens het aanleren van de relatie tussen vingers en toetsen, is het zeer "
+"belangrijk dat je alleen de vinger die de toets moet indrukken beweegt en "
+"alle andere vingers in de basispositie houdt."
 
 #: ../src/keyboard.c:1143
-msgid "After memorizing this relationship, you can relax the previous rule some, so that you can attain greater speed while typing."
-msgstr "Na het je inprenten van deze relatie, kun je de voorgaande regel een beetje afzwakken, zodat je een grotere typsnelheid kunt behalen."
+msgid ""
+"After memorizing this relationship, you can relax the previous rule some, so "
+"that you can attain greater speed while typing."
+msgstr ""
+"Na het je inprenten van deze relatie, kun je de voorgaande regel een beetje "
+"afzwakken, zodat je een grotere typsnelheid kunt behalen."
 
 #: ../src/keyboard.c:1146
-msgid "The shift keys are used for capital letters and for some symbols. To get a shifted key input you should first use the small finger of the opposite hand. Just keep it in the closest Shift while reaching the target key with the other hand."
-msgstr "De Shift-toetsen worden gebruikt voor hoofdletters en sommige symbolen. Om de tweede betekenis van een toets te krijgen dient u de pink van de andere hand te gebruiken. Houd deze pink op de betreffende Shift-toets terwijl u met de andere hand naar de doeltoets gaat."
+msgid ""
+"The shift keys are used for capital letters and for some symbols. To get a "
+"shifted key input you should first use the small finger of the opposite "
+"hand. Just keep it in the closest Shift while reaching the target key with "
+"the other hand."
+msgstr ""
+"De Shift-toetsen worden gebruikt voor hoofdletters en sommige symbolen. Om "
+"de tweede betekenis van een toets te krijgen dient u de pink van de andere "
+"hand te gebruiken. Houd deze pink op de betreffende Shift-toets terwijl u "
+"met de andere hand naar de doeltoets gaat."
 
 #: ../src/keyboard.c:1150
-msgid "You should be prepared to start training with the basic course. It will take effort and patience to be successful as a typist. We trust you have these and look forward to your success!"
-msgstr "Je zou nu klaar moeten zijn om te beginnen met de basiscursus. Het zal moeite en geduld kosten om even goed te worden als een typist. Maar we vertrouwen erop dat je dit kunt en kijken uit naar je succes!"
+msgid ""
+"You should be prepared to start training with the basic course. It will take "
+"effort and patience to be successful as a typist. We trust you have these "
+"and look forward to your success!"
+msgstr ""
+"Je zou nu klaar moeten zijn om te beginnen met de basiscursus. Het zal "
+"moeite en geduld kosten om even goed te worden als een typist. Maar we "
+"vertrouwen erop dat je dit kunt en kijken uit naar je succes!"
 
 #: ../src/keyboard.c:1161
 #, c-format
@@ -718,8 +891,12 @@ msgid "Klavaro - Adaptability"
 msgstr "Klavaro - Flexibiliteit"
 
 #: ../src/tutor.c:354
-msgid "Adaptability exercises: automating the fingers responses, typing over all the keyboard."
-msgstr "Flexibiliteitsoefeningen: de vingeracties automatiseren, alle toetsen gebruikend."
+msgid ""
+"Adaptability exercises: automating the fingers responses, typing over all "
+"the keyboard."
+msgstr ""
+"Flexibiliteitsoefeningen: de vingeracties automatiseren, alle toetsen "
+"gebruikend."
 
 #: ../src/tutor.c:359
 msgid "Klavaro - Velocity"
@@ -749,122 +926,138 @@ msgstr "Het leren van de toetsposities."
 msgid "Press any key to start the exercise. "
 msgstr "Druk op een toets om de oefening te starten. "
 
-#: ../src/tutor.c:576 ../src/tutor.c:579
+#: ../src/tutor.c:579 ../src/tutor.c:582
 msgid "Start typing when you are ready. "
 msgstr "Start met typen wanneer je er klaar voor bent. "
 
-#: ../src/tutor.c:577
+#: ../src/tutor.c:580
 msgid "Use backspace to correct errors."
 msgstr "Gebruik [Backspace] om fouten te corrigeren."
 
-#: ../src/tutor.c:1030
+#: ../src/tutor.c:1033
 #, c-format
-msgid "ps.: logging not performed for this session: the number of typed characters (%i) must be greater than %i."
-msgstr "PS: er worden geen log-bestanden bijgehouden voor deze sessie: het totaal aantal ingetikte tekens (%i) moet groter zijn dan %i."
+msgid ""
+"ps.: logging not performed for this session: the number of typed characters "
+"(%i) must be greater than %i."
+msgstr ""
+"PS: er worden geen log-bestanden bijgehouden voor deze sessie: het totaal "
+"aantal ingetikte tekens (%i) moet groter zijn dan %i."
 
-#: ../src/tutor.c:1172
+#: ../src/tutor.c:1175
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "PS: je hebt de top 10 bereikt, geweldig!"
 
-#: ../src/tutor.c:1184
-msgid "ps.: the text you just typed doesn't seem to be similar to ordinary texts in the language currently selected: we can't account for it in the 'Top 10' contest."
-msgstr "PS: de tekst die je intikte lijkt niet op de standaardteksten in de taal die nu geselecteerd is: we kunnen het niet in rekening brengen voor de 'Top 10'-wedstrijd."
+#: ../src/tutor.c:1187
+msgid ""
+"ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
+"the language currently selected: we can't account for it in the 'Top 10' "
+"contest."
+msgstr ""
+"PS: de tekst die je intikte lijkt niet op de standaardteksten in de taal die "
+"nu geselecteerd is: we kunnen het niet in rekening brengen voor de 'Top 10'-"
+"wedstrijd."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1232
+#: ../src/tutor.c:1235
 msgid "STATISTICS"
 msgstr "STATISTIEKEN"
 
-#: ../src/tutor.c:1233
+#: ../src/tutor.c:1236
 msgid "Elapsed time:"
 msgstr "Verstreken tijd:"
 
-#: ../src/tutor.c:1234
+#: ../src/tutor.c:1237
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "minuut en"
 msgstr[1] "minuten en"
 
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1238
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "seconde"
 msgstr[1] "seconden"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Error ratio:"
 msgstr "Foutenverhouding:"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1239
 msgid "Accuracy:"
 msgstr "Nauwkeurigheid:"
 
-#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
-#: ../src/tutor.c:1331
+#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
+#: ../src/tutor.c:1334
 msgid "Goal:"
 msgstr "Doel:"
 
-#: ../src/tutor.c:1264
+#: ../src/tutor.c:1267
 msgid "Characters per second:"
 msgstr "Aanslagen per seconde:"
 
-#: ../src/tutor.c:1282
+#: ../src/tutor.c:1285
 msgid "(CPS)"
 msgstr "(TPS)"
 
-#: ../src/tutor.c:1287
+#: ../src/tutor.c:1290
 msgid "Words per minute:"
 msgstr "Woorden per minuut:"
 
-#: ../src/tutor.c:1312
+#: ../src/tutor.c:1315
 msgid "Fluidness:"
 msgstr "Vloeiendheid:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1342
 msgid "Comments:"
 msgstr "Commentaar:"
 
-#: ../src/tutor.c:1823
+#: ../src/tutor.c:1826
 msgid "space"
 msgstr "spatie"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1828
+#: ../src/tutor.c:1831
 msgid "wye"
 msgstr "i-grec"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1832
+#: ../src/tutor.c:1835
 msgid "enter"
 msgstr "Enter"
 
-#: ../src/tutor.c:1838
+#: ../src/tutor.c:1841
 msgid "apostrophe"
 msgstr "apostrof"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1842
+#: ../src/tutor.c:1845
 msgid "quote"
 msgstr "dubbel aanhalingsteken"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1846
+#: ../src/tutor.c:1849
 msgid "ampersand"
 msgstr "ampersand"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:324
+#: ../src/plot.c:323
 msgid "Character"
 msgstr "Teken"
 
-#: ../src/plot.c:336
+#: ../src/plot.c:335
 msgid "Date & Time"
 msgstr "Datum en tijd"
 
 #: ../src/basic.c:273
-msgid "This custom lesson is empty. You can define two or more different characters to generate a personal practice. Press the editting button in the upper-right corner."
-msgstr "Deze aanpasbare les is leeg. U kunt twee of meer tekens definiëren om een persoonlijke oefening te genereren. Klik op de Bewerken-knop in de rechter bovenhoek."
+msgid ""
+"This custom lesson is empty. You can define two or more different characters "
+"to generate a personal practice. Press the editting button in the upper-"
+"right corner."
+msgstr ""
+"Deze aanpasbare les is leeg. U kunt twee of meer tekens definiëren om een "
+"persoonlijke oefening te genereren. Klik op de Bewerken-knop in de rechter "
+"bovenhoek."
 
 #: ../src/basic.c:356
 msgid "Positions of keys seems to be learned!"
@@ -912,10 +1105,12 @@ msgstr ""
 #, c-format
 msgid ""
 " You are almost there, but your accuracy rate is still below %.0f%%.\n"
-" Try a few more times, or maybe you're getting upset, so go to another kind of exercise.\n"
+" Try a few more times, or maybe you're getting upset, so go to another kind "
+"of exercise.\n"
 msgstr ""
 " Je bent er bijna, maar je nauwkeurigheid is nog steeds onder de %.0f%%.\n"
-" Probeer het nog een paar keer opnieuw, of ga naar een ander soort oefening als je er genoeg van hebt.\n"
+" Probeer het nog een paar keer opnieuw, of ga naar een ander soort oefening "
+"als je er genoeg van hebt.\n"
 
 #: ../src/adaptability.c:238
 #, c-format
@@ -1002,7 +1197,8 @@ msgstr ""
 #: ../src/velocity.c:448
 #, c-format
 msgid " Ranking good, Speed Racer! Are you afraid of reaching %.0f WPM?\n"
-msgstr " Je scoort goed, racemonster! En... ben je bang om de %.0f WPM te halen?\n"
+msgstr ""
+" Je scoort goed, racemonster! En... ben je bang om de %.0f WPM te halen?\n"
 
 #. Translators: feel free to change the reference to that martial art, if you find another good analogy.
 #: ../src/velocity.c:452
@@ -1129,7 +1325,8 @@ msgstr "Kan de lokale scores niet uploaden/downloaden."
 #~ " Top of \"qwerty\". Now it's time to change to the Dvorak mode.\n"
 #~ " Are you afraid of reaching 80 WPM?\n"
 #~ msgstr ""
-#~ " De top van \"qwerty\". Nu is het tijd om om te schakelen naar de Dvorak-modus.\n"
+#~ " De top van \"qwerty\". Nu is het tijd om om te schakelen naar de Dvorak-"
+#~ "modus.\n"
 #~ " Ben je bang om de 80 WPM te halen?\n"
 
 #~ msgid "_Font"
@@ -1207,8 +1404,12 @@ msgstr "Kan de lokale scores niet uploaden/downloaden."
 #~ msgid "Load"
 #~ msgstr "Openen"
 
-#~ msgid "Remove the layout shown above from the user defined list of available ones."
-#~ msgstr "Verwijder de bovenstaande indeling uit de lijst met zelfgemaakte indelingen."
+#~ msgid ""
+#~ "Remove the layout shown above from the user defined list of available "
+#~ "ones."
+#~ msgstr ""
+#~ "Verwijder de bovenstaande indeling uit de lijst met zelfgemaakte "
+#~ "indelingen."
 
 #~ msgid "New custom layout"
 #~ msgstr "Nieuwe, zelfgemaakte indeling"
@@ -1255,7 +1456,8 @@ msgstr "Kan de lokale scores niet uploaden/downloaden."
 #~ msgid "Revert"
 #~ msgstr "Teruggaan"
 
-#~ msgid "Forgets the current lesson, restarting the course from the introduction."
+#~ msgid ""
+#~ "Forgets the current lesson, restarting the course from the introduction."
 #~ msgstr "De huidige les negeren en de cursus vanaf de inleiding herstarten."
 
 #~ msgid "Sound"
@@ -1297,7 +1499,8 @@ msgstr "Kan de lokale scores niet uploaden/downloaden."
 #~ msgid "Go see the complete ranking in the web."
 #~ msgstr "Bekijk de volledige rangschikking op het web."
 
-#~ msgid "Automatically publish local scores whenever you succeed a new record."
+#~ msgid ""
+#~ "Automatically publish local scores whenever you succeed a new record."
 #~ msgstr "Publiceer je scores automatisch als je een nieuw record bereikt."
 
 #~ msgid "basic course"
@@ -1331,7 +1534,9 @@ msgstr "Kan de lokale scores niet uploaden/downloaden."
 #~ msgstr "Thuispagina"
 
 #~ msgid "<<==  End of lesson. Press [Enter] to start another. ==>> "
-#~ msgstr "<<==  Einde van de les. Druk op [Enter] om een nieuwe les te starten. ==>> "
+#~ msgstr ""
+#~ "<<==  Einde van de les. Druk op [Enter] om een nieuwe les te starten. "
+#~ "==>> "
 
 #~ msgid "Press any key to start the lesson. "
 #~ msgstr "Druk op een toets om de les te starten. "

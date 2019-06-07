@@ -1,3 +1,10 @@
+2019-06-13  Felipe Castro (-) <fefcas@gmail.com>;
+	* Release 3.08
+	* Fixed:
+	- Disabling beeps internally too.
+	* Added: 
+	- Portuguese translation, from Portugal.
+
 2019-06-02  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.07
 	* Fixed:
