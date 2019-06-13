@@ -79,6 +79,7 @@ klavaro_data = \
 	qwerty_no.kbd \
 	qwerty_pt.kbd \
 	qwerty_se.kbd \
+	qwerty_sk.kbd \
 	qwerty_tr.kbd \
 	qwerty_uk.kbd \
 	qwerty_us.kbd \
@@ -95,7 +96,6 @@ klavaro_data = \
 	qwertz_pl.kbd \
 	qwertz_rs.kbd \
 	qwertz_sk.kbd \
-	qwertz_sk_2.kbd \
 	workman_us.kbd \
 	C.words \
 	C.paragraphs \
