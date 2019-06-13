@@ -2,6 +2,7 @@
 	* Release 3.08
 	* Fixed:
 	- Disabling beeps internally too.
+	- qwertz_sk_2.kbd is a qwerty one: --> qwerty_sk.kbd
 	* Added: 
 	- Portuguese translation, from Portugal.
 
