@@ -53,7 +53,7 @@
 "Português BR (pt_BR) [qwerty_br_abnt2]\n" \
 "Русский (ru) [jtsuken_ru]\n" \
 "Suomen kieli (fi) [qwerty_se]\n"\
-"Slovenščina (sl) [qwertz_sk]\n" \
+"Slovenščina (sl) [qwertz_si]\n" \
 "Српски (sr) [qwertz_rs]\n" \
 "Svenska (sv) [qwerty_se]\n" \
 "తెలుగు (te) [qwerty_us]\n" \

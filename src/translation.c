@@ -78,12 +78,12 @@ trans_code_to_country (gchar *code)
 		{"rs","Србија"}, /* Serbia */
 		{"ru","Россия"},
 		{"se","Sverige"},
-		{"sk","Slovenija"},
+		{"si","Slovenija"},
+		{"sk","Slovensko"},
 		{"tr","Türkiye"},
 		{"ua","Україна"},
 		{"uk","United Kingdom"},
 		{"us","USA"},
-		{"",""},
 		{"",""}, /* 40 */
 		{"",""},
 		{"",""},
