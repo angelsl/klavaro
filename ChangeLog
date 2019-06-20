@@ -5,7 +5,11 @@
 	- qwertz_sk_2.kbd is a qwerty one: --> qwerty_sk.kbd (Slovakia)
 	- qwertz_sk.kbd is for Slovenia:  -->  qwertz_si.kbd
 	* Added: 
-	- Portuguese translation, from Portugal.
+	- Portuguese translation, from Portugal (pt).
+	- Hotkey Ctrl+F: font configuration.
+	- Hotkey Ctrl+KP_plus: increase spin buttons.
+	- Hotkey Ctrl+KP_minus: decrease spin buttons.
+	- Hotkeys Ctrl+R or Escape: cancel current practice, start a new one.
 
 2019-06-02  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.07

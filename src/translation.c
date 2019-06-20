@@ -41,10 +41,10 @@ static gint lang_num = 0;
 const gchar *
 trans_code_to_country (gchar *code)
 {
-#	define COUNTRY_N 50
+#define COUNTRY_N 50
 	gsize i;
 	gchar *dummy = NULL;
-	static gchar map[COUNTRY_N][2][64] = {
+	static gchar map[COUNTRY_N][3][64] = {
 		{"xx","Esperantio"},
 		{"ad","Andorra"},
 		{"ar","العالم العربي"},

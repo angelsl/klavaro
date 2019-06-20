@@ -374,25 +374,6 @@ on_button_tutor_other_clicked (GtkButton * button, gpointer user_data)
 }
 
 G_MODULE_EXPORT void
-on_button_tutor_stat_clicked (GtkButton * button, gpointer user_data)
-{
-	gint aux;
-
-	gtk_combo_box_set_active (GTK_COMBO_BOX (get_wg ("combobox_stat_module")), tutor_get_type ());
-	if (tutor_get_type () == TT_BASIC)
-	{
-		callbacks_shield_set (TRUE);
-		aux = basic_get_lesson () - (basic_get_lesson_increased () ? 1 : 0);
-		aux += (aux == 0) ? 1 : 0;
-		gtk_spin_button_set_value (GTK_SPIN_BUTTON (get_wg ("spinbutton_stat_lesson")), aux);
-		callbacks_shield_set (FALSE);
-	}
-
-	plot_draw_chart (gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_stat_type"))) + 1);
-	gtk_widget_show (get_wg ("window_stat"));
-}
-
-G_MODULE_EXPORT void
 on_spinbutton_lesson_value_changed (GtkSpinButton * spinbutton, gpointer user_data)
 {
 	gint tmp_int;
@@ -413,6 +394,71 @@ on_spinbutton_lesson_value_changed (GtkSpinButton * spinbutton, gpointer user_da
 	}
 	tutor_set_query (QUERY_INTRO);
 	tutor_process_touch (L'\0');
+}
+
+G_MODULE_EXPORT void
+on_eventbox_lesson_plus (GtkWidget * widget, gpointer user_data)
+{
+	gint tmp_int;
+	GtkSpinButton *spb;
+	
+	spb = GTK_SPIN_BUTTON (get_wg ("spinbutton_lesson"));
+	tmp_int = gtk_spin_button_get_value_as_int (spb);
+	gtk_spin_button_set_value (spb, tmp_int + 1);
+}
+
+G_MODULE_EXPORT void
+on_eventbox_lesson_minus (GtkWidget * widget, gpointer user_data)
+{
+	gint tmp_int;
+	GtkSpinButton *spb;
+	
+	spb = GTK_SPIN_BUTTON (get_wg ("spinbutton_lesson"));
+	tmp_int = gtk_spin_button_get_value_as_int (spb);
+	if (tmp_int > 0)
+		gtk_spin_button_set_value (spb, tmp_int - 1);
+}
+
+G_MODULE_EXPORT void
+on_eventbox_stat_plus (GtkWidget * widget, gpointer user_data)
+{
+	gint tmp_int;
+	GtkSpinButton *spb;
+	
+	spb = GTK_SPIN_BUTTON (get_wg ("spinbutton_stat_lesson"));
+	tmp_int = gtk_spin_button_get_value_as_int (spb);
+	gtk_spin_button_set_value (spb, tmp_int + 1);
+}
+
+G_MODULE_EXPORT void
+on_eventbox_stat_minus (GtkWidget * widget, gpointer user_data)
+{
+	gint tmp_int;
+	GtkSpinButton *spb;
+	
+	spb = GTK_SPIN_BUTTON (get_wg ("spinbutton_stat_lesson"));
+	tmp_int = gtk_spin_button_get_value_as_int (spb);
+	if (tmp_int > 0)
+		gtk_spin_button_set_value (spb, tmp_int - 1);
+}
+
+G_MODULE_EXPORT void
+on_button_tutor_stat_clicked (GtkButton * button, gpointer user_data)
+{
+	gint aux;
+
+	gtk_combo_box_set_active (GTK_COMBO_BOX (get_wg ("combobox_stat_module")), tutor_get_type ());
+	if (tutor_get_type () == TT_BASIC)
+	{
+		callbacks_shield_set (TRUE);
+		aux = basic_get_lesson () - (basic_get_lesson_increased () ? 1 : 0);
+		aux += (aux == 0) ? 1 : 0;
+		gtk_spin_button_set_value (GTK_SPIN_BUTTON (get_wg ("spinbutton_stat_lesson")), aux);
+		callbacks_shield_set (FALSE);
+	}
+
+	plot_draw_chart (gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_stat_type"))) + 1);
+	gtk_widget_show (get_wg ("window_stat"));
 }
 
 G_MODULE_EXPORT void
@@ -589,12 +635,6 @@ G_MODULE_EXPORT void
 on_button_tutor_close_clicked (GtkButton *button, gpointer user_data)
 {
 	on_window_tutor_destroy (NULL, NULL);
-}
-
-G_MODULE_EXPORT void
-on_button_tutor_restart_clicked (GtkButton * button, gpointer user_data)
-{
-	cb_quick_restart ();
 }
 
 G_MODULE_EXPORT void
