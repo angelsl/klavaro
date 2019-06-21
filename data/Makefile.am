@@ -5,8 +5,8 @@ SUBDIRS = icons
 klavaro_data = \
 	klavaro.glade \
 	klavaro_icon.png \
-	preferences_darkmode.ini\
-	beep.png \
+	altcolor.ini\
+	altcolor.png \
 	fluid.png \
 	go_www.png \
 	key.png \

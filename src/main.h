@@ -1,14 +1,14 @@
 /**************************************************************************/
-/*  Klavaro - a flexible touch typing tutor                               */
-/*  Copyright (C) from 2005 until 2008 Felipe Castro                      */
-/*  Copyright (C) from 2009 until 2019 The Free Software Foundation       */
-/*                                                                        */
-/*  This program is free software, licensed under the terms of the GNU    */
-/*  General Public License as published by the Free Software Foundation,  */
-/*  either version 3 of the License, or (at your option) any later        */
-/*  version. You should have received a copy of the GNU General Public    */
-/*  License along with this program. If not,                              */
-/*  see <https://www.gnu.org/licenses/>.                                  */
+/* Klavaro - a flexible touch typing tutor                               */
+/* Copyright (C) from 2005 until 2008 Felipe Castro                      */
+/* Copyright (C) from 2009 until 2019 The Free Software Foundation       */
+/*                                                                       */
+/* This program is free software, licensed under the terms of the GNU    */
+/* General Public License as published by the Free Software Foundation,  */
+/* either version 3 of the License, or (at your option) any later        */
+/* version. You should have received a copy of the GNU General Public    */
+/* License along with this program. If not,                              */
+/* see <https://www.gnu.org/licenses/>.                                  */
 /**************************************************************************/
 
 #include <sys/stat.h>
@@ -37,37 +37,30 @@
 #define GLOBAL FALSE
 
 /*
- * Interface
+ *Interface
  */
-gchar *main_path_user (void);
-
-gchar *main_path_stats (void);
-
-gchar *main_path_data (void);
-
-gchar *main_path_score (void);
+gchar * main_path_user (void);
+gchar * main_path_stats (void);
+gchar * main_path_data (void);
+gchar * main_path_score (void);
 
 gboolean main_curl_ok (void);
-
 gboolean main_velo_txt (void);
 
-gboolean main_preferences_exist (gchar * group, gchar * key);
+gboolean main_preferences_exist (gchar *group, gchar *key);
+void     main_preferences_remove (gchar *group, gchar *key);
+gchar *  main_preferences_get_string (gchar *group, gchar *key);
+void     main_preferences_set_string (gchar *group, gchar *key, gchar *value);
+gint     main_preferences_get_int (gchar *group, gchar *key);
+void     main_preferences_set_int (gchar *group, gchar *key, gint value);
+gboolean main_preferences_get_boolean (gchar *group, gchar *key);
+void     main_preferences_set_boolean (gchar *group, gchar *key, gboolean value);
 
-void main_preferences_remove (gchar * group, gchar * key);
-
-gchar *main_preferences_get_string (gchar * group, gchar * key);
-
-void main_preferences_set_string (gchar * group, gchar * key, gchar * value);
-
-gint main_preferences_get_int (gchar * group, gchar * key);
-
-void main_preferences_set_int (gchar * group, gchar * key, gint value);
-
-gboolean main_preferences_get_boolean (gchar * group, gchar * key);
-
-void main_preferences_set_boolean (gchar * group, gchar * key, gboolean value);
+gboolean main_altcolor_exist (gchar *group, gchar *key);
+gchar *  main_altcolor_get_string (gchar *group, gchar *key);
+gboolean main_altcolor_get_boolean (gchar *group, gchar *key);
+void     main_altcolor_set_boolean (gchar *group, gchar *key, gboolean value);
 
 void main_preferences_save (void);
-
 void main_window_pass_away (void);
 

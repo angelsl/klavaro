@@ -1,9 +1,7 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- Put a "Dark Mode" check box in the place of beep button.
 - Add histogram with touch speed from last speed practice.
-- Add specific paragraphs for Portuguese from Portugal.
 
 - Substitute all deprecated gtk_widet_override_background functions. (no simple way on GtkTextView...)
 - Verify GtkDataBox for updating as external lib. (2019-02-02: not yet, still on GTK-2, so updated to use GTK-3, from sf.net GIT)

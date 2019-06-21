@@ -209,27 +209,51 @@ on_button_info_return_clicked (GtkButton *but, gpointer user_data)
 /**********************************************************************
  * 3 - Tutor window
  **********************************************************************/
-#define CB_COLOR_TAG(TAG, FGCOLOR, BGCOLOR) \
-	if (main_preferences_exist ("colors", TAG "_fg"))\
-		color_fg = main_preferences_get_string ("colors", TAG "_fg");\
-	else\
-	{\
-		color_fg = g_strdup (FGCOLOR);\
-		main_preferences_set_string ("colors", TAG "_fg", color_fg);\
-	}\
-	if (main_preferences_exist ("colors", TAG "_bg"))\
-		color_bg = main_preferences_get_string ("colors", TAG "_bg");\
-	else\
-	{\
-		color_bg = g_strdup (BGCOLOR);\
-		main_preferences_set_string ("colors", TAG "_bg", color_bg);\
-	}\
-	gtk_text_buffer_create_tag (buf, TAG,\
-		       	"foreground", color_fg,\
-		       	"background", color_bg,\
-		       	"underline", PANGO_UNDERLINE_NONE, NULL);\
-	g_free (color_bg);\
+
+static void 
+cb_color_tag(gchar *tag, gchar *fgcolor, gchar *bgcolor, GtkTextBuffer *tbuf)
+{
+	gchar *tmp;
+	gchar *color_fg;
+	gchar *color_bg;
+
+	tmp = g_strconcat (tag, "_fg", NULL);
+	if (main_preferences_exist ("colors", tmp))
+		color_fg = main_preferences_get_string ("colors", tmp);
+	else
+	{
+		color_fg = g_strdup (fgcolor);
+		main_preferences_set_string ("colors", tmp, color_fg);
+	}
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+	{
+		g_free (color_fg);
+		color_fg = main_altcolor_get_string ("colors", tmp);
+	}
+	g_free (tmp);
+
+	tmp = g_strconcat (tag, "_bg", NULL);
+	if (main_preferences_exist ("colors", tmp))
+		color_bg = main_preferences_get_string ("colors", tmp);
+	else
+	{
+		color_bg = g_strdup (bgcolor);
+		main_preferences_set_string ("colors", tmp, color_bg);
+	}
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+	{
+		g_free (color_bg);
+		color_bg = main_altcolor_get_string ("colors", tmp);
+	}
+	g_free (tmp);
+
+	gtk_text_buffer_create_tag (tbuf, tag,
+		       	"foreground", color_fg,
+		       	"background", color_bg,
+		       	"underline", PANGO_UNDERLINE_NONE, NULL);
 	g_free (color_fg);
+	g_free (color_bg);
+}
 
 G_MODULE_EXPORT void
 on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
@@ -238,8 +262,6 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	gchar *tmp;
 	gchar *tmp_font;
 	gchar *search;
-	gchar *color_fg;
-	gchar *color_bg;
 	gchar *color_main_fg;
 	gchar *color_main_bg;
 	GtkWidget *wg;
@@ -265,9 +287,16 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 		color_main_fg = main_preferences_get_string ("colors", "char_untouched_fg");
 	else
 		color_main_fg = g_strdup (TUTOR_BLACK);
+	/* Check if altcolor applies */
+	if (main_altcolor_get_boolean ("colors", "altcolor") == TRUE)
+	{
+		g_free (color_main_fg);
+		g_free (color_main_bg);
+		color_main_fg = main_altcolor_get_string ("colors", "char_untouched_fg");
+		color_main_bg = main_altcolor_get_string ("colors", "char_untouched_bg");
+	}
 
-	/*
-	 * Colors of text on the tutor window (note: ordering here matters, the first tag created is in the bottom!)
+	/* Colors of text on the tutor window (note: ordering here matters, the first tag created is in the bottom!)
 	 */
 	gtk_text_buffer_create_tag (buf, "char_keep_wrap",
 		       	"background", color_main_bg,
@@ -279,13 +308,13 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 		       	"foreground", color_main_fg,
 		       	"underline", PANGO_UNDERLINE_NONE, NULL);
 
-	CB_COLOR_TAG ("char_untouched",	TUTOR_BLACK,	TUTOR_CREAM);
-	CB_COLOR_TAG ("char_wrong", 	TUTOR_RED,	TUTOR_RED_LITE);
-	CB_COLOR_TAG ("char_correct",	TUTOR_GREEN,	TUTOR_CREAM);
-	CB_COLOR_TAG ("char_retouched",	TUTOR_BROWN,	TUTOR_GRAY);
-	CB_COLOR_TAG ("cursor_blink",	TUTOR_BLACK,	TUTOR_YELLOW);
-	CB_COLOR_TAG ("cursor_unblink",	TUTOR_BLACK,	TUTOR_CREAM);
-	CB_COLOR_TAG ("text_intro",	TUTOR_BLACK,	TUTOR_WHITE);
+	cb_color_tag ("char_untouched",	TUTOR_BLACK,	TUTOR_CREAM,    buf);
+	cb_color_tag ("char_wrong", 	TUTOR_RED,	TUTOR_RED_LITE, buf);
+	cb_color_tag ("char_correct",	TUTOR_GREEN,	TUTOR_CREAM,    buf);
+	cb_color_tag ("char_retouched",	TUTOR_BROWN,	TUTOR_GRAY,     buf);
+	cb_color_tag ("cursor_blink",	TUTOR_BLACK,	TUTOR_YELLOW,   buf);
+	cb_color_tag ("cursor_unblink",	TUTOR_BLACK,	TUTOR_CREAM,    buf);
+	cb_color_tag ("text_intro",	TUTOR_BLACK,	TUTOR_WHITE,    buf);
 
 	/* Tutor font */
 	tmp_font = main_preferences_get_string ("tutor", "lesson_font");
@@ -300,7 +329,6 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	/* Change default font throughout the widget
 	 */
 	font_desc = pango_font_description_from_string (tmp_font);
-	//g_message ("Klavaro - font: %s", tmp_font);
 	g_free (tmp_font);
 	pg_style = pango_font_description_get_style (font_desc);
 	pg_weight = pango_font_description_get_weight (font_desc);
@@ -310,31 +338,23 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 			pg_style==PANGO_STYLE_NORMAL?"":"italic", 
 			pg_weight>PANGO_WEIGHT_MEDIUM?"bold":"",
 		       	pg_size, pg_family);
-	//g_message ("Klavaro - tutor style: %s", tmp, tmp_font);
 	css = gtk_css_provider_new ();
 	gtk_css_provider_load_from_data (css, tmp, -1, NULL);
-	g_free (tmp);
 	sc = gtk_widget_get_style_context (widget);
 	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 	gtk_style_context_add_class (sc, "tutor-font");
-
 	pango_font_description_free (font_desc);
+	g_free (tmp);
 
-	/* Turns on/off the beeps according to last time
+	g_free (color_main_bg);
+	g_free (color_main_fg);
+
+	/* Turns on/off the beeps according to preferences
 	 */
 	if (main_preferences_exist ("tutor", "tutor_beep"))
 		beep = main_preferences_get_boolean ("tutor", "tutor_beep");
 	else
 		beep = TRUE;
-	wg = get_wg ("togglebutton_tutor_beep");
-	beep = FALSE; /* Disabling it here, let's see if someone complains... */
-	gtk_widget_hide (wg); /* Hidding it too, to keep it off always. */
-	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (wg), beep);
-	main_preferences_set_boolean ("tutor", "tutor_beep", beep);
-
-
-	g_free (color_main_bg);
-	g_free (color_main_fg);
 
 	tutor_init_goals ();
 }
@@ -580,12 +600,15 @@ on_fontbutton_tutor_font_set (GtkFontButton * fbut, gpointer user_data)
 }
 
 G_MODULE_EXPORT void
-on_togglebutton_tutor_beep_toggled (GtkToggleButton * togglebutton, gpointer user_data)
+on_togglebutton_altcolor_toggled (GtkToggleButton * togglebutton, gpointer user_data)
 {
-	gboolean beep;
+	gboolean acol;
 
-	beep = gtk_toggle_button_get_active (togglebutton);
-	main_preferences_set_boolean ("tutor", "tutor_beep", beep);
+	if (callbacks_shield)
+		return;
+
+	acol = gtk_toggle_button_get_active (togglebutton);
+	main_altcolor_set_boolean ("colors", "altcolor", acol);
 }
 
 G_MODULE_EXPORT void

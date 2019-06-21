@@ -479,6 +479,12 @@ tutor_update_intro ()
 		color_bg = main_preferences_get_string ("colors", "text_intro_bg");
 	else
 		color_bg = g_strdup (TUTOR_WHITE);
+	/* Check if altcolor applies */
+	if (main_altcolor_get_boolean ("colors", "altcolor") == TRUE)
+	{
+		g_free (color_bg);
+		color_bg = main_altcolor_get_string ("colors", "text_intro_bg");
+	}
 	gdk_rgba_parse (&color, color_bg); 
 	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
 	g_free (color_bg);
@@ -554,6 +560,12 @@ tutor_update_start ()
 		color_bg = main_preferences_get_string ("colors", "char_untouched_bg");
 	else
 		color_bg = g_strdup (TUTOR_CREAM);
+	/* Check if altcolor applies */
+	if (main_altcolor_get_boolean ("colors", "altcolor") == TRUE)
+	{
+		g_free (color_bg);
+		color_bg = main_altcolor_get_string ("colors", "char_untouched_bg");
+	}
 	gdk_rgba_parse (&color, color_bg);
 	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
 	g_free (color_bg);
@@ -562,7 +574,7 @@ tutor_update_start ()
 	gtk_text_buffer_apply_tag_by_name (buf, "lesson_font", &start, &end);
 	gtk_text_buffer_apply_tag_by_name (buf, "char_untouched", &start, &end);
 
-	/* Trying to minimize automatic wrapping because of cursor blinking:
+	/* Trying to minimize wrapping toggle because of cursor blinking:
 	*/
 	end = start;
 	while (gtk_text_iter_forward_word_end (&end))
@@ -1174,7 +1186,6 @@ tutor_calc_stats ()
 						g_strdup (_
 							  ("ps.: you have entered the Top 10 list, great!"));
 					top10_write_stats (LOCAL, -1);
-					//if (main_preferences_get_boolean ("game", "autopublish") && UNIX_OK)
 					if (main_preferences_get_boolean ("game", "autopublish"))
 					{
 						top10_show_stats (LOCAL);
@@ -1358,19 +1369,18 @@ tutor_calc_stats ()
 
 		if (contest_ps != NULL)
 		{
-			//if (UNIX_OK)
-			{
-				gtk_text_buffer_insert_at_cursor (buf, "\n", 1);
-				gtk_text_buffer_insert_at_cursor (buf, contest_ps, strlen (contest_ps));
-			}
+			gtk_text_buffer_insert_at_cursor (buf, "\n", 1);
+			gtk_text_buffer_insert_at_cursor (buf, contest_ps, strlen (contest_ps));
 			g_free (contest_ps);
 		}
 		break;
 	}
 	g_free (tmp_str2);
 
+	/* Is this really needed? We don't remember... FIXME (remove?)
 	gtk_text_buffer_get_bounds (buf, &start, &end);
 	gtk_text_buffer_apply_tag_by_name (buf, "char_keep_wrap", &start, &end);
+	*/
 
 	gtk_text_view_scroll_mark_onscreen (GTK_TEXT_VIEW (wg), gtk_text_buffer_get_insert (buf));
 }
@@ -1715,10 +1725,7 @@ tutor_message (gchar * mesg)
 void
 tutor_beep ()
 {
-	GtkWidget *wg;
-
-	wg = get_wg ("togglebutton_tutor_beep");
-	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (wg)))
+	if (main_preferences_get_boolean ("tutor", "tutor_beep"))
 		gdk_display_beep (gdk_display_get_default ());
 }
 
