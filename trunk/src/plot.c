@@ -103,31 +103,13 @@ plot_get_databox ()
 
 /*******************************************************************************
  * Private functions
-
-static void
-plot_clip_data (gint i)
-{
-		if (accur[i] > 100)
-			accur[i] = 100.1;
-		if (accur[i] < 60)
-			accur[i] = 59.9;
-		if (velo[i] > 100)
-			velo[i] = 100.1;
-		if (velo[i] < 0)
-			velo[i] = -0.1;
-		if (fluid[i] > 100)
-			fluid[i] = 100.1;
-		if (fluid[i] < 0)
-			fluid[i] = -0.1;
-		if (score[i] < 0)
-			score[i] = -0.1;
-}
  */
 
 static void
 plot_error_frequencies ()
 {
 	gint i;
+	gchar *tcolor;
 	GdkRGBA color;
 	GdkRGBA color_black;
 	GtkDatabox *box;
@@ -157,7 +139,11 @@ plot_error_frequencies ()
 		plot.lim.y[1] = 1.05;
 
 	/* Plot color */
-	gdk_rgba_parse (&color_black, "#000000");
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+		tcolor = main_altcolor_get_string ("colors", "char_untouched_fg");
+	else
+		tcolor = main_preferences_get_string ("colors", "char_untouched_fg");
+	gdk_rgba_parse (&color_black, tcolor);
 	gdk_rgba_parse (&color, PLOT_GREEN_2);
 
 	/* Point limits */
@@ -189,6 +175,7 @@ static void
 plot_touch_times ()
 {
 	gint i;
+	gchar *tcolor;
 	GdkRGBA color;
 	GdkRGBA color_black;
 	GtkDatabox *box;
@@ -218,7 +205,11 @@ plot_touch_times ()
 		plot.lim.y[1] = 0.0105;
 
 	/* Plot color */
-	gdk_rgba_parse (&color_black, "#000000");
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+		tcolor = main_altcolor_get_string ("colors", "char_untouched_fg");
+	else
+		tcolor = main_preferences_get_string ("colors", "char_untouched_fg");
+	gdk_rgba_parse (&color_black, tcolor);
 	gdk_rgba_parse (&color, PLOT_PURPLE);
 
 	/* Point limits */
@@ -255,6 +246,7 @@ plot_initialize ()
 	static gboolean inited = FALSE;
 	static GtkCssProvider *css;
 	GtkStyleContext *sc;
+	gchar *tcolor;
 	gint i;
 
 	if (inited)
@@ -272,13 +264,18 @@ plot_initialize ()
 	gtk_container_add (GTK_CONTAINER (get_wg ("frame_stat")), plot.gtkgrid);
 	g_signal_connect (G_OBJECT (plot.databox), "motion_notify_event", G_CALLBACK (on_databox_hovered), NULL);
 
-	/* White background
-	 */
+	/* Set background not working: FIXME
 	css = gtk_css_provider_new ();
 	gtk_css_provider_load_from_data (css, ".plot_bg {background-color: white;}", -1, NULL);
 	sc = gtk_widget_get_style_context (plot.databox);
 	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 	gtk_style_context_add_class (sc, "plot_bg");
+	 */
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+		tcolor = main_altcolor_get_string ("colors", "text_intro_bg");
+	else
+		tcolor = main_preferences_get_string ("colors", "text_intro_bg");
+	gtk_databox_background (tcolor); // This is a hack!
 
 	/* Y labels
 	 */
@@ -304,6 +301,7 @@ plot_draw_chart (gint pltype)
 	gchar *tmp_lang;
 	gchar tmp_str[2000];
 	FILE *fh;
+	gchar *tcolor;
 	GdkRGBA color, color2, color3;
 	GdkRGBA color_black;
 	GtkDatabox *box;
@@ -418,11 +416,9 @@ plot_draw_chart (gint pltype)
 		if (language[i][len = (strlen(language[i])-1)] == '\n')
 			language[i][len] = '\0';
 
-		//plot_clip_data (i);
-
 		if (tutor_get_type () == TT_BASIC)
 		{
-			if (g_ascii_strtoll (lesson[i], NULL, 10) != lesson_n )
+			if (g_ascii_strtoll (lesson[i], NULL, 10) != lesson_n)
 				if (lesson_n != 0)
 					continue;
 			if (strcmp (language[i], kb_name) != 0) // in BASIC, language field is the keyboard.
@@ -475,8 +471,6 @@ plot_draw_chart (gint pltype)
 		lang_extra = fgets (language[i], 80, fh); 
 		if (language[i][len = (strlen(language[i])-1)] == '\n')
 			language[i][len] = '\0';
-
-		//plot_clip_data (i);
 
 		if (tutor_get_type () == TT_BASIC)
 		{
@@ -543,7 +537,11 @@ plot_draw_chart (gint pltype)
 	plot.lim.y[0] = 0;
 	plot.lim.y[1] = 100;
 	 
-	gdk_rgba_parse (&color_black, "#000000");
+	if (main_altcolor_get_boolean ("colors", "altcolor"))
+		tcolor = main_altcolor_get_string ("colors", "char_untouched_fg");
+	else
+		tcolor = main_preferences_get_string ("colors", "char_untouched_fg");
+	gdk_rgba_parse (&color_black, tcolor);
 	switch (pltype)
 	{
 	case 1:
@@ -605,12 +603,12 @@ plot_draw_chart (gint pltype)
 	gtk_databox_graph_add (box, plot.line_outter);
 
 	/* Goal limit */
-	gdk_rgba_parse (&color3, "#999999");
+	gdk_rgba_parse (&color3, "#808080");
 	plot.line_goal = gtk_databox_lines_new (2, plot.goal.x, plot.goal.y, &color3, 1);
 	gtk_databox_graph_add (box, plot.line_goal);
 
 	/* Grid and y labels */
-	gdk_rgba_parse (&color, "#dddddd");
+	gdk_rgba_parse (&color, "#bbbbbb");
 	if (pltype == 1) /* Correctness (%) */
 	{
 		plot.grid = gtk_databox_grid_new (3, 3, &color, 1);

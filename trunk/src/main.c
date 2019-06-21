@@ -39,6 +39,7 @@ gchar *KEYB_EDIT;
 gchar *OTHER_DEFAULT;
 
 static GKeyFile *preferences = NULL;
+static GKeyFile *altcolor = NULL;
 static gboolean curl_ok;
 static gboolean velo_txt;
 static struct
@@ -136,14 +137,38 @@ main_preferences_set_boolean (gchar * group, gchar * key, gboolean value)
 	g_key_file_set_boolean (preferences, group, key, value);
 }
 
+gboolean
+main_altcolor_exist (gchar * group, gchar * key)
+{
+	return (g_key_file_has_key (altcolor, group, key, NULL));
+}
+
+gchar *
+main_altcolor_get_string (gchar * group, gchar * key)
+{
+	return (g_key_file_get_string (altcolor, group, key, NULL));
+}
+
+
+gboolean
+main_altcolor_get_boolean (gchar * group, gchar * key)
+{	
+	return (g_key_file_get_boolean (altcolor, group, key, NULL));
+}
+
+void
+main_altcolor_set_boolean (gchar * group, gchar * key, gboolean value)
+{
+	g_key_file_set_boolean (altcolor, group, key, value);
+}
+
 void
 main_preferences_save ()
 {
 	gchar *tmp_name;
 	FILE *fh;
 
-	/*
-	 * Save preferences
+	/* Save preferences
 	 */
 	assert_user_dir ();
 	tmp_name = g_build_filename (main_path_user (), "preferences.ini", NULL);
@@ -158,7 +183,26 @@ main_preferences_save ()
 		if (tmp_name != NULL)
 			fputs (tmp_name, fh);
 		else
-			g_warning ("couldn't save your preferences at the user folder:\n %s", tmp_name);
+			g_warning ("no preferences to be saved!");
+		fclose (fh);
+	}
+	g_free (tmp_name);
+
+	/* Save altcolor
+	 */
+	tmp_name = g_build_filename (main_path_user (), "altcolor.ini", NULL);
+	fh = (FILE *) g_fopen (tmp_name, "w");
+	if (fh == NULL)
+		g_warning ("couldn't save your altcolor file at the user folder:\n %s", tmp_name);
+	else
+	{
+		g_free (tmp_name);
+		tmp_name = NULL;
+		tmp_name = g_key_file_to_data (altcolor, NULL, NULL);
+		if (tmp_name != NULL)
+			fputs (tmp_name, fh);
+		else
+			g_warning ("no altcolors to be saved!");
 		fclose (fh);
 	}
 	g_free (tmp_name);
@@ -202,18 +246,15 @@ main_initialize_global_variables ()
 	 */
 	path.data = g_build_filename ("..", "data", NULL);
 	tmp = g_build_filename (path.data, "basic_lessons.txt", NULL);
-	fh = (FILE *) g_fopen (tmp, "r");
-	if (fh == NULL)
+	if (!g_file_test (tmp, G_FILE_TEST_EXISTS))
 	{
 		g_free (path.data);
 		g_free (tmp);
 		path.data = g_build_filename (PACKAGE_DATA_DIR, PACKAGE, NULL);
 		tmp = g_build_filename (path.data, "basic_lessons.txt", NULL);
-		fh = (FILE *) g_fopen (tmp, "r");
 	}
-	if (fh == NULL)
+	if (! g_file_test (tmp, G_FILE_TEST_EXISTS))
 		g_error ("couldn't find a data file at the data path:\n %s", tmp);
-	fclose (fh);
 	g_free (tmp);
 
 	/* Get a valid scoring path.
@@ -224,16 +265,33 @@ main_initialize_global_variables ()
 		g_mkdir_with_parents (path.score, DIR_PERM);
 	}
 
-	/* Retrieve initial or saved preferences
+	/* Retrieve saved preferences or initial one
 	 */
 	preferences = g_key_file_new ();
 	tmp = g_build_filename (main_path_user (), "preferences.ini", NULL);
 	if (!g_file_test (tmp, G_FILE_TEST_EXISTS))
 	{
 		g_free (tmp);
-		tmp = g_strdup ("/etc/klavaro_preferences.ini");
+		tmp = g_strdup ("/etc/klavaro/preferences.ini");
 	}
 	g_key_file_load_from_file (preferences, tmp, G_KEY_FILE_NONE, NULL);
+	g_free (tmp);
+
+	/* Retrieve saved alternative colors or initial ones
+	 */
+	altcolor = g_key_file_new ();
+	tmp = g_build_filename (main_path_user (), "altcolor.ini", NULL);
+	if (!g_file_test (tmp, G_FILE_TEST_EXISTS))
+	{
+		g_free (tmp);
+		tmp = g_build_filename ("/etc/klavaro/altcolor.ini", NULL);
+	}
+	if (!g_file_test (tmp, G_FILE_TEST_EXISTS))
+	{
+		g_free (tmp);
+		tmp = g_build_filename (main_path_data (), "altcolor.ini", NULL);
+	}
+	g_key_file_load_from_file (altcolor, tmp, G_KEY_FILE_NONE, NULL);
 	g_free (tmp);
 
 	/* Other initializations
@@ -340,11 +398,11 @@ main_window_init ()
 
 	/* Set pixmaps
 	 */
+	set_pixmap ("image_altcolor", "altcolor.png");
 	set_pixmap ("image_fluid", "fluid.png");
 	set_pixmap ("image_keyboard", "key.png");
-	set_pixmap ("image_beep", "beep.png");
-	set_pixmap ("image_progress", "progress.png");
 	set_pixmap ("image_other", "other.png");
+	set_pixmap ("image_progress", "progress.png");
 	set_pixmap ("image_top10", "top10.png");
 
 	/* Set Top10 TreeViews and Combo
@@ -391,6 +449,13 @@ main_window_init ()
 	 */
 	gtk_widget_show (get_wg ("window_main"));
 	window_restore ("main");
+	
+	/* Altcolor toggle button 
+	 */
+	if (!main_altcolor_exist ("colors", "altcolor"))
+		main_altcolor_set_boolean ("colors", "altcolor", FALSE);
+	if (main_altcolor_get_boolean ("colors", "altcolor") == TRUE)
+		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (get_wg ("togglebutton_altcolor")), TRUE);
 
 	/* Run last used module
 	 */

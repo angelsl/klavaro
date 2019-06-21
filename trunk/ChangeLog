@@ -1,4 +1,4 @@
-2019-06-13  Felipe Castro (-) <fefcas@gmail.com>;
+2019-06-21  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.08
 	* Fixed:
 	- Disabling beeps internally too.
@@ -10,6 +10,8 @@
 	- Hotkey Ctrl+KP_plus: increase spin buttons.
 	- Hotkey Ctrl+KP_minus: decrease spin buttons.
 	- Hotkeys Ctrl+R or Escape: cancel current practice, start a new one.
+	- Alternative colors toggle button in tutor window. At first time run,
+	  a default "dark mode" is copied to the file: $HOME/.config/klavaro/altcolor.ini
 
 2019-06-02  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.07

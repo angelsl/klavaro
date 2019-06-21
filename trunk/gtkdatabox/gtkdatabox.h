@@ -106,6 +106,8 @@ struct _GtkDataboxClass
     void (*selection_canceled) (GtkDatabox * box);
 };
 
+gchar * gtk_databox_background (gchar *setcolor);
+
 GType gtk_databox_get_type (void);
 
 GtkWidget *gtk_databox_new (void);

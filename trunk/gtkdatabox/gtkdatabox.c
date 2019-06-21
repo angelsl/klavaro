@@ -651,7 +651,7 @@ gtk_databox_realize (GtkWidget * widget) {
 
     gtk_style_context_add_class(stylecontext, GTK_STYLE_CLASS_BACKGROUND);
 
-    /*gtk_style_context_set_background(stylecontext, gtk_widget_get_window(widget));*/
+    gtk_style_context_set_background(stylecontext, gtk_widget_get_window(widget));
 
     gtk_databox_create_backing_surface (box);
 }
@@ -1214,6 +1214,21 @@ gtk_databox_size_allocate (GtkWidget * widget, GtkAllocation * allocation) {
     gtk_databox_calculate_translation_factors (box);
 }
 
+/* Klavaro needs to set background for plots */
+gchar *
+gtk_databox_background (gchar * setcolor)
+{
+	gint i;
+	static gchar color[8] = "#f7f7f0";
+	if (setcolor)
+	{
+		for (i=0; i<7; i++)
+			color[i] = setcolor[i];
+		color[7] = '\0';
+	}
+	return color;
+}
+
 static gint
 gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
     GtkDatabox *box = GTK_DATABOX (widget);
@@ -1225,8 +1240,7 @@ gtk_databox_draw (GtkWidget * widget, cairo_t * cr) {
     gtk_databox_create_backing_surface (box);
 
     cr2 = cairo_create(priv->backing_surface);
-
-    gdk_rgba_parse (&bg_color, "#fefefe");
+    gdk_rgba_parse (&bg_color, gtk_databox_background (NULL));
     gdk_cairo_set_source_rgba (cr2, &bg_color);
     cairo_paint(cr2);
     cairo_destroy(cr2);
