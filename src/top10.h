@@ -13,8 +13,8 @@
 /**************************************************
  * Contest for fluidness performance
  */
-#define DOWNHOST "klavaro.sourceforge.net/top10"
-#define CGI_SERVER "klavaro.sourceforge.net/cgi-bin/klavaro_rangilo"
+#define DOWNHOST "klavaro.sourceforge.io/top10"
+#define CGI_SERVER "klavaro.sourceforge.io/cgi-bin/klavaro_rangilo"
 #define MIN_CHARS_TO_LOG 500
 
 #define TIMEOUT 10

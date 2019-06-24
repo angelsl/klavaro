@@ -739,7 +739,7 @@ top10_show_stats (gboolean locally)
 		g_free (tmp);
 		tmp = g_strdup ("en");
 	}
-	url = g_strdup_printf ("http://" DOWNHOST "/%c%c/", tmp[0], tmp[1]);
+	url = g_strdup_printf ("https://" DOWNHOST "/%c%c/", tmp[0], tmp[1]);
 	gtk_widget_set_tooltip_text (get_wg ("button_top10_go_www"), url);
 	g_free (tmp);
 	g_free (url);
@@ -837,7 +837,7 @@ top10_global_update (gpointer data)
 		g_mkdir_with_parents (main_path_score (), DIR_PERM);
 	tmp = g_build_filename (main_path_score (), ksc, NULL);
 	fail = TRUE;
-	command = g_strdup_printf ("http://%s/%s", host, ksc);
+	command = g_strdup_printf ("https://%s/%s", host, ksc);
 	if ( (fh = g_fopen (tmp, "wb")) )
 	{
 		/*
@@ -848,7 +848,9 @@ top10_global_update (gpointer data)
 		curl_easy_setopt (curl, CURLOPT_LOW_SPEED_TIME, LOW_SPEED_TIME);
 		curl_easy_setopt (curl, CURLOPT_URL, command);
 		curl_easy_setopt (curl, CURLOPT_WRITEDATA, fh);
+		curl_easy_setopt (curl, CURLOPT_SSL_VERIFYPEER, 0L);
 		fail = curl_easy_perform (curl);
+		if (fail) g_message (curl_easy_strerror (fail));
 		fclose (fh);
 	}
 	curl_easy_cleanup (curl);
@@ -885,6 +887,7 @@ top10_global_publish (gpointer data)
 {
 	gint i;
 	gboolean success;
+	gboolean fail;
 	gchar *tmp;
 	gchar *ksc;
 	gchar *host;
@@ -940,7 +943,7 @@ top10_global_publish (gpointer data)
 		username = g_strdup (g_get_user_name ());
 	}
 	ksc = g_strdup_printf ("%s_%s_%c%c.ksc", username, g_get_host_name (), tmp[0], tmp[1]);
-	url = g_strdup_printf ("http://%s?dosiernomo=%s&lingvo=%c%c", host, ksc, tmp[0], tmp[1]);
+	url = g_strdup_printf ("https://%s?dosiernomo=%s&lingvo=%c%c", host, ksc, tmp[0], tmp[1]);
 	g_free (username);
 	g_free (host);
 	g_free (ksc);
@@ -969,8 +972,9 @@ top10_global_publish (gpointer data)
 		g_free (tmp);
 		curl_easy_setopt (curl, CURLOPT_READDATA, fh);
 		curl_easy_setopt (curl, CURLOPT_WRITEDATA, fh2);
-		if (curl_easy_perform (curl))
-			g_message ("HTTP upload failed!");
+		curl_easy_setopt (curl, CURLOPT_SSL_VERIFYPEER, 0L);
+		if (fail = curl_easy_perform (curl))
+			g_message ("HTTPS upload failed: %s", curl_easy_strerror(fail));
 		else
 			success = TRUE;
 		fclose (fh);
