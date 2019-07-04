@@ -17,7 +17,7 @@ And suggestions that probably won't be done:
 - Add a metronome mode for speed and fluidity modules. (use an external program: GTick)
 - Use long dictionaries for the speed module (word frequency should come from real language used in ordinary texts, but if people send a dict long it will be accepted, in a language basis).
 - Print report after completion of a fluidity session. (printscreen should be enough, save the Earth!)
-- Allow the user to delete his full name from the web, at Top 10 (or Top 200). (No way to make this secure, the user should ask the maintainer to do that)
+- Allow the user to delete his full name from the web, at Top 10 (or Top 100). (No way to make this secure, the user should ask the maintainer to do that)
 - Get rid of the main menu window, moving all actions there to the tutor window. (no reason to change the "game" style of the application)
 - Add some kind of lessons for the numeric pad. (the user may create custom lessons for this)
 - Support for AltGr symbols. (also here, the user may create custom lessons)

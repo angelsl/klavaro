@@ -36,6 +36,9 @@ The preferences.ini file holds all the default key/value pairs, since the first 
  the application is run. But they are never overwritten after that, so direct edition should
  be done by the user to change the colors.
 
+Besides the preferences.ini file, there is also the possibility to use an altcolor.ini file, 
+ that holds alternative colors, for example, to enable a dark mode.
+
 Here is the complete list of keywords to set colors:
 
 Background and foreground for the tutor introductory texts:
