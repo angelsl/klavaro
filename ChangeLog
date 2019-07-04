@@ -1,4 +1,11 @@
 2019-06-21  Felipe Castro (-) <fefcas@gmail.com>;
+	* Release 3.09
+	* Fixed:
+	- Internet ranking server now is https://klavaro.sourceforge.io/top10/
+	* Updated translations:
+	- Swedish.
+
+2019-06-21  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.08
 	* Fixed:
 	- Disabling beeps internally too.
