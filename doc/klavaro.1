@@ -1,4 +1,4 @@
-.TH KLAVARO 1 "2014-01-09" GNU "Klavaro - Manual"
+.TH KLAVARO 1 "2019-07-07" GNU "Klavaro - Manual"
 .\" Please adjust this date whenever revising the manpage.
 .\"
 .\" Some roff macros, for reference:
@@ -20,16 +20,21 @@ you to improve your skills with the keyboard.
 .PP
 There is some more information at:
 .PP
-http://klavaro.sourceforge.net
+https://klavaro.sourceforge.io/
 .SH OPTIONS
-Besides the version option, only those related to GTK are available.
+Besides those related to GTK, a few options are available.
 .br
 \-h, \-\-help: see some help at command line.
 .br
 \-v, \-\-version: see the program version.
+.br
+\-x, \-\-velotxt: forces the speed module to use complete texts with 
+paragraphs, just like the fluidity one.
 .SH COLORS
-Some colors may be configured through the file "preferences.ini" 
-There you should create a session named [colors] and set some colors
+Some colors may be configured through the file "preferences.ini". 
+It's commonly placed at: $HOME/.config/klavaro/
+.br
+There you should create a session named [colors] and set some colors 
 with the internet/html syntax (#RRGGBB). For example:
 .PP
 [colors]
@@ -51,6 +56,9 @@ char_correct_fg=#009900
 char_retouched_fg=#bbbbaa
 .br
 cursor_blink_bg=#ff88ff
+.PP
+And also, an alternative file can be defined, for toggling all those 
+colors: "altcolor.ini", besides the "preferences.ini" file. 
 .PP
 Here follows the complete list of keywords to set colors.
 .PP
@@ -116,5 +124,5 @@ key_9
 .SH AUTHOR
 Klavaro was written by Felipe E. F. de Castro.
 .PP
-e-mail: <fefcas@gmail.com>
+e-mail: <fe2019@penso.eu.nom.br>
 .PP
