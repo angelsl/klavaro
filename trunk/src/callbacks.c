@@ -871,7 +871,7 @@ on_combobox_top10_language_changed (GtkComboBox *cmb, gpointer user_data)
 	if (tutor_get_type () == TT_FLUID)
 		tutor_init (tutor_get_type ());
 
-	on_combobox_top10_changed (GTK_COMBO_BOX (get_wg ("combobox_top10_language")), NULL);
+	on_combobox_top10_changed (GTK_COMBO_BOX (get_wg ("combobox_top10")), NULL);
 }
 
 G_MODULE_EXPORT void

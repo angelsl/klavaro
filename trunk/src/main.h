@@ -15,15 +15,11 @@
 
 #ifdef G_OS_UNIX
 # define UNIX_OK TRUE
-# define DIRSEP_S "/"
-# define DIRSEP '/'
 # define LESSON_FONT "Monospace 14"
 # define NORMAL_FONT "Sans 14"
 # define DIR_PERM (S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH)
 #else
 # define UNIX_OK FALSE
-# define DIRSEP_S "\\"
-# define DIRSEP '\\'
 # define LESSON_FONT "Courier Bold 14"
 # define NORMAL_FONT "Comic Sans MS 12"
 # undef PACKAGE_LOCALE_DIR

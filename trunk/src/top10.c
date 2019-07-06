@@ -254,44 +254,39 @@ top10_delete_stat (gint i, gboolean locally)
 }
 
 gfloat
-top10_calc_score_old (Statistics * stat)
-{
-	gfloat score;
-	// Don't touch this anymore!
-	score = (6 * stat->velo + 3 * stat->accur + stat->fluid) / 100;
-	return (score);
-}
-
-gfloat
 top10_calc_score (Statistics * stat)
 {
 	gfloat score;
-	// Don't touch this anymore! (touched: new_WPM = 1.2 old_WPM)
-	score = (6 * stat->velo / 1.2 + 3 * stat->accur + stat->fluid) / 100;
+	/* Weighs: 6 ... 3 ... 1 ==> 10 */
+	score = (6.0 * stat->velo / 1.2 + 3.0 * stat->accur + 1.0 * stat->fluid) / 100;
 	return (score);
 }
 
 gboolean
 top10_validate_stat (Statistics * stat)
 {
-
-	if (stat->score > 10.0 || stat->score < 0.0)
+	if (stat->velo >= 222.222)
 	{
-		g_message ("Invalid score (%g): it must be between 0 and 10", stat->score);
-		return (FALSE);
-	}
-
-	if ((stat->score - top10_calc_score (stat) > 1.0e-5) && (stat->score - top10_calc_score_old (stat) > 1.0e-5))
-	{
-		g_message ("Invalid score (%g): did you try to edit the scores file?", stat->score);
+		g_message ("Invalid speed (%g): too much fast for a human on a simple keyboard.", stat->score);
 		return (FALSE);
 	}
 
 	if (stat->fluid > 95)
 	{
-		g_message
-			("Invalid score (fluidness = %g): robots shouldn't compete with humans...",
+		g_message ("Invalid fluidity (%g): robots shouldn't compete with humans...",
 			 stat->fluid);
+		return (FALSE);
+	}
+
+	if (stat->score > 17.3333 || stat->score < 0.0)
+	{
+		g_message ("Invalid score (%g): it must be between 0 and 17.3333", stat->score);
+		return (FALSE);
+	}
+
+	if (stat->score - top10_calc_score (stat) > 1.0e-5)
+	{
+		g_message ("Invalid score (%g): do not edit the scorings file.", stat->score);
 		return (FALSE);
 	}
 
@@ -941,6 +936,11 @@ top10_global_publish (gpointer data)
 	{
 		g_free (username);
 		username = g_strdup (g_get_user_name ());
+	}
+	if (strlen (username) == 0)
+	{
+		g_free (username);
+		username = g_strdup ("0-0");
 	}
 	ksc = g_strdup_printf ("%s_%s_%c%c.ksc", username, g_get_host_name (), tmp[0], tmp[1]);
 	url = g_strdup_printf ("https://%s?dosiernomo=%s&lingvo=%c%c", host, ksc, tmp[0], tmp[1]);

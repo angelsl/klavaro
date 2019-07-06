@@ -41,7 +41,7 @@
 
 extern GtkCssProvider *keyb_css;
 
-#define MAX_TOUCH_TICS 10000
+#define MAX_TOUCH_TICS 4000
 struct
 {
 	TutorType type;
@@ -796,7 +796,6 @@ tutor_eval_forward (gunichar user_chr)
 			if (tutor.type != TT_BASIC)
 				accur_correct (real_chr, tutor.touch_time[tutor.ttidx-1]);
 		}
-
 		cursor_paint_char ("char_correct");
 	}
 	else
@@ -804,7 +803,6 @@ tutor_eval_forward (gunichar user_chr)
 		tutor.touch_time[tutor.ttidx] = g_timer_elapsed (tutor.tmr, NULL);
 		if (tutor.type != TT_BASIC)
 			accur_wrong (real_chr);
-
 		cursor_paint_char ("char_wrong");
 		tutor.n_errors += (int) n_touchs;
 		tutor_beep ();
@@ -994,43 +992,41 @@ tutor_calc_stats ()
 
 	accuracy = 100 * (1.0 - (gfloat) tutor.n_errors / tutor.n_touchs);
 	touchs_per_second = (gdouble) (tutor.n_touchs - tutor.n_errors) / tutor.elapsed_time;
-	velocity = 12 * touchs_per_second; // touched: new_WPM = 1.2 old_WPM
+	velocity = 12 * touchs_per_second;
 
-	if (tutor.type == TT_FLUID)
+	/* Average for touch timing
+	 */
+	sum = 0;
+	for (i = 2; i < tutor.ttidx; i++)
 	{
-		/*
-		 * "Magic" fluidness calculation
-		 */
-		sum = 0;
-		for (i = 2; i < tutor.ttidx; i++)
-		{
-			if (tutor.touch_time[i] <= 0)
-				tutor.touch_time[i] = 1.0e-8;
-			sample = sqrt (1 / tutor.touch_time[i]);
-			sum += sample;
-		}
-		if (i == 2)
-			i++;
-		average = sum / (i - 2);
-
-		sum = 0;
-		for (i = 2; i < tutor.ttidx; i++)
-		{
-			sample = sqrt (1 / tutor.touch_time[i]);
-			sum += (sample - average) * (sample - average);
-		}
-		if (i < 4)
-			i = 4;
-		standard_deviation = sqrt (sum / (i - 3));
-
-		if (average <= 0)
-			average = 1.0e-9;
-		fluidness = 100 * (1 - standard_deviation / average);
-		if (fluidness < 2)
-			fluidness = 2;
+		if (tutor.touch_time[i] <= 0)
+			tutor.touch_time[i] = 1.0e-8;
+		sample = sqrt (1 / tutor.touch_time[i]);
+		sum += sample;
 	}
-	else
-		fluidness = 0;
+	if (i == 2)
+		i++;
+	average = sum / (i - 2);
+	if (average <= 0)
+		average = 1.0e-9;
+
+	/* Standard deviation for touch timing
+	 */
+	sum = 0;
+	for (i = 2; i < tutor.ttidx; i++)
+	{
+		sample = sqrt (1 / tutor.touch_time[i]);
+		sum += (sample - average) * (sample - average);
+	}
+	if (i < 4)
+		i = 4;
+	standard_deviation = sqrt (sum / (i - 3));
+
+	/* "Magic" fluidness calculation
+	 */
+	fluidness = 100 * (1 - standard_deviation / average);
+	if (fluidness < 2)
+		fluidness = 2;
 	stat.score = 0;
 
 	/* Verify if logging is allowed 
@@ -1040,9 +1036,7 @@ tutor_calc_stats ()
 		if (tutor.n_touchs < MIN_CHARS_TO_LOG)
 		{
 			gdk_display_beep (gdk_display_get_default ());
-			contest_ps =
-				g_strdup_printf (_
-						 ("ps.: logging not performed for this session: "
+			contest_ps = g_strdup_printf (_("ps.: logging not performed for this session: "
 						  "the number of typed characters (%i) must be greater than %i."),
 						 tutor.n_touchs, MIN_CHARS_TO_LOG);
 			may_log = FALSE;
@@ -1056,8 +1050,7 @@ tutor_calc_stats ()
 		if (tmp_locale != NULL)
 			setlocale (LC_NUMERIC, "C");
 
-		/*
-		 * Logging
+		/* Logging
 		 */
 		tmp_name =
 			g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S "stat_", tutor_get_type_name (), ".txt",
@@ -1132,28 +1125,27 @@ tutor_calc_stats ()
 			g_message ("not able to log on this file:\n %s", tmp_name);
 		g_free (tmp_name);
 
+		/* Log the touch times deviation results of the last session
+		 */
+		tmp_name = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S, "deviation_", 
+				tutor_get_type_name (), ".txt", NULL);
+		if ((fh = (FILE *) g_fopen (tmp_name, "w")))
+		{
+			g_message ("writing touch timing deviation results at:\n %s", tmp_name);
+			fprintf (fh, "i\tdt(i)\t1/sqrt(dt(i))\tAver: %g\tStd: %g\tFluidity: %g\n", average, standard_deviation, fluidness);
+			for (i = 1; i < tutor.ttidx; i++)
+				fprintf (fh, "%i\t%g\t%g\n", i, tutor.touch_time[i], 
+						1.0 / sqrt(tutor.touch_time[i] > 0 ? tutor.touch_time[i] : 1.0e-9));
+			fclose (fh);
+		}
+		else
+			g_message ("not able to log on this file:\n %s", tmp_name);
+		g_free (tmp_name);
+
+		/* Fluidity specific results
+		 */
 		if (tutor.type == TT_FLUID)
 		{
-			/* Log the fluidness results of the last session
-			 */
-			tmp_name = g_build_filename (main_path_stats (), "deviation_fluid.txt", NULL);
-			if ((fh = (FILE *) g_fopen (tmp_name, "w")))
-			{
-				g_message ("writing further fluidness results at:\n %s", tmp_name);
-				fprintf (fh,
-					 "(i)\tdt(i)\tsqrt(1/dt(i))\tAverage:\t%g\tStd. dev.:\t%g\n",
-					 average, standard_deviation);
-				for (i = 1; i < tutor.ttidx; i++)
-					fprintf (fh, "%i\t%g\t%g\n", i, tutor.touch_time[i],
-						 sqrt (1 /
-						       (tutor.touch_time[i] >
-							0 ? tutor.touch_time[i] : 1.0e-9)));
-				fclose (fh);
-			}
-			else
-				g_message ("not able to log on this file:\n %s", tmp_name);
-			g_free (tmp_name);
-
 			/* Add results to Top 10
 			 */
 			tmp_name = main_preferences_get_string ("interface", "language");
@@ -1180,19 +1172,22 @@ tutor_calc_stats ()
 			top10_read_stats (LOCAL, -1);
 			if (tutor_char_distribution_approved ())
 			{
-				if (top10_compare_insert_stat (&stat, LOCAL))
+				if (top10_validate_stat (&stat))
 				{
-					contest_ps =
-						g_strdup (_
-							  ("ps.: you have entered the Top 10 list, great!"));
-					top10_write_stats (LOCAL, -1);
-					if (main_preferences_get_boolean ("game", "autopublish"))
+					if (top10_compare_insert_stat (&stat, LOCAL))
 					{
-						top10_show_stats (LOCAL);
-						top10_show_stats (GLOBAL);
-						top10_global_publish (NULL);
+						contest_ps = g_strdup (_("ps.: you have entered the Top 10 list, great!"));
+						top10_write_stats (LOCAL, -1);
+						if (main_preferences_get_boolean ("game", "autopublish"))
+						{
+							top10_show_stats (LOCAL);
+							top10_show_stats (GLOBAL);
+							top10_global_publish (NULL);
+						}
 					}
 				}
+				else
+					contest_ps = g_strdup (":-P");
 			}
 			else
 				contest_ps = g_strdup (_("ps.: the text you just typed doesn't seem to be similar"
@@ -1201,13 +1196,12 @@ tutor_calc_stats ()
 
 			/* Anyway, log also the scoring
 			 */
-			tmp_name =
-				g_build_filename (main_path_stats (), "scores_fluid.txt", NULL);
+			tmp_name = g_build_filename (main_path_stats (), "scores_fluid.txt", NULL);
 			assert_user_dir ();
 			if (!g_file_test (tmp_name, G_FILE_TEST_IS_REGULAR))
 			{
 				fh = (FILE *) g_fopen (tmp_name, "w");
-				fprintf (fh, "Score\tDate\tTime\tNumber of chars\tLanguage\n");
+				fprintf (fh, "Score\tDate\tTime\t# chars\tLang\n");
 			}
 			else
 				fh = (FILE *) g_fopen (tmp_name, "a");
@@ -1215,7 +1209,7 @@ tutor_calc_stats ()
 			{
 				ltime = localtime (&stat.when);
 				fprintf (fh,
-					 "%3.4f\t%i-%2.2i-%2.2i\t%2.2i:%2.2i\t%i\t%s\n",
+					 "%3.3f\t%i-%2.2i-%2.2i\t%2.2i:%2.2i\t%i\t%s\n",
 					 stat.score, (ltime->tm_year) + 1900, (ltime->tm_mon) + 1,
 					 (ltime->tm_mday), (ltime->tm_hour), (ltime->tm_min),
 					 stat.nchars, trans_get_current_language ());
@@ -1226,8 +1220,7 @@ tutor_calc_stats ()
 			g_free (tmp_name);
 		}
 
-		/*
-		 * Coming back to the right locale
+		/* Coming back to the right locale
 		 */
 		if (tmp_locale != NULL)
 		{
@@ -1236,8 +1229,7 @@ tutor_calc_stats ()
 		}
 	}
 
-	/*
-	 * Print statistics
+	/* Print statistics
 	 */
 	wg = get_wg ("text_tutor");
 	buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (wg));
@@ -1366,7 +1358,6 @@ tutor_calc_stats ()
 		break;
 	case TT_FLUID:
 		fluid_comment (accuracy, velocity, fluidness);
-
 		if (contest_ps != NULL)
 		{
 			gtk_text_buffer_insert_at_cursor (buf, "\n", 1);

@@ -489,7 +489,7 @@ fluid_copy_text_file (gchar * file_name)
 		return;
 	}
 
-	pars_name = g_strdup (strrchr (file_name, DIRSEP) + 1);
+	pars_name = g_strdup (strrchr (file_name, G_DIR_SEPARATOR) + 1);
 	pars_path = g_strconcat (main_path_user (), G_DIR_SEPARATOR_S, pars_name, ".paragraphs", NULL);
 	assert_user_dir ();
 	if (!(fh_destiny = (FILE *) g_fopen (pars_path, "w")))

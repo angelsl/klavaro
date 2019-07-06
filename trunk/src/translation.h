@@ -49,8 +49,8 @@
 "Nederlands (nl) [qwerty_us]\n" \
 "ਪੰਜਾਬੀ (pa) [gumurkhi_in_jehlum]\n" \
 "Polski (pl) [qwerty_pl_us]\n" \
-"Português (pt) [qwerty_pt]\n" \
 "Português BR (pt_BR) [qwerty_br_abnt2]\n" \
+"Português PT (pt_PT) [qwerty_pt]\n" \
 "Русский (ru) [jtsuken_ru]\n" \
 "Suomen kieli (fi) [qwerty_se]\n"\
 "Slovenščina (sl) [qwertz_si]\n" \

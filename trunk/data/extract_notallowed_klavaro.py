@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # coding: utf-8
+# Extract not allowed characters from paragraphs
 
 import sys
 
