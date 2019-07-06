@@ -1,7 +1,14 @@
-2019-06-21  Felipe Castro (-) <fefcas@gmail.com>;
+2019-07-06  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.09
 	* Fixed:
 	- Internet ranking server now is https://klavaro.sourceforge.io/top10/
+	- Top10 window showing always external scores when changing language
+	  combobox.
+	- Portugal Portuguese code (pt) defined as pt_PT.
+	* Added:
+	- Validation limits before putting scorings on Top 10.
+	- Logging touch timings from last session for all modules: 
+	  $HOME/.local/share/klavaro/deviation_MODULE.txt
 	* Updated translations:
 	- Swedish.
 
@@ -19,6 +26,7 @@
 	- Hotkeys Ctrl+R or Escape: cancel current practice, start a new one.
 	- Alternative colors toggle button in tutor window. At first time run,
 	  a default "dark mode" is copied to the file: $HOME/.config/klavaro/altcolor.ini
+	  Hotkey: Ctrl+A for alternative colors.
 
 2019-06-02  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.07

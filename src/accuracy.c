@@ -169,7 +169,7 @@ accur_init ()
 	/*
 	 * First, the accuracy log
 	 */
-	tmp = g_strconcat (main_path_stats (), DIRSEP_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
+	tmp = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
 	success = g_file_get_contents (tmp, &data, &len, NULL);
 	if (!success)
 		g_message ("Empty accuracy log: %s", tmp);
@@ -210,7 +210,7 @@ accur_init ()
 	/*
 	 * Second, the proficiency log
 	 */
-	tmp = g_strconcat (main_path_stats (), DIRSEP_S, PROFI_LOG_FILE, "_", kb_name, NULL);
+	tmp = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S, PROFI_LOG_FILE, "_", kb_name, NULL);
 	success = g_file_get_contents (tmp, &data, &len, NULL);
 	if (!success)
 		g_message ("Empty proficiency log: %s", tmp);
@@ -629,7 +629,7 @@ accur_close ()
 	/*
 	 * First, the accuracy log
 	 */
-	tmp = g_strconcat (main_path_stats (), DIRSEP_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
+	tmp = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S, ACCUR_LOG_FILE, "_", kb_name, NULL);
 	fh = g_fopen (tmp, "wb");
 	g_free (tmp);
 	if (fh)
@@ -651,7 +651,7 @@ accur_close ()
 	/*
 	 * Second, the proficiency log
 	 */
-	tmp = g_strconcat (main_path_stats (), DIRSEP_S, PROFI_LOG_FILE, "_", kb_name, NULL);
+	tmp = g_strconcat (main_path_stats (), G_DIR_SEPARATOR_S, PROFI_LOG_FILE, "_", kb_name, NULL);
 	fh = g_fopen (tmp, "wb");
 	g_free (tmp);
 	if (fh)

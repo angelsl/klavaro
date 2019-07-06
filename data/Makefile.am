@@ -147,10 +147,10 @@ klavaro_data = \
 	pa.paragraphs \
 	pl.words \
 	pl.paragraphs \
-	pt.words \
-	pt.paragraphs \
 	pt_BR.words \
 	pt_BR.paragraphs \
+	pt_PT.words \
+	pt_PT.paragraphs \
 	ru.words \
 	ru.paragraphs \
 	sr.words \
