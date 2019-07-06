@@ -5,6 +5,7 @@
 	- Top10 window showing always external scores when changing language
 	  combobox.
 	- Portugal Portuguese code (pt) defined as pt_PT.
+	- Man page updated.
 	* Added:
 	- Validation limits before putting scorings on Top 10.
 	- Logging touch timings from last session for all modules: 
