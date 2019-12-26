@@ -20,7 +20,9 @@
 # define TUTOR_RED "#ff0044"
 # define TUTOR_RED_LITE "#eeddbb"
 # define TUTOR_GREEN "#228822"
-# define TUTOR_YELLOW "#ffee00"
+# define TUTOR_BLUE "#0000cc"
+# define TUTOR_BLUE_LITE "#3377dd"
+# define TUTOR_YELLOW "#ffff00"
 # define TUTOR_BROWN "#886600"
 # define TUTOR_BLACK "#000000"
 # define TUTOR_GRAY "#dddddd"
@@ -63,6 +65,8 @@ typedef struct CHAR_DISTRIBUTION
 TutorType tutor_get_type (void);
 
 gchar *tutor_get_type_name (void);
+
+gboolean tutor_is_tibetan (void);
 
 TutorQuery tutor_get_query (void);
 

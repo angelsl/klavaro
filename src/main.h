@@ -29,6 +29,8 @@
 # define DIR_PERM (0xFFFF)
 #endif
 
+# define LESSON_FONT_BO "Tibetan Machine Uni 16"
+
 #define LOCAL TRUE
 #define GLOBAL FALSE
 

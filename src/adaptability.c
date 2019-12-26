@@ -83,6 +83,8 @@ adapt_draw_random_pattern ()
 
 			if (j == 0)
 				word[0] = keyb_unichar_toupper (word[0]);
+			else if (tutor_is_tibetan ())
+				text[tidx++] = TIBETAN_WORD_DELIMITER;
 			else
 				text[tidx++] = L' ';
 
@@ -93,6 +95,8 @@ adapt_draw_random_pattern ()
 			text[tidx++] = URDU_STOP;
 		if (g_str_has_prefix (hlp, "pa"))
 			text[tidx++] = DEVANAGARI_STOP;
+		else if (tutor_is_tibetan ())
+			text[tidx++] = TIBETAN_STOP;
 		else if (trans_lang_has_stopmark ())
 			text[tidx++] = L'.';
 		text[tidx++] = L'\n';
@@ -157,18 +161,36 @@ adapt_create_word (gunichar word[MAX_WORD_LEN + 1])
 		/* Avoid double diacritics */
 		if (i > 0)
 			if (keyb_is_diacritic (word[i - 1]) && keyb_is_diacritic (word[i]))
-				word[i] = vowels[rand () % vlen];
+				if ( tutor_is_tibetan() )
+				{
+					// Tibetan vowels are diacritics
+					word[i] = consonants[rand () % clen];
+				}
+				else
+				{
+					word[i] = vowels[rand () % vlen];
+				}
 	}
 	/*
 	 * Last char
 	 */
 	if (rand () % 20)
-		word[n] = vowels[rand () % vlen];
+		if ( tutor_is_tibetan() )
+		{
+			// Tibetan vowels are diacritics
+			word[i] = consonants[rand () % clen];
+		}
+		else
+		{
+			word[i] = vowels[rand () % vlen];
+		}
 	else
 	{
 		hlp = main_preferences_get_string ("interface", "language");
 		if (g_str_has_prefix (hlp, "ur"))
 			word[n] = URDU_COMMA;
+		else if (tutor_is_tibetan())
+			word[n] = TIBETAN_COMMA;
 		else if (trans_lang_has_stopmark ())
 			word[n] = L',';
 		g_free (hlp);

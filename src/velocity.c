@@ -182,10 +182,10 @@ velo_draw_random_words ()
 		for (j = 0; j < 20; j++) /* 20 words per paragraph */
 		{		
 			word = g_strdup (g_list_nth_data (dict.list, rand () % dict.len));
-			if (j == 0)
+			if (j == 0) /* first word, change to upercase */
 				word[0] = g_ascii_toupper (word[0]);
 
-			if (par.i + strlen (word) + 4 > par.size)
+			if (par.i + strlen (word) + 8 > par.size) /* check for buffer sizing, some spare for paragraph ending */
 			{
 				par.size += 1024;
 				par.text = g_renew (gchar, par.text, par.size);
@@ -193,10 +193,30 @@ velo_draw_random_words ()
 
 			strcpy (par.text + par.i, word);
 			par.i += strlen (word);
-			par.text[par.i++] = ' ';
+			if (tutor_is_tibetan ())
+			{
+				/* Append a bo word delimiter */
+				strcat(par.text, "་");
+				par.i += 3;
+			}	
+			else
+			{
+				par.text[par.i++] = ' ';
+			}	
 			g_free (word);
 		}
-		par.i--;
+		if (tutor_is_tibetan())
+		{
+			/* Replacing the last bo word delimiter with bo stop */
+			par.i -= 3;
+			strcpy(par.text + par.i, "།");
+			par.i += 3;
+		}
+		else
+		{
+			par.i--; /* For replacing the last space with stop below */
+		}
+		
 		if (trans_lang_has_stopmark ())
 			par.text[par.i++] = '.';
 		par.text[par.i++] = '\n';

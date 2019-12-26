@@ -845,7 +845,7 @@ top10_global_update (gpointer data)
 		curl_easy_setopt (curl, CURLOPT_WRITEDATA, fh);
 		curl_easy_setopt (curl, CURLOPT_SSL_VERIFYPEER, 0L);
 		fail = curl_easy_perform (curl);
-		if (fail) g_message (curl_easy_strerror (fail));
+		if (fail) g_message ("%s", curl_easy_strerror (fail));
 		fclose (fh);
 	}
 	curl_easy_cleanup (curl);
@@ -867,7 +867,6 @@ top10_global_update (gpointer data)
 	gtk_image_set_from_icon_name (img, "go-bottom", GTK_ICON_SIZE_BUTTON);
 	g_free (tmp);
 	g_free (ksc);
-
 
 	if (gtk_combo_box_get_active (GTK_COMBO_BOX (get_wg ("combobox_top10"))) == 0)
 		top10_show_stats (LOCAL);

@@ -113,6 +113,25 @@ tutor_get_type_name ()
 	return (type_name[tutor.type]);
 }
 
+gboolean 
+tutor_is_tibetan ()
+{
+	gchar *code;
+	gboolean is_tibt;
+
+	if (tutor.type == TT_BASIC || tutor.type == TT_ADAPT)
+	{
+		code = keyb_get_country_code (keyb_get_name ());
+		is_tibt = g_strcmp0 (code, "bo") == 0; 
+		g_free (code);
+		return (is_tibt);
+	}
+	else
+	{
+		return (g_str_has_prefix (main_preferences_get_string ("interface", "language"), "bo"));
+	}
+}
+
 TutorQuery
 tutor_get_query ()
 {

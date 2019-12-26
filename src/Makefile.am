@@ -22,7 +22,7 @@ AM_CPPFLAGS = @GTK_CFLAGS@ \
 	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
 
-AM_CFLAGS = -Wextra \
+AM_CFLAGS = -Wextra -Wformat -Werror=format-security \
 	    -I$(top_srcdir)/gtkdatabox
 
 AM_LDFLAGS = -static
