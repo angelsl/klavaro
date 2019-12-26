@@ -5,6 +5,7 @@ _Comment=A very flexible and efficient touch typing tutor.
 # Translators: these are keywords related to the program. CAI above means Computer Aided Instruction. Feel free to add and/or change the keywords in your language.
 Keywords=keyboard;typing;tutor;CAI
 Keywords[ar]=keyboard;typing;tutor;CAI;type;لوحة المفاتيح;الكتابة;الكتابة باللمس
+Keywords[bo]=ཡིག་འཇུག;མཐེབ་སྒྲོམ།;སྦྱོང་བརྡར།;CAI
 Keywords[ca]=keyboard;typing;tutor;CAI
 Keywords[cs]=klávesnice;psaní;psací stroj;na psacím stroji;výuka;učení;CUI
 Keywords[da]=tastatur;blindskrift;øvelse;CAI;maskinskrivning;værktøj

@@ -17,9 +17,13 @@
 #define KEY_LINE_LEN (14 + 1)	/* 14 keys + 1 NULL char */
 
 #define UPSYM ((gunichar) 182)
-#define URDU_COMMA ((gunichar) 0x060C)
 #define URDU_STOP ((gunichar) 0x06D4)
+#define URDU_COMMA ((gunichar) 0x060C)
 #define DEVANAGARI_STOP ((gunichar) 0x0964)
+#define TIBETAN_WORD_DELIMITER ((gunichar) 0x0F0B)
+#define TIBETAN_STOP ((gunichar) 0x0F0D)
+#define TIBETAN_COMMA ((gunichar) L' ')
+#define BO_NARO ((gunichar) 0x0F7C)
 
 /* Pretty colors
  */
@@ -85,6 +89,8 @@ void keyb_save_new_layout (void);
 void keyb_remove_user_layout (void);
 
 void keyb_update_virtual_layout (void);
+
+gchar * keyb_get_country_code (const gchar *kbd);
 
 gchar * keyb_get_country (const gchar *kbd);
 

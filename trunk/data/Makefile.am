@@ -61,6 +61,7 @@ klavaro_data = \
 	qwerty_ar.kbd \
 	qwerty_bg.kbd \
 	qwerty_bg_2.kbd \
+ 	qwerty_bo.kbd \
 	qwerty_br.kbd \
 	qwerty_br_abnt2.kbd \
 	qwerty_ca_multling.kbd \
@@ -105,6 +106,8 @@ klavaro_data = \
 	bg.paragraphs \
 	bn.words \
 	bn.paragraphs \
+ 	bo.words \
+ 	bo.paragraphs \
 	ca.words \
 	ca.paragraphs \
 	cs.words \

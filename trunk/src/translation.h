@@ -24,10 +24,10 @@
  */
 
 #define LANG_SET \
-"العربية (ar) [qwerty_ar] \n" \
+"العربية (ar) [qwerty_ar]\n" \
 "български език (bg) [dvorak_bg]\n" \
 " বাংলা (bn) [qwerty_us]\n" \
-"Bokmål (nb) [qwerty_no]\n" \
+"བོད་ཡིག (bo) [qwerty_bo]\n" \
 "Català (ca) [qwerty_es]\n" \
 "Čeština (cs) [qwertz_cz]\n" \
 "Dansk (da) [qwerty_dk]\n" \
@@ -46,6 +46,7 @@
 "한국어 (ko) [dubeolsik_kr]\n" \
 "Кыргызча (ky) [jtsuken_ru]\n" \
 "Magyar (hu) [qwertz_hu]\n" \
+"Bokmål (nb) [qwerty_no]\n" \
 "Nederlands (nl) [qwerty_us]\n" \
 "ਪੰਜਾਬੀ (pa) [gumurkhi_in_jehlum]\n" \
 "Polski (pl) [qwerty_pl_us]\n" \
@@ -84,6 +85,8 @@ gchar * trans_get_code (gint i);
 gboolean trans_lang_is_available (gchar * test);
 
 gboolean trans_lang_has_stopmark (void);
+
+gboolean trans_is_tibetan (void);
 
 FILE *trans_lang_get_similar_file (const gchar * file_end);
 

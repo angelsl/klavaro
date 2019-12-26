@@ -78,6 +78,11 @@ const gunichar vowels[] = {
 	(gunichar) 1080,
 	(gunichar) 1086,
 	(gunichar) 1091,
+	// Tibetan vowels
+	(gunichar) 0x0F72,
+	(gunichar) 0x0F74,
+	(gunichar) 0x0F7A,
+	(gunichar) 0x0F7C,
 	L'\0'
 };
 
@@ -93,6 +98,53 @@ const gunichar diacritics[] = {
 	(gunichar) 0x0651,
 	(gunichar) 0x0654,
 	(gunichar) 0x0670,
+	// Tibetan diacritics
+	(gunichar) 0x0F35,
+	(gunichar) 0x0F37,
+	(gunichar) 0x0F71,
+	(gunichar) 0x0F72,
+	(gunichar) 0x0F74,
+	(gunichar) 0x0F7A,
+	(gunichar) 0x0F7B,
+	(gunichar) 0x0F7C,
+	(gunichar) 0x0F7D,
+	(gunichar) 0x0F7E,
+	(gunichar) 0x0F80,
+	(gunichar) 0x0F83,
+	(gunichar) 0x0F90,
+	(gunichar) 0x0F91,
+	(gunichar) 0x0F92,	
+	(gunichar) 0x0F94,
+	(gunichar) 0x0F95,
+	(gunichar) 0x0F96,
+	(gunichar) 0x0F97,
+	(gunichar) 0x0F98,
+	(gunichar) 0x0F99,	
+	(gunichar) 0x0F9A,
+	(gunichar) 0x0F9F,
+	(gunichar) 0x0FA0,
+	(gunichar) 0x0FA1,
+	(gunichar) 0x0FA3,
+	(gunichar) 0x0FA4,
+	(gunichar) 0x0FA5,
+	(gunichar) 0x0FA6,	
+	(gunichar) 0x0FA8,
+	(gunichar) 0x0FA9,
+	(gunichar) 0x0FAA,	
+	(gunichar) 0x0FAB,
+	(gunichar) 0x0FAD,
+	(gunichar) 0x0FAE,
+	(gunichar) 0x0FAF,
+	(gunichar) 0x0FB0,
+	(gunichar) 0x0FB1,
+	(gunichar) 0x0FB2,
+	(gunichar) 0x0FB3,
+	(gunichar) 0x0FB4,
+	(gunichar) 0x0FB6,
+	(gunichar) 0x0FB7,
+	(gunichar) 0x0FB8,
+	(gunichar) 0x0FBA,
+	(gunichar) 0x0FBB,
 	// Other arabic diacritics
 	(gunichar) 0x0610,
 	(gunichar) 0x0611,
@@ -420,6 +472,7 @@ gboolean
 keyb_is_diacritic (gunichar chr)
 {
 	gint i;
+	gunichar *diac_array; 
 
 	for (i = 0; diacritics[i] != L'\0'; i++)
 		if (chr == diacritics[i])
@@ -677,12 +730,11 @@ keyb_get_layout_list_from_path (gchar *path)
 	return (files);
 }
 
-/* Get the country from a keyboard name
+/* Get the country code from a keyboard name
  */
 gchar *
-keyb_get_country (const gchar *kbd)
+keyb_get_country_code (const gchar *kbd)
 {
-	gchar *country = NULL;
 	gchar *code = NULL;
 
 	code = strchr (kbd, '_');
@@ -691,6 +743,20 @@ keyb_get_country (const gchar *kbd)
 	else
 		code = strdup ("xx");
 	code[2] = '\0';
+
+	return code;
+}
+
+
+/* Get the country from a keyboard name
+ */
+gchar *
+keyb_get_country (const gchar *kbd)
+{
+	gchar *country = NULL;
+	gchar *code = NULL;
+
+	code = keyb_get_country_code (kbd);
 	country = g_strdup (trans_code_to_country (code));
 	g_free (code);
 

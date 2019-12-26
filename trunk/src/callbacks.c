@@ -312,15 +312,18 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 	cb_color_tag ("char_wrong", 	TUTOR_RED,	TUTOR_RED_LITE, buf);
 	cb_color_tag ("char_correct",	TUTOR_GREEN,	TUTOR_CREAM,    buf);
 	cb_color_tag ("char_retouched",	TUTOR_BROWN,	TUTOR_GRAY,     buf);
-	cb_color_tag ("cursor_blink",	TUTOR_BLACK,	TUTOR_YELLOW,   buf);
-	cb_color_tag ("cursor_unblink",	TUTOR_BLACK,	TUTOR_CREAM,    buf);
+ 	cb_color_tag ("cursor_blink",	TUTOR_BLUE,	TUTOR_YELLOW,   buf);
+ 	cb_color_tag ("cursor_unblink",	TUTOR_BLUE_LITE,TUTOR_CREAM,    buf);
 	cb_color_tag ("text_intro",	TUTOR_BLACK,	TUTOR_WHITE,    buf);
 
 	/* Tutor font */
 	tmp_font = main_preferences_get_string ("tutor", "lesson_font");
 	if (tmp_font == NULL)
 	{
-		tmp_font = g_strdup (LESSON_FONT);
+		if (tutor_is_tibetan() || g_str_has_prefix (main_preferences_get_string ("interface", "language"), "bo"))
+			tmp_font = g_strdup (LESSON_FONT_BO);	
+		else
+			tmp_font = g_strdup (LESSON_FONT);
 		main_preferences_set_string ("tutor", "lesson_font", tmp_font);
 	}
 	gtk_text_buffer_create_tag (buf, "lesson_font", "font", tmp_font, NULL);

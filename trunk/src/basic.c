@@ -317,9 +317,25 @@ basic_draw_lesson ()
 					}
 				}
 				if (keyb_is_diacritic (sentence[idx-1]))
-					sentence[idx-1] = L' ';
+ 				{
+ 					if (tutor_is_tibetan())
+ 					{
+ 						if (k > 0 && keyb_is_vowel(sentence[idx-1]) && keyb_is_vowel(sentence[idx-2]) )
+						{
+ 							sentence[idx-1] = TIBETAN_WORD_DELIMITER;
+ 						}
+ 					}	
+ 					else
+					{
+ 						sentence[idx-1] = L' ';
+					}
+ 				}
 			}
-			sentence[idx++] = (j < 8) ? L' ' : UPSYM;
+ 			if (j == 8)
+ 				sentence[idx] = UPSYM;
+ 			else
+				sentence[idx] = tutor_is_tibetan() ? TIBETAN_WORD_DELIMITER : L' ';
+			idx++;
 		}
 		ut8_tmp = g_ucs4_to_utf8 (sentence, -1, NULL, NULL, NULL);
 		gtk_text_buffer_insert_at_cursor (buf, ut8_tmp, -1);

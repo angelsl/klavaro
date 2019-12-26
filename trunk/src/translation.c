@@ -50,11 +50,13 @@ trans_code_to_country (gchar *code)
 		{"ar","العالم العربي"},
 		{"be","België"},
 		{"bg","България"},
+ 		{"bo","ཧི་མ་ལ་ཡ།"},
 		{"br","Brasil"},
 		{"ca","Canada"},
 		{"ch","Schweiz / Suisse"},
+		/* 10 */
 		{"cn","中华人民共和国"},
-		{"cz","Česká republika"}, /* 10 */
+		{"cz","Česká republika"},
 		{"dk","Danmark"},
 		{"de","Deutschland"},
 		{"eo","Esperantujo"},
@@ -63,8 +65,9 @@ trans_code_to_country (gchar *code)
 		{"fi","Suomi"},
 		{"fr","France"},
 		{"gr","Ελλάδα"},
+		/* 20 */
 		{"il","ישראל"},
-		{"hr","Hrvatska"}, /* 20 */
+		{"hr","Hrvatska"},
 		{"hu","Magyarország"},
 		{"in","India"},
 		{"it","Italia"},
@@ -73,8 +76,9 @@ trans_code_to_country (gchar *code)
 		{"kr","대한민국"}, /* Korea */
 		{"no","Norge"},
 		{"pl","Polska"},
+		/* 30 */
 		{"pk","پاکستان"},
-		{"pt","Portugal"}, /* 30 */
+		{"pt","Portugal"},
 		{"rs","Србија"}, /* Serbia */
 		{"ru","Россия"},
 		{"se","Sverige"},
@@ -83,8 +87,8 @@ trans_code_to_country (gchar *code)
 		{"tr","Türkiye"},
 		{"ua","Україна"},
 		{"uk","United Kingdom"},
+		/* 40 */
 		{"us","USA"},
-		{"",""}, /* 40 */
 		{"",""},
 		{"",""},
 		{"",""},
@@ -94,7 +98,8 @@ trans_code_to_country (gchar *code)
 		{"",""},
 		{"",""},
 		{"",""},
-		{"",""}
+		/* 50 */
+		{"",""},
 	};
 
 	for (i = 0; i < COUNTRY_N; i++)
@@ -237,6 +242,7 @@ trans_lang_has_stopmark ()
 	stopmark = g_str_has_prefix (hlp, "ur") ||
 		   g_str_has_prefix (hlp, "ar") ||
 		   g_str_has_prefix (hlp, "bn") ||
+ 		   g_str_has_prefix (hlp, "bo") ||
 		   g_str_has_prefix (hlp, "pa");
 	g_free (hlp);
 
