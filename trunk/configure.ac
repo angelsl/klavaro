@@ -49,9 +49,10 @@ AC_CHECK_FUNCS([floor pow memmove memset rint setlocale sqrt strcasecmp strchr s
 GETTEXT_PACKAGE=klavaro
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
+AC_DEFINE(ENABLE_NLS,"1",[enable nls])
 
-AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION([0.18.3])
+dnl AM_GNU_GETTEXT([external])
+dnl AM_GNU_GETTEXT_VERSION([0.18.3])
 
 AM_CONDITIONAL(IS_WIN, test `uname` = "MINGW64_NT-10.0")
 AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW64_NT-10.0" -a `uname` != "Darwin")

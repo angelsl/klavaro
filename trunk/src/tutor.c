@@ -122,7 +122,7 @@ tutor_is_tibetan ()
 	if (tutor.type == TT_BASIC || tutor.type == TT_ADAPT)
 	{
 		code = keyb_get_country_code (keyb_get_name ());
-		is_tibt = g_strcmp0 (code, "bo") == 0; 
+		is_tibt = g_str_equal (code, "bo"); 
 		g_free (code);
 		return (is_tibt);
 	}
