@@ -258,6 +258,14 @@ trans_lang_get_similar (gchar * test)
 	gint i;
 	gchar aux_code_2[3];
 
+	/* Prefer C over en_GB for English variants other than en_GB. (Debian patch 02) */
+	if (g_str_has_prefix (test, "en"))
+	{
+		g_free (test);
+		test = g_strdup ("C");
+		return (TRUE);
+	}
+
 	if (g_str_equal (test, "C"))
 		return TRUE;
 

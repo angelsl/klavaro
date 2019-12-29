@@ -4,6 +4,11 @@
 	- Support for Tibetan.
 	* Changed:
 	- Checking for Werror=format-security at src/Makefile.am
+	- Applying Debian patches 02, 03, 04 and 05.
+	- Not installing GtkDataBox include headers anymore.
+	* Updated:
+	- Basque translation.
+	- Hungarian translation.
 
 2019-07-06  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.09

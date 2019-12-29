@@ -21,20 +21,20 @@ if IS_WIN
 libgtkdataboks_la_LDFLAGS += -no-undefined -export-symbols-regexp '^gtk_databox_'
 endif
 
-include_HEADERS		= \
-			gtkdatabox_typedefs.h\
-			gtkdatabox.h\
-			gtkdatabox_marshal.h\
-			gtkdatabox_scale.h\
-			gtkdatabox_graph.h\
- 			gtkdatabox_points.h\
-		    	gtkdatabox_lines.h\
-		    	gtkdatabox_bars.h\
-		    	gtkdatabox_grid.h\
-			gtkdatabox_ruler.h\
-			gtkdatabox_xyc_graph.h
+## include_HEADERS = 
 
-EXTRA_DIST = gtkdatabox_marshal.list
+EXTRA_DIST = gtkdatabox_marshal.list \
+		gtkdatabox_typedefs.h\
+		gtkdatabox.h\
+		gtkdatabox_marshal.h\
+		gtkdatabox_scale.h\
+		gtkdatabox_graph.h\
+ 		gtkdatabox_points.h\
+	    	gtkdatabox_lines.h\
+	    	gtkdatabox_bars.h\
+	    	gtkdatabox_grid.h\
+		gtkdatabox_ruler.h\
+		gtkdatabox_xyc_graph.h
 
 BUILT_SOURCES = gtkdatabox_marshal.c gtkdatabox_marshal.h
 
