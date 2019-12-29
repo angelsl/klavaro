@@ -1,7 +1,6 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- Add support for Tibetan.
 - Substitute all deprecated gtk_widet_override_background functions. (no simple way on GtkTextView...)
 - Verify GtkDataBox for updating as external lib. (2019-02-02: not yet, still on GTK-2, so updated to use GTK-3, from sf.net GIT)
 
