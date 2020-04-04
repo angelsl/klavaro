@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.05-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-06-06 20:43-0300\n"
-"PO-Revision-Date: 2019-02-12 17:22-0800\n"
+"POT-Creation-Date: 2019-02-11 21:17+0100\n"
+"PO-Revision-Date: 2020-03-14 16:29-0700\n"
 "Last-Translator: Božidar Putanec <bozidarp@yahoo.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
 #: ../data/klavaro.glade.h:1
@@ -76,12 +75,8 @@ msgid "This is a specific exercise, adjusted to your error profile."
 msgstr "Ova vježba posebno je prilagođena za vas na osnovi vaših tipfelera."
 
 #: ../data/klavaro.glade.h:16
-msgid ""
-"Edit the character set to be used in lessons after 43: they are customizable!"
-msgstr ""
-"U lekcijama 44 – 60 sami birate znakove s kojima želite vježbati! Pritisnite "
-"ovdje (olovku); upišite tipke/znakove po svojem slobodnom izboru; pritisnite "
-"je opet i nova vježba, po vašem izboru, pojavit će se u prozoru!"
+msgid "Edit the character set to be used in lessons after 43: they are customizable!"
+msgstr "U lekcijama 44 – 60 sami birate znakove s kojima želite vježbati! Pritisnite ovdje (olovku); upišite tipke/znakove po svojem slobodnom izboru; pritisnite je opet i nova vježba, po vašem izboru, pojavit će se u prozoru!"
 
 #: ../data/klavaro.glade.h:17 ../src/tutor.c:379
 msgid "Drag and drop text here to practice with it."
@@ -188,12 +183,8 @@ msgid "Rename the selected item."
 msgstr "Neobvezna promjena naziva odabranog elementa."
 
 #: ../data/klavaro.glade.h:43
-msgid ""
-"Read a text file and add a copy of it here. The file must be encoded in "
-"UTF-8."
-msgstr ""
-"Učitajte datoteku (koja mora biti tekst kodiran u UTF-8) i ovdje ostavite "
-"njenu kopiju."
+msgid "Read a text file and add a copy of it here. The file must be encoded in UTF-8."
+msgstr "Učitajte datoteku (koja mora biti tekst kodiran u UTF-8) i ovdje ostavite njenu kopiju."
 
 #: ../data/klavaro.glade.h:44
 msgid "_Open text file"
@@ -244,12 +235,8 @@ msgid "_Remove"
 msgstr "_Ukloni"
 
 #: ../data/klavaro.glade.h:56
-msgid ""
-"Toggles the shift effect on the keys. Alternates between the upper and lower "
-"characters of the keys."
-msgstr ""
-"Shift služi za tipkanje alternativnih znakova na tipkama, i za pojedinačno "
-"tipkanje velikih slova."
+msgid "Toggles the shift effect on the keys. Alternates between the upper and lower characters of the keys."
+msgstr "Shift služi za tipkanje alternativnih znakova na tipkama, i za pojedinačno tipkanje velikih slova."
 
 # Razmaknica za tipkanje razmaka, bjelina
 #: ../data/klavaro.glade.h:57
@@ -305,12 +292,8 @@ msgid "_Save and use"
 msgstr "_Spremi i upotrijebi"
 
 #: ../data/klavaro.glade.h:70
-msgid ""
-"If you like those beautiful hands, click here to close this window keeping "
-"them."
-msgstr ""
-"Ako želite gledati animaciju ruku na zaslonu tijekom vježbanja, kliknite "
-"ovdje da zatvorite ovaj prozor."
+msgid "If you like those beautiful hands, click here to close this window keeping them."
+msgstr "Ako želite gledati animaciju ruku na zaslonu tijekom vježbanja, kliknite ovdje da zatvorite ovaj prozor."
 
 #: ../data/klavaro.glade.h:71
 msgid "_Keep hands"
@@ -369,12 +352,8 @@ msgid "Your language here."
 msgstr "Ovdje odaberite svoj jezik."
 
 #: ../data/klavaro.glade.h:85
-msgid ""
-"Keyboard layout for modules 1 and 2. Also used informatively in the "
-"fluidness contest."
-msgstr ""
-"Raspored tipkovnice za 1. i 2. tečaj. Rabi se i za natjecanje u tečnosti "
-"tipkanja."
+msgid "Keyboard layout for modules 1 and 2. Also used informatively in the fluidness contest."
+msgstr "Raspored tipkovnice za 1. i 2. tečaj. Rabi se i za natjecanje u tečnosti tipkanja."
 
 #: ../data/klavaro.glade.h:86
 msgid "_Keyboard:"
@@ -425,32 +404,22 @@ msgid "This is a tip. Now you press this button to return to the main menu."
 msgstr "Savjet: Pritisnite ovaj gumb za povratak u glavni izbornik."
 
 #: ../data/klavaro.glade.h:98
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
+msgid "The main menu of the application is very straightforward. Just select the type of exercise you wish to take. Do not worry about clicking any button on the screen. The buttons will never hurt you!"
 msgstr ""
 "Glavni izbornik je vrlo jednostavan. Sastoji se od četiriju tečajeva.\n"
-"Izaberite tečaj (1., 2., 3. ili 4., ali pročitajte 0 – uvod) po kojem "
-"želite\n"
+"Izaberite tečaj (1., 2., 3. ili 4., ali pročitajte 0 – uvod) po kojem želite\n"
 "vježbati, i to je sve.\n"
 "\n"
 "Nemojte se bojati pritiskati gumbe na zaslonu. Gumbi vas neće ozlijediti!"
 
 #: ../data/klavaro.glade.h:99
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
+msgid "Also the controls have tips which will appear if you hover over them with your mouse. These tips can come in very handy. To see how these tips work, position your mouse over the button below, and without clicking, wait for the tip to appear..."
 msgstr ""
-"Na svakom gumbu pojavi se savjet kad mišem prelazite iznad gumba (ne "
-"dodirujući ga).\n"
+"Na svakom gumbu pojavi se savjet kad mišem prelazite iznad gumba (ne dodirujući ga).\n"
 "Savjeti su vrlo korisni. Da se savjet pojavi, ne treba pritisnuti gumb,\n"
 "nego treba samo malo pričekati...\n"
 "\n"
-"Osim toga, da ne gubite vrijeme micanjem ruke s tipkovnice kako biste "
-"dohvatili miš,\n"
+"Osim toga, da ne gubite vrijeme micanjem ruke s tipkovnice kako biste dohvatili miš,\n"
 "u svakom prozoru ili dijalogu možete koristiti prečace pritisnete li tipku\n"
 "Alt i podvučeno slovo, da obavite željenu radnju/akciju/funkciju."
 
@@ -476,7 +445,7 @@ msgstr "_Sudjelujte"
 
 #: ../data/klavaro.glade.h:105
 msgid "Download from the web the most up to date ranking."
-msgstr "Preuzimanje ažurirane rang-liste s internetskog poslužitelja."
+msgstr "Preuzimanje ažurirane rang-liste s internetskog servera."
 
 #: ../data/klavaro.glade.h:106
 msgid "_Update"
@@ -490,20 +459,20 @@ msgstr "Klavaro"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "Vrlo prilagodljiv i efikasan program za učenje tipkanja."
 
-#: ../src/main.c:246
+#: ../src/main.c:239
 msgid "(Custom)"
 msgstr "(Prilagodba)"
 
-#: ../src/main.c:247
+#: ../src/main.c:240
 msgid "(Edit custom)"
 msgstr "(Prilagođavanje)"
 
 # default  je teško kratko i jasno prevesti; zadano, standardno, početno, ugrađeno... zadani tekst je onaj je „ugrađen“ u Klavaro
-#: ../src/main.c:248
+#: ../src/main.c:241
 msgid "(Default)"
 msgstr "(zadani tekst)"
 
-#: ../src/main.c:325
+#: ../src/main.c:318
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -513,331 +482,189 @@ msgstr[2] "Diktiranje (ovisi o jednom od tih generatora zvuka: %s)"
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:367 ../src/keyboard.c:1315
+#: ../src/main.c:360 ../src/keyboard.c:1315
 msgid "Introduction"
 msgstr "Uvod"
 
-#: ../src/main.c:370 ../src/top10.c:110
+#: ../src/main.c:363 ../src/top10.c:110
 msgid "Basic course"
 msgstr "Osnovni tečaj"
 
-#: ../src/main.c:373 ../src/top10.c:113
+#: ../src/main.c:366 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "Fleksibilnost"
 
-#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
-#: ../src/top10.c:90 ../src/top10.c:116
+#: ../src/main.c:369 ../src/callbacks.c:1354 ../src/top10.c:90
+#: ../src/top10.c:116
 msgid "Speed"
 msgstr "Brzina"
 
-#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
+#: ../src/main.c:372 ../src/callbacks.c:1377 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Ritam i točnost"
 
-#: ../src/callbacks.c:437 ../src/tutor.c:523
+#: ../src/callbacks.c:430 ../src/tutor.c:523
 msgid "Keys:"
 msgstr "Tipke:"
 
-#: ../src/callbacks.c:835 ../src/callbacks.c:851
+#: ../src/callbacks.c:828 ../src/callbacks.c:844
 msgid "Connecting..."
 msgstr "Spajam se..."
 
-#: ../src/callbacks.c:1124
+#: ../src/callbacks.c:1117
 msgid "Overwrite user layout"
 msgstr "Brisanje rasporeda korisnika"
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1119
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Ovo će PREBRISATI postojeći raspored tipkovnice."
 
-#: ../src/callbacks.c:1133
+#: ../src/callbacks.c:1126
 msgid "Remove user layout"
 msgstr "Uklanjanje rasporeda korisnika"
 
-#: ../src/callbacks.c:1135
+#: ../src/callbacks.c:1128
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Ovo će UKLONITI postojeći raspored tipkovnice."
 
-#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
+#: ../src/callbacks.c:1135 ../src/callbacks.c:1140
 msgid "Reset progress data"
 msgstr "Brisanje podataka napretka"
 
-#: ../src/callbacks.c:1143
+#: ../src/callbacks.c:1136
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Time će se IZBRISATI svi podatci o napretku za sve tečajeve."
 
-#: ../src/callbacks.c:1155
+#: ../src/callbacks.c:1148
 #, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Time će se IZBRISATI podaci za ovaj grafikon. <%s>"
 
-#: ../src/callbacks.c:1158
+#: ../src/callbacks.c:1151
 #, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Time će se izbrisati podatci o napretku za sve tečajeve. (%s)"
 
-#: ../src/callbacks.c:1358 ../src/top10.c:88
+#: ../src/callbacks.c:1351 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Točnost"
 
 # RpM riječi po minuti
-#: ../src/callbacks.c:1361 ../src/tutor.c:1308
+#: ../src/callbacks.c:1354 ../src/tutor.c:1305
 msgid "(WPM)"
 msgstr "(RpM)"
 
-#: ../src/callbacks.c:1372
+#: ../src/callbacks.c:1365
 msgid "Errors"
 msgstr "Pogreške"
 
-#: ../src/callbacks.c:1375
+#: ../src/callbacks.c:1368
 msgid "Touch times (s)"
 msgstr "Vrijeme zahvata (s)"
 
-#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
+#: ../src/callbacks.c:1380 ../src/tutor.c:1332 ../src/top10.c:70
 msgid "Score"
 msgstr "Rezultat"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1747
+#: ../src/translation.c:508 ../src/tutor.c:1744
 msgid "en"
 msgstr "hr"
 
 #: ../src/translation.c:595
-msgid ""
-"The basic course focuses on having you read the characters presented to you "
-"on screen and typing the corresponding keys. Remember to keep your hands "
-"correctly oriented on the home row of the keyboard at all times (see "
-"introduction on main menu)."
-msgstr ""
-"Osnovni tečaj fokusira se na to da čitate slova/znakove na zaslonu te "
-"pritiskom na odgovarajuću tipku otipkate birano slovo/znak. Važno je to da "
-"ruke uvijek budu u pravilnom položaju, a prsti na temeljnim tipkama (vidi "
-"uvod u glavnom izborniku)."
+msgid "The basic course focuses on having you read the characters presented to you on screen and typing the corresponding keys. Remember to keep your hands correctly oriented on the home row of the keyboard at all times (see introduction on main menu)."
+msgstr "Osnovni tečaj fokusira se na to da čitate slova/znakove na zaslonu te pritiskom na odgovarajuću tipku otipkate birano slovo/znak. Važno je to da ruke uvijek budu u pravilnom položaju, a prsti na temeljnim tipkama (vidi uvod u glavnom izborniku)."
 
 #: ../src/translation.c:599
-msgid ""
-"The key set used in each series will be shown in the above message line. The "
-"[Space], [Shift] and [Enter] keys may not show up there but are used very "
-"often."
-msgstr ""
-"Tipke koje će se rabiti u lekciji prikazane su u traci za poruke na vrhu "
-"prozora. Tipke razmaknica (Space bar), Shift i Enter često se rabe, ali neće "
-"uvijek biti prikazane. Znak ¶ označuje da trebate pritisnuti tipku Enter da "
-"se započne novi red (¶ = Enter). Važno: Ako ne pritisnete tipku Enter, to će "
-"vam se računati kao greška (tipfeler)."
+msgid "The key set used in each series will be shown in the above message line. The [Space], [Shift] and [Enter] keys may not show up there but are used very often."
+msgstr "Tipke koje će se rabiti u lekciji prikazane su u traci za poruke na vrhu prozora. Tipke razmaknica (Space bar), Shift i Enter često se rabe, ali neće uvijek biti prikazane. Znak ¶ označuje da trebate pritisnuti tipku Enter da se započne novi red (¶ = Enter). Važno: Ako ne pritisnete tipku Enter, to će vam se računati kao greška (tipfeler)."
 
 #: ../src/translation.c:602
-msgid ""
-"The message line below follows and echoes your key presses. If required, it "
-"changes and displays instructions for actions required from you."
-msgstr ""
-"Donja traka za poruke odjekuje slova/znakove koje tipkate. Ako zatreba, "
-"poruka može biti i uputa što treba učiniti u tom slučaju."
+msgid "The message line below follows and echoes your key presses. If required, it changes and displays instructions for actions required from you."
+msgstr "Donja traka za poruke odjekuje slova/znakove koje tipkate. Ako zatreba, poruka može biti i uputa što treba učiniti u tom slučaju."
 
 #: ../src/translation.c:606
-msgid ""
-"Here you may practice and improve your memorization of all keys. There will "
-"be sentences presented with nonsense words which mix some numbers and "
-"symbols."
-msgstr ""
-"U ovom tečaju stječu se nova iskustva, poboljšava se pamćenje rasporeda "
-"tipki, a time i automatizam pokreta prstiju. Prezentirane rečenice "
-"sastavljene su od „bezveznih“ riječi, pomiješane s brojevima, simbolima i "
-"pravopisnim znakovima."
+msgid "Here you may practice and improve your memorization of all keys. There will be sentences presented with nonsense words which mix some numbers and symbols."
+msgstr "U ovom tečaju stječu se nova iskustva, poboljšava se pamćenje rasporeda tipki, a time i automatizam pokreta prstiju. Prezentirane rečenice sastavljene su od „bezveznih“ riječi, pomiješane s brojevima, simbolima i pravopisnim znakovima."
 
 #: ../src/translation.c:609
-msgid ""
-"In order to keep the lesson contents language and keyboard independent, "
-"accented letter combinations will probably not appear. For real word "
-"sentences, please use the fourth option of the main menu (about fluidness)."
-msgstr ""
-"Da bi sadržaj vježbi bio nezavisan od odabrane tipkovnice, slova s "
-"naglascima vjerojatno se neće pojavljivati. Za vježbanje s normalnim "
-"rečenicama, izaberite 4. tečaj u glavnom izborniku."
+msgid "In order to keep the lesson contents language and keyboard independent, accented letter combinations will probably not appear. For real word sentences, please use the fourth option of the main menu (about fluidness)."
+msgstr "Da bi sadržaj vježbi bio nezavisan od odabrane tipkovnice, slova s naglascima vjerojatno se neće pojavljivati. Za vježbanje s normalnim rečenicama, izaberite 4. tečaj u glavnom izborniku."
 
 #: ../src/translation.c:613
-msgid ""
-"After each exercise there will be a brief statistics panel reviewing your "
-"performance along with some relevant comments."
-msgstr ""
-"Nakon svake vježbe bit će prikazana kratka statistika s osvrtom na ostvareni "
-"rezultat, uz relevantni komentar."
+msgid "After each exercise there will be a brief statistics panel reviewing your performance along with some relevant comments."
+msgstr "Nakon svake vježbe bit će prikazana kratka statistika s osvrtom na ostvareni rezultat, uz relevantni komentar."
 
 #: ../src/translation.c:617
-msgid ""
-"This exercise is very similar to the second one, for adaptability. The "
-"difference is that here you'll type real words."
-msgstr ""
-"Ove su vježbe slične lekcijama u 2. tečaju. Razlika je to što ovdje vježbate "
-"sa smislenim riječima."
+msgid "This exercise is very similar to the second one, for adaptability. The difference is that here you'll type real words."
+msgstr "Ove su vježbe slične lekcijama u 2. tečaju. Razlika je to što ovdje vježbate sa smislenim riječima."
 
 #: ../src/translation.c:620
-msgid ""
-"The default language is the actual one of the interface. But you may select "
-"any other texts with words you would like to use. Press the 'Other' option "
-"above and add files containing those texts."
-msgstr ""
-"Smislene su riječi iz jezika sučelja. Međutim, ako želite, možete izabrati "
-"riječi/tekstove iz bilo kojeg jezika, odabravši opciju „Ostali "
-"tekstovi“ (gore lijevo) i učitavši datoteku s tim tekstom (ili „zalijepite“ "
-"li ga iz međuspremnika)."
+msgid "The default language is the actual one of the interface. But you may select any other texts with words you would like to use. Press the 'Other' option above and add files containing those texts."
+msgstr "Smislene su riječi iz jezika sučelja. Međutim, ako želite, možete izabrati riječi/tekstove iz bilo kojeg jezika, odabravši opciju „Ostali tekstovi“ (gore lijevo) i učitavši datoteku s tim tekstom (ili „zalijepite“ li ga iz međuspremnika)."
 
 #: ../src/translation.c:624
-msgid ""
-"With this exercise the focus is on speed. So, you are supposed to type "
-"really fast and I will only flatter you when you deserve it!"
-msgstr ""
-"U ovom tečaju važna je brzina tipkanja. Očekuje se da tipkate što brže, a "
-"pohvala slijedi samo ako ste je zaslužili!"
+msgid "With this exercise the focus is on speed. So, you are supposed to type really fast and I will only flatter you when you deserve it!"
+msgstr "U ovom tečaju važna je brzina tipkanja. Očekuje se da tipkate što brže, a pohvala slijedi samo ako ste je zaslužili!"
 
 #: ../src/translation.c:628
-msgid ""
-"We will now use complete sentences and paragraphs which make logical sense. "
-"This may distract you while you type if you try to understand what you are "
-"entering. The previous exercises were aimed at getting you to type without "
-"interpreting and analyzing the content."
-msgstr ""
-"Ove vježbe sastavljene su od smislenih rečenica i odlomaka. To vas može "
-"zbuniti pokušavate li za vrijeme tipkanja razumjeti tekst koji tipkate. "
-"Dosadašnje lekcije/vježbe nisu zahtijevale nikakvo razumijevanje teksta koji "
-"se tipka."
+msgid "We will now use complete sentences and paragraphs which make logical sense. This may distract you while you type if you try to understand what you are entering. The previous exercises were aimed at getting you to type without interpreting and analyzing the content."
+msgstr "Ove vježbe sastavljene su od smislenih rečenica i odlomaka. To vas može zbuniti pokušavate li za vrijeme tipkanja razumjeti tekst koji tipkate. Dosadašnje lekcije/vježbe nisu zahtijevale nikakvo razumijevanje teksta koji se tipka."
 
 #: ../src/translation.c:632
-msgid ""
-"We do not mean to imply that the typists must behave like a robot, without "
-"understanding what they type. We do aim to develop the skill of typing, "
-"making it an automatic reflex akin to the acts of walking, talking, etc. "
-"After reaching this goal, the act of typing will become automatic and "
-"require little concentration. Then you will be able to pay attention to the "
-"real meaning of the text."
-msgstr ""
-"Ne smatramo da je korisnik robot pa da tipka bez razumijevanja. Naša namjera "
-"je da se uvježba vještina tipkanja slično hodanju; kad hodamo ne razmišljamo "
-"kako se miču noge. U tipkanju, prsti se također trebaju micati bez "
-"razmišljanja. Kad se to postigne, tipkanje će postati automatsko bez potrebe "
-"da se misli na tipke. Tek tada ćete moći obratiti pažnju na značenje onoga "
-"što tipkate."
+msgid "We do not mean to imply that the typists must behave like a robot, without understanding what they type. We do aim to develop the skill of typing, making it an automatic reflex akin to the acts of walking, talking, etc. After reaching this goal, the act of typing will become automatic and require little concentration. Then you will be able to pay attention to the real meaning of the text."
+msgstr "Ne smatramo da je korisnik robot pa da tipka bez razumijevanja. Naša namjera je da se uvježba vještina tipkanja slično hodanju; kad hodamo ne razmišljamo kako se miču noge. U tipkanju, prsti se također trebaju micati bez razmišljanja. Kad se to postigne, tipkanje će postati automatsko bez potrebe da se misli na tipke. Tek tada ćete moći obratiti pažnju na značenje onoga što tipkate."
 
 #: ../src/translation.c:636
-msgid ""
-"These exercises are longer. Each exercise consists of three paragraphs and "
-"the emphasis is placed on correctness and rhythm, with a minimum speed "
-"requirement. Here you will be required to use the backspace key to correct "
-"any mistakes. In other words, only input without error will be accepted."
-msgstr ""
-"Ove vježbe traju nešto duže. Svaka vježba sastoji se od triju odlomaka; "
-"naglasak je na točnosti i ritmu tipkanja, a s manjim zahtjevom na brzinu. "
-"Budući da se u ovim vježbama greške ne toleriraju, morate svaku pogrešku "
-"ispraviti tipkom Backspace da biste mogli nastaviti s tipkanjem. To znači da "
-"se prihvaća samo 100% točno tipkanje."
+msgid "These exercises are longer. Each exercise consists of three paragraphs and the emphasis is placed on correctness and rhythm, with a minimum speed requirement. Here you will be required to use the backspace key to correct any mistakes. In other words, only input without error will be accepted."
+msgstr "Ove vježbe traju nešto duže. Svaka vježba sastoji se od triju odlomaka; naglasak je na točnosti i ritmu tipkanja, a s manjim zahtjevom na brzinu. Budući da se u ovim vježbama greške ne toleriraju, morate svaku pogrešku ispraviti tipkom Backspace da biste mogli nastaviti s tipkanjem. To znači da se prihvaća samo 100% točno tipkanje."
 
 #: ../src/keyboard.c:1115
-msgid ""
-"Correct positioning of the hands and fingers is very important to efficient "
-"typing. You will learn faster and type better if you follow the next "
-"recommendations."
-msgstr ""
-"Pravilno držanje ruku i prstiju iznimno je važno za efikasno tipkanje. "
-"Tipkat ćete točnije, brže i s manje umaranja budete li se pridržavali uputa "
-"koje slijede."
+msgid "Correct positioning of the hands and fingers is very important to efficient typing. You will learn faster and type better if you follow the next recommendations."
+msgstr "Pravilno držanje ruku i prstiju iznimno je važno za efikasno tipkanje. Tipkat ćete točnije, brže i s manje umaranja budete li se pridržavali uputa koje slijede."
 
 #: ../src/keyboard.c:1118
-msgid ""
-"The index-finger tips rest over each of the two keys which have a small "
-"raised mark, in the center of the keyboard."
-msgstr ""
-"Prije početka tipkanja postavite prste u temeljni položaj, tako da kažiprsti "
-"lagano dodiruju dvije tipke s malim ispupčenjem (tipke F i J)."
+msgid "The index-finger tips rest over each of the two keys which have a small raised mark, in the center of the keyboard."
+msgstr "Prije početka tipkanja postavite prste u temeljni položaj, tako da kažiprsti lagano dodiruju dvije tipke s malim ispupčenjem (tipke F i J)."
 
 #: ../src/keyboard.c:1121
-msgid ""
-"These marks function as 'tactile hooks' for your fingers to remain at the "
-"correct position. This way, with a little experience, you will not need to "
-"look at the keyboard to see if your fingers are properly positioned."
-msgstr ""
-"Ta ispupčenja služe da (kaži)prsti pronađu temeljnu poziciju na tipkovnici. "
-"S malo vježbanja, bez gledanja na tipkovnicu, uvijek ćete moći pravilno "
-"pozicionirati prste na tipkovnici."
+msgid "These marks function as 'tactile hooks' for your fingers to remain at the correct position. This way, with a little experience, you will not need to look at the keyboard to see if your fingers are properly positioned."
+msgstr "Ta ispupčenja služe da (kaži)prsti pronađu temeljnu poziciju na tipkovnici. S malo vježbanja, bez gledanja na tipkovnicu, uvijek ćete moći pravilno pozicionirati prste na tipkovnici."
 
 #: ../src/keyboard.c:1125
-msgid ""
-"The tips of the other fingers lie naturally beside the index ones, over the "
-"keys on the same row of the keyboard."
-msgstr ""
-"Ostali prsti lagano dodiruju tipke pored kažiprsta (tipke DSA i KLČ) u istom "
-"(temeljnom) redu tipkovnice."
+msgid "The tips of the other fingers lie naturally beside the index ones, over the keys on the same row of the keyboard."
+msgstr "Ostali prsti lagano dodiruju tipke pored kažiprsta (tipke DSA i KLČ) u istom (temeljnom) redu tipkovnice."
 
 #: ../src/keyboard.c:1128
 msgid "The outside edges of your thumbs rest over the space bar."
-msgstr ""
-"Palci dodiruju razmaknicu i rabe se za tipkanje razmaka (bjelina) između "
-"riječi."
+msgstr "Palci dodiruju razmaknicu i rabe se za tipkanje razmaka (bjelina) između riječi."
 
 #: ../src/keyboard.c:1130
-msgid ""
-"The part of the hands closest to the wrist (the base) rest over the table, "
-"outside the keyboard. Without this kind of support the arms would quickly "
-"tire."
-msgstr ""
-"Baze dlanova (dio dlana do zgloba) mogu se poduprti na „oslonac“ ispred "
-"tipkovnice. Ruke se brzo umaraju ako dlanovi nisu podbočeni. Nekima bolje "
-"odgovara držati ruke kao pijanist (bez oslonca)."
+msgid "The part of the hands closest to the wrist (the base) rest over the table, outside the keyboard. Without this kind of support the arms would quickly tire."
+msgstr "Baze dlanova (dio dlana do zgloba) mogu se poduprti na „oslonac“ ispred tipkovnice. Ruke se brzo umaraju ako dlanovi nisu podbočeni. Nekima bolje odgovara držati ruke kao pijanist (bez oslonca)."
 
 #: ../src/keyboard.c:1133
-msgid ""
-"This is referred to as the home position for the hands. From it the fingers "
-"move all over the keyboard, reaching all the keys as naturally and quickly "
-"as possible. To reach this goal one uses a specific relation between each "
-"key and finger. This relation will be learned gradually as you complete the "
-"basic course."
-msgstr ""
-"Opisani položaj ruku i prstiju naziva se temeljni položaj. Od temeljnog "
-"položaja prsti dosižu sve ostale tipke na tipkovnici što prirodnije, točnije "
-"i brže. Koju tipku treba tipkati kojim prstom uvježbava se postupno u "
-"osnovnom, 1. tečaju. Animirana slika ruku može vam poslužiti kao vodič kojim "
-"prstom treba tipkati koje slovo."
+msgid "This is referred to as the home position for the hands. From it the fingers move all over the keyboard, reaching all the keys as naturally and quickly as possible. To reach this goal one uses a specific relation between each key and finger. This relation will be learned gradually as you complete the basic course."
+msgstr "Opisani položaj ruku i prstiju naziva se temeljni položaj. Od temeljnog položaja prsti dosižu sve ostale tipke na tipkovnici što prirodnije, točnije i brže. Koju tipku treba tipkati kojim prstom uvježbava se postupno u osnovnom, 1. tečaju. Animirana slika ruku može vam poslužiti kao vodič kojim prstom treba tipkati koje slovo."
 
 #: ../src/keyboard.c:1139
-msgid ""
-"When learning the relation between fingers and keys, it is very important "
-"that you only move the finger which must press the key and allow all other "
-"fingers to remain in the home position."
-msgstr ""
-"U početku, dok vježbate odnose između prstiju i tipaka, važno je pomaknuti "
-"samo onaj prst koji trebate za tu tipku, a svi ostali prsti pritom trebaju "
-"ostati u temeljnom položaju."
+msgid "When learning the relation between fingers and keys, it is very important that you only move the finger which must press the key and allow all other fingers to remain in the home position."
+msgstr "U početku, dok vježbate odnose između prstiju i tipaka, važno je pomaknuti samo onaj prst koji trebate za tu tipku, a svi ostali prsti pritom trebaju ostati u temeljnom položaju."
 
 #: ../src/keyboard.c:1143
-msgid ""
-"After memorizing this relationship, you can relax the previous rule some, so "
-"that you can attain greater speed while typing."
-msgstr ""
-"Kasnije, kad naučite i zapamtite sve odnose prsti – tipke, to pravilo ne "
-"morate nužno slijediti, da možete brže tipkati."
+msgid "After memorizing this relationship, you can relax the previous rule some, so that you can attain greater speed while typing."
+msgstr "Kasnije, kad naučite i zapamtite sve odnose prsti – tipke, to pravilo ne morate nužno slijediti, da možete brže tipkati."
 
 #: ../src/keyboard.c:1146
-msgid ""
-"The shift keys are used for capital letters and for some symbols. To get a "
-"shifted key input you should first use the small finger of the opposite "
-"hand. Just keep it in the closest Shift while reaching the target key with "
-"the other hand."
-msgstr ""
-"Tipke Shift rabe se za pisanje velikih slova i neke simbole. Prvo trebate "
-"malim prstom suprotne ruke pritisnuti Shift, a određenim prstom druge ruke "
-"pritisnuti slovo ili simbol koji želite upisati."
+msgid "The shift keys are used for capital letters and for some symbols. To get a shifted key input you should first use the small finger of the opposite hand. Just keep it in the closest Shift while reaching the target key with the other hand."
+msgstr "Tipke Shift rabe se za pisanje velikih slova i neke simbole. Prvo trebate malim prstom suprotne ruke pritisnuti Shift, a određenim prstom druge ruke pritisnuti slovo ili simbol koji želite upisati."
 
 #: ../src/keyboard.c:1150
-msgid ""
-"You should be prepared to start training with the basic course. It will take "
-"effort and patience to be successful as a typist. We trust you have these "
-"and look forward to your success!"
+msgid "You should be prepared to start training with the basic course. It will take effort and patience to be successful as a typist. We trust you have these and look forward to your success!"
 msgstr ""
-"Sada ste spremni učiti, započevši s osnovnim tečajem. Upornost i strpljivost "
-"potrebne su za dobru vještinu tipkanja. Unaprijed se veselimo vašem "
-"uspjehu!\n"
-"P.S.: Prečacem Ctrl+R možete svaku vježbu (na početku, u tijeku, ili na "
-"kraju) u svim tečajevima započeti iznova!"
+"Sada ste spremni učiti, započevši s osnovnim tečajem. Upornost i strpljivost potrebne su za dobru vještinu tipkanja. Unaprijed se veselimo vašem uspjehu!\n"
+"P.S.: Prečacem Ctrl+R možete svaku vježbu (na početku, u tijeku, ili na kraju) u svim tečajevima započeti iznova!"
 
 #: ../src/keyboard.c:1161
 #, c-format
@@ -907,12 +734,8 @@ msgid "Klavaro - Adaptability"
 msgstr "Klavaro — Fleksibilnost"
 
 #: ../src/tutor.c:354
-msgid ""
-"Adaptability exercises: automating the fingers responses, typing over all "
-"the keyboard."
-msgstr ""
-"Vježbe za fleksibilnost: automatiziranje pokreta prstiju tipkanjem po "
-"cijeloj tipkovnici."
+msgid "Adaptability exercises: automating the fingers responses, typing over all the keyboard."
+msgstr "Vježbe za fleksibilnost: automatiziranje pokreta prstiju tipkanjem po cijeloj tipkovnici."
 
 #: ../src/tutor.c:359
 msgid "Klavaro - Velocity"
@@ -942,141 +765,128 @@ msgstr "Pamćenje rasporeda tipki."
 msgid "Press any key to start the exercise. "
 msgstr "Počnite lekciju dodirom bilo koje tipke. "
 
-#: ../src/tutor.c:579 ../src/tutor.c:582
+#: ../src/tutor.c:576 ../src/tutor.c:579
 msgid "Start typing when you are ready. "
 msgstr "Kad budete spremni, započnite tipkati. "
 
-#: ../src/tutor.c:580
+#: ../src/tutor.c:577
 msgid "Use backspace to correct errors."
 msgstr "Tipkom Backspace ispravljate pogreške."
 
-#: ../src/tutor.c:1033
+#: ../src/tutor.c:1030
 #, c-format
-msgid ""
-"ps.: logging not performed for this session: the number of typed characters "
-"(%i) must be greater than %i."
+msgid "ps.: logging not performed for this session: the number of typed characters (%i) must be greater than %i."
 msgstr "P.S.: Ova se vježba ne računa: broj slova (%i) mora biti veći od %i."
 
-#: ../src/tutor.c:1175
+#: ../src/tutor.c:1172
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "P.S: Ušli ste na listu „Najboljih 10“, bravo!"
 
 # #: ../src/tutor.c:1166
-#: ../src/tutor.c:1187
-msgid ""
-"ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
-"the language currently selected: we can't account for it in the 'Top 10' "
-"contest."
-msgstr ""
-"P.S.: Tekst koji ste upravo otipkali ne izgleda kao normalan tekst u "
-"izabranom jeziku: diskvalificiran je za natjecanje „Najboljih 10“."
+#: ../src/tutor.c:1184
+msgid "ps.: the text you just typed doesn't seem to be similar to ordinary texts in the language currently selected: we can't account for it in the 'Top 10' contest."
+msgstr "P.S.: Tekst koji ste upravo otipkali ne izgleda kao normalan tekst u izabranom jeziku: diskvalificiran je za natjecanje „Najboljih 10“."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1232
 msgid "STATISTICS"
 msgstr "STATISTIKE"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1233
 msgid "Elapsed time:"
 msgstr "Trajanje:"
 
-#: ../src/tutor.c:1237
+#: ../src/tutor.c:1234
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "minuta i"
 msgstr[1] "minute i"
 msgstr[2] "minuta i"
 
-#: ../src/tutor.c:1238
+#: ../src/tutor.c:1235
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "sekunda"
 msgstr[1] "sekunde"
 msgstr[2] "sekunda"
 
-#: ../src/tutor.c:1239
+#: ../src/tutor.c:1236
 msgid "Error ratio:"
 msgstr "Omjer pogrešaka:"
 
-#: ../src/tutor.c:1239
+#: ../src/tutor.c:1236
 msgid "Accuracy:"
 msgstr "Točnost:"
 
-#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
-#: ../src/tutor.c:1334
+#: ../src/tutor.c:1257 ../src/tutor.c:1282 ../src/tutor.c:1305
+#: ../src/tutor.c:1331
 msgid "Goal:"
 msgstr "Cilj:"
 
 # u Hrvatskoj se kaže udaraca po sekundi ali tu ćemo u znakove po sekundi
-#: ../src/tutor.c:1267
+#: ../src/tutor.c:1264
 msgid "Characters per second:"
 msgstr "Znakova po sekundi:"
 
 # u/s udaraca po sekundi
-#: ../src/tutor.c:1285
+#: ../src/tutor.c:1282
 msgid "(CPS)"
 msgstr "(ZpS)"
 
 # Riječi po minuti: RpM
-#: ../src/tutor.c:1290
+#: ../src/tutor.c:1287
 msgid "Words per minute:"
 msgstr "Riječi po minuti:"
 
-#: ../src/tutor.c:1315
+#: ../src/tutor.c:1312
 msgid "Fluidness:"
 msgstr "Ritam i točnost:"
 
-#: ../src/tutor.c:1342
+#: ../src/tutor.c:1339
 msgid "Comments:"
 msgstr "Komentari:"
 
-#: ../src/tutor.c:1826
+#: ../src/tutor.c:1823
 msgid "space"
 msgstr "razmak"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1831
+#: ../src/tutor.c:1828
 msgid "wye"
 msgstr "ipsilon"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1835
+#: ../src/tutor.c:1832
 msgid "enter"
 msgstr "enter"
 
-#: ../src/tutor.c:1841
+#: ../src/tutor.c:1838
 msgid "apostrophe"
 msgstr "apostrof"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1845
+#: ../src/tutor.c:1842
 msgid "quote"
 msgstr "navodnik"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1849
+#: ../src/tutor.c:1846
 msgid "ampersand"
 msgstr "ampersand"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:323
+#: ../src/plot.c:324
 msgid "Character"
 msgstr "Znak"
 
-#: ../src/plot.c:335
+#: ../src/plot.c:336
 msgid "Date & Time"
 msgstr "Datum i vrijeme"
 
 #: ../src/basic.c:273
-msgid ""
-"This custom lesson is empty. You can define two or more different characters "
-"to generate a personal practice. Press the editting button in the upper-"
-"right corner."
-msgstr ""
-"Ova, prilagođena lekcija, je prazna. Ovdje možete definirati dva ili više "
-"znaka da napravite lekciju za vašu osobnu upotrebu. Pritisnite gumb za "
-"uređivanje u gornjem desnom kutu."
+msgid "This custom lesson is empty. You can define two or more different characters to generate a personal practice. Press the editting button in the upper-right corner."
+msgstr "Ova, prilagođena lekcija, je prazna. Ovdje možete definirati dva ili više znaka da napravite lekciju za vašu osobnu upotrebu. Pritisnite gumb za uređivanje u gornjem desnom kutu."
 
 #: ../src/basic.c:356
 msgid "Positions of keys seems to be learned!"
@@ -1125,12 +935,10 @@ msgstr ""
 #, c-format
 msgid ""
 " You are almost there, but your accuracy rate is still below %.0f%%.\n"
-" Try a few more times, or maybe you're getting upset, so go to another kind "
-"of exercise.\n"
+" Try a few more times, or maybe you're getting upset, so go to another kind of exercise.\n"
 msgstr ""
 " Zamalo ste dostigli cilj, ali točnost je još uvijek ispod %.0f%%.\n"
-" Probajte još nekoliko puta, a ako ste se možda uzrujali, pokušajte neke "
-"druge vježbe.\n"
+" Probajte još nekoliko puta, a ako ste se možda uzrujali, pokušajte neke druge vježbe.\n"
 
 #: ../src/adaptability.c:238
 #, c-format
@@ -1327,7 +1135,7 @@ msgstr "Sigurni ste da ste instalirali program na svoje računalo?"
 
 #: ../src/top10.c:860
 msgid "Could not download file from the host server."
-msgstr "Ne mogu preuzeti datoteku s poslužitelja."
+msgstr "Ne mogu preuzeti datoteku s servera."
 
 #: ../src/top10.c:905
 msgid "Not able to upload files"
