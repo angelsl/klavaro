@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2019-06-06 20:43-0300\n"
+"POT-Creation-Date: 2020-05-30 13:47-0300\n"
 "PO-Revision-Date: 2014-09-09 16:59+0530\n"
 "Last-Translator: Gursharnjit Singh <ubuntuser13@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-l10n@lists.sourceforge.net>\n"
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 "43 ਤੋਂ ਬਾਅਦ ਅਭਿਆਸਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਣ ਵਾਲੇ ਅੱਖਰ ਸਮੂਹ ਵਿੱਚ ਸੋਧ ਕਰੋ: ਇਹ ਫ਼ੇਰਬਦਲ ਕਰਨ ਯੋਗ ਹਨ!"
 
-#: ../data/klavaro.glade.h:17 ../src/tutor.c:379
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:398
 msgid "Drag and drop text here to practice with it."
 msgstr "ਇਸ ਦੇ ਨਾਲ ਅਭਿਆਸ ਕਰਨ ਲਈ ਟੈਕਸਟ ਇੱਥੇ ਖਿੱਚੋ ਅਤੇ ਛੱਡੋ।"
 
@@ -104,314 +104,310 @@ msgid "Font definition"
 msgstr "ਫ਼ੌਟ ਵਿਆਖਿਆ"
 
 #: ../data/klavaro.glade.h:23
-msgid "Keep this checked if you want to get those nice beeps."
-msgstr "ਇਸ ਉੱਤੇ ਸਹੀ ਦਾ ਨਿਸ਼ਾਨ ਲਗਾਓ ਜੇਕਰ ਤੁਸੀ ਇਹ ਚੰਗੀਆਂ ਬੀਪ ਲੈਣਾ ਚਾਹੁੰਦੇ ਹੋ।"
+msgid "Alternative color scheme, needs restart!"
+msgstr ""
 
 #: ../data/klavaro.glade.h:24
-msgid "_Beep"
-msgstr "_Beep"
-
-#: ../data/klavaro.glade.h:25
 msgid "Co_urse information"
 msgstr "ਕੋ_ਰਸ ਜਾਣਕਾਰੀ"
 
-#: ../data/klavaro.glade.h:26
+#: ../data/klavaro.glade.h:25
 msgid "Charts showing the learning progress along the exercises."
 msgstr "ਚਾਰਟ ਅਭਿਆਸਾਂ ਦੇ ਨਾਲ -ਨਾਲ ਸਿੱਖਣ ਦੀ ਪ੍ਰਗਤੀ ਵੀ ਵਿਖਾਉਂਦੇ ਹਨ।"
 
-#: ../data/klavaro.glade.h:27
+#: ../data/klavaro.glade.h:26
 msgid "_Progress"
 msgstr "_Progress"
 
-#: ../data/klavaro.glade.h:28
+#: ../data/klavaro.glade.h:27
 msgid "Exit the application immediately."
 msgstr "ਹੁਣੇ ਇਸ ਪ੍ਰੋਗਰਾਮ ਤੋਂ ਬਾਹਰ ਜਾਓ।"
 
-#: ../data/klavaro.glade.h:29
+#: ../data/klavaro.glade.h:28
 msgid "Return to the main menu."
 msgstr "ਮੁੱਖ ਮੀਨੂੰ ਤੇ ਵਾਪਸ ਜਾਓ।"
 
-#: ../data/klavaro.glade.h:30
+#: ../data/klavaro.glade.h:29
 msgid "B_ack to menu"
 msgstr "ਮੀਨੂੰ ਤੇ _ਵਾਪਸ ਜਾਓ"
 
-#: ../data/klavaro.glade.h:31
+#: ../data/klavaro.glade.h:30
 msgid "Show local and external scores from other users."
 msgstr "ਦੂਸਰੇ ਯੂਜਰਾਂ ਦੇ ਲੋਕਲ ਅਤੇ ਬਾਹਰੀ ਅੰਕ ਵਿਖਾਓ।"
 
-#: ../data/klavaro.glade.h:32
+#: ../data/klavaro.glade.h:31
 msgid "_Top 10"
 msgstr "_Top 10"
 
-#: ../data/klavaro.glade.h:33
+#: ../data/klavaro.glade.h:32
 msgid "Change language"
 msgstr "ਭਾਸ਼ਾ ਬਦਲੋ"
 
-#: ../data/klavaro.glade.h:34
+#: ../data/klavaro.glade.h:33
 msgid "Attention!"
 msgstr "ਸਾਵਧਾਨ!"
 
-#: ../data/klavaro.glade.h:35
+#: ../data/klavaro.glade.h:34
 msgid "Do you confirm?"
 msgstr "ਕੀ ਤੁਸੀ ਪੁਸ਼ਟੀ ਕਰੋਗੇ?"
 
-#: ../data/klavaro.glade.h:36
+#: ../data/klavaro.glade.h:35
 msgid "_No"
 msgstr "_No"
 
-#: ../data/klavaro.glade.h:37
+#: ../data/klavaro.glade.h:36
 msgid "_Yes"
 msgstr "_Yes"
 
-#: ../data/klavaro.glade.h:38
+#: ../data/klavaro.glade.h:37
 msgid "Klavaro - Select file"
 msgstr "ਕਲਾਵਾਰੋ - ਫ਼ਾਈਲ ਚੁਣੋ"
 
-#: ../data/klavaro.glade.h:39
+#: ../data/klavaro.glade.h:38
 msgid "_Cancel"
 msgstr "_Cancel"
 
-#: ../data/klavaro.glade.h:40
+#: ../data/klavaro.glade.h:39
 msgid "_Open"
 msgstr "_Open"
 
-#: ../data/klavaro.glade.h:41
+#: ../data/klavaro.glade.h:40
 msgid "Re_name:"
 msgstr "ਬਦਲੋ_ਨਾਂ:"
 
-#: ../data/klavaro.glade.h:42
+#: ../data/klavaro.glade.h:41
 msgid "Rename the selected item."
 msgstr "ਚੁਣੀਦਾਂ ਚੀਜ਼ ਦਾ ਨਾਂ ਬਦਲੋ।"
 
-#: ../data/klavaro.glade.h:43
+#: ../data/klavaro.glade.h:42
 msgid ""
 "Read a text file and add a copy of it here. The file must be encoded in "
 "UTF-8."
 msgstr "ਇੱਕ ਟੈਕਸਟ ਫ਼ਾਈਲ ਪੜ੍ਹੋ ਅਤੇ ਉਸਦੀ ਇੱਕ ਕਾਪੀ ਇੱਥੇ ਜੋੜੋ। ਫ਼ਾਈਲ UTF-8 ਵਿੱਚ ਇੰਕੋਡ ਹੋਵੇ।"
 
-#: ../data/klavaro.glade.h:44
+#: ../data/klavaro.glade.h:43
 msgid "_Open text file"
 msgstr "_Open text file"
 
-#: ../data/klavaro.glade.h:45
+#: ../data/klavaro.glade.h:44
 msgid "Paste text that was copied to the clipboard."
 msgstr "ਕਲਿੱਪਬੋਰਡ ਤੇ ਕਾਪੀ ਹੋਇਆ ਟੈਕਸਟ ਪੇਸਟ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:46
+#: ../data/klavaro.glade.h:45
 msgid "_Paste from clipboard"
 msgstr "_Paste from clipboard"
 
-#: ../data/klavaro.glade.h:47
+#: ../data/klavaro.glade.h:46
 msgid "Remove the selected item."
 msgstr "ਚੁਣੀਦਾਂ ਚੀਜ਼ ਹਟਾਓ।"
 
-#: ../data/klavaro.glade.h:48
+#: ../data/klavaro.glade.h:47
 msgid "_Remove copied file"
 msgstr "_Remove copied file"
 
-#: ../data/klavaro.glade.h:49
+#: ../data/klavaro.glade.h:48
 msgid "Apply the selected item to create an exercise."
 msgstr "ਇੱਕ ਅਭਿਆਸ ਰਚਣ ਲਈ ਚੁਣੀਦਾਂ ਚੀਜ਼ ਲਾਗੂ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:50
+#: ../data/klavaro.glade.h:49
 msgid "_Apply"
 msgstr "_Apply"
 
-#: ../data/klavaro.glade.h:51
+#: ../data/klavaro.glade.h:50
 msgid "Close this window."
 msgstr "ਇਹ ਵਿੰਡੋ ਬੰਦ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:52
+#: ../data/klavaro.glade.h:51
 msgid "Country / Custom"
 msgstr "ਦੇਸ਼ / ਪਸੰਦੀਦਾ"
 
-#: ../data/klavaro.glade.h:53
+#: ../data/klavaro.glade.h:52
 msgid "Variant"
 msgstr "ਪ੍ਰਕਾਰ"
 
-#: ../data/klavaro.glade.h:54
+#: ../data/klavaro.glade.h:53
 msgid "Remove the selected custom layout."
 msgstr "ਚੁਣੀਂਦਾ ਪਸੰਦੀਦਾ ਖਾਕਾ ਹਟਾਓ।"
 
-#: ../data/klavaro.glade.h:55
+#: ../data/klavaro.glade.h:54
 msgid "_Remove"
 msgstr "_Remove"
 
-#: ../data/klavaro.glade.h:56
+#: ../data/klavaro.glade.h:55
 msgid ""
 "Toggles the shift effect on the keys. Alternates between the upper and lower "
 "characters of the keys."
 msgstr "ਕੁੰਜੀਆਂ ਉੱਪਰ ਸਿਫ਼ਟ ਦਾ ਅਸਰ ਬਦਲੋ। ਕੁੰਜੀਆਂ ਦੇ ਵੱਡੇ ਅਤੇ ਛੋਟੇ ਅੱਖਰਾਂ ਵਿਚਕਾਰ ਵਾਰੋ-ਵਾਰ।"
 
-#: ../data/klavaro.glade.h:57
+#: ../data/klavaro.glade.h:56
 msgid "SPACE BAR"
 msgstr "SPACE BAR"
 
-#: ../data/klavaro.glade.h:58 ../src/keyboard.c:1656
+#: ../data/klavaro.glade.h:57 ../src/keyboard.c:1722
 msgid "thumbs"
 msgstr "ਅੰਗੂਠੇ"
 
-#: ../data/klavaro.glade.h:59
+#: ../data/klavaro.glade.h:58
 msgid "Tab"
 msgstr ""
 
-#: ../data/klavaro.glade.h:60
+#: ../data/klavaro.glade.h:59
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: ../data/klavaro.glade.h:61
+#: ../data/klavaro.glade.h:60
 msgid "Caps"
 msgstr "Caps"
 
-#: ../data/klavaro.glade.h:62
+#: ../data/klavaro.glade.h:61
 msgid "S_ave as:"
 msgstr "ਦੇ ਤੌਰ ਤੇ ਸੰਭਾਲ੍ਹੋ:"
 
-#: ../data/klavaro.glade.h:63
+#: ../data/klavaro.glade.h:62
 msgid "Show previous screen."
 msgstr "ਪਿਛਲੀ ਸਕਰੀਨ ਵਿਖਾਓ।"
 
-#: ../data/klavaro.glade.h:64
+#: ../data/klavaro.glade.h:63
 msgid "_Previous step"
 msgstr "_Previous step"
 
-#: ../data/klavaro.glade.h:65
+#: ../data/klavaro.glade.h:64
 msgid "Show next screen."
 msgstr "ਅਗਲੀ ਸਕਰੀਨ ਵਿਖਾਓ।"
 
-#: ../data/klavaro.glade.h:66
+#: ../data/klavaro.glade.h:65
 msgid "_Next step"
 msgstr "_Next step"
 
-#: ../data/klavaro.glade.h:67
+#: ../data/klavaro.glade.h:66
 msgid "Return without any modification."
 msgstr "ਬਿਨਾਂ ਸੋਧ ਕੀਤੇ ਵਾਪਸ ਜਾਓ।"
 
-#: ../data/klavaro.glade.h:68
+#: ../data/klavaro.glade.h:67
 msgid "Save the current keyboard layout with the name specified above."
 msgstr "ਉੱਪਰ ਦਿੱਤੇ ਨਾਮ ਨਾਲ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕਾ ਸੰਭਾਲ੍ਹੋ।"
 
-#: ../data/klavaro.glade.h:69
+#: ../data/klavaro.glade.h:68
 msgid "_Save and use"
 msgstr "_Save and use"
 
-#: ../data/klavaro.glade.h:70
+#: ../data/klavaro.glade.h:69
 msgid ""
 "If you like those beautiful hands, click here to close this window keeping "
 "them."
 msgstr "ਜੇਕਰ ਤੁਹਾਨੂੰ ਇਹ ਸੋਹਣੇ ਹੱਥ ਪਸੰਦ ਹਨ, ਇਹਨਾਂ ਨੂੰ ਰੱਖਦੇ ਹੋਏ ਇਹ ਵਿੰਡੋ ਬੰਦ ਕਰਨ ਲਈ ਇੱਥੇ ਕਲਿੱਕ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:71
+#: ../data/klavaro.glade.h:70
 msgid "_Keep hands"
 msgstr "_Keep hands"
 
-#: ../data/klavaro.glade.h:72
+#: ../data/klavaro.glade.h:71
 msgid "Klavaro - Main menu"
 msgstr "ਕਲਾਵਾਰੋ - ਮੁੱਖ ਮੀਨੂੰ"
 
-#: ../data/klavaro.glade.h:73
+#: ../data/klavaro.glade.h:72
 msgid "Don't be shy about learning the basics!"
 msgstr "ਬੁਨਿਆਦ ਸਿੱਖਣ ਬਾਰੇ ਨਾ ਝਿਜਕੋ!"
 
-#: ../data/klavaro.glade.h:74
+#: ../data/klavaro.glade.h:73
 msgid "Learn how to type correctly"
 msgstr "ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਟਾਈਪ ਕਰਨਾ ਸਿੱਖੋ"
 
-#: ../data/klavaro.glade.h:75
+#: ../data/klavaro.glade.h:74
 msgid "Initial training for your fingers."
 msgstr "ਤੁਹਾਡੀ ਉਂਗਲਾਂ ਲਈ ਸ਼ੁਰੂਆਤੀ ਸਿਖਲਾਈ।"
 
-#: ../data/klavaro.glade.h:76
+#: ../data/klavaro.glade.h:75
 msgid "First steps with initial training"
 msgstr "ਸ਼ੁਰੂਆਤੀ ਸਿਖਲਾਈ ਨਾਲ ਪਹਿਲੇ ਕਦਮ"
 
-#: ../data/klavaro.glade.h:77
+#: ../data/klavaro.glade.h:76
 msgid "Memorizing the keyboard practicing random keys exercises."
 msgstr "ਬੇਤਰਤੀਬੀ ਕੁੰਜੀਆਂ ਦਾ ਅਭਿਆਸ ਕਰਦੇ ਹੋਏ ਕੀਬੋਰਡ ਯਾਦ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:78
+#: ../data/klavaro.glade.h:77
 msgid "Practice with random keys"
 msgstr "ਬੇਤਰਤੀਬੀ ਕੁੰਜੀਆਂ ਨਾਲ ਅਭਿਆਸ"
 
-#: ../data/klavaro.glade.h:79
+#: ../data/klavaro.glade.h:78
 msgid "Accelerating the touches practicing random words exercises."
 msgstr "ਬੇਤਰਤੀਬੀ ਸ਼ਬਦ ਅਭਿਆਸਾਂ ਦਾ ਅਭਿਆਸ ਕਰਦੇ ਹੋਏ ਛੂਹਣ ਵਿੱਚ ਤੇਜ਼ੀ।"
 
-#: ../data/klavaro.glade.h:80
+#: ../data/klavaro.glade.h:79
 msgid "Practice with random words"
 msgstr "ਬੇਤਰਤੀਬੀ ਸ਼ਬਦਾਂ ਨਾਲ ਅਭਿਆਸ"
 
-#: ../data/klavaro.glade.h:81
+#: ../data/klavaro.glade.h:80
 msgid "Becoming proficient practicing complete paragraphs exercises."
 msgstr "ਮੁੰਕਮਲ ਪੈਰ੍ਹੇ ਅਭਿਆਸਾਂ ਦਾ ਅਭਿਆਸ ਕਰਦੇ ਹੋਏ ਨਿਪੁੰਨ ਹੋ ਰਿਹਾ।"
 
-#: ../data/klavaro.glade.h:82
+#: ../data/klavaro.glade.h:81
 msgid "Practice with complete texts"
 msgstr "ਮੁੰਕਮਲ ਟੈਕਸਟ ਨਾਲ ਅਭਿਆਸ"
 
-#: ../data/klavaro.glade.h:83
+#: ../data/klavaro.glade.h:82
 msgid "Speech"
 msgstr "ਭਾਸ਼ਨ"
 
-#: ../data/klavaro.glade.h:84
+#: ../data/klavaro.glade.h:83
 msgid "Your language here."
 msgstr "ਤੁਹਾਡੀ ਭਾਸ਼ਾ ਇੱਥੇ ਹੈ।"
 
-#: ../data/klavaro.glade.h:85
+#: ../data/klavaro.glade.h:84
 msgid ""
 "Keyboard layout for modules 1 and 2. Also used informatively in the "
 "fluidness contest."
 msgstr "1 ਅਤੇ 2 ਮੋਡੀਊਲ ਲਈ ਕੀਬੋਰਡ ਖਾਕਾ । ਨਾਲ ਹੀ ਫ਼ਲੂਈਡਨੈੱਸ ਮੁਕਾਬਲੇ ਵਿੱਚ ਜਾਣਕਾਰੀ ਲਈ ਵਰਤਿਆ।"
 
-#: ../data/klavaro.glade.h:86
+#: ../data/klavaro.glade.h:85
 msgid "_Keyboard:"
 msgstr "_Keyboard:"
 
-#: ../data/klavaro.glade.h:87
+#: ../data/klavaro.glade.h:86
 msgid "Language for modules 3 and 4."
 msgstr "3 ਅਤੇ 4 ਮੋਡੀਊਲ ਲਈ ਭਾਸ਼ਾ।"
 
-#: ../data/klavaro.glade.h:88
+#: ../data/klavaro.glade.h:87
 msgid "_Language:"
 msgstr "_Language:"
 
-#: ../data/klavaro.glade.h:89
+#: ../data/klavaro.glade.h:88
 msgid "Little tip about this program."
 msgstr "ਇਸ ਪ੍ਰੋਗਰਾਮ ਬਾਰੇ ਛੋਟਾ ਨੁਕਤਾ।"
 
-#: ../data/klavaro.glade.h:90
+#: ../data/klavaro.glade.h:89
 msgid "_Help"
 msgstr "_Help"
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "ਇਸ ਪ੍ਰੋਗਰਾਮ ਬਾਰੇ ਆਮ ਜਾਣਕਾਰੀ।"
 
-#: ../data/klavaro.glade.h:92
+#: ../data/klavaro.glade.h:91
 msgid "_About..."
 msgstr "_About..."
 
-#: ../data/klavaro.glade.h:93
+#: ../data/klavaro.glade.h:92
 msgid "About 'Klavaro'"
 msgstr "ਬਾਰੇ 'ਕਲਾਵਾਰੋ'"
 
-#: ../data/klavaro.glade.h:94 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "ਇੱਕ ਹੋਰ ਟੱਚ ਟਾਈਪਿੰਗ ਸਿਖਿੱਅਕ"
 
-#: ../data/klavaro.glade.h:95
+#: ../data/klavaro.glade.h:94
 msgid "Remember always: someone loves you!"
 msgstr "ਹਮੇਸ਼ਾ ਯਾਦ ਰੱਖੋ: ਕੋਈ ਤੁਹਾਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹੈ!"
 
-#: ../data/klavaro.glade.h:96
+#: ../data/klavaro.glade.h:95
 msgid "Help?"
 msgstr "ਸਹਾਇਤਾ?"
 
-#: ../data/klavaro.glade.h:97
+#: ../data/klavaro.glade.h:96
 msgid "This is a tip. Now you press this button to return to the main menu."
 msgstr "ਇਹ ਇੱਕ ਨੁਕਤਾ ਹੈ। ਹੁਣ ਤੁਸੀ ਮੁੱਖ ਮੀਨੂੰ ਵਿੱਚ ਵਾਪਸ ਲਈ ਇਹ ਬਟਨ ਦਬਾਓ।"
 
-#: ../data/klavaro.glade.h:98
+#: ../data/klavaro.glade.h:97
 msgid ""
 "The main menu of the application is very straightforward. Just select the "
 "type of exercise you wish to take. Do not worry about clicking any button on "
@@ -420,7 +416,7 @@ msgstr ""
 "ਐਪਲੀਕੇਸ਼ਨ ਦਾ ਮੁੱਖ ਮੀਨੂੰ ਬਹੁਤ ਸ਼ੌਖਾ ਹੈ । ਕੇਵਲ ਅਭਿਆਸ ਦੀ ਕਿਸਮ ਚੁਣੋ ਜਿਹੜੀ ਤੁਸੀ ਲੈਣਾ ਚਾਹੋ। ਸਕਰੀਨ "
 "ਤੇ ਕਿਸੇ ਬਟਨ ਨੂੰ ਕਲਿੱਕ ਕਰਨ ਬਾਰੇ ਚਿੰਤਾ ਨਾ ਕਰੋ। ਬਟਨ ਤੁਹਾਨੂੰ ਕਦੇ ਵੀ ਦੁੱਖੀ ਨਹੀਂ ਕਰਨਗੇ!"
 
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:98
 msgid ""
 "Also the controls have tips which will appear if you hover over them with "
 "your mouse. These tips can come in very handy. To see how these tips work, "
@@ -431,31 +427,31 @@ msgstr ""
 "ਬਹੁਤ ਆਸਾਨੀ ਨਾਲ ਆ ਸਕਦੇ ਹਨ। ਇਹ ਨੁਕਤੇ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ ਵੇਖਣ ਲਈ, ਆਪਣੇ ਮਾਊਸ ਨੂੰ ਹੇਠ ਦਿੱਤੇ ਬਟਨ ਤੇ "
 "ਲਿਆਓ, ਅਤੇ ਬਿਨਾਂ ਕਲਿੱਕ ਕੀਤੇ, ਨੁਕਤੇ ਦੇ ਦਿੱਸਣ ਦੀ ਉਡੀਕ ਕਰੋ..."
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:99
 msgid "Top 10"
 msgstr "ਚੋਟੀ ਦੇ 10"
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:100
 msgid "Show extra information."
 msgstr "ਵਾਧੂ ਜਾਣਕਾਰੀ ਵਿਖਾਓ।"
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:101
 msgid "Hide extra information."
 msgstr "ਵਾਧੂ ਜਾਣਕਾਰੀ ਲੁਕਾਓ।"
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:102
 msgid "Publish to the web your local scores."
 msgstr "ਆਪਣੇ ਲੋਕਲ ਅੰਕ ਵੈਬ ਤੇ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:103
 msgid "_Participate"
 msgstr "_Participate"
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:104
 msgid "Download from the web the most up to date ranking."
 msgstr "ਵੈਬ ਤੋਂ ਬਿਲਕੁਲ ਨਵਾਂ ਦਰਜਾ ਡਾਊਨਲੋਡ ਕਰੋ।"
 
-#: ../data/klavaro.glade.h:106
+#: ../data/klavaro.glade.h:105
 msgid "_Update"
 msgstr "_Update"
 
@@ -468,19 +464,19 @@ msgstr "ਬਾਰੇ 'ਕਲਾਵਾਰੋ'"
 msgid "A very flexible and efficient touch typing tutor."
 msgstr "ਇੱਕ ਬਹੁਤ ਹੀ ਕੋਮਲ ਅਤੇ ਨਿਪੁੰਨ ਟੱਚ ਟਾਈਪਿੰਗ ਸਿਖਿੱਅਕ।"
 
-#: ../src/main.c:246
+#: ../src/main.c:304
 msgid "(Custom)"
 msgstr "(ਪਸੰਦੀਦਾ)"
 
-#: ../src/main.c:247
+#: ../src/main.c:305
 msgid "(Edit custom)"
 msgstr "(ਪਸੰਦੀਦਾ ਸੋਧ)"
 
-#: ../src/main.c:248
+#: ../src/main.c:306
 msgid "(Default)"
 msgstr "(ਮੂਲ)"
 
-#: ../src/main.c:325
+#: ../src/main.c:383
 #, c-format
 msgid "Dictation mode (depends on this speech synthesizer: %s)"
 msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
@@ -489,97 +485,97 @@ msgstr[1] "ਲੇਖਾਰੀ ਮੋਡ (ਇਹਨਾਂ ਵਿੱਚੋਂ ਇ�
 
 #. Set main labels (for translation)
 #.
-#: ../src/main.c:367 ../src/keyboard.c:1315
+#: ../src/main.c:425 ../src/keyboard.c:1381
 msgid "Introduction"
 msgstr "ਭੂਮਿਕਾ"
 
-#: ../src/main.c:370 ../src/top10.c:110
+#: ../src/main.c:428 ../src/top10.c:110
 msgid "Basic course"
 msgstr "ਬੁਨਿਆਦੀ ਕੋਰਸ"
 
-#: ../src/main.c:373 ../src/top10.c:113
+#: ../src/main.c:431 ../src/top10.c:113
 msgid "Adaptability"
 msgstr "ਅਨੁਕੂਲਤਾ"
 
-#: ../src/main.c:377 ../src/main.c:379 ../src/callbacks.c:1361
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "ਰਫ਼ਤਾਰ"
 
-#: ../src/main.c:382 ../src/callbacks.c:1384 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "ਫ਼ਲੂਈਡਿਟੀ"
 
-#: ../src/callbacks.c:437 ../src/tutor.c:523
+#: ../src/callbacks.c:508 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "ਕੁੰਜੀਆਂ:"
 
-#: ../src/callbacks.c:835 ../src/callbacks.c:851
+#: ../src/callbacks.c:903 ../src/callbacks.c:919
 msgid "Connecting..."
 msgstr "ਸੰਪਰਕ ਕਰ ਰਿਹਾ..."
 
-#: ../src/callbacks.c:1124
+#: ../src/callbacks.c:1192
 msgid "Overwrite user layout"
 msgstr "ਯੂਜ਼ਰ ਡਾਟਾ ਮੁੜ ਲਿਖੋ"
 
-#: ../src/callbacks.c:1126
+#: ../src/callbacks.c:1194
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ OVERWRITE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1133
+#: ../src/callbacks.c:1201
 msgid "Remove user layout"
 msgstr "ਯੂਜ਼ਰ ਖਾਕਾ ਹਟਾਓ"
 
-#: ../src/callbacks.c:1135
+#: ../src/callbacks.c:1203
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "ਇਹ ਇੱਕ ਮੌਜੂਦਾ ਕੀਬੋਰਡ ਖਾਕੇ ਨੂੰ REMOVE ਕਰੇਗਾ।"
 
-#: ../src/callbacks.c:1142 ../src/callbacks.c:1147
+#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
 msgid "Reset progress data"
 msgstr "ਡਾਟਾ ਵਿਕਾਸ ਰੀਸੈੱਟ"
 
-#: ../src/callbacks.c:1143
+#: ../src/callbacks.c:1211
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "ਇਹ ਚਾਰਟਾਂ ਵਿੱਚ ਵਿਖਾਏ ਗਏ ਸਾਰੇ ਤਰੱਕੀ ਡਾਟੇ ਨੂੰ DELETE ਕਰ ਦੇਵੇਗਾ।"
 
-#: ../src/callbacks.c:1155
+#: ../src/callbacks.c:1223
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "ਇਹ ਚਾਰਟਾਂ ਵਿੱਚ ਵਿਖਾਏ ਗਏ ਸਾਰੇ ਤਰੱਕੀ ਡਾਟੇ ਨੂੰ DELETE ਕਰ ਦੇਵੇਗਾ।"
 
-#: ../src/callbacks.c:1158
+#: ../src/callbacks.c:1226
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "ਸਾਰਾ ਡਾਟਾ ਵਿਕਾਸ ਮਿਟਾਓ, ਹਰੇਕ ਮੋਡੀਊਲ ਲਈ।"
 
-#: ../src/callbacks.c:1358 ../src/top10.c:88
+#: ../src/callbacks.c:1426 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "ਖਰਾਪਨ"
 
-#: ../src/callbacks.c:1361 ../src/tutor.c:1308
+#: ../src/callbacks.c:1429 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1372
+#: ../src/callbacks.c:1440
 msgid "Errors"
 msgstr "ਗਲਤੀਆਂ"
 
-#: ../src/callbacks.c:1375
+#: ../src/callbacks.c:1443
 msgid "Touch times (s)"
 msgstr "ਛੂਹਣ ਸਮਾਂ (s)"
 
-#: ../src/callbacks.c:1387 ../src/tutor.c:1335 ../src/top10.c:70
+#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "ਅੰਕ"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:508 ../src/tutor.c:1747
+#: ../src/translation.c:522 ../src/tutor.c:1765
 msgid "en"
 msgstr "pa"
 
-#: ../src/translation.c:595
+#: ../src/translation.c:609
 msgid ""
 "The basic course focuses on having you read the characters presented to you "
 "on screen and typing the corresponding keys. Remember to keep your hands "
@@ -590,7 +586,7 @@ msgstr ""
 "ਅਨੁਸਾਰ ਕੁੰਜੀਆਂ ਟਾਈਪ ਕਰੋ। ਆਪਣੇ ਹੱਥਾਂ ਨੂੰ ਹਰ ਵੇਲੇ ਕੀਬੋਰਡ ਦੀ ਹੋਮ ਕਤਾਰ ਉੱਤੇ ਅਧਾਰਿਤ ਰੱਖਣਾ ਯਾਦ ਰੱਖੋ "
 "(ਮੁੱਖ ਮੀਨੂੰ ਤੇ ਭੂਮਿਕਾ ਵੇਖੋ)।"
 
-#: ../src/translation.c:599
+#: ../src/translation.c:613
 msgid ""
 "The key set used in each series will be shown in the above message line. The "
 "[Space], [Shift] and [Enter] keys may not show up there but are used very "
@@ -599,7 +595,7 @@ msgstr ""
 "ਹਰੇਕ ਲੜੀ ਵਿੱਚ ਵਰਤਿਆ ਕੁੰਜੀ ਸਮੂਹ ਉੱਪਰ ਦਿੱਤੀ ਲਾਈਨ ਵਿੱਚ ਵਿਖਾਈ ਦੇਵੇਗਾ। [Space] , [Shift], "
 "[Enter] ਕੁੰਜੀਆਂ ਹੋ ਸਕਦਾ ਉੱਥੇ ਨਾ ਵਿਖਾਈ ਦੇਣ ਪਰ ਅਕਸਰ ਬਹੁਤ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।"
 
-#: ../src/translation.c:602
+#: ../src/translation.c:616
 msgid ""
 "The message line below follows and echoes your key presses. If required, it "
 "changes and displays instructions for actions required from you."
@@ -607,7 +603,7 @@ msgstr ""
 "ਹੇਠ ਦਿੱਤੀ ਸੁਨੇਹਾ ਲਾਈਨ ਪਿੱਛਾ ਕਰਦੀ ਅਤੇ ਤੁਹਾਡੇ ਕੁੰਜੀ ਦੱਬਣ ਤੇ ਹੁੰਗਾਰਾ ਦਿੰਦੀ ਹੈ। ਜੇਕਰ ਲੋੜ ਪਵੇ, ਇਹ "
 "ਬਦਲਦੀ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਕੋਲੋ ਲੁੜੀਂਦੀ ਕਾਰਵਾਈ ਲਈ ਹਦਾਇਤਾਂ ਵਿਖਾਉਂਦੀ ਹੈ।"
 
-#: ../src/translation.c:606
+#: ../src/translation.c:620
 msgid ""
 "Here you may practice and improve your memorization of all keys. There will "
 "be sentences presented with nonsense words which mix some numbers and "
@@ -616,7 +612,7 @@ msgstr ""
 "ਇੱਥੇ ਤੁਸੀ ਅਭਿਆਸ ਕਰੋ ਅਤੇ ਆਪਣੀ ਸਾਰੀ ਕੁੰਜੀਆਂ ਨੂੰ ਯਾਦ ਰੱਖਣ ਦੀ ਸੱਮਰਥਾ ਵਧਾਓ। ਇੱਥੇ ਵਾਕ ਬੇਹੂਦਗੀ ਸ਼ਬਦਾਂ "
 "ਨਾਲ ਪੇਸ ਕੀਤੇ ਜਾਣਗੇ ਜਿਹੜੇ ਕੁੱਝ ਨੰਬਰਾਂ ਅਤੇ ਚਿੰਨ੍ਹਾਂ ਨਾਲ ਮਿਲੇ ਹੋਣਗੇ।"
 
-#: ../src/translation.c:609
+#: ../src/translation.c:623
 msgid ""
 "In order to keep the lesson contents language and keyboard independent, "
 "accented letter combinations will probably not appear. For real word "
@@ -625,7 +621,7 @@ msgstr ""
 "ਪਾਠ ਸਮੱਗਰੀ ਭਾਸ਼ਾ ਅਤੇ ਕੀਬੋਰਡ ਨੂੰ ਨਿਰਪੇਖ ਰੱਖਣ ਲਈ, ਲਹਿਜ਼ੇ ਵਾਲੇ ਅੱਖਰਾਂ ਦੇ ਸੰਜੋਗ ਸੰਭਵ ਹੈ ਨਹੀਂ ਵਿਖਾਈ "
 "ਦੇਣਗੇ। ਅਸਲ ਸ਼ਬਦ ਵਾਕਾਂ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਮੇਨ ਮੀਨੂੰ ਦੀ ਚੌਥੀ ਚੋਣ ਨੂੰ ਵਰਤੋਂ (ਫ਼ਲੂਈਡਨੈੱਸ ਬਾਰੇ)।"
 
-#: ../src/translation.c:613
+#: ../src/translation.c:627
 msgid ""
 "After each exercise there will be a brief statistics panel reviewing your "
 "performance along with some relevant comments."
@@ -633,7 +629,7 @@ msgstr ""
 "ਹਰੇਕ ਅਭਿਆਸ ਤੋਂ ਬਾਅਦ ਇੱਕ ਸ਼ੰਖੇਪ ਅੰਕੜਿਆਂ ਵਾਲਾ ਪੈਨਲ ਤੁਹਾਡੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦੀ ਸਮੀਖਿਆ ਕਰਨ ਦੇ ਨਾਲ ਕੁੱਝ "
 "ਢੁੱਕਵੀਆਂ ਟਿੱਪਣੀਆਂ ਵੀ ਕਰੇਗਾ।"
 
-#: ../src/translation.c:617
+#: ../src/translation.c:631
 msgid ""
 "This exercise is very similar to the second one, for adaptability. The "
 "difference is that here you'll type real words."
@@ -641,7 +637,7 @@ msgstr ""
 "ਇਹ ਅਭਿਆਸ ਦੂਜੇ ਵਾਲੇ ਦੇ ਨਾਲ ਮਿਲਦਾ ਜੁਲਦਾ ਹੀ ਹੈ, ਅਨੁਕੂਲਤਾ ਲਈ। ਫ਼ਰਕ ਇਹ ਹੈ ਕੀ ਇੱਥੇ ਤੁਸੀ ਅਸਲ ਸ਼ਬਦ "
 "ਟਾਈਪ ਕਰੋਗੇ।"
 
-#: ../src/translation.c:620
+#: ../src/translation.c:634
 msgid ""
 "The default language is the actual one of the interface. But you may select "
 "any other texts with words you would like to use. Press the 'Other' option "
@@ -651,7 +647,7 @@ msgstr ""
 "ਦੀ ਵਰਤੋਂ ਤੁਹਾਨੂੰ ਪਸੰਦ ਹੋਵੇ । ਉੱਪਰ ਦਿੱਤੇ 'ਹੋਰ' ਚੋਣ ਨੂੰ ਦਬਾਓ ਅਤੇ ਫ਼ਾਈਲਾਂ ਜੋੜੋ ਜਿਹਨਾਂ ਵਿੱਚ ਉਹ ਟੈਕਸਟ "
 "ਮੋਜੂਦ ਹੋਣ।"
 
-#: ../src/translation.c:624
+#: ../src/translation.c:638
 msgid ""
 "With this exercise the focus is on speed. So, you are supposed to type "
 "really fast and I will only flatter you when you deserve it!"
@@ -659,7 +655,7 @@ msgstr ""
 "ਇਸ ਅਭਿਆਸ ਨਾਲ ਧਿਆਨ ਸਾਰਾ ਰਫ਼ਤਾਰ ਤੇ ਹੈ । ਇਸ ਲਈ, ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ ਕਾਫ਼ੀ ਤੇਜ਼ ਟਾਈਪ ਕਰਨਾ ਹੈ "
 "ਅਤੇ ਮੈਂਤੁਹਾਡੀ ਵਾਹੋ-ਵਾਹੀ ਓਦੋਂ ਹੀ ਕਰਾਗਾਂ ਜਦੋ ਤੁਸੀ ਇਸਦੇ ਹੱਕਦਾਰ ਹੋਵੋਗੇ!"
 
-#: ../src/translation.c:628
+#: ../src/translation.c:642
 msgid ""
 "We will now use complete sentences and paragraphs which make logical sense. "
 "This may distract you while you type if you try to understand what you are "
@@ -670,7 +666,7 @@ msgstr ""
 "ਧਿਆਨਭਟਕਾ ਦੇਵੇ ਜਦੋ ਤੁਸੀ ਟਾਈਪ ਕਰੋ ਜੇਕਰ ਤੁਸੀ ਜੋ ਐਂਟਰ ਕਰ ਰਹੇ ਹੋ ਉਸਨੂੰ ਸਮਝਣ ਦੀ ਕੋਸ਼ਿਸ ਕੀਤੀ । "
 "ਪਿਛਲੇ ਅਭਿਆਸਾਂ ਦਾ ਉਦੇਸ਼ ਤੁੁੁਹਾਡੇ ਕੋਲੋ ਬਿਨਾਂ ਅਨੁਵਾਦ ਅਤੇ ਵਿਸਲੇਸ਼ਣ ਦੇ ਟਾਈਪ ਕਰਵਾਉਣਾ ਸੀ।"
 
-#: ../src/translation.c:632
+#: ../src/translation.c:646
 msgid ""
 "We do not mean to imply that the typists must behave like a robot, without "
 "understanding what they type. We do aim to develop the skill of typing, "
@@ -685,7 +681,7 @@ msgstr ""
 "ਦਾ ਕਰਮ ਸਵੈਚਾਲਿਤ ਹੋ ਜਾਵੇਗਾ ਅਤੇ ਲਗਨ ਦੀ ਲੋੜ ਘੱਟ ਪਵੇਗੀ । ਤੱਦ ਤੁਸੀ ਟੈਕਸਟ ਦੇ ਸਹੀ ਮਤਲਬ ਤੇ ਧਿਆਨ "
 "ਦੇਣ ਕਾਬਲ ਹੋ ਜਾਵੋਗੇ।"
 
-#: ../src/translation.c:636
+#: ../src/translation.c:650
 msgid ""
 "These exercises are longer. Each exercise consists of three paragraphs and "
 "the emphasis is placed on correctness and rhythm, with a minimum speed "
@@ -696,7 +692,7 @@ msgstr ""
 "ਰੀਦਮ ਉੱਤੇ ਜੋ਼ਰ ਰਖਿੱਅਾ ਗਿਆ ਹੈ। ਇੱਥੇ ਤੁਹਾਨੂੰ ਗਲਤੀਆਂ ਠੀਕ ਕਰਨ ਲਈ ਬੈਕਸਪੇਸ ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਲੋੜ "
 "ਪਵੇਗੀ। ਦੂਜੇ ਸ਼ਬਦਾਂ ਵਿੱਚ, ਕੇਵਲ ਬਿਨਾਂ ਖਾਮੀਆਂ ਵਾਲੇ ਇਨਪੁੱਟ ਹੀ ਮਨਜੂਰ ਕੀਤੇ ਜਾਣਗੇ।"
 
-#: ../src/keyboard.c:1115
+#: ../src/keyboard.c:1181
 msgid ""
 "Correct positioning of the hands and fingers is very important to efficient "
 "typing. You will learn faster and type better if you follow the next "
@@ -705,7 +701,7 @@ msgstr ""
 "ਕੁਸ਼ਲ ਟਾਈਪਿੰਗ ਲਈ ਹੱਥਾਂ ਅਤੇ ਉਂਗਲਾਂ ਸਹੀ ਸਥਿਤੀ ਵਿੱਚ ਰੱਖਣਾ ਬਹੁਤ ਜਰੂਰੀ ਹੈ । ਤੁਸੀ ਛੇਤੀ ਸਿੱਖੋਗੇ ਅਤੇ "
 "ਟਾਈਪ ਕਰੋਗੇ ਜੇਕਰ ਤੁਸੀ ਅੱਗੇ ਦਿੱਤੀਆਂ ਸ਼ਿਫ਼ਾਰਿਸ਼ਾਂ ਦੀ ਪਾਲਣਾ ਕਰੋ।"
 
-#: ../src/keyboard.c:1118
+#: ../src/keyboard.c:1184
 msgid ""
 "The index-finger tips rest over each of the two keys which have a small "
 "raised mark, in the center of the keyboard."
@@ -713,7 +709,7 @@ msgstr ""
 "ਇੰਡੈਕਸ ਉਂਗਲ ਕੀਬੋਰਡ ਦੇ ਵਿਚਕਾਰ, ਦੋ ਕੁੰਜੀਆਂ ਵਿੱਚੋ ਹਰੇਕ ਉੱਪਰ ਹੋਣ ਜਿਹਨਾਂ ਤੇ ਇੱਕ ਛੋਟਾ ਉਭਾਰ ਦਾ ਨਿਸ਼ਾਨ "
 "ਹੈ।"
 
-#: ../src/keyboard.c:1121
+#: ../src/keyboard.c:1187
 msgid ""
 "These marks function as 'tactile hooks' for your fingers to remain at the "
 "correct position. This way, with a little experience, you will not need to "
@@ -723,18 +719,18 @@ msgstr ""
 "ਤਰ੍ਹਾਂ, ਥੋੜ੍ਹੇ ਤਜਰਬੇ ਨਾਲ, ਤੁਹਾਨੂੰ ਕੀਬੋਰਡ ਦੇ ਉੱਤੇ ਵੇਖਣ ਦੀ ਲੋੜ ਨਹੀਂ ਪਵੇਗੀ ਇਹ ਵੇਖਣ ਲਈ ਕਿ ਤੁਹਾਡੀ "
 "ਉਂਗਲਾਂ ਸਹੀ ਸਥਿਤੀ ਵਿੱਚ ਹਨ।"
 
-#: ../src/keyboard.c:1125
+#: ../src/keyboard.c:1191
 msgid ""
 "The tips of the other fingers lie naturally beside the index ones, over the "
 "keys on the same row of the keyboard."
 msgstr ""
 "ਤੁਹਾਡੀ ਹੋਰ ਉਂਗਲਾਂ ਦੇ ਟਿਪਸ ਇੰਡੈਕਸ ਵਾਲੀਆਂ ਦੇ ਨੇੜੇ ਕੁਦਰਤੀ ਤੌਰ ਤੇ, ਕੀਬੋਰਡ ਦੀ ਓਹੀ ਕਤਾਰ ਉੱਪਰ ਪਏ ਹੋਣ।"
 
-#: ../src/keyboard.c:1128
+#: ../src/keyboard.c:1194
 msgid "The outside edges of your thumbs rest over the space bar."
 msgstr "ਤੁਹਾਡੇ ਅੰਗੂਠਿਆਂ ਦੇ ਬਾਹਰੀ ਕਿਨਾਰੇ ਸਪੇਸ ਬਾਰ ਤੇ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ।"
 
-#: ../src/keyboard.c:1130
+#: ../src/keyboard.c:1196
 msgid ""
 "The part of the hands closest to the wrist (the base) rest over the table, "
 "outside the keyboard. Without this kind of support the arms would quickly "
@@ -743,7 +739,7 @@ msgstr ""
 "ਗੁੱਟ ਦੇ ਨਜਦੀਕੀ ਹੱਥ ਵਾਲਾ ਹਿੱਸਾ(ਤਲੀ) ਟੇਬਲ ਉੱਤੇ ਅਰਾਮ ਨਾਲ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ, ਕੀਬੋਰਡ ਤੋਂ ਬਾਹਰ। ਇਸ "
 "ਤਰ੍ਹਾਂ ਦੇ ਸਹਾਰੇ ਤੋਂ ਬਿਨਾਂ ਬਾਹਵਾਂ ਛੇਤੀ ਥੱਕ ਜਾਣਗੀਆਂ।"
 
-#: ../src/keyboard.c:1133
+#: ../src/keyboard.c:1199
 msgid ""
 "This is referred to as the home position for the hands. From it the fingers "
 "move all over the keyboard, reaching all the keys as naturally and quickly "
@@ -756,7 +752,7 @@ msgstr ""
 "ਉਂਗਲ ਦੇ ਖਾਸ ਸੰਬੰਧ ਦੀ ਵਰਤੋਂ ਕਰੇ। ਇਹ ਸੰਬੰਧ ਦਾ ਹੌਲੀ-ਹੌਲੀ ਪਤਾ ਲੱਗ ਜਾਵੇਗਾ ਜਿਵੇ ਹੀ ਤੁਸੀ ਬੁਨਿਆਦੀ "
 "ਕੋਰਸ ਪੂਰਾ ਕਰੋਗੇ।"
 
-#: ../src/keyboard.c:1139
+#: ../src/keyboard.c:1205
 msgid ""
 "When learning the relation between fingers and keys, it is very important "
 "that you only move the finger which must press the key and allow all other "
@@ -765,7 +761,7 @@ msgstr ""
 "ਜਦੋਂ ਉਂਗਲਾਂ ਅਤੇ ਕੁੰਜੀਆਂ ਦਾ ਸੰਬੰਧ ਸਿੱਖ ਰਹੇ ਹੋਵੋ, ਇਹ ਬਹੁਤ ਜ਼ਰੂਰੀ ਹੈ ਕਿ ਤੁਸੀ ਓਹੀ ਉਂਗਲ ਨੂੰ ਹਿਲਾਓ ਜਿਸ ਤੋਂ "
 "ਕੁੰਜੀ ਨੂੰ ਦੱਬਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਬਾਕੀ ਸਾਰੀਆਂ ਉਂਗਲਾਂ ਨੂੰ ਹੋਮ ਸਥਿਤੀ ਵਿੱਚ ਰਹਿਣ ਦੇਵੋ।"
 
-#: ../src/keyboard.c:1143
+#: ../src/keyboard.c:1209
 msgid ""
 "After memorizing this relationship, you can relax the previous rule some, so "
 "that you can attain greater speed while typing."
@@ -773,7 +769,7 @@ msgstr ""
 "ਇਸ ਰਿਸ਼ਤੇ ਨੂੰ ਯਾਦ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਤੁਸੀ ਪਿਛਲੇ ਨਿਯਮ ਨੂੰ ਢਿੱਲ ਦੇ ਸਕਦੇ ਹੋ, ਤਾਂ ਕਿ ਤੁਸੀ ਟਾਈਪ ਕਰਦੇ ਸਮੇਂ "
 "ਵਾਧੂ ਰਫ਼ਤਾਰ ਪ੍ਰਾਪਤ ਕਰ ਸਕੋ।"
 
-#: ../src/keyboard.c:1146
+#: ../src/keyboard.c:1212
 msgid ""
 "The shift keys are used for capital letters and for some symbols. To get a "
 "shifted key input you should first use the small finger of the opposite "
@@ -781,7 +777,7 @@ msgid ""
 "the other hand."
 msgstr ""
 
-#: ../src/keyboard.c:1150
+#: ../src/keyboard.c:1216
 msgid ""
 "You should be prepared to start training with the basic course. It will take "
 "effort and patience to be successful as a typist. We trust you have these "
@@ -791,116 +787,116 @@ msgstr ""
 "ਤਰ੍ਹਾਂ ਸ਼ਫ਼ਲ ਹੋਣ ਲਈ ਯਤਨ ਅਤੇ ਧੀਰਜ ਲੈ ਲਵੇਗਾ। ਸਾਨੂੰ ਭਰੋਸਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਕੋਲ ਇਹ ਹਨ ਅਤੇ ਤੁਹਾਡੀ "
 "ਸਫ਼ਲਤਾ ਦੀ ਉਮੀਦ ਰੱਖਦੇ ਹਾਂ!"
 
-#: ../src/keyboard.c:1161
+#: ../src/keyboard.c:1227
 #, c-format
 msgid "Step %i"
 msgstr "ਕਦਮ %i"
 
 #. Recommendations
-#: ../src/keyboard.c:1165
+#: ../src/keyboard.c:1231
 msgid "To position the hands"
 msgstr "ਹੱਥ ਰੱਖਣ ਲਈ"
 
 #. Final words
-#: ../src/keyboard.c:1248
+#: ../src/keyboard.c:1314
 msgid "Go ahead!"
 msgstr "ਅੱਗੇ ਚੱਲੋ!"
 
-#: ../src/keyboard.c:1256 ../src/keyboard.c:1258
+#: ../src/keyboard.c:1322 ../src/keyboard.c:1324
 msgid "Click on any key to see which finger you must use:"
 msgstr "ਕਿਸੇ ਵੀ ਕੁੰਜੀ ਤੇ ਕਲਿੱਕ ਕਰੋ ਵੇਖਣ ਲਈ ਕਿ ਤੁਸੀ ਕਿਹੜੀ ਉਂਗਲ ਦੀ ਵਰਤੋਂ ਕਰਨੀ ਹੈ:"
 
-#: ../src/keyboard.c:1257
+#: ../src/keyboard.c:1323
 msgid "Relation between fingers and keys"
 msgstr "ਉੱਗਲਾਂ ਅਤੇ ਕੁੰਜੀਆਂ ਵਿਚਕਾਰ ਸੰਬੰਧ"
 
-#: ../src/keyboard.c:1315 ../src/keyboard.c:1349
+#: ../src/keyboard.c:1381 ../src/keyboard.c:1415
 msgid "Keyboard"
 msgstr "ਕੀਬੋਰਡ"
 
-#: ../src/keyboard.c:1396
+#: ../src/keyboard.c:1462
 msgid "Create or modify a custom keyboard layout"
 msgstr "ਪਸੰਦੀਦਾ ਕੀਬੋਰਡ ਖਾਕਾ ਰਚੋ ਜਾਂ ਸੋਧ ਕਰੋ"
 
-#: ../src/keyboard.c:1644 ../src/keyboard.c:1668
+#: ../src/keyboard.c:1710 ../src/keyboard.c:1734
 msgid "small finger"
 msgstr "ਛੋਟੀ ਉਂਗਲ"
 
-#: ../src/keyboard.c:1647 ../src/keyboard.c:1665
+#: ../src/keyboard.c:1713 ../src/keyboard.c:1731
 msgid "ring finger"
 msgstr "ਰਿੰਗ ਉਂਗਲ"
 
-#: ../src/keyboard.c:1650 ../src/keyboard.c:1662
+#: ../src/keyboard.c:1716 ../src/keyboard.c:1728
 msgid "middle finger"
 msgstr "ਮਿਡਲ ਉਂਗਲ"
 
-#: ../src/keyboard.c:1653 ../src/keyboard.c:1659
+#: ../src/keyboard.c:1719 ../src/keyboard.c:1725
 msgid "index finger"
 msgstr "ਇੰਡੈਕਸ ਉਂਗਲ"
 
-#: ../src/keyboard.c:1754
+#: ../src/keyboard.c:1820
 msgid "Press and edit me"
 msgstr "ਮੈਨੂੰ ਦਬਾਓ ਅਤੇ ਸੋਧ ਕਰੋ"
 
-#: ../src/tutor.c:303
+#: ../src/tutor.c:322
 msgid "Lesson:"
 msgstr "ਪਾਠ:"
 
-#: ../src/tutor.c:313
+#: ../src/tutor.c:332
 msgid "Paragraphs:"
 msgstr "ਪੈਰ੍ਹੇ:"
 
-#: ../src/tutor.c:346
+#: ../src/tutor.c:365
 msgid "Klavaro - Basic Course"
 msgstr "ਕਲਾਵਾਰੋ - ਬੁਨਿਆਦੀ ਕੋਰਸ"
 
-#: ../src/tutor.c:351
+#: ../src/tutor.c:370
 msgid "Klavaro - Adaptability"
 msgstr "ਕਲਾਵਾਰੋ - ਅਨੁਕੂਲਤਾ"
 
-#: ../src/tutor.c:354
+#: ../src/tutor.c:373
 msgid ""
 "Adaptability exercises: automating the fingers responses, typing over all "
 "the keyboard."
 msgstr "ਅਨੁਕੂਲਤਾ ਅਭਿਆਸ: ਸਾਰੇ ਕੀਬੋਰਡ ਤੇ ਲਿੱਖਣ, ਉਂਗਲਾਂ ਦੇ ਜਵਾਬਾਂ ਨੂੰ ਆਟੋਮੇਟ ਕਰ ਰਿਹਾ।"
 
-#: ../src/tutor.c:359
+#: ../src/tutor.c:378
 msgid "Klavaro - Velocity"
 msgstr "ਕਲਾਵਾਰੋ - ਵੇਗ"
 
-#: ../src/tutor.c:360
+#: ../src/tutor.c:379
 msgid "Velocity exercises: accelerate typing real words."
 msgstr "ਵੇਗ ਅਭਿਆਸ: ਅਸਲ ਸ਼ਬਦਾਂ ਨੂੰ ਲਿੱਖਣਾ ਵਧਾ਼ਓ।"
 
-#: ../src/tutor.c:364
+#: ../src/tutor.c:383
 msgid "Klavaro - Fluidness"
 msgstr "ਕਲਾਵਾਰੋ - ਫ਼ਲੂਈਡਨੈੱਸ"
 
-#: ../src/tutor.c:366
+#: ../src/tutor.c:385
 msgid "Fluidness exercises: accuracy typing good sense paragraphs."
 msgstr "ਫ਼ਲੂਈਡਨੈੱਸ ਅਭਿਆਸ: ਚੰਗੇ ਭਾਵਨਾ ਵਾਲੇ ਪੈਰ੍ਹੇ ਨੂੰ ਖਰੇਪਨ ਨਾਲ ਟਾਈਪ ਕਰਨਾ।"
 
-#: ../src/tutor.c:428
+#: ../src/tutor.c:447
 msgid "End of exercise. Press [Enter] to start another."
 msgstr "ਅਭਿਆਸ ਖਤਮ ਹੋਇਆ । ਦੂਜਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ [Enter] ਦੱਬੋ।"
 
-#: ../src/tutor.c:457
+#: ../src/tutor.c:476
 msgid "Learning the key positions."
 msgstr "ਕੁੰਜੀ ਅਹੁਦੇ ਸਿੱਖ ਰਿਹਾ।"
 
-#: ../src/tutor.c:460
+#: ../src/tutor.c:479
 msgid "Press any key to start the exercise. "
 msgstr "ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੋਈ ਵੀ ਕੁੰਜੀ ਦੱਬੋ। "
 
-#: ../src/tutor.c:579 ../src/tutor.c:582
+#: ../src/tutor.c:612 ../src/tutor.c:615
 msgid "Start typing when you are ready. "
 msgstr "ਜਦੋਂ ਤਿਆਰ ਹੋਵੋ ਟਾਈਪਿੰਗ ਸ਼ੁਰੂ ਕਰੋ। "
 
-#: ../src/tutor.c:580
+#: ../src/tutor.c:613
 msgid "Use backspace to correct errors."
 msgstr "ਗਲਤੀਆਂ ਠੀਕ ਕਰਨ ਲਈ ਬੈਕਸਪੇਸ ਵਰਤੋਂ।"
 
-#: ../src/tutor.c:1033
+#: ../src/tutor.c:1060
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -909,11 +905,11 @@ msgstr ""
 "ps.: ਇਸ ਸ਼ੈਸ਼ਨ ਲਈ ਲਾਗਿੰਗ ਨਹੀਂ ਕੀਤੀ ਗਈ: ਟਾਈਪ ਕੀਤੇ ਗਏ ਅੱਖਰਾਂ(%i) ਦੀ ਗਿਣਤੀ %i ਤੋਂ ਵੱਧ ਹੋਣੀ "
 "ਚਾਹੀਦੀ ਹੈ।"
 
-#: ../src/tutor.c:1175
+#: ../src/tutor.c:1200
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "ps.: ਤੁਸੀ ਚੋਟੀ ਦੇ 10 ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ, ਬਹੁਤ ਵਧੀਆ!"
 
-#: ../src/tutor.c:1187
+#: ../src/tutor.c:1214
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -923,94 +919,94 @@ msgstr ""
 "ਅਸੀ 'ਚੋਟੀਦੇ10' ਮੁਕਾਬਲੇ ਵਿੱਚ ਇਸ ਦਾ ਉਲੇਖ ਨਹੀਂ ਕਰ ਸਕਦੇ।"
 
 #. Begin the accuracy
-#: ../src/tutor.c:1235
+#: ../src/tutor.c:1259
 msgid "STATISTICS"
 msgstr "STATISTICS"
 
-#: ../src/tutor.c:1236
+#: ../src/tutor.c:1260
 msgid "Elapsed time:"
 msgstr "ਬਾਕੀ ਸਮਾਂ:"
 
-#: ../src/tutor.c:1237
+#: ../src/tutor.c:1261
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "ਮਿੰਟ ਅਤੇ"
 msgstr[1] "ਮਿ਼ੰਟ ਅਤੇ"
 
-#: ../src/tutor.c:1238
+#: ../src/tutor.c:1262
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "ਸੈਕਿੰਡ"
 msgstr[1] "ਸੈਕਿੰਡ"
 
-#: ../src/tutor.c:1239
+#: ../src/tutor.c:1263
 msgid "Error ratio:"
 msgstr "ਗਲਤੀ ਅਨੁਪਾਤ:"
 
-#: ../src/tutor.c:1239
+#: ../src/tutor.c:1263
 msgid "Accuracy:"
 msgstr "ਖਰਾਪਨ:"
 
-#: ../src/tutor.c:1260 ../src/tutor.c:1285 ../src/tutor.c:1308
-#: ../src/tutor.c:1334
+#: ../src/tutor.c:1284 ../src/tutor.c:1309 ../src/tutor.c:1332
+#: ../src/tutor.c:1358
 msgid "Goal:"
 msgstr "ਟੀਚਾ:"
 
-#: ../src/tutor.c:1267
+#: ../src/tutor.c:1291
 msgid "Characters per second:"
 msgstr "ਅੱਖਰ ਪ੍ਰਤੀ ਸੈਕਿੰਡ:"
 
-#: ../src/tutor.c:1285
+#: ../src/tutor.c:1309
 msgid "(CPS)"
 msgstr "(CPS)"
 
-#: ../src/tutor.c:1290
+#: ../src/tutor.c:1314
 msgid "Words per minute:"
 msgstr "ਸ਼ਬਦ ਪ੍ਰਤੀ ਸੈਕਿੰਡ:"
 
-#: ../src/tutor.c:1315
+#: ../src/tutor.c:1339
 msgid "Fluidness:"
 msgstr "ਫ਼ਲੂਈਡਨੈੱਸ:"
 
-#: ../src/tutor.c:1342
+#: ../src/tutor.c:1366
 msgid "Comments:"
 msgstr "ਟਿੱਪਣੀਆਂ:"
 
-#: ../src/tutor.c:1826
+#: ../src/tutor.c:1844
 msgid "space"
 msgstr "ਸਪੇਸ"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1831
+#: ../src/tutor.c:1849
 msgid "wye"
 msgstr "wye"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1835
+#: ../src/tutor.c:1853
 msgid "enter"
 msgstr "ਐਂਟਰ"
 
-#: ../src/tutor.c:1841
+#: ../src/tutor.c:1859
 msgid "apostrophe"
 msgstr "ਐਪਾਸਟਰਾਫ਼ੀ"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1845
+#: ../src/tutor.c:1863
 msgid "quote"
 msgstr "ਹਿੱਸਾ"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1849
+#: ../src/tutor.c:1867
 msgid "ampersand"
 msgstr "ਐਪਰਸੈਨਡ"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:323
+#: ../src/plot.c:321
 msgid "Character"
 msgstr "ਅੱਖਰ"
 
-#: ../src/plot.c:335
+#: ../src/plot.c:333
 msgid "Date & Time"
 msgstr "ਤਾਰੀਖ ਅਤੇ ਸਮਾਂ"
 
@@ -1021,11 +1017,11 @@ msgid ""
 "right corner."
 msgstr ""
 
-#: ../src/basic.c:356
+#: ../src/basic.c:372
 msgid "Positions of keys seems to be learned!"
 msgstr "ਕੁੰਜੀਆਂ ਦੇ ਅਹੁਦੇ ਸਿੱਖੇ ਹੋਏ ਪ੍ਰਤੀਤ ਹੁੰਦੇ ਹਨ!"
 
-#: ../src/basic.c:357
+#: ../src/basic.c:373
 msgid ""
 " Congratulations!\n"
 " You have accomplished the entire basic course.\n"
@@ -1037,7 +1033,7 @@ msgstr ""
 " ਅਗਲੇ ਕਿਸਮ ਦੇ ਅਭਿਆਸ ਤੇ ਜਾਓ: ਅਨੁਕੂਲਤਾ।\n"
 " ਇੱਥੇ ਤੁਸੀ ਮੂਲ ਰੂਪ ਵਿੱਚ ਖਰੇਪਨ ਦਾ ਅਭਿਆਸ ਕਰੋਗੇ।\n"
 
-#: ../src/basic.c:363
+#: ../src/basic.c:379
 msgid ""
 " All right, now you got it!\n"
 " Go to the next lesson.\n"
@@ -1045,7 +1041,7 @@ msgstr ""
 " ਚੰਗਾ, ਹੁਣ ਤੁਸੀ ਸਿਖ ਗਏ ਹੋ!\n"
 " ਅਗਲੇ ਅਭਿਆਸ ਤੇ ਜਾਓ।\n"
 
-#: ../src/adaptability.c:225
+#: ../src/adaptability.c:247
 #, c-format
 msgid ""
 " Your accuracy rate is below %.0f%%...\n"
@@ -1054,7 +1050,7 @@ msgstr ""
 " ਤੁਹਾਡੇ ਖਰੇਪਨ ਦੀ ਦਰ %.0f%%... ਤੋਂ ਥੱਲੇ ਹੈ।\n"
 " ਕਿ ਤੁਸੀ ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਵਿੱਚ ਸੁਧਾਰ ਲਈ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋਗੇ?\n"
 
-#: ../src/adaptability.c:228
+#: ../src/adaptability.c:250
 #, c-format
 msgid ""
 " You are doing well. But...\n"
@@ -1063,7 +1059,7 @@ msgstr ""
 " ਤੁਸੀ ਚੰਗਾ ਕਰ ਰਹੇ ਹੋ। ਪਰ..।\n"
 " ਕਿ ਤੁਸੀ ਖਰੇਪਨ ਦੀ ਦਰ %.0f%%ਤੱਕ ਲਿਆ ਸਕਦੇ ਹੋ?\n"
 
-#: ../src/adaptability.c:231
+#: ../src/adaptability.c:253
 #, c-format
 msgid ""
 " You are almost there, but your accuracy rate is still below %.0f%%.\n"
@@ -1073,7 +1069,7 @@ msgstr ""
 " ਤੁਸੀ ਲਗਭਗ ਉੱਥੇ ਪਹੁੰਚ ਹੀ ਗਏ, ਪਰ ਤੁਹਾਡੇ ਖਰੇਪਨ ਦੀ ਦਰ ਹਾਲੇ ਵੀ %.0f%%ਥੱਲੇ ਹੈ।\n"
 " ਕੁੱਝ ਹੋਰ ਵਾਰ ਕੋਸ਼ਿਸ ਕਰੋ, ਜਾਂ ਤੁਸੀ ਪਰੇਸ਼ਾਨ ਹੋ ਰਹੇ ਹੋ, ਇਸ ਲਈ ਦੂਜੀ ਕਿਸਮ ਦੇ ਅਭਿਆਸ ਤੇ ਜਾਓ।\n"
 
-#: ../src/adaptability.c:238
+#: ../src/adaptability.c:260
 #, c-format
 msgid ""
 " Very good!\n"
@@ -1086,11 +1082,11 @@ msgstr ""
 " ਹੁਣ ਇਹ ਸਮਾਂ ਵੇਗ ਨੂੰ ਵਧਾਉਣ ਦਾ ਹੈ।\n"
 " ਮੇਨ ਮੀਨੂੰ ਤੇ 3rd ਅਭਿਆਸ ਤੇ ਜਾਓ।\n"
 
-#: ../src/velocity.c:313 ../src/fluidness.c:436
+#: ../src/velocity.c:333 ../src/fluidness.c:436
 msgid "Pasted_or_dropped"
 msgstr "Pasted_or_dropped"
 
-#: ../src/velocity.c:424
+#: ../src/velocity.c:444
 msgid ""
 " You are just beginning.\n"
 " Be patient, try it again every day, rest and don't worry so much:\n"
@@ -1100,7 +1096,7 @@ msgstr ""
 " ਸਬਰ ਰੱਖੋ, ਹਰ ਰੋਜ ਇਸ ਨੂੰ ਵਰਤੋਂ, ਆਰਾਮ ਕਰੋ ਅਤੇ ਜਿਆਦਾ ਚਿੰਤਾ ਨਾ ਕਰੋ:\n"
 " ਲਗਨ ਅਤੇ ਅਭਿਆਸ ਤੁਹਾਡੀ ਰਫ਼ਤਾਰ ਵਧਾਉਣਗੇ।\n"
 
-#: ../src/velocity.c:428
+#: ../src/velocity.c:448
 #, c-format
 msgid ""
 " Still away from the highway. You can do better...\n"
@@ -1109,7 +1105,7 @@ msgstr ""
 " ਹਾਲੇ ਵੀ ਹਾਈਵੇ ਤੋਂ ਦੂਰ। ਤੁਸੀ ਚੰਗਾ ਕਰ ਸਕਦੇ ਹੋ..।\n"
 " ਘੱਟੋ-ਘੱਟ %.0f WPM ਤੱਕ ਪਹੁੰਚਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰੋ।\n"
 
-#: ../src/velocity.c:431
+#: ../src/velocity.c:451
 #, c-format
 msgid ""
 " You are doing well, but need to go faster.\n"
@@ -1118,7 +1114,7 @@ msgstr ""
 " ਤੁਸੀ ਵਧੀਆ ਕਰ ਰਹੇ ਹੋ, ਪਰ ਤੁਹਾਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਵੱਧਣ ਦੀ ਲੋੜ ਹੈ।\n"
 " ਅਤੇ ਖਰੇਪਨ ਬਾਰੇ ਨਾ ਭੁੱਲੋ। %.0f WPM ਲੈਣ ਦੀ ਕੋਸ਼ਿਸ ਕਰੋ।\n"
 
-#: ../src/velocity.c:434
+#: ../src/velocity.c:454
 #, c-format
 msgid ""
 " Fine. Now you need to start running.\n"
@@ -1127,7 +1123,7 @@ msgstr ""
 " ਚੰਗਾ। ਹੁਣ ਤੁਹਾਨੂੰ ਦੋੜਨ ਦੀ ਲੋੜ ਹੈ।\n"
 " ਕਿ ਤੁਸੀ %.0f WPM ਤੱਕ ਸਕਦੇ ਹੋ?\n"
 
-#: ../src/velocity.c:437
+#: ../src/velocity.c:457
 #, c-format
 msgid ""
 " Very good. You are almost there.\n"
@@ -1136,7 +1132,7 @@ msgstr ""
 " ਬਹੁਤ ਵਧੀਆ। ਤੁਸੀ ਲਗਭਗ ਇੱਥੇ ਪਹੁੰਚ ਹੀ ਗਏ।\n"
 " ਕਿ ਤੁਸੀ ਅਖੀਰ %.0f WPM ਤੇ ਪਹੁੰਚ ਸਕਦੇ ਹੋ?\n"
 
-#: ../src/velocity.c:440
+#: ../src/velocity.c:460
 msgid ""
 " Excellent. For this course, that is enough.\n"
 " Try now the fluidness exercises, OK?\n"
@@ -1144,7 +1140,7 @@ msgstr ""
 " ਸ਼ਾਨਦਾਰ। ਇਸ ਕੋਰਸ ਲਈ, ਇਨ੍ਹਾਂ ਕਾਫ਼ੀ ਹੈ।\n"
 " ਹੁਣ ਫ਼ਲੂਈਡਨੈੱਸ ਅਭਿਆਸਾਂ ਦੀ ਕੋਸ਼ਿਸ ਕਰੋ, OK?\n"
 
-#: ../src/velocity.c:443
+#: ../src/velocity.c:463
 #, c-format
 msgid ""
 " Fast! Are you a professional?\n"
@@ -1155,13 +1151,13 @@ msgstr ""
 
 #. Translators: Speed Racer is a reference to a Japanese anime franchise
 #. about automobile racing, also known as Mach GoGoGo.
-#: ../src/velocity.c:448
+#: ../src/velocity.c:468
 #, c-format
 msgid " Ranking good, Speed Racer! Are you afraid of reaching %.0f WPM?\n"
 msgstr " ਵਧੀਆ ਦਰਜਾ, ਸਪੀਡ ਰੇਸ਼ਰ! ਕਿ ਤੁਸੀ %.0f WPM ਤੱਕ ਪਹੁੰਚਣ ਤੋਂ ਡਰ ਰਹੇ ਹੋ?\n"
 
 #. Translators: feel free to change the reference to that martial art, if you find another good analogy.
-#: ../src/velocity.c:452
+#: ../src/velocity.c:472
 #, c-format
 msgid ""
 " Kung-fu mastery!\n"
@@ -1171,7 +1167,7 @@ msgstr ""
 " ਕਿ ਤੁਸੀ %.0f WPM ਤੱਕ ਉੱਡ ਸਕਦੇ ਹੋ?\n"
 
 #. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
-#: ../src/velocity.c:455
+#: ../src/velocity.c:475
 msgid ""
 " Dvorak master!\n"
 " I have no words to express my admiration!\n"
@@ -1250,33 +1246,39 @@ msgstr "ਲੋਕਲ ਅੰਕ"
 msgid "External scores"
 msgstr "ਬਾਹਰੀ ਅੰਕ"
 
-#: ../src/top10.c:718
+#: ../src/top10.c:713
 msgid "Empty ranking. Please practice fluidness."
 msgstr "ਖਾਲੀ ਦਰਜਾ । ਕਿਰਪਾ ਕਰਕੇ ਫ਼ਲੂਈਡਨੈੱਸ ਦਾ ਅਭਿਆਸ ਕਰੋ।"
 
-#: ../src/top10.c:815
+#: ../src/top10.c:810
 msgid "Not able to download files"
 msgstr "ਫ਼ਾਈਲਾਂ ਡਾਊਨਲੋਡ ਕਰਨ ਵਿੱਚ ਸਮਰਥ ਨਹੀਂ"
 
-#: ../src/top10.c:815 ../src/top10.c:905
+#: ../src/top10.c:810 ../src/top10.c:902
 msgid "not found"
 msgstr "ਨਹੀਂ ਮਿਲਿਆ"
 
-#: ../src/top10.c:816 ../src/top10.c:906
+#: ../src/top10.c:811 ../src/top10.c:903
 msgid "Are you sure you have it installed in your system?"
 msgstr "ਕੀ ਤੁਹਾਨੂੰ ਯਕੀਨ ਹੈ ਤੁਸੀ ਇਸ ਨੂੰ ਆਪਣੇ ਸਿਸਟਮ ਵਿੱਚ ਇੰਸਟਾਲ ਕੀਤਾ?"
 
-#: ../src/top10.c:860
+#: ../src/top10.c:857
 msgid "Could not download file from the host server."
 msgstr "ਹੋਸਟ ਸਰਵਰ ਤੋਂ ਫ਼ਾਈਲ ਡਾਊਨਲੋਡ ਨਹੀਂ ਕਰ ਸਕਦਾ।"
 
-#: ../src/top10.c:905
+#: ../src/top10.c:902
 msgid "Not able to upload files"
 msgstr "ਫ਼ਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰਨ ਵਿੱਚ ਸਮਰਥ ਨਹੀਂ"
 
-#: ../src/top10.c:986
+#: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "ਅੰਕ ਅੱਪਲੋਡ/ਡਾਊਨਲੋਡ ਨਹੀਂ ਕਰ ਸਕਦਾ।"
+
+#~ msgid "Keep this checked if you want to get those nice beeps."
+#~ msgstr "ਇਸ ਉੱਤੇ ਸਹੀ ਦਾ ਨਿਸ਼ਾਨ ਲਗਾਓ ਜੇਕਰ ਤੁਸੀ ਇਹ ਚੰਗੀਆਂ ਬੀਪ ਲੈਣਾ ਚਾਹੁੰਦੇ ਹੋ।"
+
+#~ msgid "_Beep"
+#~ msgstr "_Beep"
 
 #~ msgid "keyboard;typing;tutor;CAI"
 #~ msgstr "ਕੀਬੋਰਡ:ਟਾਈਪਿੰਗ:ਸਿਖਿੱਅਕ:CAI"
