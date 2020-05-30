@@ -303,10 +303,12 @@ on_text_tutor_realize (GtkWidget * widget, gpointer user_data)
 		       	"foreground", color_main_fg,
 		       	"underline", PANGO_UNDERLINE_NONE, NULL);
 
+	/* This second one seems to not be needed. FIXME ?
 	gtk_text_buffer_create_tag (buf, "char_keep_wrap2",
 		       	"background", color_main_bg,
 		       	"foreground", color_main_fg,
 		       	"underline", PANGO_UNDERLINE_NONE, NULL);
+	*/
 
 	cb_color_tag ("char_untouched",	TUTOR_BLACK,	TUTOR_CREAM,    buf);
 	cb_color_tag ("char_wrong", 	TUTOR_RED,	TUTOR_RED_LITE, buf);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.20.0 -->
+<!-- Generated with glade 3.22.2 -->
 <interface>
   <requires lib="gtk+" version="3.8"/>
   <object class="GtkAdjustment" id="adjustment_h_tutor">
@@ -29,6 +29,9 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
     <signal name="show" handler="on_window_stat_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox30">
         <property name="visible">True</property>
@@ -93,7 +96,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="width_chars">3</property>
-                        <property name="text" translatable="yes">1</property>
+                        <property name="text">1</property>
                         <property name="xalign">0.5</property>
                         <property name="adjustment">adjustment_stat_lesson</property>
                         <property name="numeric">True</property>
@@ -412,9 +415,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkAdjustment" id="adjustment_v_tutor">
     <property name="upper">100</property>
@@ -429,6 +429,9 @@
     <property name="default_height">540</property>
     <signal name="destroy" handler="on_window_tutor_destroy" swapped="no"/>
     <signal name="show" handler="on_window_tutor_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox_tutor_main">
         <property name="visible">True</property>
@@ -530,7 +533,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="width_chars">3</property>
-                        <property name="text" translatable="yes">1</property>
+                        <property name="text">1</property>
                         <property name="xalign">0.5</property>
                         <property name="adjustment">adjustment_lesson</property>
                         <property name="climb_rate">0.46000000000000002</property>
@@ -568,7 +571,8 @@
               <object class="GtkLabel" id="label_heading">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="wrap_mode">char</property>
+                <property name="wrap">True</property>
+                <property name="ellipsize">end</property>
                 <property name="xalign">0</property>
               </object>
               <packing>
@@ -1084,9 +1088,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkWindow" id="dialog_confirm">
     <property name="can_focus">False</property>
@@ -1099,6 +1100,9 @@
     <property name="deletable">False</property>
     <property name="gravity">center</property>
     <signal name="show" handler="on_dialog_confirm_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox42">
         <property name="visible">True</property>
@@ -1299,9 +1303,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkFileChooserDialog" id="filechooser_tutor">
     <property name="can_focus">False</property>
@@ -1313,6 +1314,9 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
     <property name="gravity">center</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox5">
         <property name="visible">True</property>
@@ -1458,6 +1462,9 @@
     <property name="urgency_hint">True</property>
     <property name="deletable">False</property>
     <property name="gravity">center</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="hbox18">
         <property name="visible">True</property>
@@ -1818,9 +1825,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkWindow" id="window_hints">
     <property name="can_focus">False</property>
@@ -1831,6 +1835,9 @@
     <property name="deletable">False</property>
     <signal name="check-resize" handler="on_window_hints_check_resize" swapped="no"/>
     <signal name="show" handler="on_window_hints_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox_hints">
         <property name="visible">True</property>
@@ -1924,9 +1931,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkWindow" id="window_keyboard">
     <property name="can_focus">False</property>
@@ -1937,6 +1941,9 @@
     <property name="type_hint">dialog</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox_keyboard">
         <property name="visible">True</property>
@@ -2854,9 +2861,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkWindow" id="window_main">
     <property name="can_focus">False</property>
@@ -2865,6 +2869,9 @@
     <property name="default_width">420</property>
     <signal name="destroy" handler="on_window_main_destroy" swapped="no"/>
     <signal name="show" handler="on_window_main_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox40">
         <property name="visible">True</property>
@@ -3543,9 +3550,6 @@
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkAboutDialog" id="aboutdialog_klavaro">
     <property name="can_focus">False</property>
@@ -3559,9 +3563,9 @@
     <property name="program_name">Klavaro</property>
     <property name="copyright">Copyright (C) Free Software Foundation 2008-2019</property>
     <property name="comments" translatable="yes">Yet another touch typing tutor</property>
-    <property name="website">http://klavaro.sourceforge.net/</property>
+    <property name="website">https://klavaro.sourceforge.io/</property>
     <property name="website_label">klavaro.sf.net</property>
-    <property name="authors">- Felipe Castro - &lt;fefcas@gmail.com&gt;
+    <property name="authors">- Felipe Castro - &lt;fe20@penso.eu.nom.br&gt;
 - Petr Machata
 - Hodong Kim</property>
     <property name="documenters">- Felipe Castro</property>
@@ -3593,6 +3597,9 @@
     <property name="license_type">gpl-3-0</property>
     <signal name="close" handler="on_aboutdialog_klavaro_close" swapped="no"/>
     <signal name="response" handler="on_aboutdialog_klavaro_response" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox2">
         <property name="visible">True</property>
@@ -3637,6 +3644,9 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
     <property name="transient_for">window_main</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox6">
         <property name="visible">True</property>
@@ -3803,6 +3813,9 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="deletable">False</property>
     <signal name="show" handler="on_window_top10_show" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox44">
         <property name="visible">True</property>
@@ -4183,9 +4196,6 @@
           </packing>
         </child>
       </object>
-    </child>
-    <child type="titlebar">
-      <placeholder/>
     </child>
   </object>
 </interface>

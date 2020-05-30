@@ -1,11 +1,11 @@
-2020-04-??  Felipe Castro (-) <fefcas@gmail.com>;
+2020-05-30  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.10
 	* Added:
 	- Support for Tibetan.
 	* Changed:
 	- Checking for Werror=format-security at src/Makefile.am
 	- Applying Debian patches 02, 03, 04 and 05.
-	- Not installing GtkDataBox include headers anymore.
+	- Not installing GtkDataBox's include headers anymore.
 	- dvorak_fr_bepo.kbd: apostrophe now is typographic.
 	* Updated translations:
 	- Basque.

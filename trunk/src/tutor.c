@@ -492,7 +492,6 @@ tutor_update_intro ()
 
 	/*
 	 * Apply tutor background color and font to the intro 
-	 * FIXME: update deprecated function for background color
 	 */
 	if (main_preferences_exist ("colors", "text_intro_bg"))
 		color_bg = main_preferences_get_string ("colors", "text_intro_bg");
@@ -505,6 +504,7 @@ tutor_update_intro ()
 		color_bg = main_altcolor_get_string ("colors", "text_intro_bg");
 	}
 	gdk_rgba_parse (&color, color_bg); 
+	/* FIXME: update deprecated function for background color */
 	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
 	g_free (color_bg);
 
@@ -573,7 +573,6 @@ tutor_update_start ()
 
 	/*
 	 * Apply tutor background color and font to the text
-	 * FIXME: update deprecated function for background color
 	 */
 	if (main_preferences_exist ("colors", "char_untouched_bg"))
 		color_bg = main_preferences_get_string ("colors", "char_untouched_bg");
@@ -585,6 +584,7 @@ tutor_update_start ()
 		g_free (color_bg);
 		color_bg = main_altcolor_get_string ("colors", "char_untouched_bg");
 	}
+	/* FIXME: update deprecated function for background color */
 	gdk_rgba_parse (&color, color_bg);
 	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
 	g_free (color_bg);
@@ -602,7 +602,9 @@ tutor_update_start ()
 		start = end;
 		if (! gtk_text_iter_forward_char (&end))
 			break;
+		/* This second one seems to not be needed. FIXME ?
 		gtk_text_buffer_apply_tag_by_name (buf, "char_keep_wrap2", &start, &end);
+		*/
 		start = end;
 	}
 	
@@ -1387,10 +1389,9 @@ tutor_calc_stats ()
 	}
 	g_free (tmp_str2);
 
-	/* Is this really needed? We don't remember... FIXME (remove?)
+	/* This is needed to repaint the final comments with normal black foreground. */
 	gtk_text_buffer_get_bounds (buf, &start, &end);
 	gtk_text_buffer_apply_tag_by_name (buf, "char_keep_wrap", &start, &end);
-	*/
 
 	gtk_text_view_scroll_mark_onscreen (GTK_TEXT_VIEW (wg), gtk_text_buffer_get_insert (buf));
 }

@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([klavaro],[3.09],[fe2019(a)penso(d)eu(d)nom(d)br])
+AC_INIT([klavaro],[3.10],[fe20@penso.eu.nom.br])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([-Wall])
