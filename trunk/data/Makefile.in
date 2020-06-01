@@ -399,6 +399,7 @@ klavaro_data = \
 	dvorak_br_us.kbd \
 	dvorak_ca_fr.kbd \
 	dvorak_de_adnw.kbd \
+	dvorak_de_bone.kbd \
 	dvorak_de_neo2.kbd \
 	dvorak_eo_eurokeys.kbd \
 	dvorak_eo_nativo.kbd \
