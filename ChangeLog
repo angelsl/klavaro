@@ -3,6 +3,15 @@
 	* Added:
 	- keyboard: dvorak_de_bone
 	* Updated translations:
+	- Esperanto.
+	- French.
+	- Portuguese (BR).
+	- Portuguese (PT).
+	- Russian.
+	- Ukrainian.
+	- Vietnamese.
+	* Added translations:
+	- Romanian (partial).
 
 2020-05-30  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.10
@@ -42,7 +51,7 @@
 	- qwertz_sk_2.kbd is a qwerty one: --> qwerty_sk.kbd (Slovakia)
 	- qwertz_sk.kbd is for Slovenia:  -->  qwertz_si.kbd
 	* Added: 
-	- Portuguese translation, from Portugal (pt).
+	- Portuguese translation, from Portugal (PT).
 	- Hotkey Ctrl+F: font configuration.
 	- Hotkey Ctrl+KP_plus: increase spin buttons.
 	- Hotkey Ctrl+KP_minus: decrease spin buttons.
