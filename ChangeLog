@@ -1,5 +1,7 @@
-2020-??-??  Felipe Castro (-) <fefcas@gmail.com>;
+2020-08-18  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.11
+	* Fixed:
+	- Dutch typos correction on paragraphs.
 	* Added:
 	- keyboard: dvorak_de_bone
 	* Updated translations:
