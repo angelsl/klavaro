@@ -163,6 +163,8 @@ klavaro_data = \
 	sl.paragraphs \
 	sv.words \
 	sv.paragraphs \
+	tr.words \
+	tr.paragraphs \
 	uk.words \
 	uk.paragraphs \
 	ur.words \

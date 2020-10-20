@@ -57,6 +57,7 @@
 "Slovenščina (sl) [qwertz_si]\n" \
 "Српски (sr) [qwertz_rs]\n" \
 "Svenska (sv) [qwerty_se]\n" \
+"Türkçe (tr) [qwerty_tr]\n" \
 "తెలుగు (te) [qwerty_us]\n" \
 "Українська (uk) [jtsuken_ua]\n" \
 "اردو (ur) [qwerty_pk_crulp]\n" \
