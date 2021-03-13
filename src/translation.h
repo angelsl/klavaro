@@ -41,6 +41,7 @@
 "Français (fr) [azerty_fr]\n" \
 "Galego (gl) [qwerty_es]\n" \
 "Hrvatski (hr) [qwertz_hr]\n" \
+"Bahasa Indonesia (id) [qwerty_us]\n" \
 "Italiano (it) [qwerty_it]\n" \
 "Қазақ (kk) [jtsuken_kk]\n" \
 "한국어 (ko) [dubeolsik_kr]\n" \

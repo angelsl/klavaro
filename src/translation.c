@@ -69,14 +69,15 @@ trans_code_to_country (gchar *code)
 		{"il","ישראל"},
 		{"hr","Hrvatska"},
 		{"hu","Magyarország"},
+		{"id","Indonesia"},
 		{"in","India"},
 		{"it","Italia"},
 		{"jp","日本 (Nippon)"},
 		{"kk","Қазақстан"},
 		{"kr","대한민국"}, /* Korea */
 		{"no","Norge"},
-		{"pl","Polska"},
 		/* 30 */
+		{"pl","Polska"},
 		{"pk","پاکستان"},
 		{"pt","Portugal"},
 		{"rs","Србија"}, /* Serbia */
@@ -86,8 +87,8 @@ trans_code_to_country (gchar *code)
 		{"sk","Slovensko"},
 		{"tr","Türkiye"},
 		{"ua","Україна"},
-		{"uk","United Kingdom"},
 		/* 40 */
+		{"uk","United Kingdom"},
 		{"us","USA"},
 		{"",""},
 		{"",""},
@@ -97,9 +98,8 @@ trans_code_to_country (gchar *code)
 		{"",""},
 		{"",""},
 		{"",""},
-		{"",""},
 		/* 50 */
-		{"",""},
+		{"",""}
 	};
 
 	for (i = 0; i < COUNTRY_N; i++)

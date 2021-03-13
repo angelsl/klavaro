@@ -137,6 +137,8 @@ klavaro_data = \
 	hr.paragraphs \
 	hu.words \
 	hu.paragraphs \
+	id.words \
+	id.paragraphs \
 	it.words \
 	it.paragraphs \
 	kk.words \
