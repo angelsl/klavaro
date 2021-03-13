@@ -1,11 +1,13 @@
-2020-??-??  Felipe Castro (-) <fefcas@gmail.com>;
+2021-03-14  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.12
 	* Added:
 	- Indonesian translation.
 	- Turkish translation.
+	- Norman US layout.
 	* Updated translations:
 	- Dutch.
-	- French.
+	- French. And also, fr.paragraphs was updated and enlarged.
+	- Swedish.
 
 2020-08-18  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.11
