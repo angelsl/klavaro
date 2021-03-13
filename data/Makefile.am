@@ -59,6 +59,7 @@ klavaro_data = \
 	jtsuken_ru.kbd \
 	jtsuken_ru_typewriter.kbd \
 	jtsuken_ua.kbd \
+	norman_us.kbd \
 	qwerty_ar.kbd \
 	qwerty_bg.kbd \
 	qwerty_bg_2.kbd \
