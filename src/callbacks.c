@@ -101,19 +101,7 @@ on_button_help_clicked (GtkButton *button, gpointer user_data)
 G_MODULE_EXPORT void
 on_button_about_clicked (GtkButton *button, gpointer user_data)
 {
-	gtk_widget_show (get_wg ("aboutdialog_klavaro"));
-}
-
-G_MODULE_EXPORT void
-on_aboutdialog_klavaro_close (GtkDialog *dialog, gint response_id, gpointer user_data)
-{
-	gtk_widget_hide (GTK_WIDGET (dialog));
-}
-
-G_MODULE_EXPORT void
-on_aboutdialog_klavaro_response (GtkDialog *dialog, gint response_id, gpointer user_data)
-{
-	gtk_widget_hide (GTK_WIDGET (dialog));
+	gtk_widget_show (get_wg ("aboutdialog"));
 }
 
 G_MODULE_EXPORT void

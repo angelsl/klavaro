@@ -296,7 +296,7 @@ tutor_init (TutorType tt_type)
 	gtk_widget_hide (get_wg ("window_main"));
 	gtk_widget_hide (get_wg ("window_keyboard"));
 	gtk_widget_hide (get_wg ("dialog_info"));
-	gtk_widget_hide (get_wg ("aboutdialog_klavaro"));
+	gtk_widget_hide (get_wg ("aboutdialog"));
 	gtk_widget_hide (get_wg ("togglebutton_toomuch_errors"));
 	gtk_widget_show (get_wg ("window_tutor"));
 	gtk_widget_grab_focus (get_wg ("entry_mesg"));

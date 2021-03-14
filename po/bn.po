@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.1.7\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2008-11-05 16:51+0600\n"
 "Last-Translator: Md. Rezwan Shahid <rafi6047@yahoo.com>\n"
 "Language-Team: Bangla/Bengali <l10n@ankur.org.bd>\n"
@@ -414,95 +414,52 @@ msgid "_Language:"
 msgstr "ভা‌ষা"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "এই অ্যাপ্লিকেশন সম্পর্কিত কিছু টিপ।"
-
-#: ../data/klavaro.glade.h:89
-#, fuzzy
-msgid "_Help"
-msgstr "সহায়িকা"
-
-#: ../data/klavaro.glade.h:90
 #, fuzzy
 msgid "General information about the program."
 msgstr "এই অ্যাপ্লিকেশন সম্পর্কিত কিছু টিপ।"
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 #, fuzzy
 msgid "_About..."
 msgstr "ফ্লাভারো সম্পর্কিত..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "'ক্লাভারো' সম্পর্কিত"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "আরেকটি স্পর্শ টাইপিং শিক্ষক"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "সবসময় মনে রাখবেন: কেউ একজন আপনাকে ভালবাসে!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "সাহায্য?"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "এটি একটি টিপ। এখন প্রধান মেন্যুতে ফিরে যেতে এখানে চাপুন।"
-
-#: ../data/klavaro.glade.h:97
-#, fuzzy
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"এটি অ্যাপ্লিকেশনটির প্রধান মেন্যু এবং এটি খুব সহজ। আপনি কি ধরণের অনুশীলন করতে চান "
-"সেটি নির্বাচন করুন। কোনো বোতামে ক্লিক করতে ভয় পাবেন না: এগুলো আপনাকে আঘাত করবেনা!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"প্রতিটি নিয়ন্ত্রণের উপরে নির্দেশনা দেখানো পর্যন্ত অপেক্ষা করতে ভুলবেন না । মাঝে মাঝে "
-"এগুলো সহায়ক হতে পারে। নির্দেশনাগুলো কিভাবে কাজ করে সেটি দেখতে, অনুগ্রহ করে ক্লিক "
-"না করে, মাউসটি নিচের বোতামের উপর ধরে রাখুন এবং, নির্দেশনা না দেখানো পর্যন্ত "
-"কিছুক্ষন অপেক্ষা করুন..."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "সেরা ১০"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 #, fuzzy
 msgid "Show extra information."
 msgstr "তথ্য বাড়ান"
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 #, fuzzy
 msgid "Hide extra information."
 msgstr "তথ্য বাড়ান"
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 #, fuzzy
 msgid "Publish to the web your local scores."
 msgstr "আপনার স্থানীয় স্কোর কনফিগার করা হোস্টের কাছে পাবলিশ করুন।"
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 #, fuzzy
 msgid "_Participate"
 msgstr "অংশগ্রহন করুন"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr ""
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 #, fuzzy
 msgid "_Update"
 msgstr "আপডেট"
@@ -551,76 +508,76 @@ msgstr "প্রারম্ভিক কোর্স"
 msgid "Adaptability"
 msgstr "সঙ্গতিপ্রবণতা (খাপ খাওয়াবার ক্ষমতা)"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr ""
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr ""
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 #, fuzzy
 msgid "Keys:"
 msgstr "কী (Key): %s"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr ""
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "ব্যবহারকারীর লেআউট ওভাররাইট করুন"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "এটি বর্তমানে উপস্থিত একটি কীবোর্ড লেআউট ওভাররাইট করবে।"
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "ব্যবহারকারীর লেআউট মুছে ফেলুন"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "এটি বর্তমানে উপস্থিত একটি কীবোর্ড লেআউট মুছে ফেলবে।"
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr ""
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 msgid "This will DELETE all the progress data of all modules."
 msgstr ""
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr ""
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr ""
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "নির্ভুলতা"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr ""
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "স্কোর"
 
@@ -1349,6 +1306,43 @@ msgstr "ফাইল আপলোড করতে ব্যর্থ।"
 #, fuzzy
 msgid "Could not upload/download scores."
 msgstr "লোকাল স্কোর আপলোড করা যায়নি।"
+
+#~ msgid "Little tip about this program."
+#~ msgstr "এই অ্যাপ্লিকেশন সম্পর্কিত কিছু টিপ।"
+
+#, fuzzy
+#~ msgid "_Help"
+#~ msgstr "সহায়িকা"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "'ক্লাভারো' সম্পর্কিত"
+
+#~ msgid "Help?"
+#~ msgstr "সাহায্য?"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr "এটি একটি টিপ। এখন প্রধান মেন্যুতে ফিরে যেতে এখানে চাপুন।"
+
+#, fuzzy
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "এটি অ্যাপ্লিকেশনটির প্রধান মেন্যু এবং এটি খুব সহজ। আপনি কি ধরণের অনুশীলন করতে "
+#~ "চান সেটি নির্বাচন করুন। কোনো বোতামে ক্লিক করতে ভয় পাবেন না: এগুলো আপনাকে আঘাত "
+#~ "করবেনা!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "প্রতিটি নিয়ন্ত্রণের উপরে নির্দেশনা দেখানো পর্যন্ত অপেক্ষা করতে ভুলবেন না । মাঝে "
+#~ "মাঝে এগুলো সহায়ক হতে পারে। নির্দেশনাগুলো কিভাবে কাজ করে সেটি দেখতে, অনুগ্রহ "
+#~ "করে ক্লিক না করে, মাউসটি নিচের বোতামের উপর ধরে রাখুন এবং, নির্দেশনা না "
+#~ "দেখানো পর্যন্ত কিছুক্ষন অপেক্ষা করুন..."
 
 #, fuzzy
 #~ msgid "Keep this checked if you want to get those nice beeps."

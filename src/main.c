@@ -443,7 +443,7 @@ main_window_init ()
 
 	/* Set version
 	 */
-	gtk_about_dialog_set_version (GTK_ABOUT_DIALOG (get_obj ("aboutdialog_klavaro")), VERSION);
+	gtk_about_dialog_set_version (GTK_ABOUT_DIALOG (get_obj ("aboutdialog")), VERSION);
 
 	/* For remembering the window's position
 	 */

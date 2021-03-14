@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.9.0-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2011-04-24 19:21-0500\n"
 "Last-Translator: Jess Jessbody <jessbody@gmail.com>\n"
 "Language-Team: Urdu <jessbody@gmail.com>\n"
@@ -386,90 +386,48 @@ msgid "_Language:"
 msgstr "_زبان:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "اس پروگرام بارے چھوٹا سا ٹوٹکا۔"
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_مدد"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "اس پروگرام بارے جامع اطلاع۔"
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_بارے-"
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "بارے 'کلاوارو'"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "ایک اور لمسی ٹائپنگ اتالیق"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "ہمیشہ یاد رکھو: کوئی تمہیں چاہتا ہے!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "مدد؟"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "یہ ٹوٹکا ہے۔ اب یہ زِرَیہ (بٹن) دبا کر آپ لائحہ اول کی طرف واپس ہو جاؤ۔"
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"اس اطلاقیہ کا لائحۂ اول بالکل سیدھا ہے۔ بس جس طرح کی مشق لینا چاہو، اس کا "
-"انتخاب کرو۔ تظاہرہ پرکسی زریہ کو کلک کرنے سے نہ ہچکچاؤ ۔ زریہ کبھی تمہیں "
-"نقصان نہیں پہنچائے گا!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"نیز تظابیط (کنٹرول) کے ٹوٹکے ہیں جو فارہ (ماؤس) کو ان پر منڈالنے سے ظاہر "
-"ہوتے ہیں۔ یہ ٹوتکے بہت کام آ سکتے ہیں۔ یہ جاننے کے لیے کہ یہ ٹوٹکے کس طرح "
-"کام کرتے ہیں، فارہ کو نیچے زریہ پر قائم کرو اور بغیر کلک کیے ٹوٹکے کے ظاہر "
-"ہونے کا انتظار کرو_"
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "بالا 10"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 #, fuzzy
 msgid "Show extra information."
 msgstr "اضافی اطلاعات دکھاؤ"
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 #, fuzzy
 msgid "Hide extra information."
 msgstr "اضافی اطلاعات چھپاؤ"
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "اپنے مقامی اسکور ویب پر طبع کرو۔"
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_شمولیت"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "ویب سے تابہ امروز ترین رتبہ زیر اثقال کرو"
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_تجدید"
 
@@ -515,76 +473,76 @@ msgstr "اساسی نصاب"
 msgid "Adaptability"
 msgstr "ملائمیت"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "رفتار"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "اسیال پن"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "کلیدیں: "
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "واصلت_"
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "صارفی خاکہ  (کو مٹا کر اس کے) اُوپر-لکھو"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "یہ موجود کلیدی تختہ مٹا کر اوپر-لکھ دے گا۔"
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "صارفی خاکہ ہٹاؤ"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "یہ موجود کلیدی تختہ خاکہ کو ہٹا دے گا۔"
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "پیش رفت معطیات کی طاقمِ نو"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "یہ چارٹ میں دکھایا تمام پیش رفت معطیات حذف کر دے گا۔"
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "یہ چارٹ میں دکھایا تمام پیش رفت معطیات حذف کر دے گا۔"
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "ہر مِطبقیہ کا تمام پیشرفت معطیات صاف کرو۔"
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "درستی"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "غلطیاں"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "اسکور"
 
@@ -1305,6 +1263,42 @@ msgstr "ملفات (فائلیں) زَبر اثقال نہیں کی جا سکی�
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "سکور زِیر/زَبر اثقال نہیں کر سکی۔"
+
+#~ msgid "Little tip about this program."
+#~ msgstr "اس پروگرام بارے چھوٹا سا ٹوٹکا۔"
+
+#~ msgid "_Help"
+#~ msgstr "_مدد"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "بارے 'کلاوارو'"
+
+#~ msgid "Help?"
+#~ msgstr "مدد؟"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr ""
+#~ "یہ ٹوٹکا ہے۔ اب یہ زِرَیہ (بٹن) دبا کر آپ لائحہ اول کی طرف واپس ہو جاؤ۔"
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "اس اطلاقیہ کا لائحۂ اول بالکل سیدھا ہے۔ بس جس طرح کی مشق لینا چاہو، اس کا "
+#~ "انتخاب کرو۔ تظاہرہ پرکسی زریہ کو کلک کرنے سے نہ ہچکچاؤ ۔ زریہ کبھی تمہیں "
+#~ "نقصان نہیں پہنچائے گا!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "نیز تظابیط (کنٹرول) کے ٹوٹکے ہیں جو فارہ (ماؤس) کو ان پر منڈالنے سے ظاہر "
+#~ "ہوتے ہیں۔ یہ ٹوتکے بہت کام آ سکتے ہیں۔ یہ جاننے کے لیے کہ یہ ٹوٹکے کس طرح "
+#~ "کام کرتے ہیں، فارہ کو نیچے زریہ پر قائم کرو اور بغیر کلک کیے ٹوٹکے کے "
+#~ "ظاہر ہونے کا انتظار کرو_"
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr "اس کو نشان زدہ رکھو، اگر آپ وہ اچھی ٹوں ٹوں سننا چاہتے ہو۔"
