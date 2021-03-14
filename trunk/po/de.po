@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2014-09-06 09:49+0200\n"
 "Last-Translator: Hermann J. Beckers <hj.beckers@onlinehome.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -389,90 +389,46 @@ msgid "_Language:"
 msgstr "Sprache:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "Kleiner Tipp zu diesem Programm."
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_Hilfe"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Allgemeine Informationen zu diesem Programm."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_Über ..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "Über 'Klavaro'"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Ein weiteres Programm zum Erlernen des Tastschreibens"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Denken Sie immer daran: Jemand liebt Sie!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "Hilfe?"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr ""
-"Dies ist ein Hinweis. Drücken Sie nun diese Schaltfläche, um zum Hauptmenü "
-"zurückzukehren."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Dies ist das Hauptmenü der Anwendung und recht einfach. Wählen Sie einfach, "
-"welche Übung Sie durchführen möchten. Haben Sie keine Angst, auf eine "
-"Schaltfläche zu klicken: es wird Ihnen niemals weh tun!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Und vergessen Sie nicht, auf die Tipps zu warten, die über jedem Element "
-"erscheinen. Manchmal können sie sehr nützlich sein. Um zu sehen, wie diese "
-"Tipps funktionieren, führen Sie die Maus über die untere Schaltfläche und "
-"warten Sie etwas, ohne zu klicken ..."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Top 10"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 msgid "Show extra information."
 msgstr "Zusätzliche Informationen zeigen."
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 msgid "Hide extra information."
 msgstr "Zusätzliche Informationen ausblenden."
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Veröffentlichen Sie Ihre lokalen Werte auf dem konfigurierten Rechner."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Teilnehmen"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Die aktuellste Liste aus dem Web abrufen."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Aktualisierung"
 
@@ -518,76 +474,76 @@ msgstr "Grundkurs"
 msgid "Adaptability"
 msgstr "Anpassbarkeit"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Geschwindigkeit"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Schreibflüssigkeit"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Tasten:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Verbinde ..."
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Anwenderbelegung überschreiben"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Dies ÜBERSCHREIBT eine bestehende Tastaturbelegung."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Anwenderbelegung entfernen"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Dies wird eine bestehende Tastaturbelegung ENTFERNEN."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Verlaufsdaten löschen"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Dies LÖSCHT alle Verlaufsdaten, die in den Tabellen angezeigt werden."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Dies LÖSCHT alle Verlaufsdaten, die in den Tabellen angezeigt werden."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Alle Verlaufsdaten für jedes Modul löschen!"
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Genauigkeit"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "Fehler"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr "Zugriffszeit (s)"
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "Werte"
 
@@ -1322,6 +1278,43 @@ msgstr "Konnte Dateien nicht übertragen."
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "Konnte lokale Ergebnisse nicht übertragen."
+
+#~ msgid "Little tip about this program."
+#~ msgstr "Kleiner Tipp zu diesem Programm."
+
+#~ msgid "_Help"
+#~ msgstr "_Hilfe"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "Über 'Klavaro'"
+
+#~ msgid "Help?"
+#~ msgstr "Hilfe?"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr ""
+#~ "Dies ist ein Hinweis. Drücken Sie nun diese Schaltfläche, um zum "
+#~ "Hauptmenü zurückzukehren."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "Dies ist das Hauptmenü der Anwendung und recht einfach. Wählen Sie "
+#~ "einfach, welche Übung Sie durchführen möchten. Haben Sie keine Angst, auf "
+#~ "eine Schaltfläche zu klicken: es wird Ihnen niemals weh tun!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "Und vergessen Sie nicht, auf die Tipps zu warten, die über jedem Element "
+#~ "erscheinen. Manchmal können sie sehr nützlich sein. Um zu sehen, wie "
+#~ "diese Tipps funktionieren, führen Sie die Maus über die untere "
+#~ "Schaltfläche und warten Sie etwas, ohne zu klicken ..."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2015-03-19 15:53+0200\n"
 "Last-Translator: Miguel Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -382,87 +382,46 @@ msgid "_Language:"
 msgstr "_Idioma:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "Algúns consellos sobre este programa."
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_Axuda"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Información xeral sobre o programa."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_Sobre..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "Sobre o «Klavaro»"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Simplemente un titor máis de mecanografía"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Lembre sempre: Alguén o quere!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "Axuda?"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "Isto é un consello. Prema este botón para volver ao menú principal."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"O menú principal do aplicativo é moi sinxelo. Escolla o tipo de curso que "
-"quere realizar. Non teña medo en premer calquera botón. Premer un botón non "
-"lle fará dano!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Asemade, hai consellos que aparecerán se mantén o cursor sobre os botóns. "
-"Estes consellos poden ser moi útiles. Para ver como funcionan, poña o cursor "
-"sobre o botón de embaixo, sen premer, e agarde a que apareza o consello."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Os 10 mellores"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 msgid "Show extra information."
 msgstr "Amosar a información adicional."
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 msgid "Hide extra information."
 msgstr "Agochar a información adicional."
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Publicar as puntuacións locais na web."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Participar"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Descargar da web as puntuacións actualizadas."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Actualizar"
 
@@ -508,76 +467,76 @@ msgstr "Curso básico"
 msgid "Adaptability"
 msgstr "Adaptabilidade"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Velocidade"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Fluidez"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Teclas:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Conectando..."
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Sobrescribir a distribución de teclado"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Isto SOBRESCRIBIRÁ unha distribución de teclado existente."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Eliminar a distribución de teclado"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Isto ELIMINARÁ unha distribución de teclado existente."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Reiniciar os datos de progreso"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Isto ELIMINARÁ todos os datos de progreso amosados nas táboas."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Isto ELIMINARÁ todos os datos de progreso amosados nas táboas."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Borrar todos os datos de progreso, para todos os módulos."
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Precisión"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(PPM)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "Erros"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr "Tempo de pulsación (s)"
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "Puntuación"
 
@@ -1295,6 +1254,41 @@ msgstr "Non foi posíbel enviar os ficheiros"
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "Non foi posíbel enviar/descargar as puntuacións."
+
+#~ msgid "Little tip about this program."
+#~ msgstr "Algúns consellos sobre este programa."
+
+#~ msgid "_Help"
+#~ msgstr "_Axuda"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "Sobre o «Klavaro»"
+
+#~ msgid "Help?"
+#~ msgstr "Axuda?"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr "Isto é un consello. Prema este botón para volver ao menú principal."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "O menú principal do aplicativo é moi sinxelo. Escolla o tipo de curso que "
+#~ "quere realizar. Non teña medo en premer calquera botón. Premer un botón "
+#~ "non lle fará dano!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "Asemade, hai consellos que aparecerán se mantén o cursor sobre os botóns. "
+#~ "Estes consellos poden ser moi útiles. Para ver como funcionan, poña o "
+#~ "cursor sobre o botón de embaixo, sen premer, e agarde a que apareza o "
+#~ "consello."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr "Manter isto activado se quere escoitar os bonitos pitidos."

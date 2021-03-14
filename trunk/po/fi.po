@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.00-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2014-01-10 15:32+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -393,87 +393,47 @@ msgid "_Language:"
 msgstr "_Kieli:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr ""
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "O_hje"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Yleisiä tietoja ohjelmasta."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_Tietoja…"
 
-# miksi puolilainausmerkit?
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "Tietoja ”Klavarosta”"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Jälleen yksi konekirjoituksen ohjaaja"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Muista aina: joku pitää sinusta!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr ""
-
-# voiko button-sanan jättää pois?
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "Tämä on vinkki. Palaa nyt päävalikkoon painamalla tästä."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Sovelluksen päävalikko on hyvin yksinkertainen. Valitse vain haluamasi "
-"harjoitus. Älä epäröi minkään näytöllä näkyvän painikkeen painamista. "
-"Painikkeet eivät koskaan satuta sinua!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Kymmenen kärki"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 msgid "Show extra information."
 msgstr ""
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 msgid "Hide extra information."
 msgstr ""
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Julkaise paikalliset pisteesi verkossa."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Osallistu"
 
 # ranking? pisteet?
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Lataa uusimmat pisteet verkosta."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Päivitä"
 
@@ -522,79 +482,79 @@ msgstr "Peruskurssi"
 msgid "Adaptability"
 msgstr ""
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Nopeus"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Sujuvuus"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Näppäimet:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Yhdistetään…"
 
 # onko oikein?
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Korvaa käyttäjän asettelu"
 
 # existent? nykyinen vai olemassa oleva?
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Tämä KORVAA nykyisen näppäimistöasettelun."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Poista käyttäjän asettelu"
 
 # existent? nykyinen vai olemassa oleva?
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Tämä POISTAA  nykyisen näppäimistöasettelun."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Nollaa tiedot edistymisestä"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Tämä POISTAA kaikki kaavioissa näytetyt tiedot edistymisestä."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Tämä POISTAA kaikki kaavioissa näytetyt tiedot edistymisestä."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Tyhjennä kaikki tiedot edistymisestä jokaisen yksikön osalta."
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Tarkkuus"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr ""
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr ""
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr ""
 
@@ -1198,6 +1158,26 @@ msgstr ""
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr ""
+
+#~ msgid "_Help"
+#~ msgstr "O_hje"
+
+# miksi puolilainausmerkit?
+#~ msgid "About 'Klavaro'"
+#~ msgstr "Tietoja ”Klavarosta”"
+
+# voiko button-sanan jättää pois?
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr "Tämä on vinkki. Palaa nyt päävalikkoon painamalla tästä."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "Sovelluksen päävalikko on hyvin yksinkertainen. Valitse vain haluamasi "
+#~ "harjoitus. Älä epäröi minkään näytöllä näkyvän painikkeen painamista. "
+#~ "Painikkeet eivät koskaan satuta sinua!"
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr "Pidä tämä valittuna, jos haluat kuulla mukavia piippauksia."

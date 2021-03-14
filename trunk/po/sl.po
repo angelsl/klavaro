@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.00-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2014-06-27 22:30+0200\n"
 "Last-Translator: Igor ĐUKANOVIĆ <igor.mat@uni-mb.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -380,86 +380,46 @@ msgid "_Language:"
 msgstr "_Jezik:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "Majhen namig o Klavaru."
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_Pomoč"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Splošne informacije o Klavaru."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_O..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "O programu \"Klavaro\""
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Še en program za učenje slepega tipkanja"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Vedno pomni.  Nekdo te ima rad! "
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "Naj pomagam?"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr "Namig! Pritisni tole tipko, da se vrneš v glavni menu."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Glavni menu aplikacije je zelo enostaven.  Samo si izbereš vrsto vaje.  Ne "
-"skrbi glede klikanja kamorkoli po zaslonu. Ne moreš ničesar pokvariti! "
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Tudi za vsakim gumbkom se skriva pomoč, ki jo razkriješ s svojo miško.  Ti "
-"nasveti so lahko zelo priročni.  Da vidiš, kako namigi delujejo, postavi "
-"miško nad spodnjim gumbom in brez klikanja počakaj, da se namig pojavi."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Najboljših 10"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 msgid "Show extra information."
 msgstr "Pokaži dodatne informacije."
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 msgid "Hide extra information."
 msgstr "Skrij dodatne informacije."
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Objavi na spletu svoje rezultate."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Sodeluj"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Snami s spleta najnovejšo lestvico."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Posodobi"
 
@@ -510,76 +470,76 @@ msgstr "Osnovni tečaj"
 msgid "Adaptability"
 msgstr "Prilagodljivost"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Hitrost"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Fluidity (tekoče tipkanje)"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Tipke:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Povezujem..."
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Prepiši (svojo razporeditev)"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Tole po PREPISALO obstoječo razporeditev tipkovnice."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Odstrani (svojo razporeditev)"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Tole po IZBRISALO obstoječo razporeditev tipkovnice."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Resetiraj statistike o napredku."
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Tole bo IZBRISALO vse podatke o napredku iz preglednic."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Tole bo IZBRISALO vse podatke o napredku iz preglednic."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Izbriši vse podatke o napredku za vse module."
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Natančnost"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(B/M)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "Napak"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr "Štev. dotikov (s?)"
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "Rezultat"
 
@@ -1304,6 +1264,40 @@ msgstr "Ne morem naložiti datoteke."
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "Rezultatov ni bilo mogoče naložiti (upload/download)."
+
+#~ msgid "Little tip about this program."
+#~ msgstr "Majhen namig o Klavaru."
+
+#~ msgid "_Help"
+#~ msgstr "_Pomoč"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "O programu \"Klavaro\""
+
+#~ msgid "Help?"
+#~ msgstr "Naj pomagam?"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr "Namig! Pritisni tole tipko, da se vrneš v glavni menu."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "Glavni menu aplikacije je zelo enostaven.  Samo si izbereš vrsto vaje.  "
+#~ "Ne skrbi glede klikanja kamorkoli po zaslonu. Ne moreš ničesar pokvariti! "
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "Tudi za vsakim gumbkom se skriva pomoč, ki jo razkriješ s svojo miško.  "
+#~ "Ti nasveti so lahko zelo priročni.  Da vidiš, kako namigi delujejo, "
+#~ "postavi miško nad spodnjim gumbom in brez klikanja počakaj, da se namig "
+#~ "pojavi."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr ""

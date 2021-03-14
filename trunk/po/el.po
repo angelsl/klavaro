@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-3.00-pre2\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2014-01-18 03:07+0200\n"
 "Last-Translator: Vangelis Skarmoutsos <skarmoutsosv@gmail.com>\n"
 "Language-Team: Greek <team@lists.gnome.gr>\n"
@@ -393,91 +393,46 @@ msgid "_Language:"
 msgstr "_Γλώσσα:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "Μικρή συμβουλή σχετικά με αυτό το πρόγραμμα."
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Γενικές πληροφορίες σχετικά με το πρόγραμμα."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_Σχετικά..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "Σχετικά με το 'Klavaro'"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Ένα ακόμη εκπαιδευτικό λογισμικό δακτυλογραφίας"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Να θυμάστε πάντα: κάποιος σας αγαπάει!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "Βοήθεια;"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr ""
-"Αυτή είναι μια συμβουλή. Τώρα πατήστε αυτό το κουμπί για να επιστρέψετε στο "
-"κύριο μενού."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Το κύριο μενού της εφαρμογής είναι πολύ απλό. Απλά επιλέξτε τον τύπο της "
-"άσκησης που θέλετε να κάνετε. Μην ανησυχείτε για το αν θα πατήσετε "
-"οποιοδήποτε κουμπί στην οθόνη. Τα κουμπιά ποτέ δεν θα σας βλάψουν!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Επίσης τα χειριστήρια έχουν συμβουλές που εμφανίζονται όταν σταθείτε πάνω "
-"τους με το ποντίκι. Αυτές οι συμβουλές μπορούν να είναι πολύ βολικές. Για να "
-"δείτε πως λειτουργούν αυτές οι συμβουλές, τοποθετήστε το δείκτη του "
-"ποντικιού σας πάνω από ένα κουμπί παρακάτω και χωρίς να κάνετε κλικ "
-"περιμένετε λίγο ώσπου να εμφανιστεί η συμβουλή..."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Κορυφαία 10"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 msgid "Show extra information."
 msgstr "Εμφάνιση πρόσθετων πληροφοριών."
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 msgid "Hide extra information."
 msgstr "Απόκρυψη πρόσθετων πληροφοριών."
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Δημοσίευση των τοπικών βαθμολογιών σας στον ιστό."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Συμμετοχή"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Κατέβασμα από τον ιστό της πιο ενημερωμένης κατάταξης."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Ενημέρωση"
 
@@ -525,78 +480,78 @@ msgstr "Βασική σειρά μαθημάτων"
 msgid "Adaptability"
 msgstr "Προσαρμοστικότητα"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Ταχύτητα"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Ρευστότητα"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Πλήκτρα:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Σύνδεση..."
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Επικάλυψη διάταξης χρήστη"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Αυτό θα ΕΠΙΚΑΛΥΨΕΙ την υπάρχουσα διάταξη πληκτρολογίου."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Κατάργηση διάταξης χρήστη"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Αυτό θα ΚΑΤΑΡΓΗΣΕΙ την υπάρχουσα διάταξη πληκτρολογίου."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Κατάργηση των δεδομένων προόδου"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr ""
 "Αυτό τα ΔΙΑΓΡΑΨΕΙ όλα τα δεδομένα προόδου που εμφανίζονται στα διαγράμματα."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr ""
 "Αυτό τα ΔΙΑΓΡΑΨΕΙ όλα τα δεδομένα προόδου που εμφανίζονται στα διαγράμματα."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Καθαρισμός όλων των δεδομένων προόδου, για κάθε μονάδα."
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Ακρίβεια"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(ΛΑΛ)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "Σφάλματα"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr "Αριθμός πατημάτων"
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "Βαθμολογία"
 
@@ -1334,6 +1289,44 @@ msgstr "Δεν ήταν δυνατό να σταλθούν τα αρχεία"
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "Δεν μπορούν να ληφθούν/σταλθούν οι βαθμολογίες."
+
+#~ msgid "Little tip about this program."
+#~ msgstr "Μικρή συμβουλή σχετικά με αυτό το πρόγραμμα."
+
+#~ msgid "_Help"
+#~ msgstr "_Βοήθεια"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "Σχετικά με το 'Klavaro'"
+
+#~ msgid "Help?"
+#~ msgstr "Βοήθεια;"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr ""
+#~ "Αυτή είναι μια συμβουλή. Τώρα πατήστε αυτό το κουμπί για να επιστρέψετε "
+#~ "στο κύριο μενού."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "Το κύριο μενού της εφαρμογής είναι πολύ απλό. Απλά επιλέξτε τον τύπο της "
+#~ "άσκησης που θέλετε να κάνετε. Μην ανησυχείτε για το αν θα πατήσετε "
+#~ "οποιοδήποτε κουμπί στην οθόνη. Τα κουμπιά ποτέ δεν θα σας βλάψουν!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "Επίσης τα χειριστήρια έχουν συμβουλές που εμφανίζονται όταν σταθείτε πάνω "
+#~ "τους με το ποντίκι. Αυτές οι συμβουλές μπορούν να είναι πολύ βολικές. Για "
+#~ "να δείτε πως λειτουργούν αυτές οι συμβουλές, τοποθετήστε το δείκτη του "
+#~ "ποντικιού σας πάνω από ένα κουμπί παρακάτω και χωρίς να κάνετε κλικ "
+#~ "περιμένετε λίγο ώσπου να εμφανιστεί η συμβουλή..."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr "Κρατήστε αυτό επιλεγμένο αν θέλετε να έχετε αυτά τα ωραία μπιπ."

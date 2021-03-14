@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro-1.9.0-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2020-05-30 13:47-0300\n"
+"POT-Creation-Date: 2021-03-14 17:32-0300\n"
 "PO-Revision-Date: 2011-03-26 13:19+0100\n"
 "Last-Translator: Axel Bojer <axelb@skolelinux.no>\n"
 "Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
@@ -383,90 +383,48 @@ msgid "_Language:"
 msgstr "_Språk:"
 
 #: ../data/klavaro.glade.h:88
-msgid "Little tip about this program."
-msgstr "Et lite tips om dette programmet."
-
-#: ../data/klavaro.glade.h:89
-msgid "_Help"
-msgstr "_Hjelp"
-
-#: ../data/klavaro.glade.h:90
 msgid "General information about the program."
 msgstr "Generell informasjon om programmet."
 
-#: ../data/klavaro.glade.h:91
+#: ../data/klavaro.glade.h:89
 msgid "_About..."
 msgstr "_Om ..."
 
-#: ../data/klavaro.glade.h:92
-msgid "About 'Klavaro'"
-msgstr "Om «Klavaro»"
-
-#: ../data/klavaro.glade.h:93 ../data/klavaro.desktop.in.h:2
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
 msgstr "Enda et verktøy til å øve maskinskrivning"
 
-#: ../data/klavaro.glade.h:94
+#: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
 msgstr "Husk alltid: Noen elsker deg!"
 
-#: ../data/klavaro.glade.h:95
-msgid "Help?"
-msgstr "Hjelp?"
-
-#: ../data/klavaro.glade.h:96
-msgid "This is a tip. Now you press this button to return to the main menu."
-msgstr ""
-"Dette er et tips. Trykk på denne knappen for å gå tilbake til hovedmenyen."
-
-#: ../data/klavaro.glade.h:97
-msgid ""
-"The main menu of the application is very straightforward. Just select the "
-"type of exercise you wish to take. Do not worry about clicking any button on "
-"the screen. The buttons will never hurt you!"
-msgstr ""
-"Hovedmenyen i programmet er enkel. Velg den øvelsestypen du vil øve på. Ikke "
-"vær redd for å trykke på noen av knappene på skjermen. Knappene vil aldri "
-"skade deg!"
-
-#: ../data/klavaro.glade.h:98
-msgid ""
-"Also the controls have tips which will appear if you hover over them with "
-"your mouse. These tips can come in very handy. To see how these tips work, "
-"position your mouse over the button below, and without clicking, wait for "
-"the tip to appear..."
-msgstr ""
-"Knappene har også tips som vises når du holder musepekeren over dem. Disse "
-"tipsene kan være nyttige. For å se hvordan de virker, hold musepekeren over "
-"knappen nedenfor, og vent, uten å klikke, til tipset vises."
-
-#: ../data/klavaro.glade.h:99
+#: ../data/klavaro.glade.h:92
 msgid "Top 10"
 msgstr "Ti på topp"
 
-#: ../data/klavaro.glade.h:100
+#: ../data/klavaro.glade.h:93
 #, fuzzy
 msgid "Show extra information."
 msgstr "Vis ekstrainformasjonen"
 
-#: ../data/klavaro.glade.h:101
+#: ../data/klavaro.glade.h:94
 #, fuzzy
 msgid "Hide extra information."
 msgstr "Skjul ekstrainformasjonen"
 
-#: ../data/klavaro.glade.h:102
+#: ../data/klavaro.glade.h:95
 msgid "Publish to the web your local scores."
 msgstr "Legg ut dine poeng på nettet."
 
-#: ../data/klavaro.glade.h:103
+#: ../data/klavaro.glade.h:96
 msgid "_Participate"
 msgstr "_Delta"
 
-#: ../data/klavaro.glade.h:104
+#: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
 msgstr "Hent den oppdaterte rangeringen fra nettet."
 
-#: ../data/klavaro.glade.h:105
+#: ../data/klavaro.glade.h:98
 msgid "_Update"
 msgstr "_Oppdater"
 
@@ -512,76 +470,76 @@ msgstr "Grunnøvelse"
 msgid "Adaptability"
 msgstr "Tilpasningsevne"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1429
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Hastighet"
 
-#: ../src/main.c:440 ../src/callbacks.c:1452 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Flyt"
 
-#: ../src/callbacks.c:508 ../src/tutor.c:548
+#: ../src/callbacks.c:496 ../src/tutor.c:548
 msgid "Keys:"
 msgstr "Taster:"
 
-#: ../src/callbacks.c:903 ../src/callbacks.c:919
+#: ../src/callbacks.c:891 ../src/callbacks.c:907
 msgid "Connecting..."
 msgstr "Kobler til ..."
 
-#: ../src/callbacks.c:1192
+#: ../src/callbacks.c:1180
 msgid "Overwrite user layout"
 msgstr "Skriv over brukeroppsettet"
 
-#: ../src/callbacks.c:1194
+#: ../src/callbacks.c:1182
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Dette vil SKRIVE OVER et eksisterende brukeroppsett."
 
-#: ../src/callbacks.c:1201
+#: ../src/callbacks.c:1189
 msgid "Remove user layout"
 msgstr "Fjern brukeroppsett"
 
-#: ../src/callbacks.c:1203
+#: ../src/callbacks.c:1191
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Dette vil FJERNE et eksisterende tastaturoppsett."
 
-#: ../src/callbacks.c:1210 ../src/callbacks.c:1215
+#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
 msgid "Reset progress data"
 msgstr "Nullstil dataene for framgang"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1199
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Dette vil SLETTE alle de dataene for framgang som vises i diagrammene."
 
-#: ../src/callbacks.c:1223
+#: ../src/callbacks.c:1211
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Dette vil SLETTE alle de dataene for framgang som vises i diagrammene."
 
-#: ../src/callbacks.c:1226
+#: ../src/callbacks.c:1214
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Slett alle dataene om framgang, for alle modulene."
 
-#: ../src/callbacks.c:1426 ../src/top10.c:88
+#: ../src/callbacks.c:1414 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Presisjon"
 
-#: ../src/callbacks.c:1429 ../src/tutor.c:1332
+#: ../src/callbacks.c:1417 ../src/tutor.c:1332
 msgid "(WPM)"
 msgstr "(OPM)"
 
-#: ../src/callbacks.c:1440
+#: ../src/callbacks.c:1428
 msgid "Errors"
 msgstr "Feil"
 
-#: ../src/callbacks.c:1443
+#: ../src/callbacks.c:1431
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1455 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
 msgid "Score"
 msgstr "Poeng"
 
@@ -1305,6 +1263,42 @@ msgstr "Klarte ikke å laste opp filer"
 #: ../src/top10.c:989
 msgid "Could not upload/download scores."
 msgstr "Kunne ikke overføre/hente poeng,"
+
+#~ msgid "Little tip about this program."
+#~ msgstr "Et lite tips om dette programmet."
+
+#~ msgid "_Help"
+#~ msgstr "_Hjelp"
+
+#~ msgid "About 'Klavaro'"
+#~ msgstr "Om «Klavaro»"
+
+#~ msgid "Help?"
+#~ msgstr "Hjelp?"
+
+#~ msgid "This is a tip. Now you press this button to return to the main menu."
+#~ msgstr ""
+#~ "Dette er et tips. Trykk på denne knappen for å gå tilbake til hovedmenyen."
+
+#~ msgid ""
+#~ "The main menu of the application is very straightforward. Just select the "
+#~ "type of exercise you wish to take. Do not worry about clicking any button "
+#~ "on the screen. The buttons will never hurt you!"
+#~ msgstr ""
+#~ "Hovedmenyen i programmet er enkel. Velg den øvelsestypen du vil øve på. "
+#~ "Ikke vær redd for å trykke på noen av knappene på skjermen. Knappene vil "
+#~ "aldri skade deg!"
+
+#~ msgid ""
+#~ "Also the controls have tips which will appear if you hover over them with "
+#~ "your mouse. These tips can come in very handy. To see how these tips "
+#~ "work, position your mouse over the button below, and without clicking, "
+#~ "wait for the tip to appear..."
+#~ msgstr ""
+#~ "Knappene har også tips som vises når du holder musepekeren over dem. "
+#~ "Disse tipsene kan være nyttige. For å se hvordan de virker, hold "
+#~ "musepekeren over knappen nedenfor, og vent, uten å klikke, til tipset "
+#~ "vises."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
 #~ msgstr "Behold krysset hvis du vil høre de vakre, små pipelydene."

@@ -8,6 +8,8 @@
 	- Dutch.
 	- French. And also, fr.paragraphs was updated and enlarged.
 	- Swedish.
+	* Removed:
+	- Pointless help dialog, saying nothing.
 
 2020-08-18  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.11
