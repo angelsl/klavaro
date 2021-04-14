@@ -244,6 +244,8 @@ FGREP = @FGREP@
 GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GMSGFMT = @GMSGFMT@
 GREP = @GREP@
+GTKDATABOX_CFLAGS = @GTKDATABOX_CFLAGS@
+GTKDATABOX_LIBS = @GTKDATABOX_LIBS@
 GTK_CFLAGS = @GTK_CFLAGS@
 GTK_LIBS = @GTK_LIBS@
 INSTALL = @INSTALL@
@@ -357,7 +359,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = gtkdatabox src data doc po
+SUBDIRS = src data doc po
 EXTRA_DIST = m4/ChangeLog TODO ABOUT-NLS intltool-extract.in intltool-merge.in intltool-update.in
 ACLOCAL_AMFLAGS = -I m4
 all: config.h

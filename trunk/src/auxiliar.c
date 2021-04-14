@@ -52,6 +52,31 @@ get_win (gchar *name)
 	return (GTK_WINDOW (obj));
 }
 
+/* Set the background color of a widget
+ */
+void
+set_wg_bg_color (GtkWidget * widget, gchar *bg_color) 
+{
+    static GtkCssProvider *cssp = NULL;
+    GtkStyleContext *sc;
+    gchar *css_bg_color;
+
+    if (cssp == NULL)
+	    cssp = gtk_css_provider_new ();
+
+    css_bg_color = g_strdup_printf (
+		    "textview text {background-color: %s;}\n"
+		    ".background {background-color: %s;}"
+		    , bg_color, bg_color);
+    sc = gtk_widget_get_style_context (widget);
+    gtk_style_context_remove_provider (sc, GTK_STYLE_PROVIDER (cssp));
+    gtk_css_provider_load_from_data (cssp, css_bg_color, -1, NULL);
+    if (!gtk_style_context_has_class (sc, "background"))
+	    gtk_style_context_add_class (sc, "background");
+    gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (cssp), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+    g_free (css_bg_color);
+}
+
 /* Set an image widget with the name of the file provided in the data dir
  */
 void

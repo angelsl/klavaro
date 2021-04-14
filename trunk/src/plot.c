@@ -264,18 +264,11 @@ plot_initialize ()
 	gtk_container_add (GTK_CONTAINER (get_wg ("frame_stat")), plot.gtkgrid);
 	g_signal_connect (G_OBJECT (plot.databox), "motion_notify_event", G_CALLBACK (on_databox_hovered), NULL);
 
-	/* Set background not working: FIXME
-	css = gtk_css_provider_new ();
-	gtk_css_provider_load_from_data (css, ".plot_bg {background-color: white;}", -1, NULL);
-	sc = gtk_widget_get_style_context (plot.databox);
-	gtk_style_context_add_provider (sc, GTK_STYLE_PROVIDER (css), GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-	gtk_style_context_add_class (sc, "plot_bg");
-	 */
 	if (main_altcolor_get_boolean ("colors", "altcolor"))
 		tcolor = main_altcolor_get_string ("colors", "text_intro_bg");
 	else
 		tcolor = main_preferences_get_string ("colors", "text_intro_bg");
-	gtk_databox_background (tcolor); // This is a hack!
+	gtk_databox_set_bg_color (GTK_DATABOX(plot.databox), tcolor);
 
 	/* Y labels
 	 */

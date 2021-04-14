@@ -112,7 +112,7 @@ am_klavaro_OBJECTS = main.$(OBJEXT) auxiliar.$(OBJEXT) \
 	basic.$(OBJEXT) adaptability.$(OBJEXT) velocity.$(OBJEXT) \
 	fluidness.$(OBJEXT) accuracy.$(OBJEXT) top10.$(OBJEXT)
 klavaro_OBJECTS = $(am_klavaro_OBJECTS)
-klavaro_DEPENDENCIES = $(top_srcdir)/gtkdatabox/libgtkdataboks.la
+klavaro_DEPENDENCIES =
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
@@ -223,6 +223,8 @@ FGREP = @FGREP@
 GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GMSGFMT = @GMSGFMT@
 GREP = @GREP@
+GTKDATABOX_CFLAGS = @GTKDATABOX_CFLAGS@
+GTKDATABOX_LIBS = @GTKDATABOX_LIBS@
 GTK_CFLAGS = @GTK_CFLAGS@
 GTK_LIBS = @GTK_LIBS@
 INSTALL = @INSTALL@
@@ -352,16 +354,15 @@ klavaro_SOURCES = \
 	accuracy.c accuracy.h \
 	top10.c top10.h 
 
-AM_CPPFLAGS = @GTK_CFLAGS@ \
-	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
-	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
-
-AM_CFLAGS = -Wextra -Wformat -Werror=format-security \
-	-I$(top_srcdir)/gtkdatabox $(am__append_1)
-AM_LDFLAGS = -static
-klavaro_LDADD = @GTK_LIBS@ \
-		-lgmodule-2.0 \
-	       	$(top_srcdir)/gtkdatabox/libgtkdataboks.la
+AM_CPPFLAGS = @GTK_CFLAGS@ @GTKDATABOX_CFLAGS@ \
+	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	-DPACKAGE_LOCALE_DIR=\""$(localedir)"\" $(am__append_1)
+AM_CFLAGS = -Wextra -Wformat -Werror=format-security
+AM_LDFLAGS = -Wl,--export-dynamic
+klavaro_LDADD = \
+		@GTK_LIBS@ \
+		@GTKDATABOX_LIBS@ \
+		-lgmodule-2.0
 
 all: all-am
 

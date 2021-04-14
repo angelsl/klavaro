@@ -808,7 +808,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Select the font to be used in the exercise window.</property>
                 <property name="relief">none</property>
-                <property name="font">Sans 12</property>
+                <property name="font">Senserifa 12</property>
                 <property name="preview-text">EĤOŜANĜO ĈIUĴAŬDE eĥoŝanĝo ĉiuĵaŭde</property>
                 <property name="title" translatable="yes">Font definition</property>
                 <signal name="font-set" handler="on_fontbutton_tutor_font_set" swapped="no"/>

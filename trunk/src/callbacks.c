@@ -93,12 +93,6 @@ on_button_fluid_clicked (GtkButton *button, gpointer user_data)
 }
 
 G_MODULE_EXPORT void
-on_button_help_clicked (GtkButton *button, gpointer user_data)
-{
-	gtk_widget_show (get_wg ("dialog_info"));
-}
-
-G_MODULE_EXPORT void
 on_button_about_clicked (GtkButton *button, gpointer user_data)
 {
 	gtk_widget_show (get_wg ("aboutdialog"));
@@ -186,16 +180,7 @@ on_window_main_destroy (GtkWidget *obj, gpointer data)
 }
 
 /**********************************************************************
- * 2 - Little nohelp-dialog
- **********************************************************************/
-G_MODULE_EXPORT void
-on_button_info_return_clicked (GtkButton *but, gpointer user_data)
-{
-	gtk_widget_hide (get_wg ("dialog_info"));
-}
-
-/**********************************************************************
- * 3 - Tutor window
+ * 2 - Tutor window
  **********************************************************************/
 
 static void 
@@ -828,7 +813,7 @@ on_entry_mesg_realize (GtkWidget * widget, gpointer user_data)
 }
 
 /**********************************************************************
- * 4 - Top 10 management
+ * 3 - Top 10 management
  **********************************************************************/
 G_MODULE_EXPORT void
 on_combobox_top10_changed (GtkComboBox *cmb, gpointer user_data)
@@ -936,7 +921,7 @@ on_button_top10_close_clicked (GtkButton * button, gpointer user_data)
 }
 
 /**********************************************************************
- * 5 - Keyboard window
+ * 4 - Keyboard window
  **********************************************************************/
 
 G_MODULE_EXPORT void
@@ -1380,7 +1365,7 @@ on_button_hints_close_clicked (GtkButton *but, gpointer user_data)
 }
 
 /**********************************************************************
- * 6 - Charts window
+ * 5 - Charts window
  **********************************************************************/
 
 G_MODULE_EXPORT void
@@ -1521,7 +1506,7 @@ on_databox_hovered (GtkDatabox *dbox, GdkEventMotion *event, gpointer user_data)
 }
 
 /**********************************************************************
- * 7 - Other texts popup
+ * 6 - Other texts popup
  **********************************************************************/
 
 G_MODULE_EXPORT void
@@ -1805,7 +1790,7 @@ on_button_filechooser_cancel_clicked (GtkButton *button, gpointer user_data)
 }
 
 /**********************************************************************
- * 8 - Mangling with the windows positions 
+ * 7 - Mangling with the windows positions 
  **********************************************************************/
 
 G_MODULE_EXPORT void

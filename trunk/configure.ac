@@ -24,14 +24,17 @@ LT_INIT
 
 AC_HEADER_STDC
 AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h])
+
 dnl When GtkDataBox-GTK3 is available, check for it also:
-dnl AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
-dnl PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 0.9.1.1])
-dnl AC_CHECK_LIB([gtkdatabox], [gtk_databox_new])
+AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
+PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 1.0.0],,AC_MSG_ERROR([please install GtkDatabox3 found at https://gtkdatabox3.sourceforge.io/]))
+AC_CHECK_LIB([gtkdatabox], [gtk_databox_new])
+AC_SUBST(GTKDATABOX_CFLAGS)
+AC_SUBST(GTKDATABOX_LIBS)
 
 m4_define([gtk_required_version], [3.8.0])
-m4_define([pango_required_version], [1.16.0])
-m4_define([cairo_required_version], [1.4.0])
+m4_define([pango_required_version], [1.29.0])
+m4_define([cairo_required_version], [1.10.0])
 
 PKG_CHECK_MODULES(GTK, [gtk+-3.0 >= [gtk_required_version]])
 PKG_CHECK_MODULES(GTK, [gdk-3.0 >= [gtk_required_version]])
@@ -58,7 +61,6 @@ AM_CONDITIONAL(IS_WIN, test `uname` = "MINGW64_NT-10.0")
 AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW64_NT-10.0" -a `uname` != "Darwin")
 
 AC_CONFIG_FILES([Makefile
-		gtkdatabox/Makefile
 		src/Makefile
 		po/Makefile.in
 		doc/Makefile

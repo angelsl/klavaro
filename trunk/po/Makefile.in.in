@@ -155,6 +155,7 @@ check: all $(GETTEXT_PACKAGE).pot
 mostlyclean:
 	rm -f *.pox *.old.po cat-id-tbl.tmp $(GETTEXT_PACKAGE).pot 
 	rm -f .intltool-merge-cache
+	rm -f .intltool-merge-cache.lock
 
 clean: mostlyclean
 

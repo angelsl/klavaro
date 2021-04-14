@@ -648,6 +648,8 @@ PANGO_LIBS
 PANGO_CFLAGS
 GTK_LIBS
 GTK_CFLAGS
+GTKDATABOX_LIBS
+GTKDATABOX_CFLAGS
 PKG_CONFIG_LIBDIR
 PKG_CONFIG_PATH
 PKG_CONFIG
@@ -839,6 +841,8 @@ CXXCPP
 PKG_CONFIG
 PKG_CONFIG_PATH
 PKG_CONFIG_LIBDIR
+GTKDATABOX_CFLAGS
+GTKDATABOX_LIBS
 GTK_CFLAGS
 GTK_LIBS
 PANGO_CFLAGS
@@ -1518,6 +1522,10 @@ Some influential environment variables:
               directories to add to pkg-config's search path
   PKG_CONFIG_LIBDIR
               path overriding pkg-config's built-in search path
+  GTKDATABOX_CFLAGS
+              C compiler flags for GTKDATABOX, overriding pkg-config
+  GTKDATABOX_LIBS
+              linker flags for GTKDATABOX, overriding pkg-config
   GTK_CFLAGS  C compiler flags for GTK, overriding pkg-config
   GTK_LIBS    linker flags for GTK, overriding pkg-config
   PANGO_CFLAGS
@@ -17537,9 +17545,18 @@ fi
 done
 
 
+for ac_header in libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h
+do :
+  as_ac_Header=`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
+ac_fn_c_check_header_mongrel "$LINENO" "$ac_header" "$as_ac_Header" "$ac_includes_default"
+if eval test \"x\$"$as_ac_Header"\" = x"yes"; then :
+  cat >>confdefs.h <<_ACEOF
+#define `$as_echo "HAVE_$ac_header" | $as_tr_cpp` 1
+_ACEOF
 
+fi
 
-
+done
 
 
 
@@ -17661,6 +17678,129 @@ $as_echo "no" >&6; }
 		PKG_CONFIG=""
 	fi
 fi
+
+pkg_failed=no
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gtkdatabox >= 1.0.0" >&5
+$as_echo_n "checking for gtkdatabox >= 1.0.0... " >&6; }
+
+if test -n "$GTKDATABOX_CFLAGS"; then
+    pkg_cv_GTKDATABOX_CFLAGS="$GTKDATABOX_CFLAGS"
+ elif test -n "$PKG_CONFIG"; then
+    if test -n "$PKG_CONFIG" && \
+    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gtkdatabox >= 1.0.0\""; } >&5
+  ($PKG_CONFIG --exists --print-errors "gtkdatabox >= 1.0.0") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; then
+  pkg_cv_GTKDATABOX_CFLAGS=`$PKG_CONFIG --cflags "gtkdatabox >= 1.0.0" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+else
+  pkg_failed=yes
+fi
+ else
+    pkg_failed=untried
+fi
+if test -n "$GTKDATABOX_LIBS"; then
+    pkg_cv_GTKDATABOX_LIBS="$GTKDATABOX_LIBS"
+ elif test -n "$PKG_CONFIG"; then
+    if test -n "$PKG_CONFIG" && \
+    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gtkdatabox >= 1.0.0\""; } >&5
+  ($PKG_CONFIG --exists --print-errors "gtkdatabox >= 1.0.0") 2>&5
+  ac_status=$?
+  $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+  test $ac_status = 0; }; then
+  pkg_cv_GTKDATABOX_LIBS=`$PKG_CONFIG --libs "gtkdatabox >= 1.0.0" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+else
+  pkg_failed=yes
+fi
+ else
+    pkg_failed=untried
+fi
+
+
+
+if test $pkg_failed = yes; then
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+
+if $PKG_CONFIG --atleast-pkgconfig-version 0.20; then
+        _pkg_short_errors_supported=yes
+else
+        _pkg_short_errors_supported=no
+fi
+        if test $_pkg_short_errors_supported = yes; then
+	        GTKDATABOX_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors --cflags --libs "gtkdatabox >= 1.0.0" 2>&1`
+        else
+	        GTKDATABOX_PKG_ERRORS=`$PKG_CONFIG --print-errors --cflags --libs "gtkdatabox >= 1.0.0" 2>&1`
+        fi
+	# Put the nasty error message in config.log where it belongs
+	echo "$GTKDATABOX_PKG_ERRORS" >&5
+
+	as_fn_error $? "please install GtkDatabox3 found at https://gtkdatabox3.sourceforge.io/" "$LINENO" 5
+elif test $pkg_failed = untried; then
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+	as_fn_error $? "please install GtkDatabox3 found at https://gtkdatabox3.sourceforge.io/" "$LINENO" 5
+else
+	GTKDATABOX_CFLAGS=$pkg_cv_GTKDATABOX_CFLAGS
+	GTKDATABOX_LIBS=$pkg_cv_GTKDATABOX_LIBS
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
+$as_echo "yes" >&6; }
+
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for gtk_databox_new in -lgtkdatabox" >&5
+$as_echo_n "checking for gtk_databox_new in -lgtkdatabox... " >&6; }
+if ${ac_cv_lib_gtkdatabox_gtk_databox_new+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lgtkdatabox  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char gtk_databox_new ();
+int
+main ()
+{
+return gtk_databox_new ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_gtkdatabox_gtk_databox_new=yes
+else
+  ac_cv_lib_gtkdatabox_gtk_databox_new=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_gtkdatabox_gtk_databox_new" >&5
+$as_echo "$ac_cv_lib_gtkdatabox_gtk_databox_new" >&6; }
+if test "x$ac_cv_lib_gtkdatabox_gtk_databox_new" = xyes; then :
+  cat >>confdefs.h <<_ACEOF
+#define HAVE_LIBGTKDATABOX 1
+_ACEOF
+
+  LIBS="-lgtkdatabox $LIBS"
+
+fi
+
+
+
+
+
+
+
+
 
 pkg_failed=no
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for gtk+-3.0 >= gtk_required_version" >&5
@@ -18274,7 +18414,7 @@ else
 fi
 
 
-ac_config_files="$ac_config_files Makefile gtkdatabox/Makefile src/Makefile po/Makefile.in doc/Makefile data/Makefile data/icons/Makefile data/icons/hicolor/Makefile data/icons/hicolor/16x16/Makefile data/icons/hicolor/16x16/apps/Makefile data/icons/hicolor/22x22/Makefile data/icons/hicolor/22x22/apps/Makefile data/icons/hicolor/24x24/Makefile data/icons/hicolor/24x24/apps/Makefile data/icons/hicolor/32x32/Makefile data/icons/hicolor/32x32/apps/Makefile data/icons/hicolor/48x48/Makefile data/icons/hicolor/48x48/apps/Makefile data/icons/hicolor/64x64/Makefile data/icons/hicolor/64x64/apps/Makefile data/icons/hicolor/96x96/Makefile data/icons/hicolor/96x96/apps/Makefile"
+ac_config_files="$ac_config_files Makefile src/Makefile po/Makefile.in doc/Makefile data/Makefile data/icons/Makefile data/icons/hicolor/Makefile data/icons/hicolor/16x16/Makefile data/icons/hicolor/16x16/apps/Makefile data/icons/hicolor/22x22/Makefile data/icons/hicolor/22x22/apps/Makefile data/icons/hicolor/24x24/Makefile data/icons/hicolor/24x24/apps/Makefile data/icons/hicolor/32x32/Makefile data/icons/hicolor/32x32/apps/Makefile data/icons/hicolor/48x48/Makefile data/icons/hicolor/48x48/apps/Makefile data/icons/hicolor/64x64/Makefile data/icons/hicolor/64x64/apps/Makefile data/icons/hicolor/96x96/Makefile data/icons/hicolor/96x96/apps/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -19406,7 +19546,6 @@ do
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "libtool") CONFIG_COMMANDS="$CONFIG_COMMANDS libtool" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
-    "gtkdatabox/Makefile") CONFIG_FILES="$CONFIG_FILES gtkdatabox/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "doc/Makefile") CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
