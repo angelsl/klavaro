@@ -18,21 +18,24 @@ klavaro_SOURCES = \
 	accuracy.c accuracy.h \
 	top10.c top10.h 
 
-AM_CPPFLAGS = @GTK_CFLAGS@ \
+AM_CPPFLAGS = \
+	      @GTK_CFLAGS@ \
+	      @GTKDATABOX_CFLAGS@ \
 	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
+		
 
-AM_CFLAGS = -Wextra -Wformat -Werror=format-security \
-	    -I$(top_srcdir)/gtkdatabox
+AM_CFLAGS = -Wextra -Wformat -Werror=format-security
 
-AM_LDFLAGS = -static
+AM_LDFLAGS = -Wl,--export-dynamic
 
-klavaro_LDADD = @GTK_LIBS@ \
-		-lgmodule-2.0 \
-	       	$(top_srcdir)/gtkdatabox/libgtkdataboks.la
+klavaro_LDADD = \
+		@GTK_LIBS@ \
+		@GTKDATABOX_LIBS@ \
+		-lgmodule-2.0
 
 if IS_POSIX
-AM_CFLAGS += -export-dynamic
+AM_CPPFLAGS += -export-dynamic
 endif
 
 if IS_WIN

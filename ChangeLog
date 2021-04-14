@@ -1,15 +1,20 @@
-2021-03-14  Felipe Castro (-) <fefcas@gmail.com>;
+2021-04-13  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.12
 	* Added:
-	- Indonesian translation.
+	- Indonesian support.
 	- Turkish translation.
 	- Norman US layout.
+	* Changed:
+	- Linking with external GtkDatabox3 lib, version >= 1.0.0.
+	- New function to change the background color: set_wg_bg_color();
+	  substitutes the deprecated gtk_widget_override_background_color().
 	* Updated translations:
 	- Dutch.
 	- French. And also, fr.paragraphs was updated and enlarged.
 	- Swedish.
 	* Removed:
 	- Pointless help dialog, saying nothing.
+	- Internal copy of old GtkDatabox library.
 
 2020-08-18  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.11

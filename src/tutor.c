@@ -295,7 +295,6 @@ tutor_init (TutorType tt_type)
 
 	gtk_widget_hide (get_wg ("window_main"));
 	gtk_widget_hide (get_wg ("window_keyboard"));
-	gtk_widget_hide (get_wg ("dialog_info"));
 	gtk_widget_hide (get_wg ("aboutdialog"));
 	gtk_widget_hide (get_wg ("togglebutton_toomuch_errors"));
 	gtk_widget_show (get_wg ("window_tutor"));
@@ -455,7 +454,6 @@ tutor_update_intro ()
 	gchar *tmp_name;
 	gchar *text;
 	gchar *color_bg;
-	GdkRGBA color;
 	GtkWidget *wg;
 	GtkLabel *wg_label;
 	GtkTextView *wg_text;
@@ -503,9 +501,7 @@ tutor_update_intro ()
 		g_free (color_bg);
 		color_bg = main_altcolor_get_string ("colors", "text_intro_bg");
 	}
-	gdk_rgba_parse (&color, color_bg); 
-	/* FIXME: update deprecated function for background color */
-	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
+	set_wg_bg_color (get_wg ("text_tutor"), color_bg);
 	g_free (color_bg);
 
 	wg = get_wg ("scrolledwindow_tutor_main");
@@ -523,7 +519,6 @@ tutor_update_start ()
 	gchar *tmp_name;
 	gchar *text;
 	gchar *color_bg;
-	GdkRGBA color;
 	GtkWidget *wg;
 	GtkTextBuffer *buf;
 	GtkTextIter start;
@@ -584,9 +579,7 @@ tutor_update_start ()
 		g_free (color_bg);
 		color_bg = main_altcolor_get_string ("colors", "char_untouched_bg");
 	}
-	/* FIXME: update deprecated function for background color */
-	gdk_rgba_parse (&color, color_bg);
-	gtk_widget_override_background_color (get_wg ("text_tutor"), GTK_STATE_FLAG_INSENSITIVE, &color);
+	set_wg_bg_color (get_wg ("text_tutor"), color_bg);
 	g_free (color_bg);
 
 	gtk_text_buffer_get_bounds (buf, &start, &end);

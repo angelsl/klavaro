@@ -52,6 +52,8 @@ GtkWidget * get_wg (gchar *name);
 
 GtkWindow * get_win (gchar *name);
 
+void set_wg_bg_color (GtkWidget *widget, gchar *bg_color);
+
 void set_pixmap (gchar *widget, gchar *image);
 
 /* Search for the user directory and create it if not found

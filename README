@@ -8,6 +8,8 @@ And also, specific libs you have to install (on Debian):
 - libcurl4-dev
 - intltool
 - libtool
+- GtkDatabox3, the new branch, you can find at:
+  https://gtkdatabox3.sourceforge.io/
 
 For compiling on Windows, you may use MSYS2, following instructions from GTK site.
 

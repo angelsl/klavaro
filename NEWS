@@ -1,6 +1,9 @@
 _____________
 Version 3.12
 - Turkish translation added.
+- Indonesian support added.
+- Linking with external GtkDatabox3 lib, version >= 1.0.0.
+- Removed internal copy of old Gtkdatabox.
 _____________
 Version 3.10
 - Tibetan support added.
