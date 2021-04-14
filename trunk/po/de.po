@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 3.01-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2021-03-14 17:32-0300\n"
+"POT-Creation-Date: 2021-04-14 00:05-0300\n"
 "PO-Revision-Date: 2014-09-06 09:49+0200\n"
 "Last-Translator: Hermann J. Beckers <hj.beckers@onlinehome.de>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
@@ -85,7 +85,7 @@ msgstr ""
 "Bearbeiten Sie den Zeichensatz, der in den Übungen 43 ff. benutzt werden "
 "soll; sie sind anpassbar!"
 
-#: ../data/klavaro.glade.h:17 ../src/tutor.c:398
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:397
 msgid "Drag and drop text here to practice with it."
 msgstr "Verschieben Sie Text hierhin, um damit zu üben."
 
@@ -474,81 +474,81 @@ msgstr "Grundkurs"
 msgid "Adaptability"
 msgstr "Anpassbarkeit"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1402
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Geschwindigkeit"
 
-#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1425 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Schreibflüssigkeit"
 
-#: ../src/callbacks.c:496 ../src/tutor.c:548
+#: ../src/callbacks.c:481 ../src/tutor.c:543
 msgid "Keys:"
 msgstr "Tasten:"
 
-#: ../src/callbacks.c:891 ../src/callbacks.c:907
+#: ../src/callbacks.c:876 ../src/callbacks.c:892
 msgid "Connecting..."
 msgstr "Verbinde ..."
 
-#: ../src/callbacks.c:1180
+#: ../src/callbacks.c:1165
 msgid "Overwrite user layout"
 msgstr "Anwenderbelegung überschreiben"
 
-#: ../src/callbacks.c:1182
+#: ../src/callbacks.c:1167
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Dies ÜBERSCHREIBT eine bestehende Tastaturbelegung."
 
-#: ../src/callbacks.c:1189
+#: ../src/callbacks.c:1174
 msgid "Remove user layout"
 msgstr "Anwenderbelegung entfernen"
 
-#: ../src/callbacks.c:1191
+#: ../src/callbacks.c:1176
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Dies wird eine bestehende Tastaturbelegung ENTFERNEN."
 
-#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
+#: ../src/callbacks.c:1183 ../src/callbacks.c:1188
 msgid "Reset progress data"
 msgstr "Verlaufsdaten löschen"
 
-#: ../src/callbacks.c:1199
+#: ../src/callbacks.c:1184
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Dies LÖSCHT alle Verlaufsdaten, die in den Tabellen angezeigt werden."
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1196
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Dies LÖSCHT alle Verlaufsdaten, die in den Tabellen angezeigt werden."
 
-#: ../src/callbacks.c:1214
+#: ../src/callbacks.c:1199
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Alle Verlaufsdaten für jedes Modul löschen!"
 
-#: ../src/callbacks.c:1414 ../src/top10.c:88
+#: ../src/callbacks.c:1399 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Genauigkeit"
 
-#: ../src/callbacks.c:1417 ../src/tutor.c:1332
+#: ../src/callbacks.c:1402 ../src/tutor.c:1325
 msgid "(WPM)"
 msgstr "(WPM)"
 
-#: ../src/callbacks.c:1428
+#: ../src/callbacks.c:1413
 msgid "Errors"
 msgstr "Fehler"
 
-#: ../src/callbacks.c:1431
+#: ../src/callbacks.c:1416
 msgid "Touch times (s)"
 msgstr "Zugriffszeit (s)"
 
-#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1428 ../src/tutor.c:1352 ../src/top10.c:70
 msgid "Score"
 msgstr "Werte"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:522 ../src/tutor.c:1765
+#: ../src/translation.c:522 ../src/tutor.c:1758
 msgid "en"
 msgstr "de"
 
@@ -833,23 +833,23 @@ msgstr "Zeigefinger"
 msgid "Press and edit me"
 msgstr "Taste drücken und bearbeiten"
 
-#: ../src/tutor.c:322
+#: ../src/tutor.c:321
 msgid "Lesson:"
 msgstr "Übung:"
 
-#: ../src/tutor.c:332
+#: ../src/tutor.c:331
 msgid "Paragraphs:"
 msgstr "Absätze:"
 
-#: ../src/tutor.c:365
+#: ../src/tutor.c:364
 msgid "Klavaro - Basic Course"
 msgstr "Klavaro - Grundlagenkurs"
 
-#: ../src/tutor.c:370
+#: ../src/tutor.c:369
 msgid "Klavaro - Adaptability"
 msgstr "Klavaro - Anpassbarkeit"
 
-#: ../src/tutor.c:373
+#: ../src/tutor.c:372
 msgid ""
 "Adaptability exercises: automating the fingers responses, typing over all "
 "the keyboard."
@@ -857,44 +857,44 @@ msgstr ""
 "Anpassbarkeitsübungen: Automatisierung der Fingerreaktion; die gesamte "
 "Tastatur wird genutzt."
 
-#: ../src/tutor.c:378
+#: ../src/tutor.c:377
 msgid "Klavaro - Velocity"
 msgstr "Klavaro - Geschwindigkeit"
 
-#: ../src/tutor.c:379
+#: ../src/tutor.c:378
 msgid "Velocity exercises: accelerate typing real words."
 msgstr "Geschwindigkeitsübungen: Beschleunigung durch Schreiben echter Worte."
 
-#: ../src/tutor.c:383
+#: ../src/tutor.c:382
 msgid "Klavaro - Fluidness"
 msgstr "Klavaro - Schreibflüssigkeit"
 
-#: ../src/tutor.c:385
+#: ../src/tutor.c:384
 msgid "Fluidness exercises: accuracy typing good sense paragraphs."
 msgstr ""
 "Schreibflüssigkeitsübungen. Genauigkeit durch Schreiben sinnvoller Absätze."
 
-#: ../src/tutor.c:447
+#: ../src/tutor.c:446
 msgid "End of exercise. Press [Enter] to start another."
 msgstr "Ende der Übung. [Enter] drücken für eine weitere Übung."
 
-#: ../src/tutor.c:476
+#: ../src/tutor.c:474
 msgid "Learning the key positions."
 msgstr "Lernen der Tastenpositionen."
 
-#: ../src/tutor.c:479
+#: ../src/tutor.c:477
 msgid "Press any key to start the exercise. "
 msgstr "Beliebige Taste zum Start der Übung drücken. "
 
-#: ../src/tutor.c:612 ../src/tutor.c:615
+#: ../src/tutor.c:605 ../src/tutor.c:608
 msgid "Start typing when you are ready. "
 msgstr "Beginnen Sie mit dem Schreiben, wenn Sie bereit sind."
 
-#: ../src/tutor.c:613
+#: ../src/tutor.c:606
 msgid "Use backspace to correct errors."
 msgstr "Rückschritttaste zur Fehlerkorrektur benutzen."
 
-#: ../src/tutor.c:1060
+#: ../src/tutor.c:1053
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -903,11 +903,11 @@ msgstr ""
 "P.S.: Für diese Sitzung wurde keine Aufzeichnung durchgeführt: die Anzahl "
 "geschriebener Zeichen (%i) muss größer sein als %i."
 
-#: ../src/tutor.c:1200
+#: ../src/tutor.c:1193
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "P.S.: Sie haben die TOP-10-Liste erreicht, klasse!"
 
-#: ../src/tutor.c:1214
+#: ../src/tutor.c:1207
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -918,94 +918,94 @@ msgstr ""
 "Wettbewerb nicht berücksichtigen."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1259
+#: ../src/tutor.c:1252
 msgid "STATISTICS"
 msgstr "STATISTIK"
 
-#: ../src/tutor.c:1260
+#: ../src/tutor.c:1253
 msgid "Elapsed time:"
 msgstr "Abgelaufene Zeit:"
 
-#: ../src/tutor.c:1261
+#: ../src/tutor.c:1254
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "Minute und"
 msgstr[1] "Minuten und"
 
-#: ../src/tutor.c:1262
+#: ../src/tutor.c:1255
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "Sekunde"
 msgstr[1] "Sekunden"
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Error ratio:"
 msgstr "Fehlerratio:"
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Accuracy:"
 msgstr "Genauigkeit:"
 
-#: ../src/tutor.c:1284 ../src/tutor.c:1309 ../src/tutor.c:1332
-#: ../src/tutor.c:1358
+#: ../src/tutor.c:1277 ../src/tutor.c:1302 ../src/tutor.c:1325
+#: ../src/tutor.c:1351
 msgid "Goal:"
 msgstr "Ziel:"
 
-#: ../src/tutor.c:1291
+#: ../src/tutor.c:1284
 msgid "Characters per second:"
 msgstr "Zeichen pro Sekunde:"
 
-#: ../src/tutor.c:1309
+#: ../src/tutor.c:1302
 msgid "(CPS)"
 msgstr "(ZPS)"
 
-#: ../src/tutor.c:1314
+#: ../src/tutor.c:1307
 msgid "Words per minute:"
 msgstr "Worte pro Minute:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1332
 msgid "Fluidness:"
 msgstr "Schreibflüssigkeit:"
 
-#: ../src/tutor.c:1366
+#: ../src/tutor.c:1359
 msgid "Comments:"
 msgstr "Kommentare:"
 
-#: ../src/tutor.c:1844
+#: ../src/tutor.c:1837
 msgid "space"
 msgstr "Leertaste"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1849
+#: ../src/tutor.c:1842
 msgid "wye"
 msgstr "Ypsilon"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1853
+#: ../src/tutor.c:1846
 msgid "enter"
 msgstr "enter"
 
-#: ../src/tutor.c:1859
+#: ../src/tutor.c:1852
 msgid "apostrophe"
 msgstr "Apostroph"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1863
+#: ../src/tutor.c:1856
 msgid "quote"
 msgstr "Anführungszeichen"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1867
+#: ../src/tutor.c:1860
 msgid "ampersand"
 msgstr "Ampersand"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:321
+#: ../src/plot.c:314
 msgid "Character"
 msgstr "Zeichen"
 
-#: ../src/plot.c:333
+#: ../src/plot.c:326
 msgid "Date & Time"
 msgstr "Datum und Zeit"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.9.0-pre1\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2021-03-14 17:32-0300\n"
+"POT-Creation-Date: 2021-04-14 00:05-0300\n"
 "PO-Revision-Date: 2011-03-31 14:17+0800\n"
 "Last-Translator: Yuwei Yu <acevery@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -79,7 +79,7 @@ msgid ""
 "Edit the character set to be used in lessons after 43: they are customizable!"
 msgstr "编辑从44课到50课使用的字母集。"
 
-#: ../data/klavaro.glade.h:17 ../src/tutor.c:398
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:397
 msgid "Drag and drop text here to practice with it."
 msgstr "把文字拖放到这里来练习。"
 
@@ -460,81 +460,81 @@ msgstr "基础课程"
 msgid "Adaptability"
 msgstr "适应性"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1402
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "速度"
 
-#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1425 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "流畅性"
 
-#: ../src/callbacks.c:496 ../src/tutor.c:548
+#: ../src/callbacks.c:481 ../src/tutor.c:543
 msgid "Keys:"
 msgstr "按键："
 
-#: ../src/callbacks.c:891 ../src/callbacks.c:907
+#: ../src/callbacks.c:876 ../src/callbacks.c:892
 msgid "Connecting..."
 msgstr "连接..."
 
-#: ../src/callbacks.c:1180
+#: ../src/callbacks.c:1165
 msgid "Overwrite user layout"
 msgstr "覆盖用户布局"
 
-#: ../src/callbacks.c:1182
+#: ../src/callbacks.c:1167
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "这将 覆盖 一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1189
+#: ../src/callbacks.c:1174
 msgid "Remove user layout"
 msgstr "移除用户布局"
 
-#: ../src/callbacks.c:1191
+#: ../src/callbacks.c:1176
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "这将移除一个已有的键盘布局。"
 
-#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
+#: ../src/callbacks.c:1183 ../src/callbacks.c:1188
 msgid "Reset progress data"
 msgstr "重置进展数据"
 
-#: ../src/callbacks.c:1199
+#: ../src/callbacks.c:1184
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "这将会 删除 所有显示在图表的进展数据。"
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1196
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "这将会 删除 所有显示在图表的进展数据。"
 
-#: ../src/callbacks.c:1214
+#: ../src/callbacks.c:1199
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "清除所有练习数据，所有模块的。"
 
-#: ../src/callbacks.c:1414 ../src/top10.c:88
+#: ../src/callbacks.c:1399 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "精度"
 
-#: ../src/callbacks.c:1417 ../src/tutor.c:1332
+#: ../src/callbacks.c:1402 ../src/tutor.c:1325
 msgid "(WPM)"
 msgstr "(词每分钟)"
 
-#: ../src/callbacks.c:1428
+#: ../src/callbacks.c:1413
 msgid "Errors"
 msgstr "错误"
 
-#: ../src/callbacks.c:1431
+#: ../src/callbacks.c:1416
 msgid "Touch times (s)"
 msgstr ""
 
-#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1428 ../src/tutor.c:1352 ../src/top10.c:70
 msgid "Score"
 msgstr "得分"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:522 ../src/tutor.c:1765
+#: ../src/translation.c:522 ../src/tutor.c:1758
 msgid "en"
 msgstr "en"
 
@@ -790,76 +790,76 @@ msgstr "食指"
 msgid "Press and edit me"
 msgstr "按下并编辑我"
 
-#: ../src/tutor.c:322
+#: ../src/tutor.c:321
 msgid "Lesson:"
 msgstr "课程："
 
-#: ../src/tutor.c:332
+#: ../src/tutor.c:331
 msgid "Paragraphs:"
 msgstr "段落："
 
-#: ../src/tutor.c:365
+#: ../src/tutor.c:364
 msgid "Klavaro - Basic Course"
 msgstr "Klavaro - 基础课程"
 
-#: ../src/tutor.c:370
+#: ../src/tutor.c:369
 msgid "Klavaro - Adaptability"
 msgstr "Klavaro - 适应性"
 
-#: ../src/tutor.c:373
+#: ../src/tutor.c:372
 msgid ""
 "Adaptability exercises: automating the fingers responses, typing over all "
 "the keyboard."
 msgstr "适应性练习：使手指的反应自动化，在整个键盘上打字。"
 
-#: ../src/tutor.c:378
+#: ../src/tutor.c:377
 msgid "Klavaro - Velocity"
 msgstr "Klavaro - 速度"
 
-#: ../src/tutor.c:379
+#: ../src/tutor.c:378
 msgid "Velocity exercises: accelerate typing real words."
 msgstr "速度练习：提高真实词语的打字速度。"
 
-#: ../src/tutor.c:383
+#: ../src/tutor.c:382
 msgid "Klavaro - Fluidness"
 msgstr "Klavaro - 流畅性"
 
-#: ../src/tutor.c:385
+#: ../src/tutor.c:384
 msgid "Fluidness exercises: accuracy typing good sense paragraphs."
 msgstr "流畅性练习：精确地打有意义的段落。"
 
-#: ../src/tutor.c:447
+#: ../src/tutor.c:446
 msgid "End of exercise. Press [Enter] to start another."
 msgstr "练习结束，请按[回车]开始另一个。"
 
-#: ../src/tutor.c:476
+#: ../src/tutor.c:474
 msgid "Learning the key positions."
 msgstr "学习键位。"
 
-#: ../src/tutor.c:479
+#: ../src/tutor.c:477
 msgid "Press any key to start the exercise. "
 msgstr "按任意键开始练习。"
 
-#: ../src/tutor.c:612 ../src/tutor.c:615
+#: ../src/tutor.c:605 ../src/tutor.c:608
 msgid "Start typing when you are ready. "
 msgstr "当你准备好时就开始打字。"
 
-#: ../src/tutor.c:613
+#: ../src/tutor.c:606
 msgid "Use backspace to correct errors."
 msgstr ""
 
-#: ../src/tutor.c:1060
+#: ../src/tutor.c:1053
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
 "(%i) must be greater than %i."
 msgstr "    注意：当前的练习并没有被记录下来：打的字符数(%i)必须大于%i。"
 
-#: ../src/tutor.c:1200
+#: ../src/tutor.c:1193
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "    注意：你进入了冠军榜了，太棒了！"
 
-#: ../src/tutor.c:1214
+#: ../src/tutor.c:1207
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -868,94 +868,94 @@ msgstr ""
 "    注意：你刚刚打的好像和你当前选择的语言不同：我们不能将它记入冠军榜中。"
 
 #. Begin the accuracy
-#: ../src/tutor.c:1259
+#: ../src/tutor.c:1252
 msgid "STATISTICS"
 msgstr "统计"
 
-#: ../src/tutor.c:1260
+#: ../src/tutor.c:1253
 msgid "Elapsed time:"
 msgstr "使用时间："
 
-#: ../src/tutor.c:1261
+#: ../src/tutor.c:1254
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "分钟和"
 msgstr[1] "分钟和"
 
-#: ../src/tutor.c:1262
+#: ../src/tutor.c:1255
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "秒"
 msgstr[1] "秒"
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Error ratio:"
 msgstr "错误率："
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Accuracy:"
 msgstr "准确率："
 
-#: ../src/tutor.c:1284 ../src/tutor.c:1309 ../src/tutor.c:1332
-#: ../src/tutor.c:1358
+#: ../src/tutor.c:1277 ../src/tutor.c:1302 ../src/tutor.c:1325
+#: ../src/tutor.c:1351
 msgid "Goal:"
 msgstr "目标："
 
-#: ../src/tutor.c:1291
+#: ../src/tutor.c:1284
 msgid "Characters per second:"
 msgstr "字符数每秒："
 
-#: ../src/tutor.c:1309
+#: ../src/tutor.c:1302
 msgid "(CPS)"
 msgstr "(字每秒)"
 
-#: ../src/tutor.c:1314
+#: ../src/tutor.c:1307
 msgid "Words per minute:"
 msgstr "词每分钟："
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1332
 msgid "Fluidness:"
 msgstr "流畅性："
 
-#: ../src/tutor.c:1366
+#: ../src/tutor.c:1359
 msgid "Comments:"
 msgstr "评价："
 
-#: ../src/tutor.c:1844
+#: ../src/tutor.c:1837
 msgid "space"
 msgstr "空格"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1849
+#: ../src/tutor.c:1842
 msgid "wye"
 msgstr "Y"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1853
+#: ../src/tutor.c:1846
 msgid "enter"
 msgstr "回车"
 
-#: ../src/tutor.c:1859
+#: ../src/tutor.c:1852
 msgid "apostrophe"
 msgstr "单引号"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1863
+#: ../src/tutor.c:1856
 msgid "quote"
 msgstr "双引号"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1867
+#: ../src/tutor.c:1860
 msgid "ampersand"
 msgstr "＆"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:321
+#: ../src/plot.c:314
 msgid "Character"
 msgstr ""
 
-#: ../src/plot.c:333
+#: ../src/plot.c:326
 msgid "Date & Time"
 msgstr "日期和时间"
 
