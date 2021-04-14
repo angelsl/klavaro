@@ -8,7 +8,6 @@ klavaro_data = \
 	altcolor.ini\
 	altcolor.png \
 	fluid.png \
-	go_www.png \
 	key.png \
 	other.png \
 	progress.png \
