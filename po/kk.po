@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klavaro 1.9.7\n"
 "Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
-"POT-Creation-Date: 2021-03-14 17:32-0300\n"
+"POT-Creation-Date: 2021-04-14 00:05-0300\n"
 "PO-Revision-Date: 2013-12-20 08:38+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <(nothing)>\n"
@@ -82,7 +82,7 @@ msgid ""
 "Edit the character set to be used in lessons after 43: they are customizable!"
 msgstr "44-50 сабақтарда қолданылатын әріптер жиынын өзгерту."
 
-#: ../data/klavaro.glade.h:17 ../src/tutor.c:398
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:397
 msgid "Drag and drop text here to practice with it."
 msgstr "Мәтінмен шынығу үшін оны осында ұстап тартып әкеліңіз."
 
@@ -464,81 +464,81 @@ msgstr "Бастапқы сабақ"
 msgid "Adaptability"
 msgstr "Бейімделу"
 
-#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1417
+#: ../src/main.c:435 ../src/main.c:437 ../src/callbacks.c:1402
 #: ../src/top10.c:90 ../src/top10.c:116
 msgid "Speed"
 msgstr "Жылдамдық"
 
-#: ../src/main.c:440 ../src/callbacks.c:1440 ../src/top10.c:92
+#: ../src/main.c:440 ../src/callbacks.c:1425 ../src/top10.c:92
 #: ../src/top10.c:119
 msgid "Fluidity"
 msgstr "Жаттықтық"
 
-#: ../src/callbacks.c:496 ../src/tutor.c:548
+#: ../src/callbacks.c:481 ../src/tutor.c:543
 msgid "Keys:"
 msgstr "Пернелер:"
 
-#: ../src/callbacks.c:891 ../src/callbacks.c:907
+#: ../src/callbacks.c:876 ../src/callbacks.c:892
 msgid "Connecting..."
 msgstr "Байланыс орнату..."
 
-#: ../src/callbacks.c:1180
+#: ../src/callbacks.c:1165
 msgid "Overwrite user layout"
 msgstr "Пайдаланушы жаймасын алмастыру"
 
-#: ../src/callbacks.c:1182
+#: ../src/callbacks.c:1167
 msgid "This will OVERWRITE an existent keyboard layout."
 msgstr "Бұл бар болып тұрған пернетақта жаймасын АЛМАСТЫРАДЫ."
 
-#: ../src/callbacks.c:1189
+#: ../src/callbacks.c:1174
 msgid "Remove user layout"
 msgstr "Пайдаланушы жаймасын өшіру"
 
-#: ../src/callbacks.c:1191
+#: ../src/callbacks.c:1176
 msgid "This will REMOVE an existent keyboard layout."
 msgstr "Бұл бар болып тұрған пернетақта жаймасын ӨШІРЕДІ."
 
-#: ../src/callbacks.c:1198 ../src/callbacks.c:1203
+#: ../src/callbacks.c:1183 ../src/callbacks.c:1188
 msgid "Reset progress data"
 msgstr "Үрдіс ақпаратын өшіру"
 
-#: ../src/callbacks.c:1199
+#: ../src/callbacks.c:1184
 #, fuzzy
 msgid "This will DELETE all the progress data of all modules."
 msgstr "Бұл бар графиктердің барлық ақпаратын ӨШІРЕДІ."
 
-#: ../src/callbacks.c:1211
+#: ../src/callbacks.c:1196
 #, fuzzy, c-format
 msgid "This will delete the data of this chart. <%s>"
 msgstr "Бұл бар графиктердің барлық ақпаратын ӨШІРЕДІ."
 
-#: ../src/callbacks.c:1214
+#: ../src/callbacks.c:1199
 #, fuzzy, c-format
 msgid "This will delete the progress data of the module. (%s)"
 msgstr "Барлық үрдіс ақпаратын өшіру, әр модуль үшін."
 
-#: ../src/callbacks.c:1414 ../src/top10.c:88
+#: ../src/callbacks.c:1399 ../src/top10.c:88
 msgid "Accuracy"
 msgstr "Дәлдік"
 
-#: ../src/callbacks.c:1417 ../src/tutor.c:1332
+#: ../src/callbacks.c:1402 ../src/tutor.c:1325
 msgid "(WPM)"
 msgstr "(Сөз/мин)"
 
-#: ../src/callbacks.c:1428
+#: ../src/callbacks.c:1413
 msgid "Errors"
 msgstr "Қателер"
 
-#: ../src/callbacks.c:1431
+#: ../src/callbacks.c:1416
 msgid "Touch times (s)"
 msgstr "Тию саны"
 
-#: ../src/callbacks.c:1443 ../src/tutor.c:1359 ../src/top10.c:70
+#: ../src/callbacks.c:1428 ../src/tutor.c:1352 ../src/top10.c:70
 msgid "Score"
 msgstr "Нәтиже"
 
 #. Translators: your language code (first 2 letters of your po-file)
-#: ../src/translation.c:522 ../src/tutor.c:1765
+#: ../src/translation.c:522 ../src/tutor.c:1758
 msgid "en"
 msgstr "kk"
 
@@ -808,23 +808,23 @@ msgstr "сұқ саусақ"
 msgid "Press and edit me"
 msgstr "Маған басып, өзгерт"
 
-#: ../src/tutor.c:322
+#: ../src/tutor.c:321
 msgid "Lesson:"
 msgstr "Сабақ:"
 
-#: ../src/tutor.c:332
+#: ../src/tutor.c:331
 msgid "Paragraphs:"
 msgstr "Параграфтар:"
 
-#: ../src/tutor.c:365
+#: ../src/tutor.c:364
 msgid "Klavaro - Basic Course"
 msgstr "Klavaro - Бастапқы сабақ"
 
-#: ../src/tutor.c:370
+#: ../src/tutor.c:369
 msgid "Klavaro - Adaptability"
 msgstr "Klavaro - Бейімделу"
 
-#: ../src/tutor.c:373
+#: ../src/tutor.c:372
 msgid ""
 "Adaptability exercises: automating the fingers responses, typing over all "
 "the keyboard."
@@ -832,43 +832,43 @@ msgstr ""
 "Бейімделу жаттығулары: пернетақтаның барлық батырмасын баса саусақтарды "
 "қозғалтуға автоматтандыру."
 
-#: ../src/tutor.c:378
+#: ../src/tutor.c:377
 msgid "Klavaro - Velocity"
 msgstr "Klavaro - Жылдамдық"
 
-#: ../src/tutor.c:379
+#: ../src/tutor.c:378
 msgid "Velocity exercises: accelerate typing real words."
 msgstr "Жылдамдық жаттығулары: шын сөздерді теруді үдету."
 
-#: ../src/tutor.c:383
+#: ../src/tutor.c:382
 msgid "Klavaro - Fluidness"
 msgstr "Klavaro - Жаттықтық"
 
-#: ../src/tutor.c:385
+#: ../src/tutor.c:384
 msgid "Fluidness exercises: accuracy typing good sense paragraphs."
 msgstr "Жаттықтық жаттығулары: параграфтарды теру кезіндегі дәлдікке шынығу."
 
-#: ../src/tutor.c:447
+#: ../src/tutor.c:446
 msgid "End of exercise. Press [Enter] to start another."
 msgstr "Жаттығу соңы. Басқасын бастау үшін [Enter] басыңыз."
 
-#: ../src/tutor.c:476
+#: ../src/tutor.c:474
 msgid "Learning the key positions."
 msgstr "Пернелер орналасу орындарына үйрену."
 
-#: ../src/tutor.c:479
+#: ../src/tutor.c:477
 msgid "Press any key to start the exercise. "
 msgstr "Жаттығуды бастау үшін кез-келген пернені басыңыз."
 
-#: ../src/tutor.c:612 ../src/tutor.c:615
+#: ../src/tutor.c:605 ../src/tutor.c:608
 msgid "Start typing when you are ready. "
 msgstr "Дайын болғаннан кейін теруді бастаңыз."
 
-#: ../src/tutor.c:613
+#: ../src/tutor.c:606
 msgid "Use backspace to correct errors."
 msgstr "Қателерді түзету үшін backspace қолданыңыз."
 
-#: ../src/tutor.c:1060
+#: ../src/tutor.c:1053
 #, c-format
 msgid ""
 "ps.: logging not performed for this session: the number of typed characters "
@@ -877,11 +877,11 @@ msgstr ""
 "ps.: бұл сессияға қайта кіруге болмайды: (%i) терілген символдың саны %i "
 "мәнінен үлкен болу керек."
 
-#: ../src/tutor.c:1200
+#: ../src/tutor.c:1193
 msgid "ps.: you have entered the Top 10 list, great!"
 msgstr "ps.: Сіз Бірінші 10 қатарына ендіңіз, Бәрекелді!"
 
-#: ../src/tutor.c:1214
+#: ../src/tutor.c:1207
 msgid ""
 "ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
 "the language currently selected: we can't account for it in the 'Top 10' "
@@ -891,92 +891,92 @@ msgstr ""
 "секілді: біздің 'Бірінші 10' қатарына кіре алмайсыз."
 
 #. Begin the accuracy
-#: ../src/tutor.c:1259
+#: ../src/tutor.c:1252
 msgid "STATISTICS"
 msgstr "СТАТИСТИКА"
 
-#: ../src/tutor.c:1260
+#: ../src/tutor.c:1253
 msgid "Elapsed time:"
 msgstr "Кеткен уақыт:"
 
-#: ../src/tutor.c:1261
+#: ../src/tutor.c:1254
 msgid "minute and"
 msgid_plural "minutes and"
 msgstr[0] "минут және"
 
-#: ../src/tutor.c:1262
+#: ../src/tutor.c:1255
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "секунд"
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Error ratio:"
 msgstr "Қателер:"
 
-#: ../src/tutor.c:1263
+#: ../src/tutor.c:1256
 msgid "Accuracy:"
 msgstr "Тиянақтылық:"
 
-#: ../src/tutor.c:1284 ../src/tutor.c:1309 ../src/tutor.c:1332
-#: ../src/tutor.c:1358
+#: ../src/tutor.c:1277 ../src/tutor.c:1302 ../src/tutor.c:1325
+#: ../src/tutor.c:1351
 msgid "Goal:"
 msgstr "Мақсаты:"
 
-#: ../src/tutor.c:1291
+#: ../src/tutor.c:1284
 msgid "Characters per second:"
 msgstr "Секундына таңба:"
 
-#: ../src/tutor.c:1309
+#: ../src/tutor.c:1302
 msgid "(CPS)"
 msgstr "(Таңба/сек)"
 
-#: ../src/tutor.c:1314
+#: ../src/tutor.c:1307
 msgid "Words per minute:"
 msgstr "Минутына сөз:"
 
-#: ../src/tutor.c:1339
+#: ../src/tutor.c:1332
 msgid "Fluidness:"
 msgstr "Жаттықтылық:"
 
-#: ../src/tutor.c:1366
+#: ../src/tutor.c:1359
 msgid "Comments:"
 msgstr "Пікірлер:"
 
-#: ../src/tutor.c:1844
+#: ../src/tutor.c:1837
 msgid "space"
 msgstr "бос аралық"
 
 #. Translators: the name of letter Y
-#: ../src/tutor.c:1849
+#: ../src/tutor.c:1842
 msgid "wye"
 msgstr "игрек"
 
 #. Translators: the name of the Return key
-#: ../src/tutor.c:1853
+#: ../src/tutor.c:1846
 msgid "enter"
 msgstr "enter"
 
-#: ../src/tutor.c:1859
+#: ../src/tutor.c:1852
 msgid "apostrophe"
 msgstr "апостроф"
 
 #. Translators: double quote symbol: "
-#: ../src/tutor.c:1863
+#: ../src/tutor.c:1856
 msgid "quote"
 msgstr "тырнақша"
 
 #. Translators: ampersand symbol: &
-#: ../src/tutor.c:1867
+#: ../src/tutor.c:1860
 msgid "ampersand"
 msgstr "амперсанд"
 
 #. Error frequencies or touch times
 #.
-#: ../src/plot.c:321
+#: ../src/plot.c:314
 msgid "Character"
 msgstr "Таңба"
 
-#: ../src/plot.c:333
+#: ../src/plot.c:326
 msgid "Date & Time"
 msgstr "Күні және уақыты"
 
