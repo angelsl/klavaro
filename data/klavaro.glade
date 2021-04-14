@@ -20,7 +20,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
 <interface>
-  <requires lib="gtk+" version="3.8"/>
+  <requires lib="gtk+" version="3.12"/>
   <!-- interface-license-type gplv3 -->
   <!-- interface-name Klavaro -->
   <!-- interface-description A touch typing tutor -->
@@ -92,7 +92,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">_Lesson:</property>
                 <property name="use-underline">True</property>
-                <property name="xalign">1</property>
+                <property name="justify">right</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -304,43 +304,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="relief">half</property>
                 <signal name="clicked" handler="on_button_stat_reset_clicked" object="check_stat_reset" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment17">
+                  <object class="GtkBox" id="hbox29">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox29">
+                      <object class="GtkImage" id="image24">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image24">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-delete</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label28">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Reset</property>
-                            <property name="use-underline">True</property>
-                            <property name="mnemonic-widget">button_stat_reset</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">5</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-delete</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label28">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Reset</property>
+                        <property name="use-underline">True</property>
+                        <property name="mnemonic-widget">button_stat_reset</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">5</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -360,44 +352,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="relief">half</property>
                 <signal name="clicked" handler="on_button_stat_close_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment25">
+                  <object class="GtkBox" id="hbox87">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox87">
+                      <object class="GtkImage" id="image26">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image26">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="double-buffered">False</property>
-                            <property name="stock">gtk-close</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label150">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Close</property>
-                            <property name="use-underline">True</property>
-                            <property name="mnemonic-widget">button_stat_close</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">5</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label150">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                        <property name="mnemonic-widget">button_stat_close</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">5</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -414,10 +397,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="label" translatable="yes" comments="Everything means ALL the progress charts statistics.">everything!</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="focus-on-click">False</property>
                 <property name="receives-default">False</property>
                 <property name="tooltip-text" translatable="yes" comments="Confirmation check-button for removing data.">Clear data for every module, if checked!</property>
-                <property name="double-buffered">False</property>
                 <property name="draw-indicator">True</property>
               </object>
               <packing>
@@ -591,7 +572,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="can-focus">False</property>
                 <property name="wrap">True</property>
                 <property name="ellipsize">end</property>
-                <property name="xalign">0</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -629,7 +609,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="image25">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-dialog-warning</property>
+                    <property name="icon-name">dialog-warning</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -654,7 +634,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="image16">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-edit</property>
+                    <property name="icon-name">gtk-edit</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -728,7 +708,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <property name="can-default">True</property>
                     <property name="has-default">True</property>
                     <property name="tooltip-text" translatable="yes">Drag and drop text here to practice with it.</property>
-                    <property name="secondary-icon-stock">gtk-clear</property>
+                    <property name="secondary-icon-name">gtk-clear</property>
                     <property name="secondary-icon-tooltip-text" translatable="yes">Press here to restart the exercise. Hotkey: [Ctrl-R]</property>
                     <property name="secondary-icon-tooltip-markup" translatable="yes">Press here to restart the exercise. Hotkey: [Ctrl-R]</property>
                     <signal name="activate" handler="on_entry_mesg_activate" after="yes" swapped="no"/>
@@ -742,9 +722,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <signal name="realize" handler="on_entry_mesg_realize" swapped="no"/>
                   </object>
                 </child>
-                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
-                <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="Escape" signal="grab_focus"/>
+                <accelerator key="R" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
+                <accelerator key="r" signal="grab_focus" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -807,7 +787,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Select the font to be used in the exercise window.</property>
-                <property name="relief">none</property>
                 <property name="font">Senserifa 12</property>
                 <property name="preview-text">EĤOŜANĜO ĈIUĴAŬDE eĥoŝanĝo ĉiuĵaŭde</property>
                 <property name="title" translatable="yes">Font definition</property>
@@ -817,8 +796,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="padding">2</property>
+                <property name="fill">True</property>
                 <property name="position">2</property>
               </packing>
             </child>
@@ -837,8 +815,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <property name="pixbuf">altcolor.png</property>
                   </object>
                 </child>
-                <accelerator key="a" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                 <accelerator key="a" signal="activate" modifiers="GDK_SHIFT_MASK | GDK_CONTROL_MASK"/>
+                <accelerator key="a" signal="activate" modifiers="GDK_CONTROL_MASK"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -873,7 +851,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_course">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-dialog-info</property>
+                        <property name="icon-name">dialog-information</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -968,7 +946,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image15">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-close</property>
+                        <property name="icon-name">system-log-out</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -1016,7 +994,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image5">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-go-back</property>
+                        <property name="icon-name">go-previous</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -1124,14 +1102,12 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
         <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkLabel" id="label117">
+          <object class="GtkLabel" id="label_attention">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="margin-left">10</property>
+            <property name="halign">start</property>
+            <property name="margin-start">10</property>
             <property name="label" translatable="yes">Attention!</property>
-            <property name="justify">center</property>
-            <property name="xalign">0</property>
-            <property name="yalign">0</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -1144,11 +1120,10 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
           <object class="GtkLabel" id="label_confirm">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="margin-left">10</property>
+            <property name="halign">start</property>
+            <property name="margin-start">10</property>
             <property name="label">CONFIRM_MESSAGE</property>
             <property name="wrap">True</property>
-            <property name="xalign">0</property>
-            <property name="yalign">1</property>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -1209,7 +1184,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image28">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-cancel</property>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1257,7 +1232,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image27">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-delete</property>
+                        <property name="icon-name">gtk-delete</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1326,41 +1301,33 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_button_filechooser_cancel_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment4">
+                  <object class="GtkBox" id="hbox25">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0.5</property>
-                    <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkBox" id="hbox25">
+                      <object class="GtkImage" id="image22">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image22">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-cancel</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label31">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Cancel</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label31">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Cancel</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -1378,41 +1345,33 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_button_filechooser_open_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment5">
+                  <object class="GtkBox" id="hbox26">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0.5</property>
-                    <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkBox" id="hbox26">
+                      <object class="GtkImage" id="image23">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image23">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-open</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label32">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Open</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-open</property>
                       </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label32">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Open</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -1476,7 +1435,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="headers-visible">False</property>
-                    <property name="rules-hint">True</property>
                     <property name="enable-search">False</property>
                     <signal name="cursor-changed" handler="on_treeview_other_cursor_changed" swapped="no"/>
                     <signal name="realize" handler="on_treeview_other_realize" swapped="no"/>
@@ -1498,11 +1456,10 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="height-request">25</property>
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
+                <property name="halign">start</property>
                 <property name="label" translatable="yes">Re_name:</property>
                 <property name="use-underline">True</property>
                 <property name="mnemonic-widget">entry_other_rename</property>
-                <property name="xalign">0</property>
-                <property name="yalign">1</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1553,7 +1510,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image11">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-open</property>
+                        <property name="icon-name">gtk-open</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -1568,7 +1525,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">_Open text file</property>
                         <property name="use-underline">True</property>
-                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1601,7 +1557,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image6">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-paste</property>
+                        <property name="icon-name">gtk-paste</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -1616,7 +1572,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">_Paste from clipboard</property>
                         <property name="use-underline">True</property>
-                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1649,7 +1604,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image19">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-delete</property>
+                        <property name="icon-name">gtk-delete</property>
                         <property name="icon_size">2</property>
                       </object>
                       <packing>
@@ -1664,7 +1619,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">_Remove copied file</property>
                         <property name="use-underline">True</property>
-                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -1694,43 +1648,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <property name="receives-default">True</property>
                     <signal name="clicked" handler="on_button_other_cancel_clicked" swapped="no"/>
                     <child>
-                      <object class="GtkAlignment" id="alignment14">
+                      <object class="GtkBox" id="hbox27">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="xscale">0.5</property>
-                        <property name="yscale">0.5</property>
                         <child>
-                          <object class="GtkBox" id="hbox27">
+                          <object class="GtkImage" id="image17">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <child>
-                              <object class="GtkImage" id="image17">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="stock">gtk-cancel</property>
-                                <property name="icon_size">2</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkLabel" id="label27">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">_Cancel</property>
-                                <property name="use-underline">True</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="padding">4</property>
-                                <property name="position">1</property>
-                              </packing>
-                            </child>
+                            <property name="icon-name">gtk-cancel</property>
+                            <property name="icon_size">2</property>
                           </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="label27">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Cancel</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="padding">4</property>
+                            <property name="position">1</property>
+                          </packing>
                         </child>
                       </object>
                     </child>
@@ -1750,43 +1696,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                     <property name="tooltip-text" translatable="yes">Apply the selected item to create an exercise.</property>
                     <signal name="clicked" handler="on_button_other_apply_clicked" swapped="no"/>
                     <child>
-                      <object class="GtkAlignment" id="alignment10">
+                      <object class="GtkBox" id="hbox91">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="xscale">0.5</property>
-                        <property name="yscale">0.5</property>
                         <child>
-                          <object class="GtkBox" id="hbox91">
+                          <object class="GtkImage" id="image30">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <child>
-                              <object class="GtkImage" id="image30">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="stock">gtk-ok</property>
-                                <property name="icon_size">2</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="position">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkLabel" id="label154">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">_Apply</property>
-                                <property name="use-underline">True</property>
-                              </object>
-                              <packing>
-                                <property name="expand">True</property>
-                                <property name="fill">True</property>
-                                <property name="padding">4</property>
-                                <property name="position">1</property>
-                              </packing>
-                            </child>
+                            <property name="icon-name">gtk-ok</property>
+                            <property name="icon_size">2</property>
                           </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="label154">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Apply</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="padding">4</property>
+                            <property name="position">1</property>
+                          </packing>
                         </child>
                       </object>
                     </child>
@@ -1861,42 +1799,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="relief">none</property>
                 <signal name="clicked" handler="on_button_hints_close_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment1">
+                  <object class="GtkBox" id="hbox15">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0.5</property>
-                    <property name="yscale">0.5</property>
                     <child>
-                      <object class="GtkBox" id="hbox15">
+                      <object class="GtkImage" id="image2">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image2">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-close</property>
-                            <property name="icon_size">2</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label20">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Close</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
+                        <property name="icon_size">2</property>
                       </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label20">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -1945,13 +1875,12 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="spacing">12</property>
                 <child>
                   <object class="GtkLabel" id="label_keyboard_title">
-                    <property name="width-request">350</property>
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">start</property>
                     <property name="label">title</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
-                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1961,13 +1890,11 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 </child>
                 <child>
                   <object class="GtkLabel" id="label_keyboard_text_1">
-                    <property name="width-request">350</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">start</property>
                     <property name="label">text 1</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
-                    <property name="width-chars">44</property>
-                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -1977,12 +1904,11 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 </child>
                 <child>
                   <object class="GtkLabel" id="label_keyboard_text_2">
-                    <property name="width-request">350</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">start</property>
                     <property name="label">text 2</property>
                     <property name="justify">fill</property>
                     <property name="wrap">True</property>
-                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -2117,42 +2043,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Remove the selected custom layout.</property>
                 <signal name="clicked" handler="on_button_kb_remove_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment13">
+                  <object class="GtkBox" id="hbox75">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
+                    <property name="spacing">2</property>
                     <child>
-                      <object class="GtkBox" id="hbox75">
+                      <object class="GtkImage" id="image14">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="spacing">2</property>
-                        <child>
-                          <object class="GtkImage" id="image14">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-delete</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label138">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Remove</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-delete</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label138">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Remove</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -2264,7 +2182,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="pixmap9">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-go-up</property>
+                    <property name="icon-name">go-up</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -2309,7 +2227,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="pixmap8">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-go-up</property>
+                    <property name="icon-name">go-up</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -2351,7 +2269,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="image4">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-ok</property>
+                    <property name="icon-name">gtk-ok</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -2425,7 +2343,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="image3">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="stock">gtk-media-rewind</property>
+                    <property name="icon-name">gtk-media-rewind</property>
                     <property name="icon_size">1</property>
                   </object>
                 </child>
@@ -2493,47 +2411,39 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Show previous screen.</property>
                 <signal name="clicked" handler="on_button_keyboard_previous_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment3">
+                  <object class="GtkBox" id="hbox24">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox24">
+                      <object class="GtkImage" id="image20">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image20">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-go-back</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label14">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Previous step</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-go-back</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label14">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Previous step</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
-                <accelerator key="Left" signal="clicked"/>
                 <accelerator key="Left" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Left" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2552,47 +2462,39 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Show next screen.</property>
                 <signal name="clicked" handler="on_button_keyboard_next_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment2">
+                  <object class="GtkBox" id="hbox23">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox23">
+                      <object class="GtkImage" id="image18">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image18">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-go-forward</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label12">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Next step</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-go-forward</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label12">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Next step</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
-                <accelerator key="Right" signal="clicked"/>
                 <accelerator key="Right" signal="clicked" modifiers="GDK_SHIFT_MASK"/>
+                <accelerator key="Right" signal="clicked"/>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -2619,42 +2521,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Return without any modification.</property>
                 <signal name="clicked" handler="on_button_keyboard_cancel_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment11">
+                  <object class="GtkBox" id="hbox73">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox73">
+                      <object class="GtkImage" id="image12">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image12">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-cancel</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label136">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Cancel</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label136">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Cancel</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -2676,42 +2570,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Save the current keyboard layout with the name specified above.</property>
                 <signal name="clicked" handler="on_button_kb_save_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment12">
+                  <object class="GtkBox" id="hbox74">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox74">
+                      <object class="GtkImage" id="image13">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image13">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-save</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label137">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Save and use</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-save</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label137">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Save and use</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -2730,43 +2616,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Close this window.</property>
                 <signal name="clicked" handler="on_button_keyboard_close_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment9">
+                  <object class="GtkBox" id="hbox71">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox71">
+                      <object class="GtkImage" id="image10">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image10">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-close</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">2</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label134">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Close</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">2</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">2</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label134">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">2</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -2787,43 +2665,35 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">If you like those beautiful hands, click here to close this window keeping them.</property>
                 <signal name="clicked" handler="on_button_keyboard_hands_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment16">
+                  <object class="GtkBox" id="hbox28">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox28">
+                      <object class="GtkImage" id="image21">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image21">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-leave-fullscreen</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">2</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label23">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Keep hands</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">2</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">view-restore</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">2</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label23">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Keep hands</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">2</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -2879,7 +2749,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_intro">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-dialog-warning</property>
+                        <property name="icon-name">dialog-warning</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
@@ -2898,9 +2768,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label_main_intro">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label">Introduction</property>
                             <property name="mnemonic-widget">button_basic</property>
-                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2913,9 +2783,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label10">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label" translatable="yes">Learn how to type correctly</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2956,7 +2825,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_basic">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-strikethrough</property>
+                        <property name="icon-name">gtk-strikethrough</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
@@ -2975,10 +2844,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label_main_basic">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label">Basic course</property>
                             <property name="mnemonic-widget">button_basic</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -2991,9 +2859,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label13">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label" translatable="yes">First steps with initial training</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3034,7 +2901,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_adapt">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-bold</property>
+                        <property name="icon-name">gtk-bold</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
@@ -3053,10 +2920,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label_main_adapt">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label">Adaptability</property>
                             <property name="mnemonic-widget">button_basic</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3069,9 +2935,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label15">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label" translatable="yes">Practice with random keys</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3112,7 +2977,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_adapt1">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="stock">gtk-spell-check</property>
+                        <property name="icon-name">tools-check-spelling</property>
                         <property name="icon_size">6</property>
                       </object>
                       <packing>
@@ -3131,10 +2996,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label_main_velo">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label">Velocity</property>
                             <property name="mnemonic-widget">button_basic</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">1</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3147,9 +3011,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label17">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label" translatable="yes">Practice with random words</property>
-                            <property name="xalign">0</property>
-                            <property name="yalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3190,7 +3053,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkImage" id="image_fluid">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="pixbuf">fluid.png</property>
+                        <property name="icon-name">applications-graphics</property>
                         <property name="icon_size">5</property>
                       </object>
                       <packing>
@@ -3209,9 +3072,9 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label_main_fluid">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label">Fluidness</property>
                             <property name="mnemonic-widget">button_basic</property>
-                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3224,8 +3087,8 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                           <object class="GtkLabel" id="label3">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
+                            <property name="halign">start</property>
                             <property name="label" translatable="yes">Practice with complete texts</property>
-                            <property name="xalign">0</property>
                           </object>
                           <packing>
                             <property name="expand">True</property>
@@ -3270,7 +3133,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="label" translatable="yes">Speech</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
-                <property name="focus-on-click">False</property>
                 <property name="receives-default">False</property>
                 <property name="tooltip-text">Espeak</property>
                 <property name="draw-indicator">True</property>
@@ -3337,7 +3199,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Language for modules 3 and 4.</property>
                 <property name="label" translatable="yes">_Language:</property>
                 <property name="use-underline">True</property>
-                <property name="xalign">1</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -3364,42 +3225,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">General information about the program.</property>
                 <signal name="clicked" handler="on_button_about_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment7">
+                  <object class="GtkBox" id="hbox69">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox69">
+                      <object class="GtkImage" id="image8">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image8">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-about</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label132">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_About...</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">dialog-information</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label132">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_About...</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -3418,42 +3271,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Exit the application immediately.</property>
                 <signal name="clicked" handler="on_window_main_destroy" after="yes" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment6">
+                  <object class="GtkBox" id="hbox68">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox68">
+                      <object class="GtkImage" id="image7">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image7">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-close</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label131">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Close</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">4</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">system-log-out</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label131">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">4</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -3628,7 +3473,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkTreeView" id="treeview_top10_1">
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
-                        <property name="rules-hint">True</property>
                         <property name="enable-tree-lines">True</property>
                         <child internal-child="selection">
                           <object class="GtkTreeSelection" id="treeview-selection1"/>
@@ -3651,7 +3495,6 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                         <property name="width-request">300</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
-                        <property name="rules-hint">True</property>
                         <property name="enable-tree-lines">True</property>
                         <child internal-child="selection">
                           <object class="GtkTreeSelection" id="treeview-selection2"/>
@@ -3680,11 +3523,10 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="relief">none</property>
                 <signal name="clicked" handler="on_button_top10_expand_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkArrow" id="arrow1">
+                  <object class="GtkImage">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="arrow-type">left</property>
-                    <property name="shadow-type">in</property>
+                    <property name="icon-name">media-seek-backward</property>
                   </object>
                 </child>
               </object>
@@ -3702,10 +3544,10 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="relief">none</property>
                 <signal name="clicked" handler="on_button_top10_noexpand_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkArrow" id="arrow2">
+                  <object class="GtkImage">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="shadow-type">in</property>
+                    <property name="icon-name">media-seek-forward</property>
                   </object>
                 </child>
               </object>
@@ -3736,7 +3578,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                   <object class="GtkImage" id="image_go_www">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="pixbuf">go_www.png</property>
+                    <property name="icon-name">applications-internet</property>
                   </object>
                 </child>
               </object>
@@ -3755,42 +3597,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Publish to the web your local scores.</property>
                 <signal name="clicked" handler="on_button_top10_publish_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment39">
+                  <object class="GtkBox" id="hbox103">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
+                    <property name="spacing">2</property>
                     <child>
-                      <object class="GtkBox" id="hbox103">
+                      <object class="GtkImage" id="image_top10_publish">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="spacing">2</property>
-                        <child>
-                          <object class="GtkImage" id="image_top10_publish">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-goto-top</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label168">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Participate</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-goto-top</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label168">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Participate</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -3811,42 +3645,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Download from the web the most up to date ranking.</property>
                 <signal name="clicked" handler="on_button_top10_update_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment38">
+                  <object class="GtkBox" id="hbox102">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
+                    <property name="spacing">2</property>
                     <child>
-                      <object class="GtkBox" id="hbox102">
+                      <object class="GtkImage" id="image_top10_update">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="spacing">2</property>
-                        <child>
-                          <object class="GtkImage" id="image_top10_update">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-goto-bottom</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label167">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Update</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-goto-bottom</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label167">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Update</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>
@@ -3878,42 +3704,34 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
                 <property name="tooltip-text" translatable="yes">Close this window.</property>
                 <signal name="clicked" handler="on_button_top10_close_clicked" swapped="no"/>
                 <child>
-                  <object class="GtkAlignment" id="alignment35">
+                  <object class="GtkBox" id="hbox99">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="xscale">0</property>
-                    <property name="yscale">0</property>
                     <child>
-                      <object class="GtkBox" id="hbox99">
+                      <object class="GtkImage" id="image47">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <child>
-                          <object class="GtkImage" id="image47">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="stock">gtk-close</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel" id="label164">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">_Close</property>
-                            <property name="use-underline">True</property>
-                          </object>
-                          <packing>
-                            <property name="expand">False</property>
-                            <property name="fill">False</property>
-                            <property name="padding">2</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
+                        <property name="icon-name">gtk-cancel</property>
                       </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label164">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="padding">2</property>
+                        <property name="position">1</property>
+                      </packing>
                     </child>
                   </object>
                 </child>

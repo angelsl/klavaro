@@ -2,11 +2,18 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
 AC_INIT([klavaro],[3.12],[fe20@penso.eu.nom.br])
-AC_CONFIG_SRCDIR([config.h.in])
-AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([-Wall])
 
+AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_AUX_DIR([build-aux])
+
+AM_INIT_AUTOMAKE([-Wall tar-ustar])
+
+# Support silent build rules. Disable by either passing
+# --disable-silent-rules to configure or passing V=1 to make
+AM_SILENT_RULES([yes])
+
 AM_PROG_AR
 AM_PROG_LIBTOOL
 
@@ -23,18 +30,16 @@ dnl For POSIX, simply use this:
 LT_INIT
 
 AC_HEADER_STDC
-AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h])
-
-dnl When GtkDataBox-GTK3 is available, check for it also:
 AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h unistd.h curl/curl.h gtkdatabox.h])
+
 PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 1.0.0],,AC_MSG_ERROR([please install GtkDatabox3 found at https://gtkdatabox3.sourceforge.io/]))
 AC_CHECK_LIB([gtkdatabox], [gtk_databox_new])
 AC_SUBST(GTKDATABOX_CFLAGS)
 AC_SUBST(GTKDATABOX_LIBS)
 
-m4_define([gtk_required_version], [3.8.0])
-m4_define([pango_required_version], [1.29.0])
-m4_define([cairo_required_version], [1.10.0])
+m4_define([gtk_required_version], [3.12.0])
+m4_define([pango_required_version], [1.32.4])
+m4_define([cairo_required_version], [1.12.0])
 
 PKG_CHECK_MODULES(GTK, [gtk+-3.0 >= [gtk_required_version]])
 PKG_CHECK_MODULES(GTK, [gdk-3.0 >= [gtk_required_version]])
@@ -53,9 +58,6 @@ GETTEXT_PACKAGE=klavaro
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 AC_DEFINE(ENABLE_NLS,"1",[enable nls])
-
-dnl AM_GNU_GETTEXT([external])
-dnl AM_GNU_GETTEXT_VERSION([0.18.3])
 
 AM_CONDITIONAL(IS_WIN, test `uname` = "MINGW64_NT-10.0")
 AM_CONDITIONAL(IS_POSIX, test  `uname` != "MINGW64_NT-10.0" -a `uname` != "Darwin")
