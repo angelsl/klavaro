@@ -23,11 +23,8 @@ AM_CPPFLAGS = \
 	      @GTKDATABOX_CFLAGS@ \
 	      -DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	      -DPACKAGE_LOCALE_DIR=\""$(localedir)"\"
-		
 
 AM_CFLAGS = -Wextra -Wformat -Werror=format-security
-
-AM_LDFLAGS = -Wl,--export-dynamic
 
 klavaro_LDADD = \
 		@GTK_LIBS@ \
@@ -36,9 +33,10 @@ klavaro_LDADD = \
 
 if IS_POSIX
 AM_CPPFLAGS += -export-dynamic
+AM_LDFLAGS = -Wl,--export-dynamic
 endif
 
 if IS_WIN
-#AM_CFLAGS += -mwindows
+AM_CFLAGS += -mwindows
 endif
 
