@@ -1,12 +1,10 @@
 ____________________________________________________________
 Simple list of things that could be done in future releases:
 
-- Remove console in background for Windows and see how to add an icon for the launcher there.
-- Create command-line interface (CLI), something like gtypist.
-
 ____________________________________________
 And suggestions that probably won't be done:
 
+- Create command-line interface (CLI), something like gtypist. (no time for that)
 - Show sqrt(accuracy * speed) in progress charts for modules basic, adapt and speed. (too much information to deal with)
 - Configurable colors for the progress charts. (too much colors to deal with, gradients, complicate to specify each one)
 - Add method for advanced users to learn the keyboard from words in the dictionaries: center row left/rigth/both hands, lower row, upper row, number row, etc. (complicated, maybe not so useful, volunteers, please)

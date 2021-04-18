@@ -3335,35 +3335,15 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
     <property name="authors">- Felipe Castro - &lt;fe20@penso.eu.nom.br&gt;
 - Petr Machata
 - Hodong Kim</property>
-    <property name="translator-credits">- &lt;a href="http://translationproject.org/domain/klavaro.html"&gt;The Translation Project&lt;/a&gt;
-- Ankur ICT Developement Foundation, Bangladesh.
-- Martin Šín
-- Dieter Vanderfaeillie
-- Richard van Schaik
-- Dave Pawson (Great Britain)
-- Gregory Palmer
-- Felipe Castro
-- Fabrice Haberer-Proust
-- Lionel Dupuys
-- Sébastien Wilmet
-- Hermann J. Beckers
-- Matthias Mailänder
-- Gergely Máté
-- Robert Stefaniuk
-- Александр Казанцев (Alexandr Kazancev)
-- Ibon Castilla
-- Juan Macedo
-- David Prieto
-- Nils Pettersson
-- Jess Body
-- Trần Ngọc Quân</property>
+    <property name="translator-credits">- &lt;a href="http://translationproject.org/domain/klavaro.html"&gt;The Translation Project&lt;/a&gt;</property>
     <property name="artists">- David Prieto
 - Szczepan Marchewka</property>
     <property name="logo">klavaro_icon.png</property>
     <property name="license-type">gpl-3-0</property>
     <signal name="close" handler="gtk_widget_hide" swapped="no"/>
-    <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
+    <signal name="delete-event" handler="gtk_widget_hide_on_delete" swapped="no"/>
     <signal name="focus-out-event" handler="gtk_widget_hide" swapped="no"/>
+    <signal name="response" handler="gtk_widget_hide" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkBox">
         <property name="can-focus">False</property>
@@ -3372,9 +3352,53 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
         <child internal-child="action_area">
           <object class="GtkButtonBox">
             <property name="can-focus">False</property>
+            <property name="margin-top">10</property>
             <property name="layout-style">end</property>
             <child>
-              <placeholder/>
+              <object class="GtkButton" id="button_about_close">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="tooltip-text" translatable="yes">Close this window.</property>
+                <signal name="clicked" handler="gtk_widget_hide" object="aboutdialog" swapped="yes"/>
+                <child>
+                  <object class="GtkBox" id="hbox3">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkImage" id="image1">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="icon-name">gtk-cancel</property>
+                        <property name="icon_size">2</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="label5">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">_Close</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
             </child>
           </object>
           <packing>
@@ -3387,6 +3411,7 @@ along with Klavaro.  If not, see <http://www.gnu.org/licenses/>.
           <object class="GtkLabel" id="label2">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="margin-top">10</property>
             <property name="label" translatable="yes">Remember always: someone loves you!</property>
           </object>
           <packing>
