@@ -19,9 +19,9 @@ AM_INIT_AUTOMAKE([-Wall tar-ustar])
 # --disable-silent-rules to configure or passing V=1 to make
 AM_SILENT_RULES([yes])
 AM_PROG_AR
-LT_INIT
+LT_INIT([win32-dll])
 
-PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 1.0.0],,AC_MSG_ERROR([please install GtkDatabox3 found at https://gtkdatabox3.sourceforge.io/]))
+PKG_CHECK_MODULES(GTKDATABOX, [gtkdatabox >= 1.0.0],,AC_MSG_ERROR([please install GtkDatabox found at https://gtkdatabox.sourceforge.io/]))
 AC_SUBST(GTKDATABOX_CFLAGS)
 AC_SUBST(GTKDATABOX_LIBS)
 AC_CHECK_HEADERS([libintl.h curl/curl.h gtkdatabox.h])
