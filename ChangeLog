@@ -1,7 +1,12 @@
-2021-04-13  Felipe Castro (-) <fefcas@gmail.com>;
+2021-??-??  Felipe Castro (-) <fefcas@gmail.com>;
 	* Release 3.13
+	* Fixed:
+	- Close button on About dialog.
+	* Added:
+	- French layout from AFNOR: azerty (amélioré).
 	* Updated translations:
 	- Croatian.
+	- Greek, partial.
 	- Portuguese (Portugal).
 
 2021-04-13  Felipe Castro (-) <fefcas@gmail.com>;
