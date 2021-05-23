@@ -27,6 +27,7 @@ klavaro_data = \
 	alphagrip5_us.kbd \
 	azerty_be.kbd \
 	azerty_fr.kbd \
+	azerty_fr_afnor.kbd \
 	azerty_fr_ibook.kbd \
 	colemak_us.kbd \
  	dubeolsik_kr.kbd \
